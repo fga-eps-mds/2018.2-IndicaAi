@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="post">
+
+  <div class="post-content">
+    {{ content }}
+
+    <div class="members row">
+    {% for i in site.data.members %}
+    <div class="member-item col-md-4 col-sm-6 col-xs-12" data-tags='{{ i.tags | jsonify | downcase }}'>
+    	<div class="well member-outer">
+    		<div class="member-inner">
+    			<a href="/static/members/{{ i.image }}" class="thickbox">
+                        <div class="member-img bordered" style="background-image: url('{{site.baseurl}}/static/members/{{ i.image }}');"></div>
+                </a>
+                {% if i.url %} <a href="{{ i.url }}"> {% endif %}
+    			<h3 class="member-headlines">{{ i.name }}</h3>
+    			{% if i.url %} </a> {% endif %}
+    			<div class="member-content">
+    				<div class="tag-holder">
+    				{% if i.tags %} 
+    					{% for j in i.tags %}
+    					<span class="label tags tag-filter" data-tag="{{ j | downcase }}">{{ j }}</span>
+    					{% endfor %}
+    				{% endif %}
+    				</div>
+    				
+    			</div>
+    			<div class="member-footer"> 
+    				{% if i.url %} 
+    				<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm member-link">View</a>
+    				{% endif %}
+    				<span class="member-timeline">{{ i.date }}</span>
+    			</div>
+    		</div>
+    	</div>
+        </div>
+    {% endfor %}
+    </div>
+  </div>
+
+</article>
