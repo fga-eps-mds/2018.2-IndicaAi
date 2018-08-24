@@ -1,11 +1,11 @@
 title: RecomendaFGA
 description: Compartilhe com a gente os locais que você gosta de ir no tempo livre da FGA.
 author: Recomenda FGA
-logo: /assets/placeholder.png
+logo: /assets/logo.png
 github: https://github.com/fga-eps-mds/RecomendaFGA
 about: 2018 EPS / MDS
 
-#baseurl: ""
+# baseurl: ""
 baseurl: "https://fga-eps-mds.github.io/RecomendaFGA/"
 url: "https://fga-eps-mds.github.io/RecomendaFGA/"
 
