@@ -25,6 +25,14 @@
 		"image": "placeholder.jpg",
 		"date": "Oct 2016",
 		"tags": ["Android","nodejs"]
+	},
+
+	{
+		"name": "Lucas Maciel",
+		"image": "placeholder.jpg",
+		"url": "https://github.com/Ridersk",
+		"date": "17/0070735",
+		"tags": ["MDS"]
 	}
 
 ]
