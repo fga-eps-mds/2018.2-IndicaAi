@@ -109,8 +109,13 @@ As técnicas da metodologia Extreme Programming serão aplicadas com o intuito d
 * A refatoração deve ser realizada antes de fazer qualquer alteração na funcionalidade, visando garantir a integridade do código.
 
 ---
-# Kanban
 
+# Planning Poker
+* Deverá ser aplicado para estimar a dificuldade de trabalho do projeto e auxiliar no planejamento das _sprints_, conforme nota-se a capacidade de produção da equipe;
+* Os pontos estimados para uma issue devem estar registrados na mesma por meio do ZenHub;
+* Os valores que considerados serão 0, 1, 2, 3, 5, 8, 13, 21, e 40.
+
+# Kanban
 O Kanban será aplicado visando monitorar o fluxo de trabalho da equipe.
 
 * O Kanban deverá contar com os quadros Product Backlog, Icebox, Sprint Backlog, Em progresso, Revisão e Terminados;
