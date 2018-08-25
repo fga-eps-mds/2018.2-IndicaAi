@@ -16,9 +16,9 @@
     "icon": "fa-comments"
   },
   {
-    "text": "Projects",
-    "url": "/projects",
-    "icon": "fa-desktop"
+    "text": "Metodologia",
+    "url": "/docs/2018/08/24/metodologia.html",
+    "icon": "fa-thumbs-up"
   },
   {
     "text": "Resume",
