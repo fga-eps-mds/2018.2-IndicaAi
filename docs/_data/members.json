@@ -26,13 +26,18 @@
 		"date": "Oct 2016",
 		"tags": ["Android","nodejs"]
 	},
-
 	{
 		"name": "Lucas Maciel",
 		"image": "placeholder.jpg",
 		"url": "https://github.com/Ridersk",
 		"date": "17/0070735",
 		"tags": ["MDS"]
-	}
-
+	},
+        {
+                "name": "Weiller Fernandes",
+                "image": "placeholder.jpg",
+                "url": "https://github.com/WeillerFernandes",
+                "date": "13/0137995",
+                "tags": ["MDS"]
+        }
 ]
