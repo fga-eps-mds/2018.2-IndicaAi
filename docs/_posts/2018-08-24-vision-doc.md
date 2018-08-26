@@ -61,33 +61,27 @@ Elaborado de acordo com a metodologia RUP, o *Rational Unified Process*, este do
 ## 2. Posicionamento
 
 ### 2.1 Oportunidade de Negócios
-Atualmente a Universidade de Brasília enfrenta a dificuldade de adequar a demanda de disciplinas ofertadas com os recursos físicos - salas e auditórios - disponíveis em cada campus. Atualmente é empregado um processo manual exaustivo por parte dos coordenadores de cada curso, juntamente com a Prefeitura da universidade, a fim de mapear cada turma a sua respectiva sala. Com base nessa realidade, o SIGS visa facilitar este processo de alocação, tornando mais rápida e eficiente a gestão dos espaços físicos.
+A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasília e recebe alunos de vários lugares do Brasil. A faculdade ainda está em desenvolvimento, portanto faltam serviços e estruturas básicas necessárias às atividades acadêmicas, fazendo com que alunos, professores e servidores precisem sair do campus. Muitos se perdem ao procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o RecomendaFGA visa o compartilhamento de locais e experiências em relação aos bens e serviços oferecidos, próximos ao campus, com o objetivo de facilitar as buscas e melhorar a vida acadêmica.
 
 ### 2.2 Descrição do Problema
 
 <table>
-  <tr><th> O problema de         </th><td>realizar a gestão de espaços físicos da UnB manualmente</td></tr>
-  <tr><th> afeta                 </th><td>os membros responsáveis da Prefeitura, professores e alunos</td></tr>
-  <tr><th> cujo impacto é        </th><td>um processo de alocação lento e exaustivo, além de haver choque de horários entre disciplinas diferentes na mesma sala</td></tr>
-  <tr><th> uma boa solução seria </th><td>um sistema capaz de automatizar os pedidos de alocação, verificar a disponibilidade de espaços físicos da universidade e identificar disciplinas de horários concorrentes.</td></tr>
+  <tr><th> O problema         </th><td> A falta de informação do que existe nas proximidades da faculdade por parte da comunidade acadêmica. </td></tr>
+  <tr><th> Afeta                 </th><td> A comunidade acadêmia em geral.</td></tr>
+  <tr><th> cujo impacto é        </th><td> Eventuais má experiências com serviços disponíveis ou desorientação em realação a localização.</td></tr>
+  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade da faculdade o qual pessoas da comunidade pudessem compartilhar locais, experiencias e que indicasse de forma precisa a localização de estabelicimentos. </td></tr>
 </table>
-<hr>
-<table>
-  <tr><th> O problema de</th><td>realizar a gestão de espaços físicos da UnB</td></tr>
-  <tr><th> afeta</th><td>os alunos</td></tr>
-  <tr><th> cujo impacto é</th><td>disciplinas de um mesmo curso alocadas com uma grande distância entre elas em horários seguidos</td></tr>
-  <tr><th>uma boa solução seria</th><td>um sistema capaz de fornecer a informação de proximidade entre as salas, de forma que o responsável pela alocação possa tomar melhores decisões quanto a escolha da sala de uma determinada disciplina.</td></tr>
-</table>
+
 
 ### 2.3 Sentença de Posição do Produto
 
 <table>
-  <tr><th>Para</th><td>Membros do corpo acadêmico da Universidade de Brasília</td></tr>
-  <tr><th>Que</th><td>necessitam automatizar o processo de alocação de salas</td></tr>
-  <tr><th>O</th><td>Sistema Inteligente de Gestão de Salas</td></tr>
-  <tr><th>Que</th><td>Gerencia os espaços físicos da Universidade</td></tr>
-  <tr><th>Diferente do</th><td>Sistema de Alocação de Salas - SAS-FGA</td></tr>
-  <tr><th>Nosso produto</th><td>Gerencia as salas reservadas na Universidade, com base nos departamentos e cursos existentes, agrupando-as por região de forma a minimizar a distância entre as as salas das turmas de um mesmo curso.</td></tr>
+  <tr><th>Para</th><td>Membros da comunidade acadêmica da Faculdade do Gama - FGA</td></tr>
+  <tr><th>Que</th><td>Necessitam se deslocar do campus em busca de bens e serviços </td></tr>
+  <tr><th>O</th><td>RecomendaFGA</td></tr>
+  <tr><th>Que</th><td>Compartilha locais e experiências </td></tr>
+  <tr><th>Diferente do</th><td>Todos os lugares ao redor e TripAdvisitor</td></tr>
+  <tr><th>Nosso produto</th><td>Indica locais de acordo com a experiências de outros integrantes da comunidade acadêmica da FGA</td></tr>
 
 </table>
 
