@@ -24,11 +24,11 @@ categories: docs
 -----
 ## 1. Introdução
 
-Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Sistema Inteligente de Gestão de Salas (SIGS), o qual refere-se a um sistema para a alocação e gerenciamento das salas da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
+Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo RecomendaFGA, o qual refere-se a um sistema para indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA, campus da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
 
 ### 1.1 Finalidade
 
-O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do sistema de alocação e gerenciamento de salas da UnB ao expor as ideias necessárias para seu desenvolvimento.
+O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do aplicativo RecomendaFGA ao expor as ideias necessárias para seu desenvolvimento.
 
 ### 1.2 Escopo
 
@@ -39,15 +39,13 @@ São tratados nesse documento os pontos necessários para a elaboração da apli
 Abaixo serão apresentados alguns conceitos de documentação de software desejáveis para o melhor entendimento deste documento e termos aplicados ao contexto da universidade:
 
 1. UnB: Universidade De Brasília.
-2. Decano: Em uma instituição, é o membro mais antigo. Na Universidade de Brasília os Decanos são designados pelo Reitor e aprovados pelo conselho universitário. Suas principais competências são coordenar e fiscalizar as atividades universitárias de suas respectivas áreas, dentro de suas atribuições delegadas.
-3. Prefeitura: Órgão auxiliar a Reitoria da Universidade de Brasília, responsável por administrar a infraestrutura do campus, mantendo serviços como limpeza, transporte e comunicação.
-4. FGA: Faculdade do Gama - Campus da Universidade de Brasília localizado no Gama.
-5. SAA: Secretaria de Administração Acadêmica.
-6. UML (*Unified Modeling Language*): Linguagem de modelagem que define representações de um sistema de forma padronizada com o objetivo de facilitar a compreensão.
-7. RUP (*Rational Unified Process*): É um modelo de processo unificado de Engenharia de Software derivado da UML criado pela Rational Software Corporation e adquirido pela IBM em 2003. Possui elementos de modelos genéricos para apoiar o desenvolvimento de softwares incentivando a interação e exemplificando boas práticas de projeto e especificação.
-8. SIGS: Sistema Inteligente de Gestão de Salas.
-9. GPP: Disciplina de Gestão de Portfólios e Projetos de Software.
-10. MDS: Disciplina de Métodos de Desenvolvimento de Software.
+2. FGA: Faculdade do Gama - Campus da Universidade de Brasília localizado no Gama.
+3. RecomendaFGA: Aplicativo mobile com intuito de compartilhar recomendações de locais próximos a FGA que facilite a vida acadêmica.
+4. UML (*Unified Modeling Language*): Linguagem de modelagem que define representações de um sistema de forma padronizada com o objetivo de facilitar a compreensão.
+5. RUP (*Rational Unified Process*): É um modelo de processo unificado de Engenharia de Software derivado da UML criado pela Rational Software Corporation e adquirido pela IBM em 2003. Possui elementos de modelos genéricos para apoiar o desenvolvimento de softwares incentivando a interação e exemplificando boas práticas de projeto e especificação.
+6. SIGS: Sistema Inteligente de Gestão de Salas.
+7. EPS: Disciplina de Engenharia de Produto de Software.
+8. MDS: Disciplina de Métodos de Desenvolvimento de Software.
 
 
 ### 1.4 Referências
@@ -55,8 +53,6 @@ Abaixo serão apresentados alguns conceitos de documentação de software desej�
 SOMMERVILLE, Ian. **Engenharia de Software.** São Paulo: Pearson Prentice Hall. 9ª edição. 2011.
 
 GUEDES, Gilleanes T. A. **UML: uma abordagem prática.** Novatec Editora, 2008.
-
-Universidade de Brasília. **Estatuto e Regimento Geral.** Brasília: Editora UnB, 2011.
 
 ### 1.5 Visão Geral
 
@@ -400,4 +396,3 @@ O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de
 * O sistema deve conter validações para cada campo no formulário a ser preenchido pelo usuário.
 * O sistema deve criar uma sessão para o usuário após o mesmo efetuar o login.
 * O sistema deve criar níveis de permissão para cada tipo de conta em relação ao acesso a cada funcionalidade.
-
