@@ -4,6 +4,7 @@ title:  "Documento de Visão"
 date:   2018-08-24 13:50:39
 categories: docs
 ---
+# Documento de Visão
 
 ## Histórico de Revisão
 
@@ -324,7 +325,7 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 | R01 | Indicar locais próximos a FGA.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo a FGA. |
 | R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
 
-## 5. Requisitos Funcionais
+## 5. Recursos do Produto
 
 ##### Legenda de Prioridades dos Requisitos:
 
@@ -336,12 +337,13 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RF2 | Controlar Cadastro  | O Sistema deve autorizar o Assistente Administrativo de editar as informações dos usuários e aprovar seu cadastro. | Intermediária |
-| RF3 | Controlar Sala | O Sistema deve permitir o Assistente Administrativo a manter as informações das salas. | Intermedária |
-| RF4 | Controlar Turmas | O sistema deve permitir que os usuários possam manter as informações das turmas. | Alta |
-| RF5 | Controlar Alocações | O sistema deve permitir que os usuários possam gerenciar as alocações feitas, e que o Assistente Administrativo controle as de espaço comum. |Alta|
-| RF6 | Orientar Alocações | O sistema deve permitir que os usuários possam visualizar as alocações e geram seus respectivos relatórios. | Baixa|
+| RP1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
+| RP2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
+| RP3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
+| RP4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
+| RP5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Admnistrador seja tomada ). | Intermediária |
+| RP6 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
+| RP7 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários | Baixa |
 
 ## 6. Restrições
 
