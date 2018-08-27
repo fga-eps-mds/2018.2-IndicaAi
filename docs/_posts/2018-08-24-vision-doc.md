@@ -150,7 +150,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   </tr>
   <tr>
     <td><b>Tipo</b></td>
-    <td>Graduandos da Universidade de Brasília no curso de Engenharia de Software, aos quais exercem o cargo de monitora das disciplinas de Gestão de Portfólios e Projetos de Software e Métodos de Desenvolvimento de Software, respectivamente.</td>
+    <td>Graduandos da Universidade de Brasília no curso de Engenharia de Software, aos quais exercem o cargo de monitora das disciplinas de Engenharia de Produto de Software e Métodos de Desenvolvimento de Software, respectivamente.</td>
   </tr>
   <tr>
     <td><b>Responsabilidades</b></td>
@@ -252,31 +252,30 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 | **Descrição** | Um usuário com a capacidade de excluir locais mal indicados e moderar comportamentos inadequados detro do aplicativo |
 | **Tipo** | Desenvolvedores do aplicativo |
 | **Responsabilidades** | Analisar informações inseridas por usuários  |
-| **Critérios de Sucesso**  | Obter um software resultante capaz de automatizar o processo de alocação de salas, prevenindo choques de horários e longas distâncias entre salas do mesmo curso. |
-| **Envolvimento** | Usuário final do sistema. |
-| **Produtos Liberados** | - Relação de disponibilidade das salas; <br> - Informações técnicas de cada sala; <br> - Relatório de Disciplinas Alocadas com suas respectivas salas.|
-| **Comentários** | |
+| **Critérios de Sucesso**  | Obter um software resultante capaz de indicar locais próximos a FGA de acordo com a necessidade do usuário |
+| **Envolvimento** | Desenvolvimento e usuário final do sistema. |
+| **Produtos Liberados** |  Relação de disponibilidade de locais;  Informações sobre o local desejado;    Indicação de rota para o local desejado.|
 
-#### 3.4.2 Coordenador
 
-| **Representante** | Symone Rodrigues Jardim |
+#### 3.4.2 Usuário comum
+
+| **Representante** | Corpo acadêmico da universidade |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Descrição** | Responsável pela listagem das disciplinas de seu respectivo curso, contendo a relação de demanda, horários e necessidades de cada disciplina. |
-| **Tipo** | Mestres e Doutores que lecionam na universidade e atuam no cargo de Coordenador de Curso, além de seus respectivos assistentes. |
-| **Responsabilidades** | Fornecer as informações necessárias para a alocação de cada turma, caso necessário, solicitar a reserva de salas no espaço comum da faculdade.|
-| **Critérios de Sucesso**  | Obter um software resultante capaz de automatizar o processo de alocação de salas, prevenindo choques de horários e longas distâncias entre salas do mesmo curso. |
+| **Descrição** | Navegará dentro do aplicativo sendo capaz de buscar locais desejados e também indicar lugares que considerar útil à comunidade. Também poderá descrever assim como avaliar locais indicados pelo aplicativo |
+| **Tipo** | Mestres e Doutores que lecionam na universidade, alunos e servidores da universidade. |
+| **Responsabilidades** | Indicar lugarem que irão compor a base de dados do aplicativo e julgar lugares já indicados a fim de avaliar sua experiência no local para outros usuários.|
+| **Critérios de Sucesso**  | Obter um software resultante capaz de indicar locais próximos a FGA de acordo com a necessidade do usuário |
 | **Envolvimento** | Usuário final do sistema. |
-| **Produtos Liberados** | Solicitação contendo as informações necessárias para alocar as disciplinas do seu respectivo curso. |
-| **Comentários** |  |
+| **Produtos Liberados** | <br>Relação de disponibilidade de locais;</br> Informações sobre o local desejado;<br> Indicação de rota para o local desejado.</br> |
+
 
 ### 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
 | Necessidade | Prioridade | Preocupação | Solução Atual | Solução Proposta |
 | ----------- | ---------- | ----------- | ------------- | ---------------- |
-| Reservar Sala | Alta |  Choque de horário entre disciplinas; Curso prioritário sob determinadas salas; Período de expiração da reserva para evitar a inutilização dos espaços físicos; Disciplinas comuns podem ter mais de um curso associado a mesma turma. | Verificação manual do mapa de sala elaborado para o semestre. | - Categorizar as salas entre disponíveis e ocupadas, de forma que as salas já ocupadas em determinado horário não sejam dispostas para o usuário escolher; <br> - Controle temporal sobre o período letivo; <br> - Permitir ao Coordenador associar cursos diferentes a uma determinada turma, além do seu próprio.|
-| Minimizar a distância percorrida pelo aluno entre as trocas de sala | Alta | Manter as aulas de um mesmo curso, preferencialmente, a no máximo 1km de distância das outras aulas do mesmo curso. | Não possui | Agrupar as salas com base em seus respectivos prédios e departamentos, além de segregar o espaço comum da faculdade em Norte e Sul, de forma que um dado curso ofereça todas as suas disciplinas somente em uma dessas regiões. |
-| Realizar trocas de salas | Média | Caso haja a necessidade, deve ser possível realizar mudanças no quadro de alocações. | A troca é feita pelos próprios professores, sem o conhecimento dos responsáveis, de forma que impossibilita o uso da sala previamente alocada, por esta constar como ocupada nos registros. | O sistema deverá fornecer a possibilidade de realocar uma turma em outra sala a escolha do usuário. |
-| Descrição dos recursos contidos em cada Sala | Baixa | Informar as condições e recursos dispostos na sala para garantir, já na alocação, que uma sala contemple as necessidades de uma dada Disciplina. | Não Possui | Disponibilizar ao usuário a possibilidade de descrever cada sala. |
+| Buscar locais na proximidade da faculdade | Alta |  Falta de informação para localizar o local; tempo gasto para procurar locais satisfatórios; Dificuldade de acesso ao local devido carência de instruções; Local com falta de estrutura para atender o usuário. |Busca na internet por locais; indicação de pessoas conhecidas. | - Mostrar em um design simples e sofisticado locais que sirvam de utilidade para o usuário; <br> - Mecanismo de busca para especificar a procura do usuário; <br> - Mostrar ao usuário avaliações da camunidade assim como comentários sobre locais solicitados.|
+|Conhecimento do percurso a um local desejado | Alta | Capacidade de acessar localidades da forma mais simples possível. | Orientações dadas por pessoas conhecidas; uso de aplicativos externos. | Informar  ao usuário o melhor percurso para o local solicitado partindo da FGA.  |
+|  Informações sobre um dado local.| Média | Saber de antemão a qualidade de um local recomendado | Buscar informações de pessoas conhecidas que já estiveram no local | O sistema deverá fornecer avaliações de diversos usuários  que estiveram presentes no local; fornecimento comentários e informações como presença de estacionamento, banheiro e etc. |
 
 
 ### 3.6 Alternativas e Concorrência
@@ -337,18 +336,19 @@ O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de
 
 ## 6. Restrições
 
-* O cadastro de usuários deve ser aprovado apenas com a utilização de uma matrícula válida pela Unb;
-* Somente os Admnistradores do Sistema poderam realizar a remoção de uma conta de usuário comum.
-* O sistema só funcionará mediante uma conexão de rede pelo menos satisfatória e será mantido em um servidor Rails.
-* A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação apenas para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
+* O cadastro de usuários deve ser aprovado pelo Assistente Administrativo;
+* Somente a Coordenação de um determinado curso pode gerenciar as salas correspondentes àquele curso.
+* Somente o usuário Assistente Administrativo pode gerenciar as salas do espaço comum da Universidade.
+* O sistema só funcionará com uma conexão de rede de internet e mantido em um servidor Rails.
+* A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação só para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
 
 ## 7. Requisitos Não Funcionais
 
 ### 7.1 Requisito do Sistema
 
 * O sistema deve estar hospedado em um servidor da mesma linguagem de programação e versão do software, e também ter acesso a uma rede estável para a conexão com os usuários.
+* Para acessar a página do servidor é necessário o usuário ter um navegador de internet e conexão com a internet.
 
-* Para ter acesso ao aplicativo o usuário deve ter um telefone celular com sistema operacional Android ou iOS, e conta na suas respectivas centrais de aplicativos.
 
 ### 7.2 Requisito de Desempenho
 
@@ -356,36 +356,25 @@ O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de
 
 ### 7.3 Requisito de Design
 
-* O sistema deve ter uma interface organizada e utilizar de ícones intuitivos que facilitam o entendimento de seus significados além de fluxos fáceis de aprender e memorizar.
+* O sistema deve ter uma interface organizada e intuitiva suficiente para o uso adequado, tendo também cores indicadoras para diferenciar as distâncias entre salas e ícones para diferenciar cada funcionalidade.
 
 ### 7.4 Requisito de Confiabilidade
 
-* Informações não serão alugadas nem vendidas a terceiros fora do RecomendaFGA.
-
-* Quando inseridos dados pessoais do usuário, o sistema deve mantê-los protegidos de quaisquer influências externas.
-
-* Deve existir um sistema de autenticação de contas, por meio da matrícula e senha ou e-mail e senha.
-
-* O sistema deve aprensentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
-
+* O sistema deve evitar o choque de horários de uma determinada sala, tendo como dependência as informações trazidas pela solicitação da alocação de sala.
 
 ### 7.5 Requisito de Arquitetura
 
-* O backend deve seguir a arquitetura MVC (*Model View Controller*) do Ruby on Rails.
-
-* O frontend deve seguir a arquitetura Modular do React Native.
+* O sistema deve seguir a arquitetura MVC (*Model View Controller*) do Ruby on Rails.
 
 ### 7.6 Requisito de Usabilidade
 
-* Os sistema deve ser nativo para o sistema operacional utilizado pelo usuário e não uma aplicação web.
-
-* O sistema deve facilitar a utilização e compreensão de sua interface por parte dos usuário, além de buscar facilitar que o utilizador tem em alcançar os seus objetivos por meio da simplicidade no uso.
-
+* O sistema deve ser responsivo com a interação do usuário, principalmente na parte de formulários e validações, exibindo mensagens de instruções para as devidas correções e preenchimentos.
+* O sistema deve exibir uma mensagem alertando o cadastro de turmas as Terças e Quintas pela manhã, por este ser um horário muito concorrido e quem, em geral, implica na superlotação das salas.
 
 
 ### 7.7 Requisito de Suportabilidade
 
-* A linguagem de programção deve ser multiplataforma, a qual pode ser utilizada em qualquer sistema operacional mobile.
+* O sistema deve ser compatível com as versões de navegadores Google Chrome, Mozilla Firefox e Internet Explorer que são compatíveis com HTML5, CSS3 e JavaScript.
 
 ### 7.8 Requisito de Segurança
 
