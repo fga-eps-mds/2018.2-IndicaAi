@@ -1,0 +1,143 @@
+<p>A metodologia aplicada netes projeto será uma metodologia híbrida baseada nos <em>frameworks</em> Scrum, Extreme Programming e Kanban. Abaixo segue a descrição de quais técnicas de cada <em>framework</em> será aplicada juntamente com seu propósito.</p>
+
+<hr />
+<p># Scrum</p>
+
+<p>O <em>framework</em> Scrum será utilizado como principal base de todo o processo, sendo aplicado seus papéis e conceitos de <em>timeboxs</em>.</p>
+
+<h2 id="papis">Papéis</h2>
+
+<h3 id="scrum-master">Scrum Master</h3>
+<p>São responsabilidades deste papel:
+* Garantir a dissiminação do conteúdo por meio da aplicação de técnicas que constam nesse plano de metodologia. Ex.: Pareamento;
+* Remover obstáculos do desenvolvimento e minimizar os riscos do projeto;
+* Definir, monitoriar e melhorar a produtividade por meio de métricas coletadas sobre o projeto;
+* Garantir a execução da metodologia conforme está definido neste plano.</p>
+
+<h3 id="product-owner">Product Owner</h3>
+<p>São responsabilidades deste papel:
+* Levantar os pontos importantes que mais agregam valor ao produto do ponto de vista dos <em>stakeholders</em>;
+* Definir os critérios de aceitação para uma <em>issue</em>;
+* Garantir a boa usuabilidade do que está sendo implementado.</p>
+
+<h3 id="devops-no--um-papel-do-scrum">DevOps (Não é um papel do Scrum)</h3>
+<p>São responsabilidades deste papel:
+* Verificar e aceitar os <em>pull requests</em> de acordo com os critérios definidos pelo Scrum Master e o PO;
+* Garantir o disponibilidade dos ambientes de desenvolvimento, homologação e produção;
+* Configurar integração e deploy contínuo;
+* Registrar o <em>gitflow</em>.</p>
+
+<h3 id="arquiteto-no--um-papel-do-scrum">Arquiteto (Não é um papel do Scrum)</h3>
+<p>São responsabilidades deste papel:
+* Organizar e modelar a arquitetura do sistema;
+* Acompanhar o processo de desenvolvimento para garantir que a arquitetura está sendo seguida.</p>
+
+<h3 id="desenvolvedor">Desenvolvedor</h3>
+<p>São responsabilidades deste papel:
+* Desenvolver a história;
+* Testar sempre as soluções. visando mantes no mínimo 90% da corbetura do código;
+* Seguir os padrões e técnicas de programação adotados pelo Scrum Master.</p>
+
+<h2 id="sprints">Sprints</h2>
+<ul>
+  <li>Duração de 7 dias</li>
+  <li>Todas as sprints se iniciaram na quarta-feria e terão seu término na terça-feira da semana seguinte.
+    <ul>
+      <li>Sprints que antencedem as <em>releases</em> poderão ser: encurtadas para sprints de 4 dias ou emendadas com a sprint anterior, gerando sprints de 11 dias. Será responsabilidade do Scrum Master, avaliar previamente, conforme andamento da equipe, qual a melhor opção será aplicada.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="daily-meeting">Daily Meeting</h2>
+<ul>
+  <li>Duração Máxima: 15 minutos</li>
+  <li>Realizadas diariamente às 15:45h</li>
+  <li>A ausência destas reuniões deverá ser previamente comunicada pelo membro da equipe e justificada. Sendo obrigação do mesmo informar o andamento das duas atividades neste dia pelos meios de comunicações definidos pela equipe.</li>
+</ul>
+
+<h2 id="sprint-review">Sprint Review</h2>
+<ul>
+  <li>Duração Máxima: 1 hora</li>
+  <li>Ocorrerão toda terça-feira, tendo início as 18h</li>
+</ul>
+
+<h2 id="sprint-restropective">Sprint Restropective</h2>
+<ul>
+  <li>Duração Máxima: 45 minutos</li>
+  <li>Ocorrerão toda terça-feira, tendo início as 19h</li>
+</ul>
+
+<h2 id="sprint-planning">Sprint Planning</h2>
+<ul>
+  <li>Duração Máxima: 2 horas</li>
+  <li>Ocorrerão toda terça-feira, tendo início as 20h</li>
+</ul>
+
+<hr />
+<p># Extreme Programming</p>
+
+<p>As técnicas da metodologia Extreme Programming serão aplicadas com o intuito de garantir a qualidade do código e a disseminar o conhecimento entre os integrantes da equipe.</p>
+
+<h2 id="tcnicas-de-planejamento">Técnicas de Planejamento</h2>
+<p>### User Stories
+* Serão aplicadas na estimativa de tempo para planejamento da sprint;
+* Deverão seguir o seguinte template:</p>
+
+<blockquote><b>Eu como</b> [usuario do sistema] <b>desejo</b> [ação a ser executada] <b>para</b> [justificativa para a ação].</blockquote>
+
+<ul>
+  <li>Este template deve estar mapeado em uma Issue Template; <!-- FIXME linkar o com template criado --></li>
+  <li>Cada <em>user story</em> deve possuir um conjunto de critérios de aceitação definidos pelo PO, os quais deverão ser verificados antes de afirmar a tarefa como concluída.</li>
+</ul>
+
+<h2 id="tcnicas-de-gerenciamento">Técnicas de Gerenciamento</h2>
+<p>### Velocity
+* O velocity deve ser medido ao final de cada <em>sprint</em> e utilizado no planejamento da próxima <em>sprint</em> como parâmetro para avaliar a capacidade da equipe de desenvolvimento.</p>
+
+<h2 id="tcnicas-de-codificao">Técnicas de Codificação</h2>
+<p>### Programação em Pares
+* Os pares da sprint deverão ser definidos durante o Sprint Planning;
+* O Scrum Master é responsável por formar os pares;
+* O quadro de conhecimentos deve ser o indicador de maior peso na formação dos pares, sendo que desenvolvedores com mais experiência em determinada área deve parear com quem possui menos conhecimento na mesma.</p>
+
+<h3 id="integrao-contnua">Integração Contínua</h3>
+<ul>
+  <li>As <em>branchs</em> <code class="highlighter-rouge">master</code> e <code class="highlighter-rouge">devel</code> estarão submetidas ao processo de integração contínua, devendo respeitar o mínimo de 90% da cobertura de testes;</li>
+  <li>Todo <em>pull request</em> realizado para <em>branch</em> <code class="highlighter-rouge">devel</code> estará sujeito ao processo de integração contínua.
+<!-- Metricas tbm estarão nesse processo?--></li>
+</ul>
+
+<h3 id="padres-de-codificao">Padrões de Codificação</h3>
+<ul>
+  <li>O código deve ser formato seguindo os padrões de estilo e técnicas de programação adotadas pela equipe, visando assim garantir a qualidade do código gerado.</li>
+</ul>
+
+<h2 id="tcnicas-de-design">Técnicas de Design</h2>
+<p>### Simplicidade
+* Ao manusear o código a equipe deve priorizar sempre a solução mais simples que atenda as necessidades do problema.</p>
+
+<h3 id="refatorao">Refatoração</h3>
+<ul>
+  <li>Ao manusear o código, sempre que houver dificuldade para compreensão do mesmo a equipe deve se organizar para refatorá-lo.</li>
+  <li>A refatoração deve ser realizada antes de fazer qualquer alteração na funcionalidade, visando garantir a integridade do código.</li>
+</ul>
+
+<hr />
+
+<h1 id="planning-poker">Planning Poker</h1>
+<ul>
+  <li>Deverá ser aplicado para estimar a dificuldade de trabalho do projeto e auxiliar no planejamento das <em>sprints</em>, conforme nota-se a capacidade de produção da equipe;</li>
+  <li>Os pontos estimados para uma issue devem estar registrados na mesma por meio do ZenHub;</li>
+  <li>Os valores que considerados serão 0, 1, 2, 3, 5, 8, 13, 21, e 40.</li>
+</ul>
+
+<h1 id="kanban">Kanban</h1>
+<p>O Kanban será aplicado visando monitorar o fluxo de trabalho da equipe.</p>
+
+<ul>
+  <li>O Kanban deverá contar com os quadros Product Backlog, Icebox, Sprint Backlog, Em progresso, Revisão e Terminados;</li>
+  <li>É de responsabilidade de cada membro da equipe atualizar o Kanban diariamente com o <em>status</em> de cada atividade;</li>
+  <li>O Kanban estará disponível por meio da ferramenta ZenHub.</li>
+  <li><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues#zenhub">Acessar o Kanban</a>.</li>
+</ul>
+

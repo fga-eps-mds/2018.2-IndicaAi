@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Aug 2018 12:21:47 -0300</pubDate>
+    <lastBuildDate>Mon, 27 Aug 2018 12:21:47 -0300</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Papeis Definidos</title>
+        <description>&lt;p&gt;Com base na metodologia adotada, segue os papéis defindos de cada membro do grupo.&lt;/p&gt;
+
+&lt;table&gt;
+
+&lt;tr&gt;
+&lt;th&gt;Papel&lt;/th&gt;
+&lt;th&gt;Responsável&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;i&gt;Scrum Master&lt;/i&gt;&lt;/td&gt;
+&lt;td&gt;Iasmin Mendes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;i&gt;Product Owner&lt;/i&gt;&lt;/td&gt;
+&lt;td&gt;Renato Valério&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Arquiteto&lt;/td&gt;
+&lt;td&gt;Iasmin Mendes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DevOps&lt;/td&gt;
+&lt;td&gt;Renato Valério&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Time de Desenvolvimento&lt;/td&gt;
+&lt;td&gt;
+Gabriel Davi Silva Pereira&lt;br /&gt;
+Heron Rodrigues Sousa&lt;br /&gt;
+João Lucas Fragoso Zarbiélli&lt;br /&gt;
+Lucas Maciel Aguiar&lt;br /&gt;
+Matheus Gomes Ferreira&lt;br /&gt;
+Weiller Fernandes Pereira&lt;br /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 26 Aug 2018 10:50:39 -0300</pubDate>
+        <link>/docs/2018/08/26/scrum-papers.html</link>
+        <guid isPermaLink="true">/docs/2018/08/26/scrum-papers.html</guid>
+        
+        
+        <category>docs</category>
+        
+      </item>
+    
+      <item>
+        <title>Documento de Visão</title>
+        <description>&lt;h2 id=&quot;histrico-de-reviso&quot;&gt;Histórico de Revisão&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Data&lt;/th&gt;
+      &lt;th&gt;Responsável&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Versão&lt;/th&gt;
+      &lt;th&gt;Mudança realizada&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;15/03/17&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Iasmin Mendes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.1&lt;/td&gt;
+      &lt;td&gt;Criação do Documento de Visão&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;#1-introdução&quot;&gt;1. Introdução&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#2-posicionamento&quot;&gt;2. Posicionamento&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#3-descrições-dos-envolvidos-e-dos-usuários&quot;&gt;3. Descrições dos Envolvidos e dos Usuários&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#4-visão-geral-do-produto&quot;&gt;4. Visão Geral do Produto&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#5-requisitos-funcionais&quot;&gt;5. Requisitos Funcionais&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#6-restrições&quot;&gt;6. Restrições&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#7-requisitos-não-funcionais&quot;&gt;7. Requisitos Não Funcionais&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;## 1. Introdução&lt;/p&gt;
+
+&lt;p&gt;Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Sistema Inteligente de Gestão de Salas (SIGS), o qual refere-se a um sistema para a alocação e gerenciamento das salas da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.&lt;/p&gt;
+
+&lt;h3 id=&quot;finalidade&quot;&gt;1.1 Finalidade&lt;/h3&gt;
+
+&lt;p&gt;O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do sistema de alocação e gerenciamento de salas da UnB ao expor as ideias necessárias para seu desenvolvimento.&lt;/p&gt;
+
+&lt;h3 id=&quot;escopo&quot;&gt;1.2 Escopo&lt;/h3&gt;
+
+&lt;p&gt;São tratados nesse documento os pontos necessários para a elaboração da aplicação, desde a concepção do projeto até a implantação, de forma que possam ser entendidos sem o total conhecimento dos termos técnicos utilizados por desenvolvedores.&lt;/p&gt;
+
+&lt;h3 id=&quot;definies-acrnimos-e-abreviaes&quot;&gt;1.3 Definições, Acrônimos e Abreviações&lt;/h3&gt;
+
+&lt;p&gt;Abaixo serão apresentados alguns conceitos de documentação de software desejáveis para o melhor entendimento deste documento e termos aplicados ao contexto da universidade:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;UnB: Universidade De Brasília.&lt;/li&gt;
+  &lt;li&gt;Decano: Em uma instituição, é o membro mais antigo. Na Universidade de Brasília os Decanos são designados pelo Reitor e aprovados pelo conselho universitário. Suas principais competências são coordenar e fiscalizar as atividades universitárias de suas respectivas áreas, dentro de suas atribuições delegadas.&lt;/li&gt;
+  &lt;li&gt;Prefeitura: Órgão auxiliar a Reitoria da Universidade de Brasília, responsável por administrar a infraestrutura do campus, mantendo serviços como limpeza, transporte e comunicação.&lt;/li&gt;
+  &lt;li&gt;FGA: Faculdade do Gama - Campus da Universidade de Brasília localizado no Gama.&lt;/li&gt;
+  &lt;li&gt;SAA: Secretaria de Administração Acadêmica.&lt;/li&gt;
+  &lt;li&gt;UML (&lt;em&gt;Unified Modeling Language&lt;/em&gt;): Linguagem de modelagem que define representações de um sistema de forma padronizada com o objetivo de facilitar a compreensão.&lt;/li&gt;
+  &lt;li&gt;RUP (&lt;em&gt;Rational Unified Process&lt;/em&gt;): É um modelo de processo unificado de Engenharia de Software derivado da UML criado pela Rational Software Corporation e adquirido pela IBM em 2003. Possui elementos de modelos genéricos para apoiar o desenvolvimento de softwares incentivando a interação e exemplificando boas práticas de projeto e especificação.&lt;/li&gt;
+  &lt;li&gt;SIGS: Sistema Inteligente de Gestão de Salas.&lt;/li&gt;
+  &lt;li&gt;GPP: Disciplina de Gestão de Portfólios e Projetos de Software.&lt;/li&gt;
+  &lt;li&gt;MDS: Disciplina de Métodos de Desenvolvimento de Software.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;referncias&quot;&gt;1.4 Referências&lt;/h3&gt;
+
+&lt;p&gt;SOMMERVILLE, Ian. &lt;strong&gt;Engenharia de Software.&lt;/strong&gt; São Paulo: Pearson Prentice Hall. 9ª edição. 2011.&lt;/p&gt;
+
+&lt;p&gt;GUEDES, Gilleanes T. A. &lt;strong&gt;UML: uma abordagem prática.&lt;/strong&gt; Novatec Editora, 2008.&lt;/p&gt;
+
+&lt;p&gt;Universidade de Brasília. &lt;strong&gt;Estatuto e Regimento Geral.&lt;/strong&gt; Brasília: Editora UnB, 2011.&lt;/p&gt;
+
+&lt;h3 id=&quot;viso-geral&quot;&gt;1.5 Visão Geral&lt;/h3&gt;
+
+&lt;p&gt;Elaborado de acordo com a metodologia RUP, o &lt;em&gt;Rational Unified Process&lt;/em&gt;, este documento define o problema a ser resolvido. Descrevendo os requisitos do software, os envolvidos e usuários, a demografia dos mercados, a visão geral do produto e seus recursos.&lt;/p&gt;
+
+&lt;h2 id=&quot;posicionamento&quot;&gt;2. Posicionamento&lt;/h2&gt;
+
+&lt;h3 id=&quot;oportunidade-de-negcios&quot;&gt;2.1 Oportunidade de Negócios&lt;/h3&gt;
+&lt;p&gt;Atualmente a Universidade de Brasília enfrenta a dificuldade de adequar a demanda de disciplinas ofertadas com os recursos físicos - salas e auditórios - disponíveis em cada campus. Atualmente é empregado um processo manual exaustivo por parte dos coordenadores de cada curso, juntamente com a Prefeitura da universidade, a fim de mapear cada turma a sua respectiva sala. Com base nessa realidade, o SIGS visa facilitar este processo de alocação, tornando mais rápida e eficiente a gestão dos espaços físicos.&lt;/p&gt;
+
+&lt;h3 id=&quot;descrio-do-problema&quot;&gt;2.2 Descrição do Problema&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt; O problema de         &lt;/th&gt;&lt;td&gt;realizar a gestão de espaços físicos da UnB manualmente&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt; afeta                 &lt;/th&gt;&lt;td&gt;os membros responsáveis da Prefeitura, professores e alunos&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt; cujo impacto é        &lt;/th&gt;&lt;td&gt;um processo de alocação lento e exaustivo, além de haver choque de horários entre disciplinas diferentes na mesma sala&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt; uma boa solução seria &lt;/th&gt;&lt;td&gt;um sistema capaz de automatizar os pedidos de alocação, verificar a disponibilidade de espaços físicos da universidade e identificar disciplinas de horários concorrentes.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt; O problema de&lt;/th&gt;&lt;td&gt;realizar a gestão de espaços físicos da UnB&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt; afeta&lt;/th&gt;&lt;td&gt;os alunos&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt; cujo impacto é&lt;/th&gt;&lt;td&gt;disciplinas de um mesmo curso alocadas com uma grande distância entre elas em horários seguidos&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;uma boa solução seria&lt;/th&gt;&lt;td&gt;um sistema capaz de fornecer a informação de proximidade entre as salas, de forma que o responsável pela alocação possa tomar melhores decisões quanto a escolha da sala de uma determinada disciplina.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;sentena-de-posio-do-produto&quot;&gt;2.3 Sentença de Posição do Produto&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Para&lt;/th&gt;&lt;td&gt;Membros do corpo acadêmico da Universidade de Brasília&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;Que&lt;/th&gt;&lt;td&gt;necessitam automatizar o processo de alocação de salas&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;O&lt;/th&gt;&lt;td&gt;Sistema Inteligente de Gestão de Salas&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;Que&lt;/th&gt;&lt;td&gt;Gerencia os espaços físicos da Universidade&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;Diferente do&lt;/th&gt;&lt;td&gt;Sistema de Alocação de Salas - SAS-FGA&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;Nosso produto&lt;/th&gt;&lt;td&gt;Gerencia as salas reservadas na Universidade, com base nos departamentos e cursos existentes, agrupando-as por região de forma a minimizar a distância entre as as salas das turmas de um mesmo curso.&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h2 id=&quot;descries-dos-envolvidos-e-dos-usurios&quot;&gt;3. Descrições dos Envolvidos e dos Usuários&lt;/h2&gt;
+
+&lt;h3 id=&quot;resumo-dos-envolvidos&quot;&gt;3.1 Resumo dos Envolvidos&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nome&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+      &lt;th&gt;Responsabilidades&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clientes&lt;/td&gt;
+      &lt;td&gt;Membros do corpo Acadêmico da UnB&lt;/td&gt;
+      &lt;td&gt;Acompanhar o andamento do projeto e disponibilizar informações sobre o mesmo.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Coaches&lt;/td&gt;
+      &lt;td&gt;Alunos da UnB monitores  das disciplinas  de GPP e de MDS.&lt;/td&gt;
+      &lt;td&gt;Ajudar com as dificuldades  impostas à equipe de gestores e desenvolvedores.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Equipe de  Desenvolvimento&lt;/td&gt;
+      &lt;td&gt;Equipe de alunos da UnB  de Métodos de  Desenvolvimento  de Software.&lt;/td&gt;
+      &lt;td&gt;Planejar, desenvolver e  implementar o sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Equipe de Gestores  de Projeto&lt;/td&gt;
+      &lt;td&gt;Equipe de alunos da UnB  de Gestão de Portfólios  e Projetos de Software.&lt;/td&gt;
+      &lt;td&gt;Planejar, desenvolver e gerenciar o projeto.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;resumo-dos-usurios&quot;&gt;3.2 Resumo dos Usuários&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Nome&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Descrição&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Responsabilidades&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Envolvido&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Assistente Administrativo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Operador do sistema no âmbito da Prefeitura&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Responsável pela alocação de salas nos espaços comuns da faculdade.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Symone Rodrigues Jardim&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Auxiliar do Departamento&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Funcionário do Departamento designado para gerenciar as salas&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Responsável pela alocação de salas pertencentes ao seu departamento para disciplinas ofertadas para qualquer curso do respectivo departamento.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Symone Rodrigues Jardim&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Coordenador&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Coordenadores de Curso&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Responsável pela alocação de salas no espaço do próprio Departamento do Curso e solicitação de reservas no espaço comum da Universidade.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Symone Rodrigues Jardim&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Usuário Comum&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Usuário sem acesso ao sistema&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Solicitar o cadastro ao sistema&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Symone Rodrigues Jardim&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;perfis-dos-envolvidos&quot;&gt;3.3 Perfis dos Envolvidos&lt;/h3&gt;
+
+&lt;h5 id=&quot;clientes&quot;&gt;3.3.1 Clientes&lt;/h5&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Representantes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Symone Rodrigues Jardim&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Professora do Curso de Design da Universidade de Brasília e Diretora de Inovação e Estratégia no Ensino de Graduação (DIEG) que está familiarizada com alocações de sala.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Cliente que requisitou o projeto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Responsabilidades&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Observar e validar o andamento do software, disponibilizar informações sobre o processo de alocação de sala na UnB.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Critérios de Sucesso&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Receber um software que faça de maneira automatizada a alocação das salas e permita o gerenciamento destas.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Envolvimento&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Alto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Comentários&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;coaches&quot;&gt;3.3.2 Coaches&lt;/h5&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Representantes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Sabryna de Sousa Pessoa&lt;br /&gt;Vitor Barbosa de Araújo&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Coaches responsáveis pela equipe de GPP e MDS.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Graduandos da Universidade de Brasília no curso de Engenharia de Software, aos quais exercem o cargo de monitora das disciplinas de Gestão de Portfólios e Projetos de Software e Métodos de Desenvolvimento de Software, respectivamente.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Responsabilidades&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Observar e auxiliar ambas as equipes do projeto na questão de dúvidas e dificuldades no andamento do mesmo.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Critérios de Sucesso&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Ajudar as equipes na conquista de conclusão do projeto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Envolvimento&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Médio.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Comentários&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;equipe-de-desenvolvedores&quot;&gt;3.3.3 Equipe de Desenvolvedores&lt;/h4&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Representantes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Ateldy Borges Brasil Filho&lt;br /&gt;
+    Bruno Matias Casas&lt;br /&gt;
+    Carlos Enrique Rodrigues Aragon&lt;br /&gt;
+		Daniel Marques Rangel&lt;br /&gt;
+		Francisco Wallacy Coutinho Braz&lt;br /&gt;
+		Iasmin Santos Mendes&lt;br /&gt;
+		Rodrigo Dadamos Lopes da Silva&lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Desenvolvedores do Projeto&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Graduandos de Engenharia de Software na Universidade de Brasília, matriculados na disciplina de Métodos de Desenvolvimento de Software.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Responsabilidades&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Projetar a aplicação, documentar a estrutura do software, programar os recursos definidos e realizar testes de implementação.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Critérios de Sucesso&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Entregar aplicação no prazo para a Universidade de Brasília e aumentar experiência na área de desenvolvimento de software.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Envolvimento&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Alto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Comentários&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;equipe-de-gestores&quot;&gt;3.3.4 Equipe de Gestores&lt;/h4&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Representantes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Caio Felipe Dias Nunes&lt;br /&gt;
+	  Gesiel dos Santos Freitas&lt;br /&gt;
+	  João Paulo Busche da Cruz&lt;br /&gt;
+	  Lucas Andrade Oliveira&lt;br /&gt;
+	  Vinícius da Silva Carvalho&lt;br /&gt;
+	  Vinicius Pinheiro da Silva Corrêa&lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Gestores do Projeto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Graduandos de Engenharia de Software na Universidade de Brasília, matriculados na disciplina de Gestão de Portfólios e Projetos de Software.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Responsabilidades&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Efetuar todo o planejamento do projeto, projetar a aplicação, programar os recursos definidos do projeto e gerenciar a equipe de desenvolvedores, escopo, custos, riscos e requisitos.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Critérios de Sucesso&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Entregar aplicação no prazo para a Universidade de Brasília e aumentar experiência na área de desenvolvimento de software e gestão de projeto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Envolvimento&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;Alto.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;Comentários&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;perfil-dos-usurios&quot;&gt;3.4 Perfil dos Usuários&lt;/h3&gt;
+
+&lt;h4 id=&quot;assistente-administrativo&quot;&gt;3.4.1 Assistente Administrativo&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Representante&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;Symone Rodrigues Jardim&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Descrição&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Responsável atual pelo processo de alocação e gerenciamento das salas comuns dentro do Campus Darcy Ribeiro.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Tipo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Assistente Administrativo que atua na Prefeitura da Universidade&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Responsabilidades&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Gerenciar a reserva de salas no espaço comum da Universiade, avaliando e aprovando as solicitações de cada Coordenador de curso.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Critérios de Sucesso&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Obter um software resultante capaz de automatizar o processo de alocação de salas, prevenindo choques de horários e longas distâncias entre salas do mesmo curso.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Envolvimento&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Usuário final do sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Produtos Liberados&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;- Relação de disponibilidade das salas; &lt;br /&gt; - Informações técnicas de cada sala; &lt;br /&gt; - Relatório de Disciplinas Alocadas com suas respectivas salas.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Comentários&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;coordenador&quot;&gt;3.4.2 Coordenador&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Representante&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;Symone Rodrigues Jardim&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Descrição&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Responsável pela listagem das disciplinas de seu respectivo curso, contendo a relação de demanda, horários e necessidades de cada disciplina.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Tipo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Mestres e Doutores que lecionam na universidade e atuam no cargo de Coordenador de Curso, além de seus respectivos assistentes.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Responsabilidades&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Fornecer as informações necessárias para a alocação de cada turma, caso necessário, solicitar a reserva de salas no espaço comum da faculdade.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Critérios de Sucesso&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Obter um software resultante capaz de automatizar o processo de alocação de salas, prevenindo choques de horários e longas distâncias entre salas do mesmo curso.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Envolvimento&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Usuário final do sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Produtos Liberados&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Solicitação contendo as informações necessárias para alocar as disciplinas do seu respectivo curso.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Comentários&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;principais-necessidades-dos-usurios-ou-dos-envolvidos&quot;&gt;3.5 Principais Necessidades dos Usuários ou dos Envolvidos&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Necessidade&lt;/th&gt;
+      &lt;th&gt;Prioridade&lt;/th&gt;
+      &lt;th&gt;Preocupação&lt;/th&gt;
+      &lt;th&gt;Solução Atual&lt;/th&gt;
+      &lt;th&gt;Solução Proposta&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Reservar Sala&lt;/td&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+      &lt;td&gt;Choque de horário entre disciplinas; Curso prioritário sob determinadas salas; Período de expiração da reserva para evitar a inutilização dos espaços físicos; Disciplinas comuns podem ter mais de um curso associado a mesma turma.&lt;/td&gt;
+      &lt;td&gt;Verificação manual do mapa de sala elaborado para o semestre.&lt;/td&gt;
+      &lt;td&gt;- Categorizar as salas entre disponíveis e ocupadas, de forma que as salas já ocupadas em determinado horário não sejam dispostas para o usuário escolher; &lt;br /&gt; - Controle temporal sobre o período letivo; &lt;br /&gt; - Permitir ao Coordenador associar cursos diferentes a uma determinada turma, além do seu próprio.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Minimizar a distância percorrida pelo aluno entre as trocas de sala&lt;/td&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+      &lt;td&gt;Manter as aulas de um mesmo curso, preferencialmente, a no máximo 1km de distância das outras aulas do mesmo curso.&lt;/td&gt;
+      &lt;td&gt;Não possui&lt;/td&gt;
+      &lt;td&gt;Agrupar as salas com base em seus respectivos prédios e departamentos, além de segregar o espaço comum da faculdade em Norte e Sul, de forma que um dado curso ofereça todas as suas disciplinas somente em uma dessas regiões.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Realizar trocas de salas&lt;/td&gt;
+      &lt;td&gt;Média&lt;/td&gt;
+      &lt;td&gt;Caso haja a necessidade, deve ser possível realizar mudanças no quadro de alocações.&lt;/td&gt;
+      &lt;td&gt;A troca é feita pelos próprios professores, sem o conhecimento dos responsáveis, de forma que impossibilita o uso da sala previamente alocada, por esta constar como ocupada nos registros.&lt;/td&gt;
+      &lt;td&gt;O sistema deverá fornecer a possibilidade de realocar uma turma em outra sala a escolha do usuário.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Descrição dos recursos contidos em cada Sala&lt;/td&gt;
+      &lt;td&gt;Baixa&lt;/td&gt;
+      &lt;td&gt;Informar as condições e recursos dispostos na sala para garantir, já na alocação, que uma sala contemple as necessidades de uma dada Disciplina.&lt;/td&gt;
+      &lt;td&gt;Não Possui&lt;/td&gt;
+      &lt;td&gt;Disponibilizar ao usuário a possibilidade de descrever cada sala.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;alternativas-e-concorrncia&quot;&gt;3.6 Alternativas e Concorrência&lt;/h3&gt;
+
+&lt;h4 id=&quot;ufscar---sistema-de-alocao-de-salas&quot;&gt;3.6.1 UFSCar - Sistema de Alocação de Salas&lt;/h4&gt;
+
+&lt;p&gt;Plataforma web desenvolvida pela Secretaria de Informática da Universidade Federal de São Carlos, para consulta e solicitação de horário somente de salas informatizadas. O filtro de busca utiliza o prédio localizado como base para pesquisa e são exibidas informações como código, capacidade, número de computadores e setor responsável.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/ufscar.png&quot; alt=&quot;UFSCar_SAS&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;unicampi---sistema-de-reservas-de-salas-e-recursos&quot;&gt;3.6.2 Unicampi - Sistema de Reservas de Salas e Recursos&lt;/h4&gt;
+
+&lt;p&gt;Sistema baseado em um modelo de agenda, o qual permite as secretarias e setores internos a instituição fazerem as reservas de salas, sendo que, cada departamento tem prioridade para alocar determinadas salas, antes destas ficarem a disposição de todas as alas. Professores possuem a possibilidade de realizar a pré-reserva da sala pelo sistema, a qual fica sob pendência de aprovação pelo setor responsável, enquanto que os alunos devem solicitar a reserva na própria secretaria.  Nos horários de 12h às 14h e 18h às 19h, a reserva das salas fica sob prioridade da secretaria para atender as demandas dos alunos quanto a monitoria. Existe no sistema uma classificação das salas quanto a nome, topologia, capacidade, tipo de utilização e prédio. Além de ser possível a solicitação de salas para eventos externos a instituição.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/unicamp.png&quot; alt=&quot;Unicampi&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;saef---sistema-de-acompanhamento-de-espaos-fsicos&quot;&gt;3.6.3 SAEF - Sistema de Acompanhamento de Espaços Físicos&lt;/h4&gt;
+
+&lt;p&gt;Implantado na Pontífica Universidade Católica do Rio de Janeiro - PUC Rio, o SAEF consiste em uma plataforma Web desenvolvida pela Kogumelo Informática, a qual permite a reserva de salas e auditórios para as aulas da própria instituição, assim como, para eventos paralelos, tendo todo o procedimento para este último caso online.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/pucRio.png&quot; alt=&quot;SAEF_PUC_RIO&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;sas-fga---sistema-de-alocao-de-salas&quot;&gt;3.6.4 SAS-FGA - Sistema de Alocação de Salas&lt;/h4&gt;
+
+&lt;p&gt;Software desenvolvido diretamente para o contexto da FGA, um dos quatros campus que compõem a Universidade de Brasília, com o intuito de automatizar e simplificar o processo de alocação de salas dentro do campus. O projeto visou dar maior autonomia aos membros do Corpo Acadêmico, retirando a necessidade de aprovação da reserva, ou seja, uma vez que uma sala consta como disponível no sistema é possível reservá-la imediatamente, sem etapas intermediárias. Em termos de usabilidade, o sistema não foi bem contemplado exigindo muitos passos do usuário para executar tarefas simples.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/sas_fga.png&quot; alt=&quot;SAS_FGA&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;viso-geral-do-produto&quot;&gt;4. Visão Geral do Produto&lt;/h2&gt;
+
+&lt;h3 id=&quot;perspectiva-do-produto&quot;&gt;4.1 Perspectiva do Produto&lt;/h3&gt;
+
+&lt;p&gt;O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de alocação de salas referente às disciplinas oferecidas pela Universidade de Brasília. De tal forma que, Coordenadores e membros do departamento tenham o controle sobre o mapeamento das salas ocupadas no respectivo departamento, enquanto que as áreas comuns ficam sob jurisdição da Prefeitura da Universidade. O produto fornecerá aos usuários as informações necessárias para melhor gerirem os espaços físicos. Tais informações contemplam disponibilidade da sala, capacidade, topologia, recursos e proximidade de uma dada sala do espaço comum com as salas respectivas de um curso. Assim, têm-se como expectativa facilitar e agilizar o processo de alocação de salas da UnB, além de evitar qualquer inconsistência em relação às salas e horários, como choques de horários entre turmas.&lt;/p&gt;
+
+&lt;h3 id=&quot;resumo-dos-recursos&quot;&gt;4.2 Resumo dos Recursos&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Código&lt;/th&gt;
+      &lt;th&gt;Recurso&lt;/th&gt;
+      &lt;th&gt;Benefício&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;R01&lt;/td&gt;
+      &lt;td&gt;Sistematização do processo de alocação de salas.&lt;/td&gt;
+      &lt;td&gt;Agiliza o processo de alocação de salas para disciplinas, um processo que atualmente é feito de maneira mecânica, com a utilização de ferramentas como planilhas. Além disso, evita choque de horários entre disciplinas, adequação da capacidade das salas e também de grandes distâncias entre disciplinas de um mesmo curso.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;R02&lt;/td&gt;
+      &lt;td&gt;Fornecer um panorama da atual situação das salas referentes às suas respectivas alocações.&lt;/td&gt;
+      &lt;td&gt;Permite uma maior organização uma vez que que o sistema garantirá que não haja nenhum tipo de inconsistência em relação às salas e horários.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;requisitos-funcionais&quot;&gt;5. Requisitos Funcionais&lt;/h2&gt;
+
+&lt;h5 id=&quot;legenda-de-prioridades-dos-requisitos&quot;&gt;Legenda de Prioridades dos Requisitos:&lt;/h5&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Prioridade&lt;/th&gt;
+      &lt;th&gt;Característica&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+      &lt;td&gt;Requisito fundamental para o sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Intermediária&lt;/td&gt;
+      &lt;td&gt;Requisito importante, mas não é fundamental para o funcionamento do sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Baixa&lt;/td&gt;
+      &lt;td&gt;Requisito não fundamental e pouco usado no sistema.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Identificador&lt;/th&gt;
+      &lt;th&gt;Nome&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+      &lt;th&gt;Prioridade&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF1&lt;/td&gt;
+      &lt;td&gt;Autenticar Usuário&lt;/td&gt;
+      &lt;td&gt;O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação.&lt;/td&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF2&lt;/td&gt;
+      &lt;td&gt;Controlar Cadastro&lt;/td&gt;
+      &lt;td&gt;O Sistema deve autorizar o Assistente Administrativo de editar as informações dos usuários e aprovar seu cadastro.&lt;/td&gt;
+      &lt;td&gt;Intermediária&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF3&lt;/td&gt;
+      &lt;td&gt;Controlar Sala&lt;/td&gt;
+      &lt;td&gt;O Sistema deve permitir o Assistente Administrativo a manter as informações das salas.&lt;/td&gt;
+      &lt;td&gt;Intermedária&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF4&lt;/td&gt;
+      &lt;td&gt;Controlar Turmas&lt;/td&gt;
+      &lt;td&gt;O sistema deve permitir que os usuários possam manter as informações das turmas.&lt;/td&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF5&lt;/td&gt;
+      &lt;td&gt;Controlar Alocações&lt;/td&gt;
+      &lt;td&gt;O sistema deve permitir que os usuários possam gerenciar as alocações feitas, e que o Assistente Administrativo controle as de espaço comum.&lt;/td&gt;
+      &lt;td&gt;Alta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RF6&lt;/td&gt;
+      &lt;td&gt;Orientar Alocações&lt;/td&gt;
+      &lt;td&gt;O sistema deve permitir que os usuários possam visualizar as alocações e geram seus respectivos relatórios.&lt;/td&gt;
+      &lt;td&gt;Baixa&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;restries&quot;&gt;6. Restrições&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O cadastro de usuários deve ser aprovado pelo Assistente Administrativo;&lt;/li&gt;
+  &lt;li&gt;Somente a Coordenação de um determinado curso pode gerenciar as salas correspondentes àquele curso.&lt;/li&gt;
+  &lt;li&gt;Somente o usuário Assistente Administrativo pode gerenciar as salas do espaço comum da Universidade.&lt;/li&gt;
+  &lt;li&gt;O sistema só funcionará com uma conexão de rede de internet e mantido em um servidor Rails.&lt;/li&gt;
+  &lt;li&gt;A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação só para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;requisitos-no-funcionais&quot;&gt;7. Requisitos Não Funcionais&lt;/h2&gt;
+
+&lt;h3 id=&quot;requisito-do-sistema&quot;&gt;7.1 Requisito do Sistema&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve estar hospedado em um servidor da mesma linguagem de programação e versão do software, e também ter acesso a uma rede estável para a conexão com os usuários.&lt;/li&gt;
+  &lt;li&gt;Para acessar a página do servidor é necessário o usuário ter um navegador de internet e conexão com a internet.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-desempenho&quot;&gt;7.2 Requisito de Desempenho&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve ter o tempo de execução e resposta de acordo com a qualidade da conexão de internet, sendo assim, a velocidade de rede irá impactar diretamente o sistema em todas as suas funcionalidades.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-design&quot;&gt;7.3 Requisito de Design&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve ter uma interface organizada e intuitiva suficiente para o uso adequado, tendo também cores indicadoras para diferenciar as distâncias entre salas e ícones para diferenciar cada funcionalidade.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-confiabilidade&quot;&gt;7.4 Requisito de Confiabilidade&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve evitar o choque de horários de uma determinada sala, tendo como dependência as informações trazidas pela solicitação da alocação de sala.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-arquitetura&quot;&gt;7.5 Requisito de Arquitetura&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve seguir a arquitetura MVC (&lt;em&gt;Model View Controller&lt;/em&gt;) do Ruby on Rails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-usabilidade&quot;&gt;7.6 Requisito de Usabilidade&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve ser responsivo com a interação do usuário, principalmente na parte de formulários e validações, exibindo mensagens de instruções para as devidas correções e preenchimentos.&lt;/li&gt;
+  &lt;li&gt;O sistema deve exibir uma mensagem alertando o cadastro de turmas as Terças e Quintas pela manhã, por este ser um horário muito concorrido e quem, em geral, implica na superlotação das salas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-suportabilidade&quot;&gt;7.7 Requisito de Suportabilidade&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve ser compatível com as versões de navegadores Google Chrome, Mozilla Firefox e Internet Explorer que são compatíveis com HTML5, CSS3 e JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requisito-de-segurana&quot;&gt;7.8 Requisito de Segurança&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O sistema deve conter validações para cada campo no formulário a ser preenchido pelo usuário.&lt;/li&gt;
+  &lt;li&gt;O sistema deve criar uma sessão para o usuário após o mesmo efetuar o login.&lt;/li&gt;
+  &lt;li&gt;O sistema deve criar níveis de permissão para cada tipo de conta em relação ao acesso a cada funcionalidade.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 24 Aug 2018 10:50:39 -0300</pubDate>
+        <link>/docs/2018/08/24/vision-doc.html</link>
+        <guid isPermaLink="true">/docs/2018/08/24/vision-doc.html</guid>
+        
+        
+        <category>docs</category>
+        
+      </item>
+    
+      <item>
+        <title>Metodologia</title>
+        <description>&lt;p&gt;A metodologia aplicada netes projeto será uma metodologia híbrida baseada nos &lt;em&gt;frameworks&lt;/em&gt; Scrum, Extreme Programming e Kanban. Abaixo segue a descrição de quais técnicas de cada &lt;em&gt;framework&lt;/em&gt; será aplicada juntamente com seu propósito.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;# Scrum&lt;/p&gt;
+
+&lt;p&gt;O &lt;em&gt;framework&lt;/em&gt; Scrum será utilizado como principal base de todo o processo, sendo aplicado seus papéis e conceitos de &lt;em&gt;timeboxs&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;papis&quot;&gt;Papéis&lt;/h2&gt;
+
+&lt;h3 id=&quot;scrum-master&quot;&gt;Scrum Master&lt;/h3&gt;
+&lt;p&gt;São responsabilidades deste papel:
+* Garantir a dissiminação do conteúdo por meio da aplicação de técnicas que constam nesse plano de metodologia. Ex.: Pareamento;
+* Remover obstáculos do desenvolvimento e minimizar os riscos do projeto;
+* Definir, monitoriar e melhorar a produtividade por meio de métricas coletadas sobre o projeto;
+* Garantir a execução da metodologia conforme está definido neste plano.&lt;/p&gt;
+
+&lt;h3 id=&quot;product-owner&quot;&gt;Product Owner&lt;/h3&gt;
+&lt;p&gt;São responsabilidades deste papel:
+* Levantar os pontos importantes que mais agregam valor ao produto do ponto de vista dos &lt;em&gt;stakeholders&lt;/em&gt;;
+* Definir os critérios de aceitação para uma &lt;em&gt;issue&lt;/em&gt;;
+* Garantir a boa usuabilidade do que está sendo implementado.&lt;/p&gt;
+
+&lt;h3 id=&quot;devops-no--um-papel-do-scrum&quot;&gt;DevOps (Não é um papel do Scrum)&lt;/h3&gt;
+&lt;p&gt;São responsabilidades deste papel:
+* Verificar e aceitar os &lt;em&gt;pull requests&lt;/em&gt; de acordo com os critérios definidos pelo Scrum Master e o PO;
+* Garantir o disponibilidade dos ambientes de desenvolvimento, homologação e produção;
+* Configurar integração e deploy contínuo;
+* Registrar o &lt;em&gt;gitflow&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;arquiteto-no--um-papel-do-scrum&quot;&gt;Arquiteto (Não é um papel do Scrum)&lt;/h3&gt;
+&lt;p&gt;São responsabilidades deste papel:
+* Organizar e modelar a arquitetura do sistema;
+* Acompanhar o processo de desenvolvimento para garantir que a arquitetura está sendo seguida.&lt;/p&gt;
+
+&lt;h3 id=&quot;desenvolvedor&quot;&gt;Desenvolvedor&lt;/h3&gt;
+&lt;p&gt;São responsabilidades deste papel:
+* Desenvolver a história;
+* Testar sempre as soluções. visando mantes no mínimo 90% da corbetura do código;
+* Seguir os padrões e técnicas de programação adotados pelo Scrum Master.&lt;/p&gt;
+
+&lt;h2 id=&quot;sprints&quot;&gt;Sprints&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Duração de 7 dias&lt;/li&gt;
+  &lt;li&gt;Todas as sprints se iniciaram na quarta-feria e terão seu término na terça-feira da semana seguinte.
+    &lt;ul&gt;
+      &lt;li&gt;Sprints que antencedem as &lt;em&gt;releases&lt;/em&gt; poderão ser: encurtadas para sprints de 4 dias ou emendadas com a sprint anterior, gerando sprints de 11 dias. Será responsabilidade do Scrum Master, avaliar previamente, conforme andamento da equipe, qual a melhor opção será aplicada.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;daily-meeting&quot;&gt;Daily Meeting&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Duração Máxima: 15 minutos&lt;/li&gt;
+  &lt;li&gt;Realizadas diariamente às 15:45h&lt;/li&gt;
+  &lt;li&gt;A ausência destas reuniões deverá ser previamente comunicada pelo membro da equipe e justificada. Sendo obrigação do mesmo informar o andamento das duas atividades neste dia pelos meios de comunicações definidos pela equipe.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sprint-review&quot;&gt;Sprint Review&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Duração Máxima: 1 hora&lt;/li&gt;
+  &lt;li&gt;Ocorrerão toda terça-feira, tendo início as 18h&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sprint-restropective&quot;&gt;Sprint Restropective&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Duração Máxima: 45 minutos&lt;/li&gt;
+  &lt;li&gt;Ocorrerão toda terça-feira, tendo início as 19h&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sprint-planning&quot;&gt;Sprint Planning&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Duração Máxima: 2 horas&lt;/li&gt;
+  &lt;li&gt;Ocorrerão toda terça-feira, tendo início as 20h&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;# Extreme Programming&lt;/p&gt;
+
+&lt;p&gt;As técnicas da metodologia Extreme Programming serão aplicadas com o intuito de garantir a qualidade do código e a disseminar o conhecimento entre os integrantes da equipe.&lt;/p&gt;
+
+&lt;h2 id=&quot;tcnicas-de-planejamento&quot;&gt;Técnicas de Planejamento&lt;/h2&gt;
+&lt;p&gt;### User Stories
+* Serão aplicadas na estimativa de tempo para planejamento da sprint;
+* Deverão seguir o seguinte template:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;b&gt;Eu como&lt;/b&gt; [usuario do sistema] &lt;b&gt;desejo&lt;/b&gt; [ação a ser executada] &lt;b&gt;para&lt;/b&gt; [justificativa para a ação].&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Este template deve estar mapeado em uma Issue Template; &lt;!-- FIXME linkar o com template criado --&gt;&lt;/li&gt;
+  &lt;li&gt;Cada &lt;em&gt;user story&lt;/em&gt; deve possuir um conjunto de critérios de aceitação definidos pelo PO, os quais deverão ser verificados antes de afirmar a tarefa como concluída.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tcnicas-de-gerenciamento&quot;&gt;Técnicas de Gerenciamento&lt;/h2&gt;
+&lt;p&gt;### Velocity
+* O velocity deve ser medido ao final de cada &lt;em&gt;sprint&lt;/em&gt; e utilizado no planejamento da próxima &lt;em&gt;sprint&lt;/em&gt; como parâmetro para avaliar a capacidade da equipe de desenvolvimento.&lt;/p&gt;
+
+&lt;h2 id=&quot;tcnicas-de-codificao&quot;&gt;Técnicas de Codificação&lt;/h2&gt;
+&lt;p&gt;### Programação em Pares
+* Os pares da sprint deverão ser definidos durante o Sprint Planning;
+* O Scrum Master é responsável por formar os pares;
+* O quadro de conhecimentos deve ser o indicador de maior peso na formação dos pares, sendo que desenvolvedores com mais experiência em determinada área deve parear com quem possui menos conhecimento na mesma.&lt;/p&gt;
+
+&lt;h3 id=&quot;integrao-contnua&quot;&gt;Integração Contínua&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;As &lt;em&gt;branchs&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;devel&lt;/code&gt; estarão submetidas ao processo de integração contínua, devendo respeitar o mínimo de 90% da cobertura de testes;&lt;/li&gt;
+  &lt;li&gt;Todo &lt;em&gt;pull request&lt;/em&gt; realizado para &lt;em&gt;branch&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;devel&lt;/code&gt; estará sujeito ao processo de integração contínua.
+&lt;!-- Metricas tbm estarão nesse processo?--&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;padres-de-codificao&quot;&gt;Padrões de Codificação&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;O código deve ser formato seguindo os padrões de estilo e técnicas de programação adotadas pela equipe, visando assim garantir a qualidade do código gerado.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tcnicas-de-design&quot;&gt;Técnicas de Design&lt;/h2&gt;
+&lt;p&gt;### Simplicidade
+* Ao manusear o código a equipe deve priorizar sempre a solução mais simples que atenda as necessidades do problema.&lt;/p&gt;
+
+&lt;h3 id=&quot;refatorao&quot;&gt;Refatoração&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ao manusear o código, sempre que houver dificuldade para compreensão do mesmo a equipe deve se organizar para refatorá-lo.&lt;/li&gt;
+  &lt;li&gt;A refatoração deve ser realizada antes de fazer qualquer alteração na funcionalidade, visando garantir a integridade do código.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;planning-poker&quot;&gt;Planning Poker&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Deverá ser aplicado para estimar a dificuldade de trabalho do projeto e auxiliar no planejamento das &lt;em&gt;sprints&lt;/em&gt;, conforme nota-se a capacidade de produção da equipe;&lt;/li&gt;
+  &lt;li&gt;Os pontos estimados para uma issue devem estar registrados na mesma por meio do ZenHub;&lt;/li&gt;
+  &lt;li&gt;Os valores que considerados serão 0, 1, 2, 3, 5, 8, 13, 21, e 40.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;kanban&quot;&gt;Kanban&lt;/h1&gt;
+&lt;p&gt;O Kanban será aplicado visando monitorar o fluxo de trabalho da equipe.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;O Kanban deverá contar com os quadros Product Backlog, Icebox, Sprint Backlog, Em progresso, Revisão e Terminados;&lt;/li&gt;
+  &lt;li&gt;É de responsabilidade de cada membro da equipe atualizar o Kanban diariamente com o &lt;em&gt;status&lt;/em&gt; de cada atividade;&lt;/li&gt;
+  &lt;li&gt;O Kanban estará disponível por meio da ferramenta ZenHub.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fga-eps-mds/RecomendaFGA/issues#zenhub&quot;&gt;Acessar o Kanban&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 24 Aug 2018 10:50:39 -0300</pubDate>
+        <link>/docs/2018/08/24/metodologia.html</link>
+        <guid isPermaLink="true">/docs/2018/08/24/metodologia.html</guid>
+        
+        
+        <category>docs</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 04 Jun 2016 10:50:39 -0300</pubDate>
+        <link>/docs/jekyll/2016/06/04/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/docs/jekyll/2016/06/04/welcome-to-jekyll.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Example content for posts</title>
+        <description>&lt;p&gt;&lt;small&gt;This demo page has been used from &lt;a href=&quot;http://jasonm23.github.io/markdown-css-themes/&quot; target=&quot;_blank&quot;&gt;http://jasonm23.github.io/markdown-css-themes/&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+
+&lt;h1&gt;A First Level Header&lt;/h1&gt;
+
+&lt;h2&gt;A Second Level Header&lt;/h2&gt;
+
+&lt;h3&gt;A Third Level Header&lt;/h3&gt;
+
+&lt;h4&gt;A Fourth Level Header&lt;/h4&gt;
+
+&lt;h5&gt;A Fifth Level Header&lt;/h5&gt;
+
+&lt;h6&gt;A Sixed Level Header&lt;/h6&gt;
+
+&lt;p&gt;Now is the time for all good men to come to
+the aid of their country. This is just a
+regular paragraph.&lt;/p&gt;
+
+&lt;p&gt;The quick brown fox jumped over the lazy
+dog&amp;rsquo;s back.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3&gt;Header 3&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+
+&lt;h2&gt;This is an H2 in a blockquote&lt;/h2&gt;
+
+&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;This is nested blockquote.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Back to the first level.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Some of these words &lt;em&gt;are emphasized&lt;/em&gt;.
+Some of these words &lt;em&gt;are emphasized also&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Use two asterisks for &lt;strong&gt;strong emphasis&lt;/strong&gt;.
+Or, if you prefer, &lt;strong&gt;use two underscores instead&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Candy.&lt;/li&gt;
+&lt;li&gt;Gum.&lt;/li&gt;
+&lt;li&gt;Booze.&lt;/li&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A list item.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With multiple paragraphs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Another item in the list.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.*   Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This is a list item with two paragraphs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is the second paragraph in the list item. You&amp;rsquo;re
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Another item in the same list.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A list item with a bit of &lt;code&gt;code&lt;/code&gt; inline.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is an example of a pre code block&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
+    beep
+end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is an &lt;a href=&quot;#&quot;&gt;example link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I start my morning with a cup of coffee and
+&lt;a href=&quot;http://www.nytimes.com/&quot;&gt;The New York Times&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;code-snippet&quot;&gt;Code snippet&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;threading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadWallpaper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Downloading Image&#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_alive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image of the day downloaded.&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Sat, 04 Jun 2016 00:00:00 -0300</pubDate>
+        <link>/docs/others/2016/06/04/example-content.html</link>
+        <guid isPermaLink="true">/docs/others/2016/06/04/example-content.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>others</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Page</title>
+        <description>&lt;p&gt;This is a test blog page where we can explore how to embedd images in the blog.&lt;/p&gt;
+
+&lt;h2 id=&quot;image-example-1&quot;&gt;Image example 1&lt;/h2&gt;
+
+&lt;p&gt;Here, I will embedd image from local assets which goes into &lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt; directory in project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; directory. Choose a specific image, related to particular post. I chose to name the image &lt;code class=&quot;highlighter-rouge&quot;&gt;test-page-image-1.jpg&lt;/code&gt;, which I will embedd as:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown
+![my alternate text](/assets/test-page-image-1.jpg);
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/test-page-image-1.jpg&quot; alt=&quot;my alternate text&quot; /&gt;;&lt;/p&gt;
+
+&lt;p&gt;Ofcourse, you can load images from web as well. Just point to image direct URL. For ex, here is one placeholder image:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown
+![my alternate text](http://lorempixel.com/400/200);
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lorempixel.com/400/200&quot; alt=&quot;my alternate text&quot; /&gt;;&lt;/p&gt;
+
+&lt;p&gt;One cool thing about this is the fact that images adapt themselves to the screen size of device. Try to resize your browser window and check for yourself, Have fun.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Jun 2015 10:50:39 -0300</pubDate>
+        <link>/docs/others/2015/06/04/test-page.html</link>
+        <guid isPermaLink="true">/docs/others/2015/06/04/test-page.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>others</category>
+        
+      </item>
+    
+  </channel>
+</rss>

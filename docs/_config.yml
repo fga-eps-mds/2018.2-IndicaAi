@@ -5,8 +5,8 @@ logo: /assets/logo.png
 github: https://github.com/fga-eps-mds/RecomendaFGA
 about: 2018 EPS / MDS
 
-# baseurl: ""
-baseurl: "https://fga-eps-mds.github.io/RecomendaFGA/"
+baseurl: ""
+#baseurl: "https://fga-eps-mds.github.io/RecomendaFGA/"
 url: "https://fga-eps-mds.github.io/RecomendaFGA/"
 
 allowsearch: false
