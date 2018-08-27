@@ -285,3 +285,12 @@ body .container ul.well ul.panel li a:hover {
         width: 290px;
     }
 }
+
+table.frequency td:last-child {
+    text-align: center;
+    color: #009688;
+}
+
+table.frequency td:last-child i.fa-times {
+    color: #333;
+}

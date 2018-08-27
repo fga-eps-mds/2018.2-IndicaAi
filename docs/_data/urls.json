@@ -11,23 +11,6 @@
     "icon": "fa-users"
   },
   {
-    "text": "Metodologia",
-    "url": "#",
-    "icon": "fa-pencil",
-    "urls": [
-        {
-          "text": "Plano Metodológico",
-          "url": "/docs/2018/08/24/metodologia.html",
-          "icon": "fa-file"
-        },
-        {
-          "text": "Papéis Definidos",
-          "url": "/docs/2018/08/26/scrum-papers.html",
-          "icon": "fa-user"
-        }
-    ]
-  },
-  {
     "text": "RoadMaps",
     "url": "#",
     "icon": "fa-map",
@@ -60,19 +43,47 @@
     ]
   },
   {
+    "text": "Metodologia",
+    "url": "#",
+    "icon": "fa-pencil",
+    "urls": [
+        {
+          "text": "Plano Metodológico",
+          "url": "/docs/2018/08/24/metodologia.html",
+          "icon": "fa-file"
+        },
+        {
+          "text": "Papéis Definidos",
+          "url": "/docs/2018/08/26/scrum-papers.html",
+          "icon": "fa-user"
+        }
+    ]
+  },
+  {
     "text": "Documentos",
     "url": "/#",
     "icon": "fa-archive"
   },
   {
+    "text": "Sprint Planning",
+    "url": "#",
+    "icon": "fa-paper-plane",
+    "urls": [
+        {
+          "text": "Sprint 01",
+          "url": "/sprint-planning/2018/08/27/planning-sprint-1.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 02",
+          "url": "/sprint-planning/2018/08/27/planning-sprint-2.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
     "icon": "fa-github"
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
   }
 ]

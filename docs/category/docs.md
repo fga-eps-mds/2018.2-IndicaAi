@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
 categories: docs
-title: Jekyll
+title: Documentos
 permalink: /category/docs
 ---
