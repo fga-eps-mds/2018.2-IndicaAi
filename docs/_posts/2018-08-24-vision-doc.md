@@ -4,6 +4,7 @@ title:  "Documento de Visão"
 date:   2018-08-24 13:50:39
 categories: docs
 ---
+# Documento de Visão
 
 ## Histórico de Revisão
 
@@ -80,7 +81,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   <tr><th>Que</th><td>Necessitam se deslocar do campus em busca de bens e serviços </td></tr>
   <tr><th>O</th><td>RecomendaFGA</td></tr>
   <tr><th>Que</th><td>Compartilha locais e experiências </td></tr>
-  <tr><th>Diferente do</th><td>Todos os lugares ao redor e TripAdvisitor</td></tr>
+  <tr><th>Diferente do</th><td>Todos os lugares ao redor e TripAdvisor</td></tr>
   <tr><th>Nosso produto</th><td>Indica locais de acordo com a experiências de outros integrantes da comunidade acadêmica da FGA</td></tr>
 
 </table>
@@ -315,16 +316,16 @@ Software desenvolvido diretamente para o contexto da FGA, um dos quatros campus 
 
 ### 4.1 Perspectiva do Produto
 
-O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de alocação de salas referente às disciplinas oferecidas pela Universidade de Brasília. De tal forma que, Coordenadores e membros do departamento tenham o controle sobre o mapeamento das salas ocupadas no respectivo departamento, enquanto que as áreas comuns ficam sob jurisdição da Prefeitura da Universidade. O produto fornecerá aos usuários as informações necessárias para melhor gerirem os espaços físicos. Tais informações contemplam disponibilidade da sala, capacidade, topologia, recursos e proximidade de uma dada sala do espaço comum com as salas respectivas de um curso. Assim, têm-se como expectativa facilitar e agilizar o processo de alocação de salas da UnB, além de evitar qualquer inconsistência em relação às salas e horários, como choques de horários entre turmas.
+O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar se demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais ja cadastrados, relatar experiência e achar sua localização por mapa.
 
 ### 4.2 Resumo dos Recursos
 
 | Código |Recurso | Benefício|
 |:------:|--------|----------|
-| R01 | Sistematização do processo de alocação de salas.| Agiliza o processo de alocação de salas para disciplinas, um processo que atualmente é feito de maneira mecânica, com a utilização de ferramentas como planilhas. Além disso, evita choque de horários entre disciplinas, adequação da capacidade das salas e também de grandes distâncias entre disciplinas de um mesmo curso. |
-| R02 | Fornecer um panorama da atual situação das salas referentes às suas respectivas alocações. | Permite uma maior organização uma vez que que o sistema garantirá que não haja nenhum tipo de inconsistência em relação às salas e horários. |
+| R01 | Indicar locais próximos a FGA.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo a FGA. |
+| R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
 
-## 5. Requisitos Funcionais
+## 5. Recursos do Produto
 
 ##### Legenda de Prioridades dos Requisitos:
 
@@ -336,12 +337,15 @@ O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RF2 | Controlar Cadastro  | O Sistema deve autorizar o Assistente Administrativo de editar as informações dos usuários e aprovar seu cadastro. | Intermediária |
-| RF3 | Controlar Sala | O Sistema deve permitir o Assistente Administrativo a manter as informações das salas. | Intermedária |
-| RF4 | Controlar Turmas | O sistema deve permitir que os usuários possam manter as informações das turmas. | Alta |
-| RF5 | Controlar Alocações | O sistema deve permitir que os usuários possam gerenciar as alocações feitas, e que o Assistente Administrativo controle as de espaço comum. |Alta|
-| RF6 | Orientar Alocações | O sistema deve permitir que os usuários possam visualizar as alocações e geram seus respectivos relatórios. | Baixa|
+| RP1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
+| RP2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
+| RP3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
+| RP4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
+| RP5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Admnistrador seja tomada ). | Intermediária |
+| RP6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
+| RP7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
+| RP8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
+| RP9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
 
 ## 6. Restrições
 
