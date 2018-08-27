@@ -349,11 +349,10 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 ## 6. Restrições
 
-* O cadastro de usuários deve ser aprovado pelo Assistente Administrativo;
-* Somente a Coordenação de um determinado curso pode gerenciar as salas correspondentes àquele curso.
-* Somente o usuário Assistente Administrativo pode gerenciar as salas do espaço comum da Universidade.
-* O sistema só funcionará com uma conexão de rede de internet e mantido em um servidor Rails.
-* A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação só para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
+* O cadastro de usuários deve ser aprovado apenas com a utilização de uma matrícula válida pela Unb;
+* Somente os Admnistradores do Sistema poderam realizar a remoção de uma conta de usuário comum.
+* O sistema só funcionará mediante uma conexão de rede pelo menos satisfatória e será mantido em um servidor Rails.
+* A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação apenas para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
 
 ## 7. Requisitos Não Funcionais
 
