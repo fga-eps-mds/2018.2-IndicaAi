@@ -28,13 +28,45 @@
     ]
   },
   {
+    "text": "RoadMaps",
+    "url": "#",
+    "icon": "fa-map",
+    "urls": [
+        {
+          "text": "Geral",
+          "url": "/roadmaps/2018/08/26/roadmap_geral.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Scrum Master",
+          "url": "/roadmaps/2018/08/26/roadmap_scrum_master.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Product Owner",
+          "url": "/roadmaps/2018/08/26/roadmap_po.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "DevOps",
+          "url": "/roadmaps/2018/08/26/roadmap_devops.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Arquiteto",
+          "url": "/roadmaps/2018/08/26/roadmap_arquiteto.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
     "text": "Documentos",
     "url": "/#",
     "icon": "fa-archive"
   },
   {
     "text": "Github",
-    "url": "/#",
+    "url": "https://github.com/fga-eps-mds/RecomendaFGA",
     "icon": "fa-github"
   },
   {
