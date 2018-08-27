@@ -4,7 +4,6 @@ title:  "Documento de Visão"
 date:   2018-08-24 13:50:39
 categories: docs
 ---
-# Documento de Visão
 
 ## Histórico de Revisão
 
@@ -81,7 +80,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   <tr><th>Que</th><td>Necessitam se deslocar do campus em busca de bens e serviços </td></tr>
   <tr><th>O</th><td>RecomendaFGA</td></tr>
   <tr><th>Que</th><td>Compartilha locais e experiências </td></tr>
-  <tr><th>Diferente do</th><td>Todos os lugares ao redor e TripAdvisor</td></tr>
+  <tr><th>Diferente do</th><td>Todos os lugares ao redor e TripAdvisitor</td></tr>
   <tr><th>Nosso produto</th><td>Indica locais de acordo com a experiências de outros integrantes da comunidade acadêmica da FGA</td></tr>
 
 </table>
@@ -92,19 +91,17 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 
 | Nome                           | Descrição                                                                 | Responsabilidades                                                                |
 |--------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Clientes               | Membros do corpo Acadêmico da UnB | Acompanhar o andamento do projeto e disponibilizar informações sobre o mesmo.    |
-| Coaches                        | Alunos da UnB monitores  das disciplinas  de GPP e de MDS.                | Ajudar com as dificuldades  impostas à equipe de gestores e desenvolvedores. |
+| Clientes               | Prof. Carla Silva Rocha Aguiar, doutora docente na Universidade de Brasília | Acompanhar o andamento do projeto e disponibilizar informações sobre o mesmo.    |
+| Coaches                        | -                | - |
 | Equipe de  Desenvolvimento     | Equipe de alunos da UnB  de Métodos de  Desenvolvimento  de Software.    | Planejar, desenvolver e  implementar o sistema.                                     |
-| Equipe de Gestores  de Projeto | Equipe de alunos da UnB  de Gestão de Portfólios  e Projetos de Software. | Planejar, desenvolver e gerenciar o projeto.                 |
+| Equipe de Gestores  de Projeto | Equipe de alunos da UnB  de Disciplina de Engenharia de Produto de Software. | Planejar, desenvolver e gerenciar o projeto.                 |
 
 ### 3.2 Resumo dos Usuários
 
 |    Nome    |      Descrição      |                                   Responsabilidades                                  |       Envolvido      |
 |:----------:|:-------------------:|:------------------------------------------------------------------------------------:|:--------------------:|
-| Assistente Administrativo | Operador do sistema no âmbito da Prefeitura | Responsável pela alocação de salas nos espaços comuns da faculdade. | Symone Rodrigues Jardim |
-| Auxiliar do Departamento | Funcionário do Departamento designado para gerenciar as salas | Responsável pela alocação de salas pertencentes ao seu departamento para disciplinas ofertadas para qualquer curso do respectivo departamento. | Symone Rodrigues Jardim |
-| Coordenador | Coordenadores de Curso | Responsável pela alocação de salas no espaço do próprio Departamento do Curso e solicitação de reservas no espaço comum da Universidade. | Symone Rodrigues Jardim |
-| Usuário Comum | Usuário sem acesso ao sistema | Solicitar o cadastro ao sistema | Symone Rodrigues Jardim |
+| Administrador | Moderador responsável por controlar os usuários | O administrador exerce o papel de avaliar a legitimidade dos locais indicados |Corpo acadêmico da universidade |
+| Usuário Comum | Alunos, professores e servidores contemplados pelo aplicativo | Solicitar o cadastro ao sistema e indicar locais nas proximidades do campus | Corpo acadêmico da universidade |
 
 
 ### 3.3 Perfis dos Envolvidos
@@ -113,11 +110,11 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 <table>
   <tr>
     <td><b>Representantes</b></td>
-    <td>Symone Rodrigues Jardim</td>
+    <td>Carla Silva Rocha Aguiar</td>
   </tr>
   <tr>
     <td><b>Descrição</b></td>
-    <td>Professora do Curso de Design da Universidade de Brasília e Diretora de Inovação e Estratégia no Ensino de Graduação (DIEG) que está familiarizada com alocações de sala.</td>
+    <td>Atua na graduação em disciplinas orientadas desenvolvimento de  software livre (MDS/EPS) e coordena o Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS).</td>
   </tr>
   <tr>
     <td><b>Tipo</b></td>
@@ -125,11 +122,11 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   </tr>
   <tr>
     <td><b>Responsabilidades</b></td>
-    <td>Observar e validar o andamento do software, disponibilizar informações sobre o processo de alocação de sala na UnB.</td>
+    <td>Observar e validar o andamento do software.</td>
   </tr>
   <tr>
     <td><b>Critérios de Sucesso</b></td>
-    <td>Receber um software que faça de maneira automatizada a alocação das salas e permita o gerenciamento destas.</td>
+    <td>Receber um software que realize de forma sucinta a indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA</td>
   </tr>
   <tr>
     <td><b>Envolvimento</b></td>
@@ -145,11 +142,11 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 <table>
   <tr>
     <td><b>Representantes</b></td>
-    <td>Sabryna de Sousa Pessoa<br>Vitor Barbosa de Araújo</td>
+    <td>-</td>
   </tr>
   <tr>
     <td><b>Descrição</b></td>
-    <td>Coaches responsáveis pela equipe de GPP e MDS.</td>
+    <td>Coaches responsáveis pela equipe de MDS e EPS.</td>
   </tr>
   <tr>
     <td><b>Tipo</b></td>
@@ -177,13 +174,13 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 <table>
   <tr>
     <td><b>Representantes</b></td>
-    <td>Ateldy Borges Brasil Filho<br>
-    Bruno Matias Casas<br>
-    Carlos Enrique Rodrigues Aragon<br>
-		Daniel Marques Rangel<br>
-		Francisco Wallacy Coutinho Braz<br>
-		Iasmin Santos Mendes<br>
-		Rodrigo Dadamos Lopes da Silva<br>
+    <td>Gabriel Davi Silva Pereira<br>
+  Heron Rodrigues Souza<br>
+    João Lucas Fragoso Zarbiélli<br>
+		Lucas Maciel Aguiar<br>
+		Matheus Gomes Ferreira<br>
+		Weiller Fernandes Pereira<br>
+		<br>
     </td>
   </tr>
   <tr>
@@ -216,12 +213,8 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 <table>
   <tr>
     <td><b>Representantes</b></td>
-    <td>Caio Felipe Dias Nunes<br>
-	  Gesiel dos Santos Freitas<br>
-	  João Paulo Busche da Cruz<br>
-	  Lucas Andrade Oliveira<br>
-	  Vinícius da Silva Carvalho<br>
-	  Vinicius Pinheiro da Silva Corrêa<br>
+    <td>Iasmin Santos Mendes
+	  <br>Renato Valério Gomes</br>
     </td>
   </tr>
   <tr>
@@ -230,7 +223,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   </tr>
   <tr>
     <td><b>Tipo</b></td>
-    <td>Graduandos de Engenharia de Software na Universidade de Brasília, matriculados na disciplina de Gestão de Portfólios e Projetos de Software.</td>
+    <td>Graduandos de Engenharia de Software na Universidade de Brasília, matriculados na disciplina de Engenharia de Produto de Software.</td>
   </tr>
   <tr>
     <td><b>Responsabilidades</b></td>
@@ -252,13 +245,13 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 
 ### 3.4 Perfil dos Usuários
 
-#### 3.4.1 Assistente Administrativo
+#### 3.4.1 Administrador
 
-| **Representante** | Symone Rodrigues Jardim |
+| **Representante** | Corpo acadêmico da universidade |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Descrição** | Responsável atual pelo processo de alocação e gerenciamento das salas comuns dentro do Campus Darcy Ribeiro. |
-| **Tipo** | Assistente Administrativo que atua na Prefeitura da Universidade |
-| **Responsabilidades** | Gerenciar a reserva de salas no espaço comum da Universiade, avaliando e aprovando as solicitações de cada Coordenador de curso.  |
+| **Descrição** | Um usuário com a capacidade de excluir locais mal indicados e moderar comportamentos inadequados detro do aplicativo |
+| **Tipo** | Desenvolvedores do aplicativo |
+| **Responsabilidades** | Analisar informações inseridas por usuários  |
 | **Critérios de Sucesso**  | Obter um software resultante capaz de automatizar o processo de alocação de salas, prevenindo choques de horários e longas distâncias entre salas do mesmo curso. |
 | **Envolvimento** | Usuário final do sistema. |
 | **Produtos Liberados** | - Relação de disponibilidade das salas; <br> - Informações técnicas de cada sala; <br> - Relatório de Disciplinas Alocadas com suas respectivas salas.|
@@ -288,44 +281,42 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 
 ### 3.6 Alternativas e Concorrência
 
-#### 3.6.1 UFSCar - Sistema de Alocação de Salas
+#### 3.6.1 Catraca Livre
 
-Plataforma web desenvolvida pela Secretaria de Informática da Universidade Federal de São Carlos, para consulta e solicitação de horário somente de salas informatizadas. O filtro de busca utiliza o prédio localizado como base para pesquisa e são exibidas informações como código, capacidade, número de computadores e setor responsável.
+ aplicativo ordena todos os passeios encontrados de acordo com a proximidade do usuário, indo do mais próximo para o mais distante. Também é possível aplicar filtros para datas de eventos que ainda vão ocorrer ou categoria dos eventos(Balada, dança, barato...).
+![Catraca_livre](https://raw.githubusercontent.com/fga-eps-mds/RecomendaFGA/DocVisao/docs/static/DocVis_images/8cgrxx4mrv4nji662b7c2dn5f.jpg)
 
-![UFSCar_SAS](https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/ufscar.png)
+#### 3.6.2  What3Words(W3W)
+Serviço de localização, já com o suporte para o idioma português, que utiliza somente 3 palavras para encontrar qualquer endereço do mundo.Basta que o usuário resuma sua busca em no mínimo 3 palavras que o programa dará uma possível localização do lugar. Além da ferramenta de busca, o app também possui a opção de traçar uma rota até o ponto encontrado na busca.
 
-#### 3.6.2 Unicampi - Sistema de Reservas de Salas e Recursos
+![W3W](https://raw.githubusercontent.com/fga-eps-mds/RecomendaFGA/DocVisao/docs/static/DocVis_images/size_960_16_9_20151020-25144-zw89r7.jpg)
 
-Sistema baseado em um modelo de agenda, o qual permite as secretarias e setores internos a instituição fazerem as reservas de salas, sendo que, cada departamento tem prioridade para alocar determinadas salas, antes destas ficarem a disposição de todas as alas. Professores possuem a possibilidade de realizar a pré-reserva da sala pelo sistema, a qual fica sob pendência de aprovação pelo setor responsável, enquanto que os alunos devem solicitar a reserva na própria secretaria.  Nos horários de 12h às 14h e 18h às 19h, a reserva das salas fica sob prioridade da secretaria para atender as demandas dos alunos quanto a monitoria. Existe no sistema uma classificação das salas quanto a nome, topologia, capacidade, tipo de utilização e prédio. Além de ser possível a solicitação de salas para eventos externos a instituição.
+#### 3.6.3 Kekanto
 
-![Unicampi](https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/unicamp.png)
+O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugual, por exemplo.
 
-#### 3.6.3 SAEF - Sistema de Acompanhamento de Espaços Físicos
+![Kekanto](https://raw.githubusercontent.com/fga-eps-mds/RecomendaFGA/DocVisao/docs/static/DocVis_images/kekanto.jpeg)
 
-Implantado na Pontífica Universidade Católica do Rio de Janeiro - PUC Rio, o SAEF consiste em uma plataforma Web desenvolvida pela Kogumelo Informática, a qual permite a reserva de salas e auditórios para as aulas da própria instituição, assim como, para eventos paralelos, tendo todo o procedimento para este último caso online.
+#### 3.6.4 Yelp
 
-![SAEF_PUC_RIO](https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/pucRio.png)
+Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuario informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
 
-#### 3.6.4 SAS-FGA - Sistema de Alocação de Salas
-
-Software desenvolvido diretamente para o contexto da FGA, um dos quatros campus que compõem a Universidade de Brasília, com o intuito de automatizar e simplificar o processo de alocação de salas dentro do campus. O projeto visou dar maior autonomia aos membros do Corpo Acadêmico, retirando a necessidade de aprovação da reserva, ou seja, uma vez que uma sala consta como disponível no sistema é possível reservá-la imediatamente, sem etapas intermediárias. Em termos de usabilidade, o sistema não foi bem contemplado exigindo muitos passos do usuário para executar tarefas simples.
-
-![SAS_FGA](https://raw.githubusercontent.com/wiki/fga-gpp-mds/Grupo---7-GPP-MDS/images/sas_fga.png)
+![Yelp](https://raw.githubusercontent.com/fga-eps-mds/RecomendaFGA/DocVisao/docs/static/DocVis_images/ZRKtVyQ.jpg)
 
 ## 4. Visão Geral do Produto
 
 ### 4.1 Perspectiva do Produto
 
-O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar se demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais ja cadastrados, relatar experiência e achar sua localização por mapa.
+O SIGS - Sistema Inteligente de Gestão de Salas irá sistematizar o processo de alocação de salas referente às disciplinas oferecidas pela Universidade de Brasília. De tal forma que, Coordenadores e membros do departamento tenham o controle sobre o mapeamento das salas ocupadas no respectivo departamento, enquanto que as áreas comuns ficam sob jurisdição da Prefeitura da Universidade. O produto fornecerá aos usuários as informações necessárias para melhor gerirem os espaços físicos. Tais informações contemplam disponibilidade da sala, capacidade, topologia, recursos e proximidade de uma dada sala do espaço comum com as salas respectivas de um curso. Assim, têm-se como expectativa facilitar e agilizar o processo de alocação de salas da UnB, além de evitar qualquer inconsistência em relação às salas e horários, como choques de horários entre turmas.
 
 ### 4.2 Resumo dos Recursos
 
 | Código |Recurso | Benefício|
 |:------:|--------|----------|
-| R01 | Indicar locais próximos a FGA.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo a FGA. |
-| R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
+| R01 | Sistematização do processo de alocação de salas.| Agiliza o processo de alocação de salas para disciplinas, um processo que atualmente é feito de maneira mecânica, com a utilização de ferramentas como planilhas. Além disso, evita choque de horários entre disciplinas, adequação da capacidade das salas e também de grandes distâncias entre disciplinas de um mesmo curso. |
+| R02 | Fornecer um panorama da atual situação das salas referentes às suas respectivas alocações. | Permite uma maior organização uma vez que que o sistema garantirá que não haja nenhum tipo de inconsistência em relação às salas e horários. |
 
-## 5. Recursos do Produto
+## 5. Requisitos Funcionais
 
 ##### Legenda de Prioridades dos Requisitos:
 
@@ -337,15 +328,12 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RP1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RP2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
-| RP3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
-| RP4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
-| RP5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Admnistrador seja tomada ). | Intermediária |
-| RP6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
-| RP7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
-| RP8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
-| RP9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
+| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
+| RF2 | Controlar Cadastro  | O Sistema deve autorizar o Assistente Administrativo de editar as informações dos usuários e aprovar seu cadastro. | Intermediária |
+| RF3 | Controlar Sala | O Sistema deve permitir o Assistente Administrativo a manter as informações das salas. | Intermedária |
+| RF4 | Controlar Turmas | O sistema deve permitir que os usuários possam manter as informações das turmas. | Alta |
+| RF5 | Controlar Alocações | O sistema deve permitir que os usuários possam gerenciar as alocações feitas, e que o Assistente Administrativo controle as de espaço comum. |Alta|
+| RF6 | Orientar Alocações | O sistema deve permitir que os usuários possam visualizar as alocações e geram seus respectivos relatórios. | Baixa|
 
 ## 6. Restrições
 
