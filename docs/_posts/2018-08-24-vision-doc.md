@@ -359,8 +359,8 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 ### 7.1 Requisito do Sistema
 
 * O sistema deve estar hospedado em um servidor da mesma linguagem de programação e versão do software, e também ter acesso a uma rede estável para a conexão com os usuários.
-* Para acessar a página do servidor é necessário o usuário ter um navegador de internet e conexão com a internet.
 
+* Para ter acesso ao aplicativo o usuário deve ter um telefone celular com sistema operacional Android ou iOS, e conta na suas respectivas centrais de aplicativos.
 
 ### 7.2 Requisito de Desempenho
 
@@ -368,25 +368,36 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 ### 7.3 Requisito de Design
 
-* O sistema deve ter uma interface organizada e intuitiva suficiente para o uso adequado, tendo também cores indicadoras para diferenciar as distâncias entre salas e ícones para diferenciar cada funcionalidade.
+* O sistema deve ter uma interface organizada e utilizar de ícones intuitivos que facilitam o entendimento de seus significados além de fluxos fáceis de aprender e memorizar.
 
 ### 7.4 Requisito de Confiabilidade
 
-* O sistema deve evitar o choque de horários de uma determinada sala, tendo como dependência as informações trazidas pela solicitação da alocação de sala.
+* Informações não serão alugadas nem vendidas a terceiros fora do RecomendaFGA.
+
+* Quando inseridos dados pessoais do usuário, o sistema deve mantê-los protegidos de quaisquer influências externas.
+
+* Deve existir um sistema de autenticação de contas, por meio da matrícula e senha ou e-mail e senha.
+
+* O sistema deve aprensentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
+
 
 ### 7.5 Requisito de Arquitetura
 
-* O sistema deve seguir a arquitetura MVC (*Model View Controller*) do Ruby on Rails.
+* O backend deve seguir a arquitetura MVC (*Model View Controller*) do Ruby on Rails.
+
+* O frontend deve seguir a arquitetura Modular do React Native.
 
 ### 7.6 Requisito de Usabilidade
 
-* O sistema deve ser responsivo com a interação do usuário, principalmente na parte de formulários e validações, exibindo mensagens de instruções para as devidas correções e preenchimentos.
-* O sistema deve exibir uma mensagem alertando o cadastro de turmas as Terças e Quintas pela manhã, por este ser um horário muito concorrido e quem, em geral, implica na superlotação das salas.
+* Os sistema deve ser nativo para o sistema operacional utilizado pelo usuário e não uma aplicação web.
+
+* O sistema deve facilitar a utilização e compreensão de sua interface por parte dos usuário, além de buscar facilitar que o utilizador tem em alcançar os seus objetivos por meio da simplicidade no uso.
+
 
 
 ### 7.7 Requisito de Suportabilidade
 
-* O sistema deve ser compatível com as versões de navegadores Google Chrome, Mozilla Firefox e Internet Explorer que são compatíveis com HTML5, CSS3 e JavaScript.
+* A linguagem de programção deve ser multiplataforma, a qual pode ser utilizada em qualquer sistema operacional mobile.
 
 ### 7.8 Requisito de Segurança
 
