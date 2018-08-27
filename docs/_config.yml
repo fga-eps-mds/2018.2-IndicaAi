@@ -9,7 +9,7 @@ about: 2018 EPS / MDS
 baseurl: "https://fga-eps-mds.github.io/RecomendaFGA/"
 url: "https://fga-eps-mds.github.io/RecomendaFGA/"
 
-allowsearch: false
+allowsearch: true
 
 # disqus_shortname: aboutashu
 # google_analytics: UA-72862926-1
