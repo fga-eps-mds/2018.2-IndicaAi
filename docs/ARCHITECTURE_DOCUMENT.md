@@ -49,6 +49,13 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 - MVC(Model View Controller): Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
 
 ## 2: Representação Arquitetural
+  O padrão de arquitetura será o MVC que separa a interação entre software e usuário. Existira uma integração entre duas tecnologias, Ruby on Rails 5.2.0 e React Native 2.0.1
+
+### 2.1 Ruby on Rails 5.2.0
+  Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
+
+### 2.2 React Native
+  O React Native é um framawork para desenvolvimento de aplicativos nativos para celular feito com React. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
 ## 3:  Requisitos e Restrições Arquiteturais
 
@@ -62,14 +69,14 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 
 ### 7.1 Visão Geral
 
-A arquitetura utilizada na aplicação é o padrão arquitetural MVC, que é adotada framework Ruby on Rails. 
+A arquitetura utilizada na aplicação é o padrão arquitetural MVC, que é adotada framework Ruby on Rails.
 
 ### 7.2 Camadas
 
 #### 7.2.1 Models
 É nessa camada que se implementa as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dados (banco de dados) e como esses dados serão acessados , validados , relacionados e etc. Isto é, a model é responsável por conter todas as informações referentes à manipulação de dados.
 #### 7.2.2 Views
-A camada view é a responsável por formatar as informações e apresentá-las ao usuário de forma organizada. 
+A camada view é a responsável por formatar as informações e apresentá-las ao usuário de forma organizada.
 #### 7.2.3 Controller
 É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
 
