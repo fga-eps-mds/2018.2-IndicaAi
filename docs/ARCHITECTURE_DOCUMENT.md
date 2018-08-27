@@ -55,11 +55,16 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
 
 ### 2.2 React Native
-  O React Native é um framawork para desenvolvimento de aplicativos nativos para celular feito com React. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
+  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
 ## 3:  Requisitos e Restrições Arquiteturais
 
 ## 4:   Visão Lógica
+  A visão lógica da aplicação é composta por dois pacotes principais: API e React Native.
+
+  A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe tambem uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
+
+  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim um ambientes mais compativeis. 
 
 ## 5:   Visão de Processo
 
