@@ -10,29 +10,31 @@
 1. [Introdução]()       
   1.1 [Finalidade]()            
   1.2 [Escopo]()   
-  1.3 [Definições, Acrônimos e Abreviaçõespo]()   
+  1.3 [Definições, Acrônimos e Abreviações]()   
 
 2. [Representação da Arquitetura]()
 
 3. [Metas e Restrições de Arquitetura]()  
   3.1 [Ambiente e Ferramentas de Desenvolvimento]()
 
-4. [Visão Lógica]()              
+4. [Visão de Casos de Uso]()  
+  4.1 [Realização de Casos de Uso]()
+5. [Visão Lógica]()              
 
-5. [Visão de Processos]()
+6. [Visão de Processos]()
 
-6. [Visão de Implantação]()
+7. [Visão de Implantação]()
 
-7. [Visão de Implementação]()
-    7.1 [Visão Geral]()
-    7.2 [Camadas]()              
-    7.2.1 [Model]()           
-    7.2.2 [View]()             
-    7.2.3 [Controller]()             
+8. [Visão de Implementação]()  
+    8.1 [Visão Geral]()  
+    8.2 [Camadas]()         
+    8.2.1 [Model]()  
+    8.2.2 [View]()  
+    8.2.3 [Controller]()             
 
-8. [Tamanho e Desempenho]()
+9. [Tamanho e Desempenho]()
 
-9.  [Referências]()
+10.  [Referências]()
 
 
 ## 1:   Introdução
@@ -58,36 +60,42 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
 ## 3:  Requisitos e Restrições Arquiteturais
-
-## 4:   Visão Lógica
+## 4: Visão de Casos de Uso
+### 4.1 Realização de Casos de Uso
+  | Ator | Descrição |
+  | --- | --- |
+  | Usuário Comum | Usuário que somente pode utilizar as funcionalidades padrão do aplicativo|
+  | Usuário Administrador | Usuário com acesso integral ao Sistema com prioridades sobre o usuário comum |
+  ![use_case_diagram](../static/diagram-docs/use-case-diagram.jpg)
+## 5:   Visão Lógica
   A visão lógica da aplicação é composta por dois pacotes principais: API e React Native.
 
   A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe tambem uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
 
-  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim um ambientes mais compativeis. 
+  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim um ambientes mais compativeis.
 
-## 5:   Visão de Processo
+## 6:   Visão de Processo
 
-## 6:   Visão de Implantação
+## 7:   Visão de Implantação
 
-## 7:    Visão de Implementação
+## 8:    Visão de Implementação
 
-### 7.1 Visão Geral
+### 8.1 Visão Geral
 
 A arquitetura utilizada na aplicação é o padrão arquitetural MVC, que é adotada framework Ruby on Rails.
 
-### 7.2 Camadas
+### 8.2 Camadas
 
-#### 7.2.1 Models
+#### 8.2.1 Models
 É nessa camada que se implementa as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dados (banco de dados) e como esses dados serão acessados , validados , relacionados e etc. Isto é, a model é responsável por conter todas as informações referentes à manipulação de dados.
-#### 7.2.2 Views
+#### 8.2.2 Views
 A camada view é a responsável por formatar as informações e apresentá-las ao usuário de forma organizada.
-#### 7.2.3 Controller
+#### 8.2.3 Controller
 É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
 
-## 8:   Tamanho e Desempenho
+## 9:   Tamanho e Desempenho
 
-## 9:  Referências
+## 10:  Referências
 
 ARTEFATO: DOCUMENTO DE ARQUITETURA DE SOFTWARE. FUNPAR. Disponível em: <http://www.funpar.ufpr.br:8080/rup/process/artifact/ar_sadoc.htm>. Acesso em: 26 Agosto 2018.
 
