@@ -82,6 +82,23 @@
     ]
   },
   {
+    "text": "Sprint Review",
+    "url": "#",
+    "icon": "fa-comments",
+    "urls": [
+        {
+          "text": "Sprint 01",
+          "url": "/sprint-review/2018/08/27/review-sprint-1.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 02",
+          "url": "/sprint-result/2018/08/27/results-sprint-2.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
     "icon": "fa-github"
