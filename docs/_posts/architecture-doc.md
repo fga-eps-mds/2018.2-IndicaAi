@@ -74,6 +74,10 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 
   O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim um ambientes mais compativeis.
 
+### 5.1 Diagrama de Classes
+
+![class-diagram](../static/diagram-docs/class_doc.jpg)
+
 ## 6:   Visão de Processo
 
 ## 7:   Visão de Implantação
