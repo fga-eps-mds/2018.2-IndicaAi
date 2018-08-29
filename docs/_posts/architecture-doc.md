@@ -34,8 +34,9 @@
 
 9. [Tamanho e Desempenho]()
 
-10.  [Referências]()
+10.  [Qualidade]()
 
+11. [Referências]()
 
 ## 1:   Introdução
 
@@ -48,7 +49,12 @@ Este documento tem como objetivo fornecer uma visão geral da arquitetura que se
 O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será responsável pela recomendação de lugares próximos a Faculda do Gama, como também avaliar esse lugares por meio de notas. O documento apresentará toda a parte arquitetural para a confecção do software Dr. Down, a fim de tornar claras as características arquiteturais do projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
-- MVC(Model View Controller): Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
+* MVC ( Model View Controller) : Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
+
+* iOS - Sistema operacional móvel da Apple Inc.
+
+
+
 
 ## 2: Representação Arquitetural
   O padrão de arquitetura será o MVC que separa a interação entre software e usuário. Existira uma integração entre duas tecnologias, Ruby on Rails 5.2.0 e React Native 2.0.1
@@ -115,9 +121,15 @@ A camada view é a responsável por formatar as informações e apresentá-las a
 #### 8.2.3 Controller
 É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
 
-## 9:   Tamanho e Desempenho
+## 9.  Tamanho e Desempenho
 
-## 10:  Referências
+
+
+## 10. Qualidade
+
+A arquitetura utilizada permite definir algumas metas de qualidade, como facilidade no acrescimo de novas funcionalidades, na manutenção e reaproveitamento de código. Por ser uma arquitetura bastante utilizada aumenta a confiabilidade no software e, em caso de problemas, o suporte é maior e de mais fácil acesso.
+
+## 11.  Referências
 
 ARTEFATO: DOCUMENTO DE ARQUITETURA DE SOFTWARE. FUNPAR. Disponível em: <http://www.funpar.ufpr.br:8080/rup/process/artifact/ar_sadoc.htm>. Acesso em: 26 Agosto 2018.
 
