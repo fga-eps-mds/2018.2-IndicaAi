@@ -24,11 +24,11 @@ categories: docs
 -----
 ## 1. Introdução
 
-Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo RecomendaFGA, o qual refere-se a um sistema para indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA, campus da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
+Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA, campus da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
 
 ### 1.1 Finalidade
 
-O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do aplicativo RecomendaFGA ao expor as ideias necessárias para seu desenvolvimento.
+O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do aplicativo Indica Ai ao expor as ideias necessárias para seu desenvolvimento.
 
 ### 1.2 Escopo
 
@@ -40,7 +40,7 @@ Abaixo serão apresentados alguns conceitos de documentação de software desej�
 
 1. UnB: Universidade De Brasília.
 2. FGA: Faculdade do Gama - Campus da Universidade de Brasília localizado no Gama.
-3. RecomendaFGA: Aplicativo mobile com intuito de compartilhar recomendações de locais próximos a FGA que facilite a vida acadêmica.
+3. Indica Ai: Aplicativo mobile com intuito de compartilhar recomendações de locais próximos a FGA que facilite a vida acadêmica.
 4. UML (*Unified Modeling Language*): Linguagem de modelagem que define representações de um sistema de forma padronizada com o objetivo de facilitar a compreensão.
 5. RUP (*Rational Unified Process*): É um modelo de processo unificado de Engenharia de Software derivado da UML criado pela Rational Software Corporation e adquirido pela IBM em 2003. Possui elementos de modelos genéricos para apoiar o desenvolvimento de softwares incentivando a interação e exemplificando boas práticas de projeto e especificação.
 6. EPS: Disciplina de Engenharia de Produto de Software.
@@ -60,7 +60,7 @@ Elaborado de acordo com a metodologia RUP, o *Rational Unified Process*, este do
 ## 2. Posicionamento
 
 ### 2.1 Oportunidade de Negócios
-A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasília e recebe alunos de vários lugares do Brasil. A faculdade ainda está em desenvolvimento, portanto faltam serviços e estruturas básicas necessárias às atividades acadêmicas, fazendo com que alunos, professores e servidores precisem sair do campus. Muitos se perdem ao procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o RecomendaFGA visa o compartilhamento de locais e experiências em relação aos bens e serviços oferecidos, próximos ao campus, com o objetivo de facilitar as buscas e melhorar a vida acadêmica.
+A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasília e recebe alunos de vários lugares do Brasil. A faculdade ainda está em desenvolvimento, portanto faltam serviços e estruturas básicas necessárias às atividades acadêmicas, fazendo com que alunos, professores e servidores precisem sair do campus. Muitos se perdem ao procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento de locais e experiências em relação aos bens e serviços oferecidos, próximos ao campus, com o objetivo de facilitar as buscas e melhorar a vida acadêmica.
 
 ### 2.2 Descrição do Problema
 
@@ -77,7 +77,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 <table>
   <tr><th>Para</th><td>Membros da comunidade acadêmica da Faculdade do Gama - FGA</td></tr>
   <tr><th>Que</th><td>Necessitam se deslocar do campus em busca de bens e serviços </td></tr>
-  <tr><th>O</th><td>RecomendaFGA</td></tr>
+  <tr><th>O</th><td>Indica Ai</td></tr>
   <tr><th>Que</th><td>Compartilha locais e experiências </td></tr>
   <tr><th>Diferente do</th><td>Dos aplicativos Catraca livre, Yelp, Kekanto e What3Words(W3W)</td></tr>
   <tr><th>Nosso produto</th><td>Indica locais de acordo com a experiências de outros integrantes da comunidade acadêmica da FGA</td></tr>
@@ -250,7 +250,8 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 
 #### 3.6.1 Catraca Livre
 
- aplicativo ordena todos os passeios encontrados de acordo com a proximidade do usuário, indo do mais próximo para o mais distante. Também é possível aplicar filtros para datas de eventos que ainda vão ocorrer ou categoria dos eventos(Balada, dança, barato...).
+ aplicativo ordena todos os passeios encontrados de acordo com a proximidade do usuário, indo do mais próximo para o mais distante. Também é possível aplicar filtros para datas de eventos que ainda vão ocorrer ou categoria dos eventos ( Balada, dança, barato... ).
+
 ![Catraca_livre](https://raw.githubusercontent.com/fga-eps-mds/RecomendaFGA/DocVisao/docs/static/DocVis_images/8cgrxx4mrv4nji662b7c2dn5f.jpg)
 
 #### 3.6.2  What3Words(W3W)
@@ -274,7 +275,7 @@ Yelp é um app que pesquisa locais próximos do usuário, utilizando a localiza�
 
 ### 4.1 Perspectiva do Produto
 
-O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar se demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais ja cadastrados, relatar experiência e achar sua localização por mapa.
+O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais já cadastrados, relatar experiência e achar sua localização por mapa.
 
 ### 4.2 Resumo dos Recursos
 
@@ -295,18 +296,18 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RP1 | Autenticar Usuário | O Sistema deve solicitar o usuário e autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RP2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
-| RP3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
-| RP4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
-| RP5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Administrador seja tomada ). | Intermediária |
-| RP6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
-| RP7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
-| RP8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
-| RP9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
+| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e requisitar a API autenticar a sessão do mesmo, após a aprovação. | Alta |
+| RF2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
+| RF3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
+| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
+| RF5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Administrador seja tomada ). | Intermediária |
+| RF6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
+| RF7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
+| RF8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
+| RF9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
+
 ## 6. Restrições
 
-* O cadastro de usuários deve ser aprovado apenas com a utilização de uma matrícula válida pela Unb;
 
 * Somente os Admnistradores do Sistema poderam realizar a remoção de uma conta de usuário comum.
 
@@ -314,7 +315,6 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 * A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação apenas para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
 
-* A documentação do sistema será escrita em sua maioria na língua portuguesa, assim restringindo o entendimento da documentação só para pessoas com conhecimento na língua, salvo partes mais técnicas relacionadas diretamente ao código da aplicação.
 
 ## 7. Requisitos Não Funcionais
 
@@ -335,7 +335,7 @@ O RecomendaFGA irá ajudar todo o corpo acadêmico informando a localização, o
 
 ### 7.4 Requisito de Confiabilidade
 
-* Informações não serão alugadas nem vendidas a terceiros fora do RecomendaFGA.
+* Informações não serão alugadas nem vendidas a terceiros fora do Indica Ai.
 
 * Quando inseridos dados pessoais do usuário, o sistema deve mantê-los protegidos de quaisquer influências externas, por meio de acesso a uma API externa para autenticação do usuário
 
