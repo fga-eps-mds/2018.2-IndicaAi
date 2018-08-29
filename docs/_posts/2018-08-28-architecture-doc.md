@@ -20,7 +20,7 @@
 4. [Visão de Casos de Uso]()  
   4.1 [Realização de Casos de Uso]()
 5. [Visão Lógica]()              
-
+  5.1 [Diagrama de Classes]()
 6. [Visão de Processos]()
 
 7. [Visão de Implantação]()
@@ -65,7 +65,8 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   | Ator | Descrição |
   | --- | --- |
   | Usuário Comum | Usuário que somente pode utilizar as funcionalidades padrão do aplicativo|
-  | Usuário Administrador | Usuário com acesso integral ao Sistema com prioridades sobre o usuário comum |
+  | Usuário Administrador | Usuário com acesso integral ao Sistema com prioridades sobre o usuário comum |  
+
   ![use_case_diagram](../static/diagram-docs/use-case-diagram.jpg)
 ## 5:   Visão Lógica
   A visão lógica da aplicação é composta por dois pacotes principais: API e React Native.
