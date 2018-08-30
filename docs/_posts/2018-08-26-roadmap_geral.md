@@ -12,12 +12,3 @@ Este _roadmap_ é destinado a mapear os objetivos da equipe como um todo, os qua
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1OmGJhQZDaV5gHGcBysdrPLzJb-ZRW9kT&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1OmGJhQZDaV5gHGcBysdrPLzJb-ZRW9kT%26export%3Ddownload"></script>
 ---
-
-## Histórico de Revisão
-
-| Data | Responsável | Versão | Mudança realizada |
-| --- | --- | --- | --- |
-| **15/03/17** | Iasmin Mendes | 0.1  | Criação do Documento de Visão |
-
------
-
