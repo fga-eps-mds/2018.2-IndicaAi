@@ -62,7 +62,19 @@
   {
     "text": "Documentos",
     "url": "/#",
-    "icon": "fa-archive"
+    "icon": "fa-archive",
+    "urls": [
+        {
+          "text": "Documento de Visão",
+          "url": "/docs/2018/08/24/vision-doc.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Documento de Arquitetura",
+          "urls": "#",
+          "icon": "fa-angle-right"
+        }
+    ]
   },
   {
     "text": "Sprint Planning",
