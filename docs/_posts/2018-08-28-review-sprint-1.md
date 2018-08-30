@@ -11,9 +11,6 @@ categories: sprint-review
 <tr><th>Início</th><td>22/08/2018</td></tr>
 <tr><th>Término</th><td>28/08/2018</td></tr>
 <tr><th>Duração</th><td>7 dias</td></tr>
-<tr><th>Pontos Planejados</th><td></td></tr>
-<tr><th>Pontos Adicionados</th><td></td></tr>
-<tr><th>Pontos Concluídos</th><td></td></tr>
 </table>
 
 
@@ -24,7 +21,7 @@ categories: sprint-review
 <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th><th>Status</th></tr>
 <tr>
   <th rowspan='21' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/21">#21</a></td>
   <td>Definição dos Papéis</td>
   <td>0</td>
   <td>Iasmin Mendes <br> Renato Valério</td>
@@ -33,7 +30,7 @@ categories: sprint-review
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
   <td>Organizar GitHub Pages</td>
-  <td>3</td>
+  <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
@@ -63,12 +60,14 @@ categories: sprint-review
   <td>README do Projejto</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
+  <td>Concluído</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
   <td>Documento de "Como Contribuir"</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
+  <td>Concluído</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/10">#10</a></td>
@@ -82,6 +81,7 @@ categories: sprint-review
   <td>Definir métricas de produtividade</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
+  <td>Não Concluído</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
@@ -91,27 +91,23 @@ categories: sprint-review
   <td>Concluído</td>
 </tr>
 <tr>
-  <td></td>
-  <td>Elaborar definição de Produtividade</td>
-  <td></td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/26">#26</a></td>
   <td>Elaborar EAP</td>
-  <td></td>
+  <td>3</td>
   <td>Renato Valério</td>
+  <td>Não Concluído</td>
 </tr>
 <tr>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/24">#24</a></td>
   <td>Elaborar TAP</td>
-  <td></td>
+  <td>3</td>
   <td>Renato Valério</td>
+  <td>Não Concluído</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
   <td>Elaborar RoadMap do DevOps</td>
-  <td>2</td>
+  <td>1</td>
   <td>Renato Valério</td>
   <td>Concluído</td>
 </tr>
@@ -140,7 +136,7 @@ categories: sprint-review
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/3">#3</a><br>
       <a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/4">#4</a></td>
   <td>Treinameto de HTML e CSS</td>
-  <td>1</td>
+  <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
@@ -154,73 +150,95 @@ categories: sprint-review
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/8">#8</a></td>
   <td>Elaborar o Documento de Visão</td>
-  <td></td>
+  <td>3</td>
   <td>Time de Desenvolvimento</td>
+  <td>Concluído</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/9">#9</a></td>
   <td>Elaborar o Documento de Arquitetura</td>
-  <td></td>
+  <td>5</td>
   <td>Time de Desenvolvimento</td>
+  <td>Não Concluído</td>
 </tr>
 </table>
 
 #### Resumo
 <table>
 <tr>
-  <td>Total de Pontos Planejados</td>
-  <td></td>
+  <th>Total de Pontos Planejados</th>
+  <td>37</td>
 </tr>
 <tr>
-  <td>Total de Pontos Adicionados</td>
-  <td></td>
+  <th>Total de Pontos Planejados e Concluídos</th>
+  <td>23</td>
 </tr>
 <tr>
-  <td>Total de Pontos Planejados e Concluídos</td>
-  <td></td>
+  <th>Total de Pontos Adicionados</th>
+  <td>0</td>
 </tr>
 <tr>
-  <td>Total de Pontos Adicionados e Concluídos</td>
-  <td></td>
+  <th>Total de Pontos Adicionados e Concluídos</th>
+  <td>0</td>
 </tr>
 <tr>
   <th>Total de Pontos Concluídos</th>
-  <td></td>
+  <td>23</td>
 </tr>
 <tr>
   <th>Dívida para a próxima Sprint</th>
-  <td></td>
+  <td>14</td>
 </tr>
 </table>
 
 ----
 
-### Burndown
+### _Burndown_
+
+![Burndown - Sprint 1](/static/img/burndown/sprint_1.png)
+
+O _Burndown_ evidencia a entrega contínua de _issues_ durante o andamento da _sprint_. Ainda sim, nem todas as _issues_ foram entregues sendo os fatores que contribuíram para isso:
+
+* Esta foi a primeira _sprint_ do grupo e teve um processo conturbado, dividido entre conhecer a equipe, organizar o projeto e realizar os treinamentos necessários para a equipe de desenvolvimento poder começar a trabalhar;
+* O membro Renato Valério - da disciplina de EPS - entrou no meio da _sprint_, levando um tempo para se ambientar no processo da disciplina e da equipe, o que dificultou um pouco o andamento das atividades;
+* A equipe de desenvolvedores ficou sobrecarregada com os treinamentos que ocorreram durante a _sprint_ e acabaram iniciando tardiamente a construção dos Documentos de Visão e de Arquitetura que estavam previstos pra _sprint_.
+* Em algumas _issues_ relacionadas a documentação do projeto houve dificuldade de entendimento sobre o objetivo/confecção do documento e dificuldade de comunicação com a orientadora do projeto para esclarecê-las, o que acabou atrasando a entrega das mesmas.
 
 ---
 
-### Velocity
+### _Velocity_
+
+![Velocity - Sprint 1](/static/img/velocity/sprint_1.png)
+
+Nessa _sprint_ o _velocity_ da equipe foi de 23 pontos, sendo que o valor planejado para a entrega era de 37.
 
 ---
 
 ### Quadro de Conhecimentos
 
-![Quadro de Conhecimentos - Sprint 1 (Inicial)](/static/img/quadros_de_conhecimento/sprint_0.png)
+![Quadro de Conhecimentos - Sprint 1 (Final)](/static/img/quadros_de_conhecimento/sprint_1_melhorias.png)
 
 ---
 
 ### Retrospectiva da Sprint
 
 * **Pontos Positivos**
-  * Membros de MDS fazem perguntas
+  * Membros de MDS fazem perguntas;
+  * Participação do grupo inteiro;
+  * Grupo todo se ajudou;
+  * Iasmin(_Scrum Master_) é organizada.
 <br><br>
 * **Pontos Negativos**
-  * Renato ainda está um pouco perdido na matéria
+  * Montou o grupo tarde;
+  * Começamos a fazer os documentos de Visão e Arquitetura no final da _sprint_.
+
+### Melhorias
+
+* Começar a trabalhar logo no início da _sprint_ na confecção dos documentos.
 
 ---
 
-## Indicadores de Qualidade de Código
----
+<!-- ## Indicadores de Qualidade de Código -->
 
 ## Presença - Sprint Review e Sprint Retrospective
 
