@@ -7,12 +7,11 @@ categories: sprint-planning
 
 ## Informações Básicas da Sprint
 <table>
-<tr><th>Sprint</th><td>1</td></tr>
+<tr><th><i>Sprint</i></th><td>1</td></tr>
 <tr><th>Início</th><td>22/08/2018</td></tr>
 <tr><th>Término</th><td>28/08/2018</td></tr>
 <tr><th>Duração</th><td>7 dias</td></tr>
-<tr><th>Pontos Planejados</th><td></td></tr>
-<tr><th>Pontos Adicionados</th><td></td></tr>
+<tr><th>Pontos Planejados</th><td>37</td></tr>
 </table>
 
 ---
@@ -40,12 +39,12 @@ Weiller Fernandes Pereira<br>
 
 ---
 
-## Issues Planejadas
+## _Issues_ Planejadas
 
 <table>
 <tr><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
 <tr>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/21">#21</a></td>
   <td>Definição dos Papéis</td>
   <td>0</td>
   <td>Iasmin Mendes <br> Renato Valério</td>
@@ -53,7 +52,7 @@ Weiller Fernandes Pereira<br>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
   <td>Organizar GitHub Pages</td>
-  <td>3</td>
+  <td>2</td>
   <td>Iasmin Mendes</td>
 </tr>
 <tr>
@@ -105,27 +104,21 @@ Weiller Fernandes Pereira<br>
   <td>Renato Valério</td>
 </tr>
 <tr>
-  <td></td>
-  <td>Elaborar definição de Produtividade</td>
-  <td></td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/26">#26</a></td>
   <td>Elaborar EAP</td>
-  <td></td>
+  <td>3</td>
   <td>Renato Valério</td>
 </tr>
 <tr>
-  <td></td>
+  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/24">#24</a></td>
   <td>Elaborar TAP</td>
-  <td></td>
+  <td>3</td>
   <td>Renato Valério</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
   <td>Elaborar RoadMap do DevOps</td>
-  <td>2</td>
+  <td>1</td>
   <td>Renato Valério</td>
 </tr>
 <tr>
@@ -150,7 +143,7 @@ Weiller Fernandes Pereira<br>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/3">#3</a><br>
       <a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/4">#4</a></td>
   <td>Treinameto de HTML e CSS</td>
-  <td>1</td>
+  <td>2</td>
   <td>Iasmin Mendes</td>
 </tr>
 <tr>
@@ -162,15 +155,16 @@ Weiller Fernandes Pereira<br>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/8">#8</a></td>
   <td>Elaborar o Documento de Visão</td>
-  <td></td>
+  <td>3</td>
   <td>Time de Desenvolvimento</td>
 </tr>
 <tr>
   <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/9">#9</a></td>
   <td>Elaborar o Documento de Arquitetura</td>
-  <td></td>
+  <td>5</td>
   <td>Time de Desenvolvimento</td>
 </tr>
+<tr><th colspan='2'>Total de Pontos Planejados</th><td colspan='2'>37</td></tr>
 </table>
 
 ----
