@@ -111,6 +111,23 @@
     ]
   },
   {
+    "text": "Tutoriais",
+    "url": "#",
+    "icon": "fa-comments",
+    "urls": [
+        {
+          "text": "Como Contribuir?",
+          "url": "/guides/2018/08/28/contributing.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "",
+          "url": "",
+          "icon": ""
+        }
+    ]
+  },
+  {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
     "icon": "fa-github"
