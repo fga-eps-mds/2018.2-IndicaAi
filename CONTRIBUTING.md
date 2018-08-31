@@ -4,10 +4,10 @@
 
 Se você é um **usuário externo** ao time de desenvolvimento do RecomendaFGA e quer contribuir com a nossa proposta você deve fazer um **fork** do repositório e seguir os passos a frente. Para quem já faz parte do nosso time de desenvolvimento, basta seguir esses passos:
 
-1. Criar sua [_issue_](CONTRIBUTING.md#política-de-issues)
-1. Criar uma [_branch_](CONTRIBUTING.md#política-de-branchs)
-1. Fazer seus [_commits_](CONTRIBUTING.md#política-de-commits)
-1. Abrir um [_Pull Request_](CONTRIBUTING.md#política-de-pull-request)
+1. Criar sua [_issue_](#política-de-issues)
+1. Criar uma [_branch_](#política-de-branchs)
+1. Fazer seus [_commits_](#política-de-commits)
+1. Abrir um [_Pull Request_](#política-de-pull-requests)
 
 ---
 
@@ -23,21 +23,24 @@ Se você é um **usuário externo** ao time de desenvolvimento do RecomendaFGA e
 * Essas _issues_ devem ser acompanhadas de uma lista de critérios de aceitação que garantem que o ao implementar o objetivo será atendido, tanto em termos de funcionalidade, usabilidade, design e qualidade de código;
 * No nosso repositório nós já disponibilizamos um [templete básico](https://github.com/fga-eps-mds/RecomendaFGA/issues/new?template=us-template.md) para essas _issues_, com alguns critérios comuns a maioria das funcionalidades.
 * Para melhor identificar essas _issues_ o nome deve seguir o seguinte padrão:
+
     > US - Nome da Issue
 
 ### _Issues_ para histórias técnicas
 * Histórias técnicas devem ser descritas conforme o padrão definido na [metodologia](docs/_posts/2018-08-24-metodologia.md) desse projeto;
 * Para melhor identificar essas _issues_ o nome deve seguir o seguinte padrão:
+
     > TS - Nome da Issue
+
 ---
 
 ## Política de _Branchs_
 
-#### _master_
+#### Branch _master_
 
 A _branch master_ é a _branch_ estável do projeto, onde estará o código de produção. _Commits_ e _pushes_ para essa _branch_ estarão bloqueados. Somente serão aceitos _pull requests_ para essa _branch_ oriundos da _branch devel_.
 
-#### _devel_
+#### Branch _devel_
 
 A _branch devel_ será a _branch_ de desenvolvimento, na qual será unificado novas funcionalidades e correções no código visando gerar uma nova versão estável.
 
@@ -47,7 +50,7 @@ Os nomes das _branchs_ devem estar em **inglês** e serem objetivos e claros, es
 
 > `x-branch-name`
 
-Onde x refere-se ao número da _issue_
+Onde x refere-se ao número da _issue_.
 
 #### _Branchs_ de Documentação
 
@@ -63,9 +66,15 @@ _Branchs_ cujo foco seja inserir uma nova funcionalidade no sistema, em geral re
 
 ### _Branchs_ para correção de _bugs_
 
-_Branchs_ cujo foco seja inserir uma nova funcionalidade no sistema, em geral relacionadas as _user stories_ devem seguir o seguinte padrão:
+_Branchs_ cujo foco seja corrigir funcionalidade no sistema, em geral relacionadas as _user stories_ devem seguir o seguinte padrão:
 
 > `bugfix/x-branch-name`
+
+### _Branchs_ para refatoração de código
+
+_Branchs_ cujo foco seja refatorar uma funcionalidade no sistema, em geral relacionadas as _techical stories_ devem seguir o seguinte padrão:
+
+> `refactor/x-branch-name`
 
 ### _Branchs_ para problemas críticos em produção
 
