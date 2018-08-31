@@ -19,7 +19,8 @@
 
 4. [Visão de Casos de Uso]()  
   4.1 [Realização de Casos de Uso]()
-5. [Visão Lógica]()              
+5. [Visão Lógica]()  
+  5.1 [Diagrama de Classes]()
 
 6. [Visão de Processos]()
 
@@ -65,7 +66,7 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   A aplicação deve atender o usuário de forma eficiente tem como um dos requisitos responder a requisições rapidamente, bem como atender os requisitos não funcionais como facilidade de manutenção, através da estruturação organizadad do código.
 
   O Aplicativo será funcional em dispositivos celulares Android ou iOS os quais devem ter acesso a internet. Será utiizado Docker com Ruby on Rails para o desenvolvimento da API e a interface do usuário será feita com React Native.
-  
+
 ## 4: Visão de Casos de Uso
 
 ### 4.1 Realização de Casos de Uso
@@ -74,7 +75,8 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   | Usuário Comum | Usuário que somente pode utilizar as funcionalidades padrão do aplicativo|
   | Usuário Administrador | Usuário com acesso integral ao Sistema com prioridades sobre o usuário comum |
   | API Cadastro | API que irá fazer a validação de login do usuário |
-  | API Google Maps | API usada para fornecer a localização global do local cadastrado |
+  | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
+
   ![use_case_diagram](../static/diagram-docs/use-case-diagram.jpg)
 
 ### 4.2 Descrição dos Casos de Uso
@@ -101,7 +103,7 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 
 ### 5.1 Diagrama de Classes
 
-![class-diagram](../static/diagram-docs/class_doc.jpg)
+![class-diagram](../static/diagram-docs/class-diagram.jpg)
 
 ## 6:   Visão de Processo
 
