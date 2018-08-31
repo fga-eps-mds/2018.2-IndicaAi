@@ -23,20 +23,18 @@
 
 6. [Visão de Processos]()
 
-7. [Visão de Implantação]()
+7. [Visão de Implementação]()  
+    7.1 [Visão Geral]()  
+    7.2 [Camadas]()         
+    7.2.1 [Model]()  
+    7.2.2 [View]()  
+    7.2.3 [Controller]()             
 
-8. [Visão de Implementação]()  
-    8.1 [Visão Geral]()  
-    8.2 [Camadas]()         
-    8.2.1 [Model]()  
-    8.2.2 [View]()  
-    8.2.3 [Controller]()             
+8. [Tamanho e Desempenho]()
 
-9. [Tamanho e Desempenho]()
+9.  [Qualidade]()
 
-10.  [Qualidade]()
-
-11. [Referências]()
+10. [Referências]()
 
 ## 1:   Introdução
 
@@ -63,8 +61,11 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 ### 2.2 React Native
   O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
-## 3:  Requisitos e Restrições Arquiteturais
+## 3: Requisitos e Restrições Arquiteturais
+  A aplicação deve atender o usuário de forma eficiente tem como um dos requisitos responder a requisições rapidamente, bem como atender os requisitos não funcionais como facilidade de manutenção, através da estruturação organizadad do código.
 
+  O Aplicativo será funcional em dispositivos celulares Android ou iOS os quais devem ter acesso a internet. Será utiizado Docker com Ruby on Rails para o desenvolvimento da API e a interface do usuário será feita com React Native.
+  
 ## 4: Visão de Casos de Uso
 
 ### 4.1 Realização de Casos de Uso
@@ -105,33 +106,33 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 ## 6:   Visão de Processo
 
 
-## 8:    Visão de Implementação
+## 7:  Visão de Implementação
 
-### 8.1 Visão Geral
+### 7.1 Visão Geral
 
 A arquitetura utilizada na aplicação é o padrão arquitetural MVC, que é adotada framework Ruby on Rails.
 
-### 8.2 Camadas
+### 7.2 Camadas
 
-#### 8.2.1 Models
+#### 7.2.1 Models
 É nessa camada que se implementa as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dados (banco de dados) e como esses dados serão acessados , validados , relacionados e etc. Isto é, a model é responsável por conter todas as informações referentes à manipulação de dados.
 
-#### 8.2.2 Views
+#### 7.2.2 Views
 A camada view é a responsável por formatar as informações e apresentá-las ao usuário de forma organizada.
 
-#### 8.2.3 Controller
+#### 7.2.3 Controller
 É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
 
-## 9.  Tamanho e Desempenho
+## 8.  Tamanho e Desempenho
 
-Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade e tem como usuário principal o corpo acadêmico da FGA, não é previsto uma grande quantidade de acessos, tanto pela quantidade reduzida da comunidade acadêmica da FGA quanto pela baixa expectativa de adesão do aplicativo, portanto não haverá um grande volume de dados, não sendo necessário assim um alto nível de exigência com relação ao hardware para a hospedagem da aplicação. A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo. 
+Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade e tem como usuário principal o corpo acadêmico da FGA, não é previsto uma grande quantidade de acessos, tanto pela quantidade reduzida da comunidade acadêmica da FGA quanto pela baixa expectativa de adesão do aplicativo, portanto não haverá um grande volume de dados, não sendo necessário assim um alto nível de exigência com relação ao hardware para a hospedagem da aplicação. A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo.
 
 
-## 10. Qualidade
+## 9. Qualidade
 
 A arquitetura utilizada permite definir algumas metas de qualidade, como facilidade no acrescimo de novas funcionalidades, na manutenção e reaproveitamento de código. Por ser uma arquitetura bastante utilizada aumenta a confiabilidade no software e, em caso de problemas, o suporte é maior e de mais fácil acesso.
 
-## 11.  Referências
+## 10.  Referências
 
 ARTEFATO: DOCUMENTO DE ARQUITETURA DE SOFTWARE. FUNPAR. Disponível em: <http://www.funpar.ufpr.br:8080/rup/process/artifact/ar_sadoc.htm>. Acesso em: 26 Agosto 2018.
 
