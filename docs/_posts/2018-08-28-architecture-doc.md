@@ -104,7 +104,6 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
 
 ## 6:   Visão de Processo
 
-## 7:   Visão de Implantação
 
 ## 8:    Visão de Implementação
 
@@ -125,6 +124,7 @@ A camada view é a responsável por formatar as informações e apresentá-las a
 
 ## 9.  Tamanho e Desempenho
 
+Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade e tem como usuário principal o corpo acadêmico da FGA, não é previsto uma grande quantidade de acessos, tanto pela quantidade reduzida da comunidade acadêmica da FGA quanto pela baixa expectativa de adesão do aplicativo, portanto não haverá um grande volume de dados, não sendo necessário assim um alto nível de exigência com relação ao hardware para a hospedagem da aplicação. A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo. 
 
 
 ## 10. Qualidade
