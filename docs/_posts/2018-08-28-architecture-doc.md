@@ -1,7 +1,7 @@
 
 # Documento de Arquitetura
 
-## Histórico de Revisão
+## Sumário
 
 1. [Introdução](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#1---introdu%C3%A7%C3%A3o)       
   1.1 [Finalidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#11-finalidade)            
@@ -38,11 +38,11 @@
 
 ### 1.1 Finalidade
 
-Este documento tem como objetivo fornecer uma visão geral da arquitetura que será usada no desenvolvimento do projeto e permitir um maior entendimento do módulo RecomendaFGA, para o aplicativo FGA app, e de como ele irá se comportar e se comunicar com as outras aplicações que compõem o projeto. Ele deve mostrar de forma clara e objetiva as decisões arquiteturais que foram tomadas em relação ao projeto.
+Este documento tem como objetivo fornecer uma visão geral da arquitetura que será usada no desenvolvimento do projeto e permitir um maior entendimento do módulo IndicaAi, para o aplicativo FGA app, e de como ele irá se comportar e se comunicar com as outras aplicações que compõem o projeto. Ele deve mostrar de forma clara e objetiva as decisões arquiteturais que foram tomadas em relação ao projeto.
 
 ### 1.2 Escopo
 
-O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será responsável pela recomendação de lugares próximos a Faculda do Gama, como também avaliar esse lugares por meio de notas. O documento apresentará toda a parte arquitetural para a confecção do software Dr. Down, a fim de tornar claras as características arquiteturais do projeto.
+O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsável pela recomendação de lugares próximos a Faculda do Gama, como também avaliar esse lugares por meio de notas. O documento apresentará toda a parte arquitetural para a confecção do IndicaAi, a fim de tornar claras as características arquiteturais do projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 * MVC ( Model View Controller) : Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
@@ -88,8 +88,7 @@ O RecomendaFGA será um módulo do aplicativo FGA app, este módulo será respon
   | UC07: Ler comentários | Ler comentários realizados por outros usuários |
   | UC08: Responder comentários | Responder comentários realizados por outros usuários |
   | UC09: Avaliar comentário | Fazer avaliação do comentário através de um sistema de curtida |
-  | UC10: Denunciar usuário | Fazer denúncia de usuário que realizar qualquer publicação ou comentário indevido |
-  | UC11: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
+  | UC10: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
 
 ## 5:   Visão Lógica
   A visão lógica da aplicação é composta por dois pacotes principais: API e React Native.
@@ -139,5 +138,5 @@ TEMPLATE Documento de Arquitetura de Software. Disponível em:
 <https://github.com/DroidFoundry/DroidMetronome/wiki/TEMPLATE-Documento-de-Arquitetura-de-Software>. Acesso em: 26 Agosto 2018.
 
 Especificação suplementar. Disponível em:
-<https://github.com/Instagram-Requisitos-2018-1/Instagram/wiki/Especifica%C3%A7%C3%A3o-suplementar>. . Acesso em: 30 Agosto 2018.
+<https://github.com/Instagram-Requisitos-2018-1/Instagram/wiki/Especifica%C3%A7%C3%A3o-suplementar>. Acesso em: 30 Agosto 2018.
 
