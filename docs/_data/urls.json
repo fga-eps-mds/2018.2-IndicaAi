@@ -13,17 +13,17 @@
   {
     "text": "Abertura do Projeto",
     "url": "#",
-    "icon": "fa-pencil",
+    "icon": "fa-clipboard",
     "urls": [
         {
-          "text": "TAP",
-          "url": "/docs/2018/08/24/metodologia.html",
-          "icon": "fa-file"
+          "text": "Termo de Abertura",
+          "url": "/docs/2018/08/27/tap.html",
+          "icon": "fa-angle-right"
         },
         {
           "text": "EAP",
-          "url": "/docs/2018/08/26/scrum-papers.html",
-          "icon": "fa-user"
+          "url": "/docs/2018/08/27/eap.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -62,17 +62,17 @@
   {
     "text": "Metodologia",
     "url": "#",
-    "icon": "fa-pencil",
+    "icon": "fa-pencil-alt",
     "urls": [
         {
           "text": "Plano Metodológico",
           "url": "/docs/2018/08/24/metodologia.html",
-          "icon": "fa-file"
+          "icon": "fa-angle-right"
         },
         {
           "text": "Papéis Definidos",
           "url": "/docs/2018/08/26/scrum-papers.html",
-          "icon": "fa-user"
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -147,11 +147,11 @@
   {
     "text": "Licença",
     "url": "/docs/2018/08/28/license.html",
-    "icon": "fa-shield"
+    "icon": "fa-shield-alt"
   },
   {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
-    "icon": "fa-github"
+    "icon": "fa-code-branch"
   }
 ]
