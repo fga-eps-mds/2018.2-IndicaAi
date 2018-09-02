@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="content well">
 <div id="post-content">
-    <hr />
     {% for category in site.categories %}
         {% capture category_slug %}{{ category | first }}{% endcapture %}
         {% for c_slug in category_slug %}
