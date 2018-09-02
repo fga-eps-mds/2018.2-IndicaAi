@@ -1,10 +1,9 @@
-# RecomendaFGA
-
-O RecomendaFGA é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter acesso por meio do FGA App. A API é desenvolvida na Universidade de Brasília, por alunos do curso de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e Engenharia de Produto de Software.
-
-[Documentação do Projeto](documentacao)
-
-## Começando com o RecomendaFGA
+---
+layout: post
+title:  "Configurando o Ambiente"
+date:   2018-08-28 13:50:39
+categories: tutoriais
+---
 
 Nós trabalhamos com _containers_ para construção dos ambientes. Para isso é necessário que você tenha o `docker` e o `docker-compose` instalados na sua máquina. Acesse a [Documentação do Docker](https://docs.docker.com/) e veja como instalar esses pacotes no seu computador.
 
@@ -20,14 +19,3 @@ Nós trabalhamos com _containers_ para construção dos ambientes. Para isso é 
 
 Se for necessário acessar o terminal do _container_ que roda a aplicação, o seguinte comando pode ser utilizado:
 * `docker exec -it recomendafga_web_1 bash`
-
-## Rodando a aplicação com frontend do FGA App
-
-## Como contribuir
-
-Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](como-contribuir).
-
-## Conduta de Código
-
-[como-contribuir](CONTRIBUTING.md)
-[documentacao][https://fga-eps-mds.github.io/RecomendaFGA/]
