@@ -11,19 +11,19 @@
     "icon": "fa-users"
   },
   {
-    "text": "Metodologia",
+    "text": "Abertura do Projeto",
     "url": "#",
-    "icon": "fa-pencil",
+    "icon": "fa-clipboard",
     "urls": [
         {
-          "text": "Plano Metodológico",
-          "url": "/docs/2018/08/24/metodologia.html",
-          "icon": "fa-file"
+          "text": "Termo de Abertura",
+          "url": "/docs/2018/08/27/tap.html",
+          "icon": "fa-angle-right"
         },
         {
-          "text": "Papéis Definidos",
-          "url": "/docs/2018/08/26/scrum-papers.html",
-          "icon": "fa-user"
+          "text": "EAP",
+          "url": "/docs/2018/08/27/eap.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -60,19 +60,99 @@
     ]
   },
   {
+    "text": "Metodologia",
+    "url": "#",
+    "icon": "fa-pencil-alt",
+    "urls": [
+        {
+          "text": "Plano Metodológico",
+          "url": "/docs/2018/08/24/metodologia.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Papéis Definidos",
+          "url": "/docs/2018/08/26/scrum-papers.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
     "text": "Documentos",
     "url": "/#",
-    "icon": "fa-archive"
+    "icon": "fa-archive",
+    "urls": [
+        {
+          "text": "Documento de Visão",
+          "url": "/docs/2018/08/24/vision-doc.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Documento de Arquitetura",
+          "urls": "#",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
+    "text": "Sprint Planning",
+    "url": "#",
+    "icon": "fa-paper-plane",
+    "urls": [
+        {
+          "text": "Sprint 01",
+          "url": "/sprint-planning/2018/08/27/planning-sprint-1.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 02",
+          "url": "/sprint-planning/2018/08/27/planning-sprint-2.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
+    "text": "Sprint Review",
+    "url": "#",
+    "icon": "fa-comments",
+    "urls": [
+        {
+          "text": "Sprint 01",
+          "url": "/sprint-review/2018/08/27/review-sprint-1.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 02",
+          "url": "/sprint-result/2018/08/27/results-sprint-2.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
+    "text": "Tutoriais",
+    "url": "#",
+    "icon": "fa-book",
+    "urls": [
+        {
+          "text": "Como Contribuir?",
+          "url": "/tutoriais/2018/08/28/contributing.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "",
+          "url": "",
+          "icon": ""
+        }
+    ]
+  },
+  {
+    "text": "Licença",
+    "url": "/docs/2018/08/28/license.html",
+    "icon": "fa-shield-alt"
   },
   {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
-    "icon": "fa-github"
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
+    "target": "_blank",
+    "icon": "fa-code-branch"
   }
 ]

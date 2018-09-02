@@ -1,4 +1,9 @@
-# Guia de Contribuição
+---
+layout: post
+title:  "Guia de Contribuição"
+date:   2018-08-28 13:50:39
+categories: tutoriais
+---
 
 ## Como contribuir?
 

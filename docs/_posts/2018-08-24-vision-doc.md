@@ -5,14 +5,6 @@ date:   2018-08-24 13:50:39
 categories: docs
 ---
 
-## Histórico de Revisão
-
-| Data       | Responsável          | Versão   | Mudança realizada                                 |  
-| ---------- | -------------------- |:--------:| ------------------------------------------------- |
-|**15/03/17**|  Iasmin Mendes     | 0.1  | Criação do Documento de Visão                         |   
-
------
-
 [1. Introdução](#1-introdução)   
 [2. Posicionamento](#2-posicionamento)   
 [3. Descrições dos Envolvidos e dos Usuários](#3-descrições-dos-envolvidos-e-dos-usuários)   
