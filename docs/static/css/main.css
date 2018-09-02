@@ -307,3 +307,7 @@ ul:not(.panel) {
     padding-left: 20px;
 }
 
+#js-search__input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
