@@ -134,7 +134,7 @@
     "urls": [
         {
           "text": "Como Contribuir?",
-          "url": "/guides/2018/08/28/contributing.html",
+          "url": "/tutoriais/2018/08/28/contributing.html",
           "icon": "fa-angle-right"
         },
         {
@@ -152,6 +152,7 @@
   {
     "text": "Github",
     "url": "https://github.com/fga-eps-mds/RecomendaFGA",
+    "target": "_blank",
     "icon": "fa-code-branch"
   }
 ]
