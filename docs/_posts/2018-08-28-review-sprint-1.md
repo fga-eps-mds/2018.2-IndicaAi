@@ -21,141 +21,141 @@ categories: sprint-review
 <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th><th>Status</th></tr>
 <tr>
   <th rowspan='21' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/21">#21</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/21">#21</a></td>
   <td>Definição dos Papéis</td>
   <td>0</td>
   <td>Iasmin Mendes <br> Renato Valério</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
   <td>Organizar GitHub Pages</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
   <td>Elaborar o RoadMap do Scrum Master</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
   <td>Elaborar o RoadMap Geral</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
   <td>Definir a Licença</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
   <td>README do Projejto</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/11">#11</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
   <td>Documento de "Como Contribuir"</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/10">#10</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/10">#10</a></td>
   <td>Definir a metodologia</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/23">#23</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/23">#23</a></td>
   <td>Definir métricas de produtividade</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Não Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
   <td>Elaborar RoadMap do PO</td>
   <td>2</td>
   <td>Renato Valério</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/26">#26</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/26">#26</a></td>
   <td>Elaborar EAP</td>
   <td>3</td>
   <td>Renato Valério</td>
   <td>Não Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/24">#24</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/24">#24</a></td>
   <td>Elaborar TAP</td>
   <td>3</td>
   <td>Renato Valério</td>
   <td>Não Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
   <td>Elaborar RoadMap do DevOps</td>
   <td>1</td>
   <td>Renato Valério</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/15">#15</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
   <td>Elaborar RoadMap do Arquiteto</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/16">#16</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/16">#16</a></td>
   <td>Treinameto de Artefatos</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/2">#2</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/2">#2</a></td>
   <td>Treinameto de Git</td>
   <td>1</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/3">#3</a><br>
-      <a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/4">#4</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/3">#3</a><br>
+      <a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/4">#4</a></td>
   <td>Treinameto de HTML e CSS</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/5">#5</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/5">#5</a></td>
   <td>Treinameto de JS</td>
   <td>2</td>
   <td>Iasmin Mendes</td>
   <td>Não Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/8">#8</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/8">#8</a></td>
   <td>Elaborar o Documento de Visão</td>
   <td>3</td>
   <td>Time de Desenvolvimento</td>
   <td>Concluído</td>
 </tr>
 <tr>
-  <td><a href="https://github.com/fga-eps-mds/RecomendaFGA/issues/9">#9</a></td>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/9">#9</a></td>
   <td>Elaborar o Documento de Arquitetura</td>
   <td>5</td>
   <td>Time de Desenvolvimento</td>

@@ -174,4 +174,4 @@ O Kanban será aplicado visando monitorar o fluxo de trabalho da equipe.
 * Ao manusear o código, sempre que houver dificuldade para compreensão do mesmo a equipe deve se organizar para refatorá-lo.
 * A refatoração deve ser realizada antes de fazer qualquer alteração na funcionalidade, visando garantir a integridade do código.
 
-[zenhub]: https://github.com/fga-eps-mds/RecomendaFGA/issues#zenhub
+[zenhub]: https://github.com/fga-eps-mds/2018.2-IndicaAi/issues#zenhub

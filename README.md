@@ -1,10 +1,10 @@
-# RecomendaFGA
+# IndicaAi
 
-O RecomendaFGA é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter acesso por meio do FGA App. A API é desenvolvida na Universidade de Brasília, por alunos do curso de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e Engenharia de Produto de Software.
+O IndicaAi é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter acesso por meio do FGA App. A API é desenvolvida na Universidade de Brasília, por alunos do curso de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e Engenharia de Produto de Software.
 
 [Documentação do Projeto](documentacao)
 
-## Começando com o RecomendaFGA
+## Começando com o IndicaAi
 
 Nós trabalhamos com _containers_ para construção dos ambientes. Para isso é necessário que você tenha o `docker` e o `docker-compose` instalados na sua máquina. Acesse a [Documentação do Docker](https://docs.docker.com/) e veja como instalar esses pacotes no seu computador.
 
@@ -30,4 +30,4 @@ Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](como
 ## Conduta de Código
 
 [como-contribuir](CONTRIBUTING.md)
-[documentacao][https://fga-eps-mds.github.io/RecomendaFGA/]
+[documentacao][https://fga-eps-mds.github.io/2018.2-IndicaAi/]

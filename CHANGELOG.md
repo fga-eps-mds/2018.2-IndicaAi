@@ -11,6 +11,6 @@ Todas as alterações notáveis do projeto estão registradas neste documento. O
   - Estrutura básica da API
   - Ambiente padrão de desenvolvimento com Docker
 
-  [Unreleased]: https://github.com/fga-eps-mds/RecomendaFGA/compare/master...devel
-  [Versão 0.0.1]: https://github.com/fga-eps-mds/RecomendaFGA/compare/master...release/stable-0.0.1
+  [Unreleased]: https://github.com/fga-eps-mds/IndicaAi/compare/master...devel
+  [Versão 0.0.1]: https://github.com/fga-eps-mds/IndicaAi/compare/master...release/stable-0.0.1
 

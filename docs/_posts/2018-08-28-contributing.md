@@ -7,7 +7,7 @@ categories: tutoriais
 
 ## Como contribuir?
 
-Se você é um **usuário externo** ao time de desenvolvimento do RecomendaFGA e quer contribuir com a nossa proposta você deve fazer um **fork** do repositório e seguir os passos a frente. Para quem já faz parte do nosso time de desenvolvimento, basta seguir esses passos:
+Se você é um **usuário externo** ao time de desenvolvimento do IndicaAi e quer contribuir com a nossa proposta você deve fazer um **fork** do repositório e seguir os passos a frente. Para quem já faz parte do nosso time de desenvolvimento, basta seguir esses passos:
 
 1. Criar sua [_issue_](#política-de-issues)
 1. Criar uma [_branch_](#política-de-branchs)
@@ -26,7 +26,7 @@ Se você é um **usuário externo** ao time de desenvolvimento do RecomendaFGA e
 
 * Novas funcionalidades devem ser descritas como _user stories_, conforme a [metodologia](docs/_posts/2018-08-24-metodologia.md) aplicada no nosso projeto;
 * Essas _issues_ devem ser acompanhadas de uma lista de critérios de aceitação que garantem que o ao implementar o objetivo será atendido, tanto em termos de funcionalidade, usabilidade, design e qualidade de código;
-* No nosso repositório nós já disponibilizamos um [templete básico](https://github.com/fga-eps-mds/RecomendaFGA/issues/new?template=us-template.md) para essas _issues_, com alguns critérios comuns a maioria das funcionalidades.
+* No nosso repositório nós já disponibilizamos um [templete básico](https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/new?template=us-template.md) para essas _issues_, com alguns critérios comuns a maioria das funcionalidades.
 * Para melhor identificar essas _issues_ o nome deve seguir o seguinte padrão:
 
     > US - Nome da Issue
