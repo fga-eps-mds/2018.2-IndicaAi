@@ -171,7 +171,7 @@ Weiller Fernandes Pereira<br>
 
 ## Quadro de Conhecimentos
 
-![Quadro de Conhecimentos - Sprint 1 (Inicial)](/static/img/quadros_de_conhecimento/sprint_0.png)
+![Quadro de Conhecimentos - Sprint 1 (Inicial)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_0.png)
 
 ---
 

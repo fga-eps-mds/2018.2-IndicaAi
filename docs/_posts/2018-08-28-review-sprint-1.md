@@ -195,7 +195,7 @@ categories: sprint-review
 
 ### _Burndown_
 
-![Burndown - Sprint 1](/static/img/burndown/sprint_1.png)
+![Burndown - Sprint 1]({{site.baseurl}}/static/img/burndown/sprint_1.png)
 
 O _Burndown_ evidencia a entrega contínua de _issues_ durante o andamento da _sprint_. Ainda sim, nem todas as _issues_ foram entregues sendo os fatores que contribuíram para isso:
 
@@ -208,7 +208,7 @@ O _Burndown_ evidencia a entrega contínua de _issues_ durante o andamento da _s
 
 ### _Velocity_
 
-![Velocity - Sprint 1](/static/img/velocity/sprint_1.png)
+![Velocity - Sprint 1]({{site.baseurl}}/static/img/velocity/sprint_1.png)
 
 Nessa _sprint_ o _velocity_ da equipe foi de 23 pontos, sendo que o valor planejado para a entrega era de 37.
 
@@ -216,7 +216,7 @@ Nessa _sprint_ o _velocity_ da equipe foi de 23 pontos, sendo que o valor planej
 
 ### Quadro de Conhecimentos
 
-![Quadro de Conhecimentos - Sprint 1 (Final)](/static/img/quadros_de_conhecimento/sprint_1_melhorias.png)
+![Quadro de Conhecimentos - Sprint 1 (Final)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_1_melhorias.png)
 
 ---
 
