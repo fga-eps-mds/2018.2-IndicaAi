@@ -1,15 +1,15 @@
-title: RecomendaFGA
+title: IndicaAi
 description: Compartilhe com a gente os locais que você gosta de ir no tempo livre da FGA.
-author: Recomenda FGA
+author: Indica Ai
 logo: /assets/logo.png
-github: https://github.com/fga-eps-mds/RecomendaFGA
+github: https://github.com/fga-eps-mds/2018.2-IndicaAi
 about: 2018 EPS / MDS
 
-# baseurl: ""
-baseurl: "https://fga-eps-mds.github.io/RecomendaFGA/"
-url: "https://fga-eps-mds.github.io/RecomendaFGA/"
+baseurl: ""
+# baseurl: "https://fga-eps-mds.github.io/2018.2-IndicaAi/"
+url: "https://fga-eps-mds.github.io/2018.2-IndicaAi/"
 
-allowsearch: false
+allowsearch: true
 
 # disqus_shortname: aboutashu
 # google_analytics: UA-72862926-1

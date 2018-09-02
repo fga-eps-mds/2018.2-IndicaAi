@@ -220,3 +220,94 @@ footer {
     position: absolute;
     right: 12px;
 }
+
+table, th, td {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+table {
+    margin: 30px auto;
+}
+
+body .container ul.well {
+    padding: 0;
+}
+
+body .container ul.well li {
+    margin: 5px 0;
+    padding: 0;
+    padding-left: 15px;
+}
+
+ul.panel {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: max-height 0.5s ease;
+}
+
+body .container ul.well li.accordion {
+    margin-bottom: 0px;
+}
+
+body .container ul.well li.li-panel {
+    margin: 0px;
+}
+
+body .container ul.well li.accordion.active a {
+    background-color: #007D72;
+}
+
+body .container ul.well ul.panel li {
+    background-color: #00b3a1;
+    margin: 0;
+    padding: 2px;
+}
+
+body .container ul.well ul.panel li a {
+    padding: 10px 0px 10px 20px;
+}
+
+body .container ul.well ul.panel li a i {
+    line-height: normal;
+    height: auto;
+    width: 40px;
+}
+
+body .container ul.well ul.panel li a:hover {
+    background-color: #00b3a1;
+    color: #007D72;
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        width: 290px;
+    }
+}
+
+table.frequency td:last-child {
+    text-align: center;
+    color: #009688;
+}
+
+table.frequency td:last-child i.fa-times {
+    color: #333;
+}
+
+* {
+    text-align: justify;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul:not(.panel) {
+    padding-left: 20px;
+}
+
+#js-search__input::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}

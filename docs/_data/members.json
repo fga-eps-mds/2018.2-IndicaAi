@@ -1,43 +1,58 @@
 [
-	{
-		"name": "Iasmin Santos Mendes",
-		"image": "placeholder.jpg",
-		"url": "#",
-		"date": "14/0041940",
-		"tags": ["EPS"]
-	},
-	{
-		"name": "João Lucas",
-		"image": "joao.jpg",
-		"url": "https://github.com/zarbielli",
-		"date": "17/0146251",
-		"tags": ["MDS"]
-	},
-	{
-		"name": "Gabriel Davi",
-		"image": "placeholder.jpg",
-		"url": "https://github.com/GabrielDVpereira",
-		"date": "17/0010341",
-		"tags": ["MDS"]
-	},
-	{
-		"name": "Heron",
-		"image": "placeholder.jpg",
-		"date": "Oct 2016",
-		"tags": ["Android","nodejs"]
-	},
-	{
-		"name": "Lucas Maciel",
-		"image": "placeholder.jpg",
-		"url": "https://github.com/Ridersk",
-		"date": "17/0070735",
-		"tags": ["MDS"]
-	},
-        {
-                "name": "Weiller Fernandes",
-                "image": "placeholder.jpg",
-                "url": "https://github.com/WeillerFernandes",
-                "date": "13/0137995",
-                "tags": ["MDS"]
-        }
+  {
+    "name": "Iasmin Mendes",
+    "image": "desconhecido.jpg",
+    "url": "https://github.com/mendesiasmin/",
+    "date": "14/0041940",
+    "tags": ["EPS"]
+  },
+  {
+    "name": "Renato Valério",
+    "image": "renato.jpeg",
+    "url": "https://github.com/Renatovga2602/",
+    "date": "14/0041940",
+    "tags": ["EPS"]
+  },
+  {
+    "name": "João Lucas",
+    "image": "joao.jpeg",
+    "url": "https://github.com/zarbielli",
+    "date": "17/0146251",
+    "tags": ["MDS"]
+  },
+  {
+    "name": "Gabriel Davi",
+    "image": "desconhecido.jpg",
+    "url": "https://github.com/GabrielDVpereira",
+    "date": "17/0010341",
+    "tags": ["MDS"]
+  },
+  {
+    "name": "Heron Sousa",
+    "image": "desconhecido.jpg",
+    "url": "https://github.com/heronsousa/",
+    "date": "16/0124484",
+    "tags": ["MDS"]
+  },
+  {
+    "name": "Lucas Maciel",
+    "image": "lucas.jpeg",
+    "url": "https://github.com/Ridersk",
+    "date": "17/0070735",
+    "tags": ["MDS"]
+  },
+  {
+    "name": "Weiller Fernandes",
+    "image": "desconhecido.jpg",
+    "url": "https://github.com/WeillerFernandes",
+    "date": "13/0137995",
+    "tags": ["MDS"]
+  },
+  {
+    "name": "Matheus Gomes",
+    "image": "matheus.jpeg",
+    "url": "https://github.com/matheusgomesf",
+    "date": "14/0155376",
+    "tags": ["MDS"]
+  }
 ]
