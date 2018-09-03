@@ -42,7 +42,7 @@ Este documento tem como objetivo fornecer uma visão geral da arquitetura que se
 
 ### 1.2 Escopo
 
-O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsável pela recomendação de lugares próximos a Faculda do Gama, como também avaliar esse lugares por meio de notas. O documento apresentará toda a parte arquitetural para a confecção do IndicaAi, a fim de tornar claras as características arquiteturais do projeto.
+O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsável pela recomendação de lugares próximos a Faculda do Gama, como também avaliar esses lugares por meio de notas. O documento apresentará toda a parte arquitetural para a confecção do IndicaAi, a fim de tornar claras as características arquiteturais do projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 * MVC ( Model View Controller) : Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
@@ -51,18 +51,24 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 
 ## 2: Representação Arquitetural
-  O padrão de arquitetura será o MVC que separa a interação entre software e usuário. Existira uma integração entre duas tecnologias, Ruby on Rails 5.2.0 e React Native 2.0.1
+  O padrão de arquitetura será o MVC que separa a interação entre software e usuário. Existira uma integração entre duas tecnologias, Ruby on Rails 5.2.1 e React Native 2.0.1, consistindo em um modelo cliente-servidor, no qual há uma API criada em Ruby on Rails, responsável por fornecer dados ao frontend criado com React Native. A interface do usuário (frontend), será compartilhada com várias API's funcionando sobre o modelo arquitetural de microserviços.
 
-### 2.1 Ruby on Rails 5.2.0
+### 2.1 Ruby on Rails 5.2.1
   Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
 
 ### 2.2 React Native
-  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. O camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
+
+  O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
 ## 3: Requisitos e Restrições Arquiteturais
-  A aplicação deve atender o usuário de forma eficiente tem como um dos requisitos responder a requisições rapidamente, bem como atender os requisitos não funcionais como facilidade de manutenção, através da estruturação organizadad do código.
 
-  O Aplicativo será funcional em dispositivos celulares Android ou iOS os quais devem ter acesso a internet. Será utiizado Docker com Ruby on Rails para o desenvolvimento da API e a interface do usuário será feita com React Native.
+   * A aplicação deve ser contruída sobre a arquitetura de microserviços, na qual o frontend será desenvolvido em React Native.
+
+   * O Aplicativo será funcional em dispositivos celulares Android ou iOS os quais devem ter acesso a internet.
+
+   * O frontend deve ser desenvolvido para consumir diferentes serviços de APIs diferentes, portanto um modulo não pode interferir no outro.
+
+   * O serviço de autenticação de usuários será fornecido por uma API externa.
 
 ## 4: Visão de Casos de Uso
 
@@ -95,7 +101,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
   A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe tambem uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
 
-  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim um ambientes mais compativeis.
+  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
 
 ### 5.1 Diagrama de Classes
 
@@ -139,4 +145,3 @@ TEMPLATE Documento de Arquitetura de Software. Disponível em:
 
 Especificação suplementar. Disponível em:
 <https://github.com/Instagram-Requisitos-2018-1/Instagram/wiki/Especifica%C3%A7%C3%A3o-suplementar>. Acesso em: 30 Agosto 2018.
-
