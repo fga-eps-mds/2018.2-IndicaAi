@@ -90,6 +90,11 @@
           "text": "Documento de Arquitetura",
           "urls": "#",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Plano de Qualidade",
+          "urls": "/docs/2018/08/28/plano-de-qualidade.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
