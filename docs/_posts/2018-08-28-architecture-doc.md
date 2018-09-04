@@ -103,11 +103,15 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
   A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
-  A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe também uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
+  ![pack-diagram](../static/diagram-docs/pack-diagram.png)
 
-  React Native assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
+  * Banco de dados -  Será utilizado o banco de dados PostgreSQL, que é objeto relacional. O banco será responsável por guardar as tabelas de dados criadas pelas *Models* da API.
 
+  * Model - No Rails a model é responsável por implementar as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dado, isso é feito pela herança da classe Active Record a qual faz ORM (Object Relational Mapping), abstraindo assim a necessidade de se conhecer a linguagem SQL pois a Active Record faz todo o trabalho de persistência. O recurso de ORM da *Model* do Rails está em conformidade com o banco de dados PostgreSQL que é objeto relacional.
 
+  * Controller - Responsável pelo fluxo do usuário na aplicação ela controla as requisições feitas pelo Frontend. Controllers sarão responsáveis também pela serialização dos dados, pois a comunicação Frontend/Backend será feita por métodos HTTP (GET, PUT, POST, DELETE entre outros) e JSON (JavaScript Obejct Notation), o que está em conformidade com o Frontend em React Native que é um framework de JavaScript que interpreta JSON e faz requisições HTTP.  
+
+  * React Native assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
 
 
 ### 5.1 Diagrama de Classes
@@ -148,7 +152,6 @@ O React Native está em conformidade com os requisitos por permitir a arquitetur
 
  Por fim a escolha do conjunto Rails API + React Native + microserviços, é justificada pela capacidade de acrescimo de novas funcionalidades, manutenção e reaproveitamento de código, os quais juntos aumentam significativamente a qualidade do sistema.
 
-Portanto
 
 ## 9.  Referências
 
