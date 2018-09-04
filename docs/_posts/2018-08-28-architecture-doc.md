@@ -76,8 +76,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | Ator | Descrição |
   | --- | --- |
   | Usuário Comum | Usuário que somente pode utilizar as funcionalidades padrão do aplicativo|
-  | Usuário Administrador | Usuário com acesso integral ao Sistema com prioridades sobre o usuário comum |
-  | API Cadastro | API que irá fazer a validação de login do usuário |
+  | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
   ![use_case_diagram](../static/diagram-docs/use-case-diagram.jpg)
@@ -85,16 +84,20 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 ### 4.2 Descrição dos Casos de Uso
   | Caso de Uso | Descrição |
   | --- | --- |
-  | UC01: Compartilhar local | Compartilhamento de local baseado na posição do usuário |
-  | UC02: Buscar locais | Fazer busca dos locais já cadastrados no sistema |
-  | UC03: Visualizar local | Visualizar local e todas as informações referentes a ele |
-  | UC04: Favoritar local | Salvar local em uma lista de favoritos |
-  | UC05: Avaliar local | Fazer avaliação do local através de um sistema de notas |
-  | UC06: Inserir comentários | Adicionar um novo comentário em determinada publicação |
-  | UC07: Ler comentários | Ler comentários realizados por outros usuários |
-  | UC08: Responder comentários | Responder comentários realizados por outros usuários |
-  | UC09: Avaliar comentário | Fazer avaliação do comentário através de um sistema de curtida |
-  | UC10: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
+  | UC01: Cadastrar local | Cadastramento de um local pelo usuário |
+  | UC02: Gerar localização | Gera a localização no mapa de acordo com a posição do usuário ou por um ponto de escolha|
+  | UC03: Gerar rota | Cria uma rota baseada na posição de partida do usuário e a posição de destino do local |
+  | UC04: Solicitar Rota | Solicitação para gerar uma rota entre o usuário e o destino |
+  | UC05: Buscar locais | Fazer busca dos locais já cadastrados no sistema |
+  | UC06: Visualizar local | Visualizar local e todas as informações referentes a ele |
+  | UC07: Favoritar local | Salvar local em uma lista de favoritos |
+  | UC08: Avaliar local | Fazer avaliação do local através de um sistema de notas |
+  | UC09: Inserir comentários | Adicionar um novo comentário em determinada publicação |
+  | UC10: Ler comentários | Ler comentários realizados por outros usuários |
+  | UC11: Responder comentários | Responder comentários realizados por outros usuários |
+  | UC12: Avaliar comentário | Fazer avaliação do comentário através de um sistema de curtidas |
+  | UC13: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
+
 
 ## 5:   Visão Lógica
 
