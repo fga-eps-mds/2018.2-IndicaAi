@@ -145,6 +145,11 @@
     ]
   },
   {
+    "text": "Código de Conduta",
+    "url": "/docs/2018/09/03/code-of-conduct.html",
+    "icon": "fas fa-book-reader"
+  },
+  {
     "text": "Licença",
     "url": "/docs/2018/08/28/license.html",
     "icon": "fa-shield-alt"
