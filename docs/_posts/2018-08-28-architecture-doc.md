@@ -130,7 +130,9 @@ A camada view é a responsável por formatar as informações e apresentá-las a
 
 ## 7.  Tamanho e Desempenho
 
-Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade e tem como usuário principal o corpo acadêmico da FGA, não é previsto uma grande quantidade de acessos, tanto pela quantidade reduzida da comunidade acadêmica da FGA quanto pela baixa expectativa de adesão do aplicativo, portanto não haverá um grande volume de dados, não sendo necessário assim um alto nível de exigência com relação ao hardware para a hospedagem da aplicação. A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo.
+Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade tem portanto como usuário principal o corpo acadêmico da FGA. É esperado que o software seja utilizado por toda a comunidade academica por apresentar vantagens a todos que fazem parte da mesma, com isso é previsto um número próximo a 2300 usuários, o que implica que caso seja utilizado um serviço de Cloud Server, plataformas mais simples como Heroku poderam ser usadas durante o tempo de adesão do aplicativo, porem quando em pleno funcionamento uma plataforma mais robusta como AWS (Amazon Web Services) afim de atender melhor o número de acessos simultâneos.
+
+A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo.
 
 
 ## 8. Qualidade
@@ -157,3 +159,6 @@ TEMPLATE Documento de Arquitetura de Software. Disponível em:
 
 Especificação suplementar. Disponível em:
 <https://github.com/Instagram-Requisitos-2018-1/Instagram/wiki/Especifica%C3%A7%C3%A3o-suplementar>. Acesso em: 30 Agosto 2018.
+
+Anuário Estatístico da UnB 2017. Disponível em:
+<http://www.dpo.unb.br/index.php?option=com_phocadownload&view=category&download=167:unbemnureros-12&id=57:folder-unb-em-numeros>. Acesso em: 3 Setembro 2018.
