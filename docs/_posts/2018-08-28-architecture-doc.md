@@ -97,11 +97,15 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | UC10: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
 
 ## 5:   Visão Lógica
-  A visão lógica da aplicação é composta por dois pacotes principais: API e React Native.
 
-  A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe tambem uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
+  A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
-  O React Native é um módulo do React que por sua vez é uma biblioteca do JavaScript. Ele assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
+  A API é responsável por lidar com comunicação e acesso ao banco de dados, de forma geral é responsável por automatizar o acesso e modificações necessárias aos dados. Na API existe também uma camada *Controller* que é responsável por lidar com as requisições e tambem o envio de dados a *View*, aqui representada pelo React Native.
+
+  React Native assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
+
+
+
 
 ### 5.1 Diagrama de Classes
 
@@ -131,7 +135,15 @@ Como o sistema é um aplicativo para sistemas mobile em que os principais obejti
 
 ## 8. Qualidade
 
-A arquitetura utilizada permite definir algumas metas de qualidade, como facilidade no acrescimo de novas funcionalidades, na manutenção e reaproveitamento de código. Por ser uma arquitetura bastante utilizada aumenta a confiabilidade no software e, em caso de problemas, o suporte é maior e de mais fácil acesso.
+A arquitetura de microserviços permite definir algumas metas de qualidade, como facilidade no acrescimo de novas funcionalidades, na manutenção e reaproveitamento de código. Por não ser um arquitetura monolítica ela permite uma maior escalabilidade, como cada serviço é um componente separado é possível expandir um único módulo sem ter que dimensionar todo o sistema, alem de facilitar a depuração, por possuir modulos menores, permitindo assim um processo contínuo de teste e entrega.
+
+O React Native está em conformidade com os requisitos por permitir a arquitetura de microserviços, alem de criar aplicativos nativos, diminuindo assim a chances de problemas relacionados a compatibilidades em diversas plataformas. Outro fator é o alto suporte da comunidade, criando assim um ambiente onde quaisquer falhas podem ser resolvidas em menor tempo.
+
+ A escolha de fazer uma API é justificada pelo poder de integração e customização dos serviços. Através da integração com outras APIs é possível obter informações sobre o usuário sem que ele tenha preenchido nenhum formulário, fato que se encaixa bem com o contexto do projeto que é uma integração de vários módulos, podendo no futuro haver troca de dados entre as APIs de cada modulo para oferecer um serviço mais personalizado para o usuário.
+
+ Por fim a escolha do conjunto Rails API + React Native + microserviços, é justificada pela capacidade de acrescimo de novas funcionalidades, manutenção e reaproveitamento de código, os quais juntos aumentam significativamente a qualidade do sistema.
+
+Portanto
 
 ## 9.  Referências
 
