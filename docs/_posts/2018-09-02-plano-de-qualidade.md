@@ -311,7 +311,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
 </table>
 
 <table>
-<tr><th colspan='2'>Padrão Aplicado</th></tr>
+<tr><th colspan='2'>Padrões de Iterface Aplicados</th></tr>
 <tr>
   <th>Objetivo da Medição</th>
   <td>Avaliar se funcionalidades semelhantes seguem padrões de interface que facilitem a memorização do usuário.</td>
@@ -398,7 +398,11 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>ao final de cada <i>sprint</i></li>
+<<<<<<< Updated upstream
         <li><b>Ferramenta: </b></li>
+=======
+        <li><b>Ferramenta: Rubocop</b></li>
+>>>>>>> Stashed changes
         <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
     </ul>
   </td>
