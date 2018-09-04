@@ -9,7 +9,7 @@
   1.3 [Definições, Acrônimos e Abreviações](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#13-defini%C3%A7%C3%B5es-acr%C3%B4nimos-e-abrevia%C3%A7%C3%B5es)   
 
 2. [Representação da Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#2-representa%C3%A7%C3%A3o-arquitetural)   
-  2.1 [Ruby on Rails 5.2.0](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
+  2.1 [Ruby on Rails 5.2.1](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
   2.2 [React Native](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#22-react-native)    
 
 3. [Metas e Restrições de Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
@@ -19,14 +19,13 @@
   4.2 [Descrição dos Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#42-descri%C3%A7%C3%A3o-dos-casos-de-uso)
 
 5. [Visão Lógica](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#5---vis%C3%A3o-l%C3%B3gica)  
-  5.1 [Diagrama de Classes](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#51-diagrama-de-classes)
+    5.1 [Camadas](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#51-Camadas)
+
+    5.2 [Diagrama de Classes](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#52-diagrama-de-classes)
 
 6. [Visão de Implementação](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#6--vis%C3%A3o-de-implementa%C3%A7%C3%A3o)  
     6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)  
-    6.2 [Camadas](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#62-camadas)         
-    6.2.1 [Model](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#621-models)  
-    6.2.2 [View](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#622-views)  
-    6.2.3 [Controller](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#623-controller)             
+            
 
 7. [Tamanho e Desempenho](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#7--tamanho-e-desempenho)
 
@@ -99,22 +98,21 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | UC13: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
 
 
-## 5:   Visão Lógica
+## 5: Visão Lógica
 
   A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
   ![pack-diagram](../static/diagram-docs/pack-diagram.png)
 
-  * Banco de dados -  Será utilizado o banco de dados PostgreSQL, que é objeto relacional. O banco será responsável por guardar as tabelas de dados criadas pelas *Models* da API.
+### 5.1 Camadas
 
-  * Model - No Rails a model é responsável por implementar as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dado, isso é feito pela herança da classe Active Record a qual faz ORM (Object Relational Mapping), abstraindo assim a necessidade de se conhecer a linguagem SQL pois a Active Record faz todo o trabalho de persistência. O recurso de ORM da *Model* do Rails está em conformidade com o banco de dados PostgreSQL que é objeto relacional.
+* Model - É nessa camada que se implementa as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dados (banco de dados) e como esses dados serão acessados , validados e relacionados, isto é, a model é responsável por conter todas as informações referentes à manipulação de dados.
 
-  * Controller - Responsável pelo fluxo do usuário na aplicação ela controla as requisições feitas pelo Frontend. Controllers sarão responsáveis também pela serialização dos dados, pois a comunicação Frontend/Backend será feita por métodos HTTP (GET, PUT, POST, DELETE entre outros) e JSON (JavaScript Obejct Notation), o que está em conformidade com o Frontend em React Native que é um framework de JavaScript que interpreta JSON e faz requisições HTTP.  
+* Controller - É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
 
-  * React Native assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
+* A camada View não será implementada seguindo a arquitetura monilítica do rails, pois será substituida pelo React Native que possui uma arquitetura própria voltada a eventos.
 
-
-### 5.1 Diagrama de Classes
+### 5.2 Diagrama de Classes
 
 ![class-diagram](../static/diagram-docs/class-diagram.jpg)
 
@@ -122,22 +120,19 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 ### 6.1 Visão Geral
 
-A arquitetura utilizada na aplicação é o padrão arquitetural MVC, que é adotada framework Ruby on Rails.
+A arquitetura utilizada na aplicação é de microserviços que será feita através da integração de uma API criada em rails e um Frontend criado em React Native.
 
-### 6.2 Camadas
+ * Banco de dados -  Será utilizado o banco de dados PostgreSQL, que é objeto relacional. O banco será responsável por guardar as tabelas de dados criadas pelas *Models* da API.
 
-#### 6.2.1 Models
-É nessa camada que se implementa as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dados (banco de dados) e como esses dados serão acessados , validados , relacionados e etc. Isto é, a model é responsável por conter todas as informações referentes à manipulação de dados.
+  * Model - No Rails a model é responsável por implementar as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dado, isso é feito pela herança da classe Active Record a qual faz ORM (Object Relational Mapping), abstraindo assim a necessidade de se conhecer a linguagem SQL pois a Active Record faz todo o trabalho de persistência. O recurso de ORM da *Model* do Rails está em conformidade com o banco de dados PostgreSQL que é objeto relacional.
 
-#### 6.2.2 Views
-A camada view é a responsável por formatar as informações e apresentá-las ao usuário de forma organizada.
+  * Controller - Responsável pelo fluxo do usuário na aplicação ela controla as requisições feitas pelo Frontend. Controllers sarão responsáveis também pela serialização dos dados, pois a comunicação Frontend/Backend será feita por métodos HTTP (GET, PUT, POST, DELETE entre outros) e JSON (JavaScript Obejct Notation), o que está em conformidade com o Frontend em React Native que é um framework de JavaScript que interpreta JSON e faz requisições HTTP.  
 
-#### 6.2.3 Controller
-É camada controller que fica responsável pelo fluxo do usuário na aplicação. Esta é usada para comunicação com a Model e renderização das Views, com informações procedentes da Model.
+  * React Native - Assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
 
 ## 7.  Tamanho e Desempenho
 
-Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade tem portanto como usuário principal o corpo acadêmico da FGA. É esperado que o software seja utilizado por toda a comunidade academica por apresentar vantagens a todos que fazem parte da mesma, com isso é previsto um número próximo a 2300 usuários, o que implica que caso seja utilizado um serviço de Cloud Server, plataformas mais simples como Heroku poderam ser usadas durante o tempo de adesão do aplicativo, porem quando em pleno funcionamento uma plataforma mais robusta como AWS (Amazon Web Services) afim de atender melhor o número de acessos simultâneos.
+Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade tem portanto como usuário principal o corpo acadêmico da FGA. É esperado que o software seja utilizado por toda a comunidade academica por apresentar vantagens a todos que fazem parte da mesma, com isso é previsto um número próximo a 2300 usuários, o que implica que caso seja utilizado um serviço de Cloud Server, plataformas mais simples como Heroku poderam ser usadas durante o tempo de adesão do aplicativo, porem quando em pleno funcionamento uma plataforma mais robusta como AWS (Amazon Web Services) será mais adequada afim de atender melhor o número de acessos simultâneos.
 
 A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo.
 
@@ -148,9 +143,9 @@ A arquitetura de microserviços permite definir algumas metas de qualidade, como
 
 O React Native está em conformidade com os requisitos por permitir a arquitetura de microserviços, alem de criar aplicativos nativos, diminuindo assim a chances de problemas relacionados a compatibilidades em diversas plataformas. Outro fator é o alto suporte da comunidade, criando assim um ambiente onde quaisquer falhas podem ser resolvidas em menor tempo.
 
- A escolha de fazer uma API é justificada pelo poder de integração e customização dos serviços. Através da integração com outras APIs é possível obter informações sobre o usuário sem que ele tenha preenchido nenhum formulário, fato que se encaixa bem com o contexto do projeto que é uma integração de vários módulos, podendo no futuro haver troca de dados entre as APIs de cada modulo para oferecer um serviço mais personalizado para o usuário.
+A escolha de fazer uma API é justificada pelo poder de integração e customização dos serviços. Através da integração com outras APIs é possível obter informações sobre o usuário sem que ele tenha preenchido nenhum formulário, fato que se encaixa bem com o contexto do projeto que é uma integração de vários módulos, podendo no futuro haver troca de dados entre as APIs de cada modulo para oferecer um serviço mais personalizado para o usuário.
 
- Por fim a escolha do conjunto Rails API + React Native + microserviços, é justificada pela capacidade de acrescimo de novas funcionalidades, manutenção e reaproveitamento de código, os quais juntos aumentam significativamente a qualidade do sistema.
+Por fim a escolha do conjunto Rails API + React Native + microserviços, é justificada pela capacidade de acrescimo de novas funcionalidades, manutenção e reaproveitamento de código, os quais juntos aumentam significativamente a qualidade do sistema.
 
 
 ## 9.  Referências
