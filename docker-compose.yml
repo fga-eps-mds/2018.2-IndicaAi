@@ -1,9 +1,11 @@
 version: '3'
 services:
+
   db:
     image: postgres
     ports:
       - "5400:5432"
+
   web:
     build: .
     command: rails s -p 3000 -b '0.0.0.0'
