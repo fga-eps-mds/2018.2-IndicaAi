@@ -25,7 +25,7 @@
 
 6. [Visão de Implementação](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#6--vis%C3%A3o-de-implementa%C3%A7%C3%A3o)  
     6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)  
-            
+
 
 7. [Tamanho e Desempenho](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#7--tamanho-e-desempenho)
 
@@ -91,11 +91,8 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | UC06: Visualizar local | Visualizar local e todas as informações referentes a ele |
   | UC07: Favoritar local | Salvar local em uma lista de favoritos |
   | UC08: Avaliar local | Fazer avaliação do local através de um sistema de notas |
-  | UC09: Inserir comentários | Adicionar um novo comentário em determinada publicação |
-  | UC10: Ler comentários | Ler comentários realizados por outros usuários |
-  | UC11: Responder comentários | Responder comentários realizados por outros usuários |
-  | UC12: Avaliar comentário | Fazer avaliação do comentário através de um sistema de curtidas |
-  | UC13: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
+  | UC09: Realizar login | Fazer login no aplicativo podendo assim fazer uso das demais funcionalidades disponibilizadas |
+  | UC10: Gerar Token de autenticação | Cria uma chave para comunicação entre a API com as informações de usuários e a aplicação IndicaAi, possibilitando a realização do login  do usuário|
 
 
 ## 5: Visão Lógica
