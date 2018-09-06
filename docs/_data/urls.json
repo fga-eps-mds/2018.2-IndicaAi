@@ -109,6 +109,11 @@
     "icon": "fa-paper-plane",
     "urls": [
         {
+          "text": "backlog",
+          "url": "/docs/2018/09/06/backlog-doc.html",
+          "icon": "fa-angle-right"
+        },
+        {
           "text": "Sprint 01",
           "url": "/sprint-planning/2018/08/27/planning-sprint-1.html",
           "icon": "fa-angle-right"
