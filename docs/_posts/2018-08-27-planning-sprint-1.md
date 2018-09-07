@@ -173,6 +173,8 @@ Weiller Fernandes Pereira<br>
 
 ![Quadro de Conhecimentos - Sprint 1 (Inicial)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_0.png)
 
+![Gráfico de Conhecimentos - Sprint 1 (Inicial)]({{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_0.png)
+
 ---
 
 ## Presença na Sprint Planning

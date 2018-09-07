@@ -218,6 +218,8 @@ Nessa _sprint_ o _velocity_ da equipe foi de 23 pontos, sendo que o valor planej
 
 ![Quadro de Conhecimentos - Sprint 1 (Final)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_1_melhorias.png)
 
+![Gráfico de Conhecimentos - Sprint 1 (Final)]({{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_1.png)
+
 ---
 
 ### Retrospectiva da Sprint

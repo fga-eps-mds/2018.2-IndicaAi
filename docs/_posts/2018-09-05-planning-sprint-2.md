@@ -7,7 +7,7 @@ categories: sprint-planning
 
 ## Informações Básicas da Sprint
 <table>
-<tr><th><i>Sprint</i></th><td>1</td></tr>
+<tr><th><i>Sprint</i></th><td>2</td></tr>
 <tr><th>Início</th><td>29/08/2018</td></tr>
 <tr><th>Término</th><td>04/09/2018</td></tr>
 <tr><th>Duração</th><td>7 dias</td></tr>
@@ -46,7 +46,7 @@ Weiller Fernandes Pereira<br>
 <table>
 <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
 <tr>
-  <th rowspan='13' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
+  <th rowspan='16' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
   <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/49">#49</a></td>
   <td>Reservar Salas</td>
   <td>0</td>
@@ -125,6 +125,24 @@ Weiller Fernandes Pereira<br>
   <td>Time de desenvolvimento</td>
 </tr>
 <tr>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/32">#32</a></td>
+  <td>Fazer levantamento de riscos</td>
+  <td>3</td>
+  <td>Renato Valério</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/33">#33</a></td>
+  <td>Construir burndown de riscos</td>
+  <td>2</td>
+  <td>Renato Valério</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/43">#43</a></td>
+  <td>Configurar métricas com a integração contínua</td>
+  <td>5</td>
+  <td>Renato Valério</td>
+</tr>
+<tr>
   <th rowspan='5' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
   <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/9">#9</a></td>
   <td>Documento de Arquitetura</td>
@@ -155,9 +173,9 @@ Weiller Fernandes Pereira<br>
   <td>1</td>
   <td>Iasmin Mendes</td>
 </tr>
-<tr><th colspan='4'>Pontos Planejados</th><td colspan='2'>34</td></tr>
-<tr><th colspan='4'>Pontos de Dívida</th><td colspan='2'>14</td></tr>
-<tr><th colspan='4'>Pontuação total</th><td colspan='2'>48</td></tr>
+<tr><th colspan='3'>Pontos Planejados</th><td colspan='2'>34</td></tr>
+<tr><th colspan='3'>Pontos de Dívida</th><td colspan='2'>14</td></tr>
+<tr><th colspan='3'>Pontuação total</th><td colspan='2'>48</td></tr>
 </table>
 
 ----
@@ -166,6 +184,7 @@ Weiller Fernandes Pereira<br>
 
 ![Quadro de Conhecimentos - Sprint 2 (Inicial)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_1.png)
 
+![Gráfico de Conhecimentos - Sprint 2 (Inicial)]({{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_1.png)
 ---
 
 ## Presença na Sprint Planning
