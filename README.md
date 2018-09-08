@@ -32,6 +32,8 @@ Se for necessário acessar o terminal do _container_ que roda a aplicação, o s
 
 ## Como contribuir
 
-Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/master/CONTRIBUTING.md).
+Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/devel/CONTRIBUTING.md).
 
 ## Conduta de Código
+
+Acesse o nosso [Código de Conduta](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/devel/CODE_OF_CONDUCT.md) e saiba como é a nossa política de relacionamento.

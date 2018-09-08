@@ -1,12 +1,3 @@
----
-layout: post
-title:  "Code of Conduct"
-date:   2018-09-03 17:11:39
-categories: docs
----
-
-<!-- CODIGO-CONDUTA -->
-
 ## Código de Conduta do aplicativo IndicaAi
 
 ### Nosso Compromisso
