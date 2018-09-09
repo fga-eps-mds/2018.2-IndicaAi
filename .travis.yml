@@ -22,6 +22,6 @@ before_script:
 script:
     - bundle exec rspec
 
- notifications:
+notifications:
     slack: indicaai:g0c69S8I2cLnQHEM5FAhlaUB
 
