@@ -3,6 +3,7 @@ version: "2"
 plugins:
   rubocop:
     enabled: true
+    Rails: true
   flog:
       enabled: true
   duplication:
