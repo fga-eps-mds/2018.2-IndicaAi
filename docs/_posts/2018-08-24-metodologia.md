@@ -128,7 +128,30 @@ São responsabilidades deste papel:
 <tr><td>21</td><td>30 horas</td><td>10 horas</td><td>40 horas</td></tr>
 </table>
 
-_Issues_ com mais de 8 pontos devem ser transformadas em Épicos e quebradas em _issues_ menores, para facilitar o desenvolvimento do projeto.
+_Issues_ com mais de 13 pontos devem ser transformadas em Épicos e quebradas em _issues_ menores, para facilitar o desenvolvimento do projeto.
+
+### MosCow
+
+O _backlog_ deve ser priorizado utilizando o método MosCow, o qual está disposto abaixo:
+
+<table>
+    <tr>
+        <th>Must have</th>
+        <td>Tem que ter</td>
+    </tr>
+    <tr>
+        <th>Should have</th>
+        <td>Deveria ter</td>
+    </tr>
+    <tr>
+        <th>Could have</th>
+        <td>Pode ter</td>
+    </tr>
+    <tr>
+        <th>Would have</th>
+        <td>Seria bom ter</td>
+    </tr>
+</table>
 
 ### Kanban
 O Kanban será aplicado visando monitorar o fluxo de trabalho da equipe.
