@@ -214,6 +214,12 @@ Nessa _sprint_ o _velocity_ da equipe foi de 23 pontos, sendo que o valor planej
 
 ---
 
+#### _Commits_ por dia
+
+![Commits - Sprint 1]({{site.baseurl}}/static/img/commits/sprint_1.png)
+
+---
+
 ### Quadro de Conhecimentos
 
 ![Quadro de Conhecimentos - Sprint 1 (Final)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_1_melhorias.png)

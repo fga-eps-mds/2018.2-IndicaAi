@@ -138,6 +138,33 @@
     ]
   },
   {
+    "text": "Métricas",
+    "url": "#",
+    "icon": "fa-chart-line",
+    "urls": [
+        {
+          "text": "Burndown",
+          "url": "/burndown",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Velocity",
+          "url": "/velocity",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Commits por Dia",
+          "url": "/commits",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Conhecimento",
+          "url": "/conhecimento",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
     "text": "Tutoriais",
     "url": "#",
     "icon": "fa-book",

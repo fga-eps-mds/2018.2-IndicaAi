@@ -230,6 +230,12 @@ Nessa _sprint_ o _velocity_ da equipe subiu para 30.5 pontos. Boa parte desse au
 
 ---
 
+#### _Commits_ por dia
+
+![Commits - Sprint 2]({{site.baseurl}}/static/img/commits/sprint_2.png)
+
+---
+
 #### Quadro de Conhecimentos
 
 ![Quadro de Conhecimentos - Sprint 2 (Final)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_2_melhorias.png)

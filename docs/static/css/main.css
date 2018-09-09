@@ -311,3 +311,33 @@ ul:not(.panel) {
     color: #fff;
     opacity: 0.8;
 }
+
+div.well.metrics ul.nav-tabs {
+    padding-left: 0;
+    margin-left: 0;
+    background: #fff;
+}
+
+div.well.metrics div.tab-pane img {
+    margin: 20px auto;
+}
+
+div.well.metrics ul.nav-tabs>li>a {
+    color: #59b0a7 !important;
+    background: #fff;
+}
+
+div.well.metrics ul.nav-tabs>li.active>a {
+    background: #009587 !important;
+    color: #fff !important;
+}
+
+div.well.metrics div.card-deck {
+    margin-top: 50px;
+}
+
+div.well.metrics div.card-deck .card {
+    max-width: 48%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
