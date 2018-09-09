@@ -311,38 +311,6 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
 </table>
 
 <table>
-<tr><th colspan='2'>Padrões de Iterface Aplicados</th></tr>
-<tr>
-  <th>Objetivo da Medição</th>
-  <td>Avaliar se funcionalidades semelhantes seguem padrões de interface que facilitem a memorização do usuário.</td>
-</tr>
-<tr>
-  <th>Fórmula</th>
-  <td>Não se aplica</td>
-</tr>
-<tr>
-  <th>Escala de Medição</th>
-  <td>Não se aplica</td>
-</tr>
-<tr>
-  <th>Coleta</th>
-  <td>
-    <ul>
-        <li><b>Responsável: </b><i>Product Owner</i></li>
-        <li><b>Periodicidade: </b>Ao final de cada sprint, na entrega de funcionalidades associadas a interface da aplicação.</li>
-        <li><b>Procedimento: </b>O responsável deve utilizar a aplicação e observar se o caminho para executar funcionalides semelhantes, também é semelhante, de forma que facilite a memorização do usuário. Por fim, a avaliação feita deve ser registrada pelo PO.</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <th>Análise</th>
-  <td>
-    Caso seja identificado que funcionalidades semelhantes possuem interfaces muito diferentes na hora de execução, deve-se escolher a melhor interface e adaptar as funcionalidades para que funcionem de forma parecida.
-  </td>
-</tr>
-</table>
-
-<table>
 <tr><th colspan='2'>Duplicidade de Código</th></tr>
 <tr>
   <th>Objetivo da Medição</th>
@@ -362,7 +330,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>a cada fechamento de <i>Sprint</i></li>
-        <li><b>Ferramenta: </b></li>
+        <li><b>Ferramenta: </b>Rubocop</li>
         <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
     </ul>
   </td>
@@ -398,11 +366,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>ao final de cada <i>sprint</i></li>
-<<<<<<< Updated upstream
-        <li><b>Ferramenta: </b></li>
-=======
         <li><b>Ferramenta: Rubocop</b></li>
->>>>>>> Stashed changes
         <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
     </ul>
   </td>
@@ -411,6 +375,39 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
   <th>Análise</th>
   <td>
     Caso a ferramenta acuse trechos de código em inconformidade com os padrões, deve-se abrir uma história técnica para consertar o trecho acusado.
+  </td>
+</tr>
+</table>
+
+<table>
+<tr><th colspan='2'>Manutenibilidade</th></tr>
+<tr>
+  <th>Objetivo da Medição</th>
+  <td>Monitorar e melhorar a manutenibilidade do código que está sendo gerado.</td>
+</tr>
+<tr>
+  <th>Fórmula</th>
+  <td>Não se aplica.</td>
+</tr>
+<tr>
+  <th>Escala de Medição</th>
+  <td>Racional</td>
+</tr>
+<tr>
+  <th>Coleta</th>
+  <td>
+    <ul>
+        <li><b>Responsável: </b><i>Scrum Master</i></li>
+        <li><b>Periodicidade: </b>ao final de cada <i>sprint</i></li>
+        <li><b>Ferramenta: </b>CodeClimate</li>
+        <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <th>Análise</th>
+  <td>
+    Caso a manutenibilidade esteja abaixo de B, o código deverá ser considerado como prioridade para ser refatorado.
   </td>
 </tr>
 </table>
@@ -438,7 +435,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>ao final de cada Sprint</li>
-        <li><b>Ferramenta: </b></li>
+        <li><b>Ferramenta: </b>Rubocop</li>
         <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
     </ul>
   </td>
@@ -446,11 +443,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
 <tr>
   <th>Análise</th>
   <td>
-    <ul>
-        <li><b>0 a 25: </b>Nível aceitável.</li>
-        <li><b>26 a 60: </b>Nível preocupande. Deve-se executar refatoração do código.</li>
-        <li><b>61 ou mais: </b>Nível perigoso. Deve se executar uma profunda análise do código para identificar e sanar o problema.</li>
-    </ul>
+    Caso a ferramenta acuse algum problema de complexidade, o código deverá ser corrigido.
   </td>
 </tr>
 </table>
@@ -475,7 +468,7 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>ao final de cada <i>sprint</i></li>
-        <li><b>Ferramenta: </b></li>
+        <li><b>Ferramenta: </b>Converalls</li>
         <li><b>Procedimento: </b>Após o último <i>Pull Request</i> aprovado da Sprint, rodar a ferramenta sobre a <i>branch devel</i> e pegar o resultado da métrica.</li>
     </ul>
   </td>
@@ -628,10 +621,10 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
 </table>
 
 <table>
-<tr><th colspan='2'>Linhas de código por desenvolvedor</th></tr>
+<tr><th colspan='2'>Número de Commits por dia</th></tr>
 <tr>
   <th>Objetivo da Medição</th>
-  <td>Acompanhar a produtividade individual de cada membro durante as <i>sprints</i></td>
+  <td>Acompanhar a produtividade diária das <i>sprints</i>, afim de averiguar se está havendo integra contínua</td>
 </tr>
 <tr>
   <th>Fórmula</th>
@@ -647,14 +640,14 @@ Este documento tem por finalidade definir os objetivos qualitativos que este pro
     <ul>
         <li><b>Responsável: </b><i>Scrum Master</i></li>
         <li><b>Periodicidade: </b>ao final de cada <i>sprint</i></li>
-        <li><b>Procedimento: </b>Após o fechamento da <i>sprint</i>, coletar no <i>Insights</i> do GitHub a relação de linhas adicionadas e retiraadas de cada membro durante a <i>sprint</i></li>
+        <li><b>Procedimento: </b>Após o fechamento da <i>sprint</i>, coletar no <i>Insights</i> do GitHub a relação de <i>commits</i> por dia durante a <i>sprint</i></li>
     </ul>
   </td>
 </tr>
 <tr>
   <th>Análise</th>
   <td>
-    Entende-se que os membros com maior volume de linhas alteradas e adicionadas está produzindo mais durante a <i>sprint</i>. Os membros que estiverem com valor muito inferior em  relação aos demais, deverão ser procurados pelo <i>Scrum Master</i> para que o mesmo possa conversar e identificar a causa, seja dificuldade com a ferramenta, sobrecarga de tarefas, ou qualquer outro motivo. Assim espera-se que o <i>Scrum Master</i> seja capaz de tomar alguma medida corretiva.
+    Caso os commits ocorram apenas no sexto ou sétimo dia da <i>sprint</i>, deve ser avaliado o motivo das entregas emcima da hora (sobrecarga dos desenvolvedores, issues muito grandes ou descaso). Cabendo ao <i>Scrum Master</i> tomar alguma medida corretiva sobre o problema.
   </td>
 </tr>
 </table>
