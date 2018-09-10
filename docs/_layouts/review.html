@@ -1,0 +1,381 @@
+---
+layout: default
+---
+
+<div class="post-content well metrics">
+
+  <ul class="nav nav-tabs">
+    <li class='active in'><a data-toggle="tab" class='active in' href="#info">Sprint {{page.sprint}}</a></li>
+    <li><a data-toggle="tab" href="#papers">Papéis</a></li>
+    <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
+    <li><a data-toggle="tab" href="#retrospective">Sprint Retrospective</a></li>
+    {% if page.feedback %}<li><a data-toggle="tab" href="#feedback">Feedback</a></li>{% endif %}
+    <li><a data-toggle="tab" href="#metrics">Métricas</a></li>
+  </ul>
+
+  <div class="tab-content">
+      <div id="info" class="tab-pane fade active in">
+        <h2>Informações Básicas da Sprint</h2>
+        <table>
+          <tr><th><i>Sprint</i></th><td>{{page.sprint}}</td></tr>
+          <tr><th>Início</th><td>{{page.startDate}}</td></tr>
+          <tr><th>Término</th><td>{{page.endDate}}</td></tr>
+          <tr><th>Duração</th><td>{{page.duration}} dias</td></tr>
+          <tr><th>Pontuação Total</th><td>{{page.totalPoints}}</td></tr>
+          <tr><th>Pontuação Concluída</th><td>{{page.finishedPoints}}</td></tr>
+        </table>
+        <hr>
+
+        <h3>Resumo da Sprint</h3>
+        <table>
+        <tr>
+          <th>Total de Pontos Planejados</th>
+          <td>{{page.plannedPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos Planejados e Concluídos</th>
+          <td>{{page.plannedFinishedPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos de dívida passada</th>
+          <td>{{page.debtPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos de dívida concluídos</th>
+          <td>{{page.debtFinishedPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos Adicionados</th>
+          <td>{{page.addPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos Adicionados e Concluídos</th>
+          <td>{{page.addFinishedPoints}}</td>
+        </tr>
+        <tr>
+          <th>Total de Pontos Concluídos</th>
+          <td>{{page.finishedPoints}}</td>
+        </tr>
+        <tr>
+          <th>Dívida para a próxima Sprint</th>
+          <td>{{page.nextDebtPoints}}</td>
+        </tr>
+        </table>
+
+        <hr>
+
+        <h3>Presença na <i>Sprint Review</i> e <i>Retroscpective</i></h3>
+        <table class='frequency'>
+        <tr><th>Membro</th><th>Presença</th></tr>
+        {% for i in page.presence %}
+          {% if i.presence == true %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-check"></i></td></tr>
+          {% else %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-times"></i></td></tr>
+          {% endif %}
+        {% endfor %}
+        </table>
+
+      </div>
+
+      <div id="papers" class="tab-pane fade">
+        <h2>Papéis</h2>
+        <table>
+          <tr> <th>Papel</th> <th>Responsável</th> </tr>
+          <tr> <td><i>Scrum Master</i></td> <td>{{page.scrumMaster}}</td> </tr>
+          <tr> <td><i>Product Owner</i></td> <td>{{page.productOwner}}</td> </tr>
+          <tr> <td>Arquiteto</td> <td>{{page.architect}}</td> </tr>
+          <tr> <td>DevOps</td> <td>{{page.devops}}</td> </tr> 
+          <tr>
+          <td>Time de Desenvolvimento</td>
+          <td>
+          {% for i in page.developmentTeam %}
+              {{i}}<br>
+          {% endfor %}
+          </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="backlog" class="tab-pane fade">
+        <h2>Sprint Backlog</h2>
+        <table>
+        <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th><th>Status</th></tr>
+        <tr>
+        {% for i in page.issues %}
+          <tr>
+            {% if i.header and i.header == "Planejadas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
+            {% elsif i.header and i.header == "Dividas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
+            {% endif %}
+            <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/{{i.number}}">#{{i.number}}</a></td>
+            <td>{{i.description}}</td>
+            <td>{{i.points}}</td>
+            <td>
+                {% for p in i.responsible %}
+                    {{p}}<br>
+                {% endfor %}
+             </td>
+            <td>{{i.status}}</td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+
+      <div id="retrospective" class="tab-pane fade">
+        <h2>Retrospectiva da Sprint</h2>
+            {% if page.positives %}
+              <h3>Pontos Positivos</h3>
+              <ul>
+                  {% for i in page.positives %}
+                      <li>{{i}}</li>
+                  {% endfor %}
+              </ul>
+            {% endif %}
+            {% if page.negatives %}
+              <h3>Pontos Negativos</h3>
+              <ul>
+                  {% for i in page.negatives %}
+                      <li>{{i}}</li>
+                  {% endfor %}
+              </ul>
+            {% endif %}
+            {% if page.improvements %}
+              <h3>Melhorias</h3>
+              <ul>
+                  {% for i in page.improvements %}
+                      <li>{{i}}</li>
+                  {% endfor %}
+              </ul>
+            {% endif %}
+      </div>
+
+      {% if page.feedback %}
+        <div id="feedback" class="tab-pane fade">
+          <h2>Feedback</h2>
+          {{page.feedback}}
+        </div>
+      {% endif %}
+
+      <div id="metrics" class="tab-pane fade">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9"> 
+              <div class="tab-content">
+                {% if page.burndown %}
+                  <div id="burndown" class="tab-pane fade active in">
+                    <h2><i>Burndown</i></h2>
+                    <img src='{{site.baseurl}}/static/img/burndown/sprint_{{page.sprint}}.png' title='Burndown - Sprint {{page.sprint}}' alt='Burndown - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.burndown %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/burndown'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.velocity %}
+                  <div id="velocity" class="tab-pane fade">
+                    <h2><i>Velocity</i></h2>
+                    <img src='{{site.baseurl}}/static/img/velocity/sprint_{{page.sprint}}.png' title='Velocity - Sprint {{page.sprint}}' alt='Velocity - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.velocity %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/velocity'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.commits %}
+                  <div id="commits" class="tab-pane fade">
+                    <h2><i>Commits</i> por Dia</h2>
+                    <img src='{{site.baseurl}}/static/img/commits/sprint_{{page.sprint}}.png' title='Commits por Dia - Sprint {{page.sprint}}' alt='Commits por Dia - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.commits %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/commits'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.knowledge %}
+                  <div id="knowledge" class="tab-pane fade">
+                    <h2>Quadro de Conhecimentos</h2>
+                    <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.sprint}}_melhorias.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
+                    <h2>Gráfico de Conhecimentos</h2>
+                    <img src='{{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_{{page.sprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/conhecimento'>aqui</a>.</p>
+                    <ul>
+                    {% for i in page.knowledge %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+
+                {% if page.pairings %}
+                  <div id="pairings" class="tab-pane fade">
+                    <h2>Número de Pareamentos</h2>
+                    <img src='{{site.baseurl}}/static/img/pareamentos/sprint_{{page.sprint}}.png' title='Número de Pareamentos - Sprint {{page.sprint}}' alt='Número de Pareamentos - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.pairings %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/pairings'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.coverage %}
+                  <div id="coverage" class="tab-pane fade">
+                    <h2>Cobertura de Testes</h2>
+                    <img src='{{site.baseurl}}/static/img/coverage/sprint_{{page.sprint}}.png' title='Cobertura de Testes - Sprint {{page.sprint}}' alt='Cobertura de Testes - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.coverage %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/coverage'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.complexity %}
+                  <div id="complexity" class="tab-pane fade">
+                    <h2>Complexidade Ciclomática</h2>
+                    <img src='{{site.baseurl}}/static/img/complexity/sprint_{{page.sprint}}.png' title='Complexidade Ciclomática - Sprint {{page.sprint}}' alt='Complexidade Ciclomática - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.complexity %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/complexity'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.duplication %}
+                  <div id="duplication" class="tab-pane fade">
+                    <h2>Duplicação de Código</h2>
+                    <img src='{{site.baseurl}}/static/img/duplication/sprint_{{page.sprint}}.png' title='Duplicação de Código - Sprint {{page.sprint}}' alt='Duplicação de Código - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.duplication %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/duplication'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.styleSheet %}
+                  <div id="styleSheet" class="tab-pane fade">
+                    <h2>Folha de Estilo</h2>
+                    <img src='{{site.baseurl}}/static/img/styleSheet/sprint_{{page.sprint}}.png' title='Folha de Estilo - Sprint {{page.sprint}}' alt='Folha de Estilo - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.styleSheet %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/styleSheet'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.satisfaction %}
+                  <div id="satisfaction" class="tab-pane fade">
+                    <h2>Satisfação do Usuário</h2>
+                    <ul>
+                    {% for i in page.satisfaction %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/satisfaction'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
+                {% if page.clicks %}
+                  <div id="clicks" class="tab-pane fade">
+                    <h2>Número de Cliques</h2>
+                    <img src='{{site.baseurl}}/static/img/clicks/sprint_{{page.sprint}}.png' title='Número de Cliques - Sprint {{page.sprint}}' alt='Número de Cliques - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.clicks %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/clicks'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-md-3">
+              <ul class="nav nav-pills nav-stacked nav-tabs">
+                {% if page.burndown %}<li class='active in'><a data-toggle="tab" href="#burndown">Burndown</a></li>{% endif %}
+                {% if page.velocity %}<li><a data-toggle="tab" href="#velocity">Velocity</a></li>{% endif %}
+                {% if page.commits %}<li><a data-toggle="tab" href="#commits">Commits</a></li>{% endif %}
+                {% if page.knowledge %}<li><a data-toggle="tab" href="#knowledge">Conhecimento</a></li>{% endif %}
+                {% if page.pairings %}<li><a data-toggle="tab" href="#pairings">Pareamentos</a></li>{% endif %}
+                {% if page.coverage %}<li><a data-toggle="tab" href="#coverage">Cobertura de Testes</a></li>{% endif %}
+                {% if page.complexity %}<li><a data-toggle="tab" href="#complexity">Complexidade Ciclomática</a></li>{% endif %}
+                {% if page.duplication %}<li><a data-toggle="tab" href="#duplication">Duplicação de Código</a></li>{% endif %}
+                {% if page.styleSheet %}<li><a data-toggle="tab" href="#styleSheet">Folha de Estilo</a></li>{% endif %}
+                {% if page.satisfaction %}<li><a data-toggle="tab" href="#satisfaction">Satisfação do Usuário</a></li>{% endif %}
+                {% if page.clicks %}<li><a data-toggle="tab" href="#clicks">Número de Cliques</a></li>{% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<article class="content">
+    <div class="post">{{ content }}</div>
+</article>
+
+
+<hr>
+{% assign hasSimilar = '' %}
+{% for post in site.posts  %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.categories %}
+        {% for thisTag in page.categories %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <div class="panel-body">
+                <h4>Sprint Review</h4>
+                <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </ul>
+    </div>
+{% endif %}
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "{{ site.disqus_shortname }}";
+        var disqus_identifier = "{{ site.url }}_{{ page.title }}";
+        var disqus_title = "{{ page.title }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
