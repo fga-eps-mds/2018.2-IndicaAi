@@ -1,0 +1,2 @@
+class LocalsControllerController < ApplicationController
+end
