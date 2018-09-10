@@ -1,0 +1,2 @@
+class Local < ApplicationRecord
+end
