@@ -1,0 +1,28 @@
+version: "2"
+
+plugins:
+  rubocop:
+    enabled: true
+    Rails: true
+  flog:
+      enabled: true
+  duplication:
+    enabled: true
+    exclude_paths:
+      - indicaAi/spec/
+    config:
+      languages:
+        ruby:
+          mass_threshold: 30
+
+ratings:
+  paths:
+  - Gemfile.lock
+  - Gemfile
+  - "**.rb"
+
+exclude_paths:
+- indicaAi/config/
+- indicaAi/db/
+- indicaAi/vendor/
+- docs/
