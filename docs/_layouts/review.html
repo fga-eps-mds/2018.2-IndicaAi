@@ -206,14 +206,15 @@ layout: default
                   <div id="knowledge" class="tab-pane fade">
                     <h2>Quadro de Conhecimentos</h2>
                     <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.sprint}}_melhorias.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
                     <h2>Gráfico de Conhecimentos</h2>
                     <img src='{{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_{{page.sprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/conhecimento'>aqui</a>.</p>
                     <ul>
                     {% for i in page.knowledge %}
                         <li>{{i.review}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
                   </div>
                 {% endif %}
 

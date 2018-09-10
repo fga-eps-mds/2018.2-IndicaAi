@@ -158,7 +158,12 @@
           "icon": "fa-angle-right"
         },
         {
-          "text": "Conhecimento",
+          "text": "Quadro de Conhecimento",
+          "url": "/knowledge",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Gráfico de Conhecimento",
           "url": "/conhecimento",
           "icon": "fa-angle-right"
         }
