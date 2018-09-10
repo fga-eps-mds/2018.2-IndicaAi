@@ -24,6 +24,11 @@
           "text": "EAP",
           "url": "/docs/2018/08/27/eap.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Canvas",
+          "url": "/docs/2018/09/01/canvas.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -90,6 +95,11 @@
           "text": "Documento de Arquitetura",
           "urls": "#",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Plano de Qualidade",
+          "urls": "/docs/2018/08/28/plano-de-qualidade.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -105,7 +115,7 @@
         },
         {
           "text": "Sprint 02",
-          "url": "/sprint-planning/2018/08/27/planning-sprint-2.html",
+          "url": "/sprint-planning/2018/09/05/planning-sprint-2.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -122,7 +132,39 @@
         },
         {
           "text": "Sprint 02",
-          "url": "/sprint-result/2018/08/27/results-sprint-2.html",
+          "url": "/sprint-review/2018/09/03/review-sprint-2.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
+    "text": "Métricas",
+    "url": "#",
+    "icon": "fa-chart-line",
+    "urls": [
+        {
+          "text": "Burndown",
+          "url": "/burndown",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Velocity",
+          "url": "/velocity",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Commits por Dia",
+          "url": "/commits",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Quadro de Conhecimento",
+          "url": "/knowledge",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Gráfico de Conhecimento",
+          "url": "/conhecimento",
           "icon": "fa-angle-right"
         }
     ]
@@ -143,6 +185,11 @@
           "icon": "fa-angle-right"
         }
     ]
+  },
+  {
+    "text": "Código de Conduta",
+    "url": "/docs/2018/09/03/code-of-conduct.html",
+    "icon": "fas fa-book-reader"
   },
   {
     "text": "Licença",
