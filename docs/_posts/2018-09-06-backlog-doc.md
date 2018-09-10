@@ -15,5 +15,5 @@
 
   <tr><td rowspan="2">Favoritos</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/63">US06</a></td><td>Favoritar local</td><td> Would have</td><td>-</td></tr>
 
-  <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/64">US07</a></td><td>Visualizar favoritos</td><td>-</td><td> Would have</td></tr>
+  <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/64">US07</a></td><td>Visualizar favoritos</td><td> Would have</td><td>-</td></tr>
 </table>
