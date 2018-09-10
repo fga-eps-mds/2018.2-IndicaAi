@@ -1,4 +1,4 @@
-#Locals Controller
+# Locals Controller
 class LocalsController < ApplicationController
   # GET /locals
   def all_locals
@@ -8,7 +8,7 @@ class LocalsController < ApplicationController
 
   # GET /locals/name/:name
   def search_locals
-    locals = Local.findByName(params[:name])
+    locals = Local.find_by_name(params[:name])
     render json: locals
   end
 end
