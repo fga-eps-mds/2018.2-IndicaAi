@@ -1,192 +1,218 @@
 ---
-layout: post
+layout: planning
 title:  "Sprint 01 - Planning"
 date:   2018-08-27 13:50:39
 categories: sprint-planning
+
+sprint: 1
+previousSprint: 0
+startDate: 22/08/2018
+endDate: 28/08/2018
+duration: 7
+plannedPoints: "37"
+debtPoints: "0"
+totalPoints: "37"
+
+scrumMaster: Iasmin Mendes
+productOwner: Renato Valério
+architect: Iasmin Mendes
+devops: Gabriel Valério
+developmentTeam: [
+  Gabriel Davi Silva Pereira,
+  Heron Rodrigues Sousa,
+  João Lucas Fragoso Zarbiélli,
+  Lucas Maciel Aguiar,
+  Matheus Gomes Ferreira,
+  Weiller Fernandes Pereira,
+]
+
+issues: [
+    {
+        number: 21,
+        description: Definição dos Papéis,
+        responsible: [Iasmin Mendes, Renato Valério],
+        points: 0,
+        header: Planejadas,
+        headerSpan: 21,
+        status: Concluído
+    },
+    {
+        number: 11,
+        description: Organizar GitHub Pages,
+        responsible: Iasmin Mendes,
+        points: 2,
+        status: Concluído
+    },
+    {
+        number: 15,
+        description: Elaborar o RoadMap do Scrum Master,
+        responsible: Iasmin Mendes,
+        points: 2,
+        status: Concluído
+    },
+    {
+        number: 15,
+        description: Elaborar o RoadMap Geral,
+        responsible: Iasmin Mendes,
+        points: 2,
+        status: Concluído
+    },
+    {
+        number: 11,
+        description: Definir a Licença,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 11,
+        description: README do Projejto,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 11,
+        description: Documento de "Como Contribuir",
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 10,
+        description: Definir a metodologia,
+        responsible: Iasmin Mendes,
+        points: 2,
+        status: Concluído
+    },
+    {
+        number: 23,
+        description: Definir métricas de produtividade,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Não Concluído
+    },
+    {
+        number: 15,
+        description: Elaborar RoadMap do PO,
+        responsible: Renato Valério,
+        points: 2,
+        status: Concluído
+    },
+    {
+        number: 26,
+        description: Elaborar EAP,
+        responsible: Renato Valério,
+        points: 3,
+        status: Não Concluído
+    },
+    {
+        number: 24,
+        description: Elaborar TAP,
+        responsible: Renato Valério,
+        points: 3,
+        status: Não Concluído
+    },
+    {
+        number: 15,
+        description: Elaborar RoadMap do DevOps,
+        responsible: Renato Valério,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 15,
+        description: Elaborar RoadMap do Arquiteto,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 16,
+        description: Treinameto de Artefatos,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 1,
+        description: Treinameto de Git,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 3,
+        description: Treinameto de HTML,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 4,
+        description: Treinameto de CSS,
+        responsible: Iasmin Mendes,
+        points: 1,
+        status: Concluído
+    },
+    {
+        number: 5,
+        description: Treinameto de JS,
+        responsible: Iasmin Mendes,
+        points: 2,
+        status: Não Concluído
+    },
+    {
+        number: 8,
+        description: Elaborar Documento de Visão,
+        responsible: Time de Desenvolvimento,
+        points: 3,
+        status: Concluído
+    },
+    {
+        number: 9,
+        description: Elaborar Documento de Arquitetura,
+        responsible: Time de Desenvolvimento,
+        points: 5,
+        status: Não Concluído
+    }
+]
+
+knowledge: true
+
+presence : [
+    {
+        name: Iasmin Mendes,
+        presence: true
+    },
+    {
+        name: Renato Valério,
+        presence: true
+    },
+    {
+        name: Gabriel Davi,
+        presence: true
+    },
+    {
+        name: Heron Rodrigues,
+        presence: true
+    },
+    {
+        name: João Lucas Zarbiélli,
+        presence: true
+    },
+    {
+        name: Lucas Maciel,
+        presence: true
+    },
+    {
+        name: Matheus Gomes,
+        presence: true
+    },
+    {
+        name: Weiller Fernandes,
+        presence: true
+    }
+]
+
 ---
-
-## Informações Básicas da Sprint
-<table>
-<tr><th><i>Sprint</i></th><td>1</td></tr>
-<tr><th>Início</th><td>22/08/2018</td></tr>
-<tr><th>Término</th><td>28/08/2018</td></tr>
-<tr><th>Duração</th><td>7 dias</td></tr>
-<tr><th>Pontos Planejados</th><td>37</td></tr>
-</table>
-
----
-
-## Papéis
-
-<table>
-<tr> <th>Papel</th> <th>Responsável</th> </tr>
-<tr> <td><i>Scrum Master</i></td> <td>Iasmin Mendes</td> </tr>
-<tr> <td><i>Product Owner</i></td> <td>Renato Valério</td> </tr>
-<tr> <td>Arquiteto</td> <td>Iasmin Mendes</td> </tr>
-<tr> <td>DevOps</td> <td>Renato Valério</td> </tr> 
-<tr>
-<td>Time de Desenvolvimento</td>
-<td>
-Gabriel Davi Silva Pereira<br>
-Heron Rodrigues Sousa<br>
-João Lucas Fragoso Zarbiélli<br>
-Lucas Maciel Aguiar<br>
-Matheus Gomes Ferreira<br>
-Weiller Fernandes Pereira<br>
-</td>
-</tr>
-</table>
-
----
-
-## _Issues_ Planejadas
-
-<table>
-<tr><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/21">#21</a></td>
-  <td>Definição dos Papéis</td>
-  <td>0</td>
-  <td>Iasmin Mendes <br> Renato Valério</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
-  <td>Organizar GitHub Pages</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
-  <td>Elaborar o RoadMap do Scrum Master</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
-  <td>Elaborar o RoadMap Geral</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
-  <td>Definir a Licença</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
-  <td>README do Projejto</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/11">#11</a></td>
-  <td>Documento de "Como Contribuir"</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/10">#10</a></td>
-  <td>Definir a metodologia</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/23">#23</a></td>
-  <td>Definir métricas de produtividade</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
-  <td>Elaborar RoadMap do PO</td>
-  <td>2</td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/26">#26</a></td>
-  <td>Elaborar EAP</td>
-  <td>3</td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/24">#24</a></td>
-  <td>Elaborar TAP</td>
-  <td>3</td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
-  <td>Elaborar RoadMap do DevOps</td>
-  <td>1</td>
-  <td>Renato Valério</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/15">#15</a></td>
-  <td>Elaborar RoadMap do Arquiteto</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/16">#16</a></td>
-  <td>Treinameto de Artefatos</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/2">#2</a></td>
-  <td>Treinameto de Git</td>
-  <td>1</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/3">#3</a><br>
-      <a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/4">#4</a></td>
-  <td>Treinameto de HTML e CSS</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/5">#5</a></td>
-  <td>Treinameto de JS</td>
-  <td>2</td>
-  <td>Iasmin Mendes</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/8">#8</a></td>
-  <td>Elaborar o Documento de Visão</td>
-  <td>3</td>
-  <td>Time de Desenvolvimento</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/9">#9</a></td>
-  <td>Elaborar o Documento de Arquitetura</td>
-  <td>5</td>
-  <td>Time de Desenvolvimento</td>
-</tr>
-<tr><th colspan='2'>Total de Pontos Planejados</th><td colspan='2'>37</td></tr>
-</table>
-
-----
-
-## Quadro de Conhecimentos
-
-![Quadro de Conhecimentos - Sprint 1 (Inicial)]({{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_0.png)
-
-![Gráfico de Conhecimentos - Sprint 1 (Inicial)]({{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_0.png)
-
----
-
-## Presença na Sprint Planning
-
-<table class='frequency'>
-<tr><th>Membro</th><th>Presença</th></tr>
-<tr><td>Iasmin Mendes</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Renato Valério</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Gabriel Davi</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Heron Rodrigues</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>João Lucas Zarbiélli</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Lucas Maciel</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Matheus Gomes</td><td><i class="fa fa-check"></i></td></tr>
-<tr><td>Weiller Fernandes</td><td><i class="fa fa-check"></i></td></tr>
-</table>

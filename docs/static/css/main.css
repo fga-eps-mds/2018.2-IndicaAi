@@ -1,4 +1,24 @@
-.main.outer{padding-top: 50px;}
+body.home.overflow-hidden {
+    background: #fff;
+}
+
+body .container .post-content.well {
+    box-shadow: 0px 0px;
+}
+
+.col-md-9.col-xs-12 {
+    padding-right: 30px;
+}
+
+.main.outer{
+    padding-top: 50px;
+    width: auto;
+}
+
+nav.menu .navbar-collapse.collapse {
+    width: 100%;
+}
+
 .header-panel.shadow-z-2 {
     background-color: #009587;
     padding: 50px 0 15px 0;
@@ -262,7 +282,6 @@ body .container ul.well li.accordion.active a {
 body .container ul.well ul.panel li {
     background-color: #00b3a1;
     margin: 0;
-    padding: 2px;
 }
 
 body .container ul.well ul.panel li a {
@@ -340,4 +359,8 @@ div.well.metrics div.card-deck .card {
     max-width: 48%;
     margin-right: 10px;
     margin-bottom: 20px;
+}
+
+#metrics .container {
+    width: auto;
 }

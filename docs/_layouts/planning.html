@@ -2,89 +2,115 @@
 layout: default
 ---
 
-<div class="post-content well">
+<div class="post-content well metrics">
 
-<h2>Informações Básicas da Sprint</h2>
+  <ul class="nav nav-tabs">
+    <li class='active in'><a data-toggle="tab" class='active in' href="#info">Sprint {{page.sprint}}</a></li>
+    <li><a data-toggle="tab" href="#papers">Papéis</a></li>
+    <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
+    {% if page.knowledge %}<li><a data-toggle="tab" href="#knowledge">Conhecimento</a></li>{% endif %}
+    {% if page.changes %}<li><a data-toggle="tab" href="#changes">Mudanças</a></li>{% endif %}
+  </ul>
 
-<table>
-<tr><th><i>Sprint</i></th><td>{{page.sprint}}</td></tr>
-<tr><th>Início</th><td>{{page.startDate}}</td></tr>
-<tr><th>Término</th><td>{{page.endDate}}</td></tr>
-<tr><th>Duração</th><td>{{page.duration}} dias</td></tr>
-<tr><th>Pontos Planejados</th><td>{{page.plannedPoints}}</td></tr>
-<tr><th>Pontos de Dívida</th><td>{{page.debtPoints}}</td></tr>
-<tr><th>Pontuação Total</th><td>{{page.totalPoints}}</td></tr>
-</table>
+  <div class="tab-content">
+      <div id="info" class="tab-pane fade active in">
+        <h2>Informações Básicas da Sprint</h2>
+        <table>
+          <tr><th><i>Sprint</i></th><td>{{page.sprint}}</td></tr>
+          <tr><th>Início</th><td>{{page.startDate}}</td></tr>
+          <tr><th>Término</th><td>{{page.endDate}}</td></tr>
+          <tr><th>Duração</th><td>{{page.duration}} dias</td></tr>
+          <tr> <th>Pontos Planejados</th> <td>{{page.plannedPoints}}</td> </tr>
+          <tr> <th>Pontos de dívida passada</th> <td>{{page.debtPoints}}</td> </tr>
+          <tr><th>Pontuação Total</th><td>{{page.totalPoints}}</td></tr>
+        </table>
+        <hr>
 
-<hr>
+        <h3>Presença na <i>Sprint Planning</i></h3>
+        <table class='frequency'>
+        <tr><th>Membro</th><th>Presença</th></tr>
+        {% for i in page.presence %}
+          {% if i.presence == true %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-check"></i></td></tr>
+          {% else %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-times"></i></td></tr>
+          {% endif %}
+        {% endfor %}
+        </table>
 
-<h2>Papéis</h2>
+      </div>
 
-<table>
-<tr> <th>Papel</th> <th>Responsável</th> </tr>
-<tr> <td><i>Scrum Master</i></td> <td>{{page.scrumMaster}}</td> </tr>
-<tr> <td><i>Product Owner</i></td> <td>{{page.productOwner}}</td> </tr>
-<tr> <td>Arquiteto</td> <td>{{page.architect}}</td> </tr>
-<tr> <td>DevOps</td> <td>{{page.devops}}</td> </tr> 
-<tr>
-<td>Time de Desenvolvimento</td>
-<td>
-{% for i in page.developmentTeam %}
-    {{i}}<br>
-{% endfor %}
-</td>
-</tr>
-</table>
+      <div id="papers" class="tab-pane fade">
+        <h2>Papéis</h2>
+        <table>
+          <tr> <th>Papel</th> <th>Responsável</th> </tr>
+          <tr> <td><i>Scrum Master</i></td> <td>{{page.scrumMaster}}</td> </tr>
+          <tr> <td><i>Product Owner</i></td> <td>{{page.productOwner}}</td> </tr>
+          <tr> <td>Arquiteto</td> <td>{{page.architect}}</td> </tr>
+          <tr> <td>DevOps</td> <td>{{page.devops}}</td> </tr> 
+          <tr>
+          <td>Time de Desenvolvimento</td>
+          <td>
+          {% for i in page.developmentTeam %}
+              {{i}}<br>
+          {% endfor %}
+          </td>
+          </tr>
+        </table>
+      </div>
 
-<table>
-<tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
-<tr>
-{% for i in page.issues %}
-  <tr>
-    {% if i.header and i.header == "Planejadas" %}
-      <th rowspan='{{i.headerSpan}}' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
-    {% elsif i.header and i.header == "Dividas" %}
-      <th rowspan='{{i.headerSpan}}' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
-    {% endif %}
-    <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/{{i.number}}">#{{i.number}}</a></td>
-    <td>{{i.description}}</td>
-    <td>{{i.points}}</td>
-    <td>{{i.responsible}}</td>
-  </tr>
-{% endfor %}
-<tr><th colspan='3'>Pontos Planejados</th><td colspan='2'>{{page.plannedPoints}}</td></tr>
-<tr><th colspan='3'>Pontos de Dívida</th><td colspan='2'>{{page.debtPoints}}</td></tr>
-<tr><th colspan='3'>Pontuação total</th><td colspan='2'>{{page.totalPoints}}</td></tr>
-</table>
+      <div id="backlog" class="tab-pane fade">
+        <h2>Sprint Backlog</h2>
+        <table>
+        <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
+        <tr>
+        {% for i in page.issues %}
+          <tr>
+            {% if i.header and i.header == "Planejadas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
+            {% elsif i.header and i.header == "Dividas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
+            {% endif %}
+            <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/{{i.number}}">#{{i.number}}</a></td>
+            <td>{{i.description}}</td>
+            <td>{{i.points}}</td>
+            <td>
+                {% for p in i.responsible %}
+                    {{p}}<br>
+                {% endfor %}
+             </td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
 
-<hr>
+      {% if page.changes %}
+        <div id="changes" class="tab-pane fade">
+          <h2>Mudanças na <i>Sprint</i></h2>
+          <ul>
+            {% for i in page.changes %}
+              <li>{{i}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
 
-{% if page.knowledge == true %}
-
-<h2>Quadro de Conhecimentos</h2>
-
-<img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.previousSprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.previousSprint}}' alt='Quadro de Conhecimentos - Sprint {{page.previousSprint}}'>
-
-{% endif %}
+      {% if page.knowledge %}
+        <div id="knowledge" class="tab-pane fade">
+          <h2>Quadro de Conhecimentos - Início da <i>Sprint</i></h2>
+          <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.previousSprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.previousSprint}}' alt='Quadro de Conhecimentos - Sprint {{page.previousSprint}}'>
+          <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
+        </div>
+      {% endif %}
+  </div>
+</div>
 
 <article class="content">
     <div class="post">{{ content }}</div>
 </article>
 
-<h2>Presença na Sprint Planning</h2>
 
-<table class='frequency'>
-<tr><th>Membro</th><th>Presença</th></tr>
-{% for i in page.presence %}
-  {% if i.presence == true %}
-    <tr><td>{{i.name}}</td><td><i class="fa fa-check"></i></td></tr>
-  {% else %}
-    <tr><td>{{i.name}}</td><td><i class="fa fa-times"></i></td></tr>
-  {% endif %}
-{% endfor %}
-</table>
-
-<hr />
+<hr>
 {% assign hasSimilar = '' %}
 {% for post in site.posts  %}
     {% assign postHasSimilar = false %}
@@ -93,7 +119,7 @@ layout: default
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
                 <div class="panel-body">
-                <h4>Outros Documentos</h4>
+                <h4>Sprint Planning</h4>
                 <ul>
                 {% endif %}
                 <li class="relatedPost">
