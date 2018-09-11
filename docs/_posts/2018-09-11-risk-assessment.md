@@ -284,3 +284,14 @@ Caronas e Reuniões diárias devem ser priorizadas para garantir a segurança do
 </td>
 </tr>
 </table>
+
+## 2. Riscos Positivos
+
+### 2.1. Documentação
+| ID | Se | por conta | o impacto será |
+|:--:|:--:|:---------:|:--------------:|
+| RP01 | o design for intuitivo e de boa qualidade | da experiência em design de um integrante | qualidade na interface de usuário, gerando aceitação do público. |
+| RP02 | o aplicativo for hospedado em alguma unidade da UNB | de haver integrantes com conhecimento de implatação que tem acesso e possuem a permissão para implantar o sistema | economia de recursos. |
+| RP03 | a equipe de gerência quiser colaborar com o projeto | de motivos acadêmicos e profissionais | maior qualidade na interface de usuário e no software em sí. |
+| RP04 | terceiros se interessarem com o projeto | da visibilidade da plataforma | financiamento do software e contínuidade de tal|
+| RP05 | terceiros se interessarem e ajudarem no desenvolvimento do produto | da visibilidade da plataforma | equipe maior de desenvolvimento, divindo o trabalho|
