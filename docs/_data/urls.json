@@ -109,7 +109,7 @@
     "icon": "fa-paper-plane",
     "urls": [
         {
-          "text": "backlog",
+          "text": "Backlog",
           "url": "/docs/2018/09/06/backlog-doc.html",
           "icon": "fa-angle-right"
         },
