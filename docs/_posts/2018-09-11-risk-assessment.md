@@ -19,15 +19,15 @@ Este documento tem como finalidade registrar o levantamento dos riscos que podem
 | RN01 | o cliente não aprovar o produto | da inexperiência da equipe de desenvolvimento e da gerência | a não aprovação do sistema. |
 | RN02 | a equipe finalizar o software antes do tempo previsto | da rápida absorção de conhecimento | perda de dinheiro do cliente. |
 | RN03 | tempo de desenvolvimento for reduzido | de fatores externos ou internos | o replanejamento do projeto. |
-| RN04 | a equipe tiver problemaas de comunicação entre sí | da equipe possuir diversos integrantes | dificuldade no gerênciamento. |
+| RN04 | a equipe tiver problemas de comunicação entre si | da equipe possuir diversos integrantes | dificuldade no gerenciamento. |
 | RN05 | um membro da equipe desistir da disciplina | de motivos diversos | enfraquecimento do desempenho da equipe. |
 | RN06 | algum membro da equipe se ausentar | de motivos diversos | desfalque na equipe. |
 | RN07 | o cliente mudar o escopo | da definição da disciplina | replanejamento do projeto e tempo de refatoração. |
 | RN08 | a equipe não tiver comprometimento com as atividades delegadas| da falta de integração da equipe | atraso no cronograma. |
 | RN09 | a equipe de gerência não conseguir dar o suporte necessário para a equipe de desenvolvimento | da falta de experiência | baixa produtividade e qualidade inferior. |
 | RN10 | a equipe não conseguir desenvolver usando a arquitetura | da complexidade arquitetural | o produto poderá sofrer letargia na entrega e na qualidade. |
-| RN11 | houver falha no equipamento de desenvolvimento | de algum imprevisto ou mal uso | aumento do custo do projeto e atraso no desenvolvimentode tal. |
-| RN12 | houver desrespeito da equipe entre sí | de questões pessoais | atitudes tomadas pela equipe de gerência. |
+| RN11 | houver falha no equipamento de desenvolvimento | de algum imprevisto ou mal uso | aumento do custo do projeto e atraso no desenvolvimento de tal. |
+| RN12 | houver desrespeito da equipe entre si | de questões pessoais | atitudes tomadas pela equipe de gerência. |
 
 ### 1.2 Interpretação
 
@@ -60,10 +60,21 @@ De acordo com as métricas, e os atributos entregues, deve ser feita uma medida 
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-Dar treinamento e coletar métricas para garantir que o nível de qualidade é statisfatório.
+Dar treinamento e coletar métricas para garantir que o nível de qualidade é satisfatório.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN02</td>
 <td>Baixo</td>
@@ -85,7 +96,18 @@ Verificar se as atividades são feitas no prazo certo.
 EPS deve agir para diminuir ao máximo erros de planejamento e tempo gasto.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN03</td>
 <td>Alto</td>
@@ -104,10 +126,21 @@ Verificar com a professora(Cliente) se ocorreram ou vão ocorrer mudanças no ca
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-A equipe deve estar pronta para agir, aplicando o plano de mudanças e se adptando da melhor forma possível. Porém não tem como eliminar esse risco.
+A equipe deve estar pronta para agir, aplicando o plano de mudanças e se adaptando da melhor forma possível. Porém não tem como eliminar esse risco.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN04</td>
 <td>Médio</td>
@@ -126,10 +159,21 @@ Assegurar que todos os integrantes estão nos canais de comunicação e por dent
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-EPS deve planejar e gerênciar a comunicação ao longo de todo o projeto.
+EPS deve planejar e gerenciar a comunicação ao longo de todo o projeto.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN05</td>
 <td>Alto</td>
@@ -142,16 +186,27 @@ EPS deve planejar e gerênciar a comunicação ao longo de todo o projeto.
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Todos os integrantes foram informardos para avisar caso desistam da disciplina. O monitoramento será a verificação se algum membro informa a sua desistência.
+Todos os integrantes foram informados para avisar caso desistam da disciplina. O monitoramento será a verificação se algum membro informa a sua desistência.
 </td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-Treinamentos e rotacionamentos dos integrantes de forma a se integrar e padronizar toda a equie, genrando assim um menor impacto na perca de um integrante.
+Treinamentos e rotacionamentos dos integrantes de forma a se integrar e padronizar toda a equipe, gerando assim um menor impacto na perca de um integrante.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN06</td>
 <td>Médio</td>
@@ -164,16 +219,27 @@ Treinamentos e rotacionamentos dos integrantes de forma a se integrar e padroniz
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Todos os mebros foram avisados para informar com a maior antecedência possível se tiverem viagens, problemas de saúde ou qualquer outro impedimento que não permita a contribuição temporária ao projeto. O monitoramento será acompanhar o aviso de ausência dos integrantes.
+Todos os membros foram avisados para informar com a maior antecedência possível se tiverem viagens, problemas de saúde ou qualquer outro impedimento que não permita a contribuição temporária ao projeto. O monitoramento será acompanhar o aviso de ausência dos integrantes.
 </td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-Aviso com antecendência a ausência.
+Aviso com antecedência a ausência.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN07</td>
 <td>Muito Alto</td>
@@ -195,7 +261,18 @@ Confirmar o escopo atual do projeto em todas as reuniões com Carla(cliente), af
 Não existem atitudes para eliminar esse risco, tendo em vista que as definições do cliente deve ser acatadas.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN08</td>
 <td>Alto</td>
@@ -208,7 +285,7 @@ Não existem atitudes para eliminar esse risco, tendo em vista que as definiçõ
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verificar se as atividades estão sendo entregues dentro do prazo determidado, e estão sendo realizadas de forma concreta.
+Verificar se as atividades estão sendo entregues dentro do prazo determinado, e estão sendo realizadas de forma concreta.
 </td>
 </tr>
 <tr>
@@ -217,7 +294,18 @@ Verificar se as atividades estão sendo entregues dentro do prazo determidado, e
 Reorganizar cronograma caso alguma atividade seja finalizada antes ou depois do prazo. Porém os deadlines das disciplinas devem ser levados em conta.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN09</td>
 <td>Alto</td>
@@ -236,10 +324,21 @@ A equipe de gerência deve estar alinhado ou superior no conhecimento em relaç�
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-Rotacionar conhecimento entre os integrantes de forma que os mais experiêntes possam ajudar os menos experiêntes.
+Rotacionar conhecimento entre os integrantes de forma que os mais experientes possam ajudar os menos experientes.
 </td>
 </tr>
+</tale>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN10</td>
 <td>Muito Alto</td>
@@ -261,7 +360,18 @@ Verificar se o software está de acordo com a arquitetura planejada e documentad
 Treinamentos devem ser fornecidas aos desenvolvedores visando garantir a total compreensão da arquitetura.
 </td>
 </tr>
+</table>
 
+<table>
+<tr>
+<th>ID</th>
+<th>Impacto</th>
+<th>Probabilidade</th>
+<th>Prioridade</th>
+<th>Estratégia</th>
+<th>Responsável</th>
+<th>Hora estimada</th>
+</tr>
 <tr>
 <td>RN11</td>
 <td>Alto</td>
@@ -274,7 +384,7 @@ Treinamentos devem ser fornecidas aos desenvolvedores visando garantir a total c
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Os integrantes que tiverem seus equipamentos de desenvolvimento roubados ou estraviados devem informar a equipe de EPS.
+Os integrantes que tiverem seus equipamentos de desenvolvimento roubados devem informar a equipe de EPS.
 </td>
 </tr>
 <tr>
@@ -291,10 +401,10 @@ Caronas e Reuniões diárias devem ser priorizadas para garantir a segurança do
 | ID | Se | por conta | o impacto será |
 |:--:|:--:|:---------:|:--------------:|
 | RP01 | o design for intuitivo e de boa qualidade | da experiência em design de um integrante | qualidade na interface de usuário, gerando aceitação do público. |
-| RP02 | o aplicativo for hospedado em alguma unidade da UNB | de haver integrantes com conhecimento de implatação que tem acesso e possuem a permissão para implantar o sistema | economia de recursos. |
-| RP03 | a equipe de gerência quiser colaborar com o projeto | de motivos acadêmicos e profissionais | maior qualidade na interface de usuário e no software em sí. |
-| RP04 | terceiros se interessarem com o projeto | da visibilidade da plataforma | financiamento do software e contínuidade de tal|
-| RP05 | terceiros se interessarem e ajudarem no desenvolvimento do produto | da visibilidade da plataforma | equipe maior de desenvolvimento, divindo o trabalho|
+| RP02 | o aplicativo for hospedado em alguma unidade da UNB | de haver integrantes com conhecimento de implantação que tem acesso e possuem a permissão para implantar o sistema | economia de recursos. |
+| RP03 | a equipe de gerência quiser colaborar com o projeto | de motivos acadêmicos e profissionais | maior qualidade na interface de usuário e no software em si. |
+| RP04 | terceiros se interessarem com o projeto | da visibilidade da plataforma | financiamento do software e continuidade de tal|
+| RP05 | terceiros se interessarem e ajudarem no desenvolvimento do produto | da visibilidade da plataforma | equipe maior de desenvolvimento, dividindo o trabalho|
 
 
 ### 2.2 Interpretação
@@ -326,7 +436,7 @@ Verificar se o integrante com mais experiência está com carga de atividades re
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=5>
-O integrante com maior conhecimento de design,html e css deve gerênciar a implementação da interface do sistema.
+O integrante com maior conhecimento de design,html e css deve gerenciar a implementação da interface do sistema.
 </td>
 </tr>
 
@@ -341,7 +451,7 @@ O integrante com maior conhecimento de design,html e css deve gerênciar a imple
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=5>
-Verificar se a estrutura do LAPPIS ou alguma outra opção, e as permissões para implantar o software nos servidores deles por meio de comunicação com os reponsáveis pelo laboratório.
+Verificar se a estrutura do LAPPIS ou alguma outra opção, e as permissões para implantar o software nos servidores deles por meio de comunicação com os responsáveis pelo laboratório.
 </td> 
 </tr>
 <tr>
@@ -368,7 +478,7 @@ Verificar os artefatos e as mensagens de colaboração com integrantes do projet
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=5>
-Se a contribuição se concretizar os artefatos de colaboração devem ser usados e evoluidos visando agregar valor ao sistema.
+Se a contribuição se concretizar os artefatos de colaboração devem ser usados e evoluídos visando agregar valor ao sistema.
 </td>
 </tr>
 
@@ -389,7 +499,7 @@ Checar os meios de comunicação e se mensagens aos integrantes da equipe possue
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=5>
-Deve-se analisar o financiamento e compartilhar o capital com a universidade de acordo com a inteção dos clientes e professores relacionados ao projeto. Gerando assim uma análise de tal.
+Deve-se analisar o financiamento e compartilhar o capital com a universidade de acordo com a intenção dos clientes e professores relacionados ao projeto. Gerando assim uma análise de tal.
 </td>
 </tr>
 
@@ -461,7 +571,7 @@ Pouca experiência com a tecnologia
 <p>
 Comunicação de toda equipe (interna / externa), tanto de Mds quanto de EPs
 <p>
-Equipe de Gerência sem experiência com gerênciamento
+Equipe de Gerência sem experiência com gerenciamento
 </td>
 <td>
 <center><h3>AMEAÇAS</h3></center>
