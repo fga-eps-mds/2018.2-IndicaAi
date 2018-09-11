@@ -295,3 +295,122 @@ Caronas e Reuniões diárias devem ser priorizadas para garantir a segurança do
 | RP03 | a equipe de gerência quiser colaborar com o projeto | de motivos acadêmicos e profissionais | maior qualidade na interface de usuário e no software em sí. |
 | RP04 | terceiros se interessarem com o projeto | da visibilidade da plataforma | financiamento do software e contínuidade de tal|
 | RP05 | terceiros se interessarem e ajudarem no desenvolvimento do produto | da visibilidade da plataforma | equipe maior de desenvolvimento, divindo o trabalho|
+
+
+### 2.2 Interpretação
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Impacto</th>
+        <th>Probabilidade</th>
+        <th>Prioridade</th>
+        <th>Estratégia</th>
+        <th>Responsável</th>
+    </tr>
+
+<tr>
+<td>RP01</td>
+<td>Alto</td>
+<td>Média</td>
+<td>Média</td>
+<td>Explorar</td>
+<td>MDS</td>
+</tr>
+<tr>
+<td><b>Monitoramento</b></td>
+<td colspan=5>
+Verificar se o integrante com mais experiência está com carga de atividades reduzidas para investir mais tempo no frontend.
+</td> 
+</tr>
+<tr>
+<td><b>Resposta</b></td>
+<td colspan=5>
+O integrante com maior conhecimento de design,html e css deve gerênciar a implementação da interface do sistema.
+</td>
+</tr>
+
+<tr>
+<td>RP02</td>
+<td>Alto</td>
+<td>Muito Alta</td>
+<td>Muto Alta</td>
+<td>Explorar</td>
+<td>EPS e MDS</td>
+</tr>
+<tr>
+<td><b>Monitoramento</b></td>
+<td colspan=5>
+Verificar se a estrutura do LAPPIS ou alguma outra opção, e as permissões para implantar o software nos servidores deles por meio de comunicação com os reponsáveis pelo laboratório.
+</td> 
+</tr>
+<tr>
+<td><b>Resposta</b></td>
+<td colspan=5>
+A comunicação e planejamento da relação entre a equipe deve ser feito de forma a garantir que essa oportunidade se torne realidade.
+</td>
+</tr>
+
+<tr>
+<td>RP03</td>
+<td>Médio</td>
+<td>Muito Alta</td>
+<td>Alta</td>
+<td>Melhorar</td>
+<td>EPS</td>
+</tr>
+<tr>
+<td><b>Monitoramento</b></td>
+<td colspan=5>
+Verificar os artefatos e as mensagens de colaboração com integrantes do projeto.
+</td> 
+</tr>
+<tr>
+<td><b>Resposta</b></td>
+<td colspan=5>
+Se a contribuição se concretizar os artefatos de colaboração devem ser usados e evoluidos visando agregar valor ao sistema.
+</td>
+</tr>
+
+<tr>
+<td>RP04</td>
+<td>Alto</td>
+<td>Baixa</td>
+<td>Baixa</td>
+<td>Compartilhar</td>
+<td>EPS e MDS</td>
+</tr>
+<tr>
+<td><b>Monitoramento</b></td>
+<td colspan=5>
+Checar os meios de comunicação e se mensagens aos integrantes da equipe possuem oportunidades de financiamento.
+</td> 
+</tr>
+<tr>
+<td><b>Resposta</b></td>
+<td colspan=5>
+Deve-se analisar o financiamento e compartilhar o capital com a universidade de acordo com a inteção dos clientes e professores relacionados ao projeto. Gerando assim uma análise de tal.
+</td>
+</tr>
+
+<tr>
+<td>RP05</td>
+<td>Alto</td>
+<td>Baixa</td>
+<td>Baixa</td>
+<td>Compartilhar</td>
+<td>EPS e MDS</td>
+</tr>
+<tr>
+<td><b>Monitoramento</b></td>
+<td colspan=5>
+Checar os meios de comunicação, mensagens e intenções aos interessados no desenvolvimento do produto.
+</td> 
+</tr>
+<tr>
+<td><b>Resposta</b></td>
+<td colspan=5>
+Deve-se analisar o interesse dos contribuintes.
+</td>
+</tr>
+</table>
