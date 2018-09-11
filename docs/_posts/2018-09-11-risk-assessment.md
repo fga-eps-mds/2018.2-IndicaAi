@@ -16,8 +16,6 @@ Este documento tem como finalidade registrar o levantamento dos riscos que podem
 
 | ID | Se | por conta | o impacto será |
 |:--:|:--:|:---------:|:--------------:|
-
-
 | RN01 | o cliente não aprovar o produto | da inexperiência da equipe de desenvolvimento e da gerência | a não aprovação do sistema. |
 | RN02 | a equipe finalizar o software antes do tempo previsto | da rápida absorção de conhecimento | perda de dinheiro do cliente. |
 | RN03 | tempo de desenvolvimento for reduzido | de fatores externos ou internos | o replanejamento do projeto. |
@@ -50,14 +48,14 @@ Este documento tem como finalidade registrar o levantamento dos riscos que podem
 <td>Baixa</td>
 <td>Media</td>
 <td>Prevenir</td>
-<td>Matheus</td>
-<td>253,5 horas</td>
+<td>Renato e Iasmin</td>
+<td>200 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-A coleta de métricas de qualidade de código deve ser feita. De acordo com seu resultado, medidas para melhorar o código ou resolver problemas devem ser tomadas.
-</td> 
+De acordo com as métricas, e os atributos entregues, deve ser feita uma medida para resolução do problema.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
@@ -72,41 +70,41 @@ Dar treinamento e coletar métricas para garantir que o nível de qualidade é s
 <td>Muito Baixa</td>
 <td>Baixa</td>
 <td>Mitigar</td>
-<td>Eduardo</td>
+<td>Renato</td>
 <td>0 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verificar se as atividades são feitas antes do previsto.
-</td> 
+Verificar se as atividades são feitas no prazo certo.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-GPP deve agir para diminuir ao máximo erros de planejamento.
+EPS deve agir para diminuir ao máximo erros de planejamento e tempo gasto.
 </td>
 </tr>
 
 <tr>
 <td>RN03</td>
 <td>Alto</td>
-<td>Muito baixa</td>
-<td>Muito baixa</td>
-<td>Aceitar</td>
-<td>Artur</td>
-<td>82 horas</td>
+<td>Muito alto</td>
+<td>Alta</td>
+<td>Prevenir</td>
+<td>Carla</td>
+<td>0 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verificar com a professora se ocorreram ou vão ocorrer mudanças no calendário da disciplina.
-</td> 
+Verificar com a professora(Cliente) se ocorreram ou vão ocorrer mudanças no calendário da disciplina.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-A equipe deve estar pronta para agir, aplicando o plano de mudanças. Porém não tem como eliminar esse risco.
+A equipe deve estar pronta para agir, aplicando o plano de mudanças e se adptando da melhor forma possível. Porém não tem como eliminar esse risco.
 </td>
 </tr>
 
@@ -114,43 +112,43 @@ A equipe deve estar pronta para agir, aplicando o plano de mudanças. Porém nã
 <td>RN04</td>
 <td>Médio</td>
 <td>Média</td>
-<td>Baixa</td>
+<td>Alta</td>
 <td>Prevenir</td>
-<td>Marcelo</td>
-<td>169 horas</td>
+<td>EPS</td>
+<td>30 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Assegurar que todos os integrantes estão nos canais de comunicação.
-</td> 
+Assegurar que todos os integrantes estão nos canais de comunicação e por dentro do assunto abordado.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-GPP deve planejar e gerênciar a comunicação ao longo de todo o projeto.
+EPS deve planejar e gerênciar a comunicação ao longo de todo o projeto.
 </td>
 </tr>
 
 <tr>
 <td>RN05</td>
 <td>Alto</td>
+<td>Alta</td>
 <td>Média</td>
-<td>Média</td>
-<td>Mitigar</td>
-<td>Marcelo</td>
-<td>169 horas</td>
+<td>Prevenir</td>
+<td>EPS e MDS</td>
+<td>0 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
 Todos os integrantes foram informardos para avisar caso desistam da disciplina. O monitoramento será a verificação se algum membro informa a sua desistência.
-</td> 
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-         Rotacionar o conhecimento dos integrantes de forma a minimizar o impacto da perda de um integrante.
+Treinamentos e rotacionamentos dos integrantes de forma a se integrar e padronizar toda a equie, genrando assim um menor impacto na perca de um integrante.
 </td>
 </tr>
 
@@ -160,19 +158,19 @@ Todos os integrantes foram informardos para avisar caso desistam da disciplina. 
 <td>Muito Alta</td>
 <td>Alta</td>
 <td>Mitigar</td>
-<td>Arthur</td>
-<td>100 horas</td>
+<td>EPS e MDSthur</td>
+<td>0 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
 Todos os mebros foram avisados para informar com a maior antecedência possível se tiverem viagens, problemas de saúde ou qualquer outro impedimento que não permita a contribuição temporária ao projeto. O monitoramento será acompanhar o aviso de ausência dos integrantes.
-</td> 
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-        Deve-se acompanhar os membros de forma que seja avisado com a maior antecedência possível sua ausência.
+Aviso com antecendência a ausência.
 </td>
 </tr>
 
@@ -182,19 +180,19 @@ Todos os mebros foram avisados para informar com a maior antecedência possível
 <td>Baixa</td>
 <td>Muito baixa</td>
 <td>Aceitar</td>
-<td>Artur</td>
-<td>338 horas</td>
+<td>EPS</td>
+<td>200 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Confirmar o escopo atual do projeto em todas as reuniões com cliente, afim de verificar se existem mudanças que podem impactar o projeto.
-</td> 
+Confirmar o escopo atual do projeto em todas as reuniões com Carla(cliente), afim de verificar se existem mudanças que podem impactar o projeto.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-        Não existem atitudes para eliminar esse risco, tendo em vista que as definições do cliente deve ser acatadas. Porém todo o planejamento de mudanças deve ser aplicado para diminuir ao máximo o impacto do risco.
+Não existem atitudes para eliminar esse risco, tendo em vista que as definições do cliente deve ser acatadas.
 </td>
 </tr>
 
@@ -204,19 +202,19 @@ Confirmar o escopo atual do projeto em todas as reuniões com cliente, afim de v
 <td>Média</td>
 <td>Alta</td>
 <td>Prevenir</td>
-<td>Matheus</td>
+<td>EPS</td>
 <td>169 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verificar se as atividades estão sendo entregues dentro do prazo determidado no cronograma.
-</td> 
+Verificar se as atividades estão sendo entregues dentro do prazo determidado, e estão sendo realizadas de forma concreta.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-         Reorganizar cronograma caso alguma atividade seja finalizada antes ou depois do prazo. Porém os deadlines das disciplinas devem ser levados em conta.
+Reorganizar cronograma caso alguma atividade seja finalizada antes ou depois do prazo. Porém os deadlines das disciplinas devem ser levados em conta.
 </td>
 </tr>
 
@@ -225,42 +223,42 @@ Verificar se as atividades estão sendo entregues dentro do prazo determidado no
 <td>Alto</td>
 <td>Baixo</td>
 <td>Alta</td>
-<td>Mitigar</td>
-<td>Matheus</td>
+<td>Prevenir</td>
+<td>EPS</td>
 <td>200 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verficar se as atividades de implementação em que envolvem integrantes de GPP são entregues no prazo.
-</td> 
+A equipe de gerência deve estar alinhado ou superior no conhecimento em relação a equipe de desenvolvimento.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-         Rotacionar conhecimento entre os integrantes de forma que os mais experiêntes possam ajudar os menos experiêntes.
+Rotacionar conhecimento entre os integrantes de forma que os mais experiêntes possam ajudar os menos experiêntes.
 </td>
 </tr>
 
 <tr>
 <td>RN10</td>
 <td>Muito Alto</td>
-<td>Baixa</td>
+<td>Alta</td>
 <td>Média</td>
 <td>Prevenir</td>
-<td>Eduardo</td>
-<td>507 horas</td>
+<td>EPS e MDS</td>
+<td>200 horas</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Verificar se o software está de acordo com a arquitetura planejada e documentada acessando classes, pastas e organização do framework.
-</td> 
+Verificar se o software está de acordo com a arquitetura planejada e documentada.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-        Treinamentos e aulas devem ser fornecidas aos desenvolvedores visando garantir a total compreensão da arquitetura.
+Treinamentos devem ser fornecidas aos desenvolvedores visando garantir a total compreensão da arquitetura.
 </td>
 </tr>
 
@@ -270,19 +268,19 @@ Verificar se o software está de acordo com a arquitetura planejada e documentad
 <td>Baixa</td>
 <td>Baixa</td>
 <td>Prevenir</td>
-<td>Artur</td>
+<td>Renato</td>
 <td>R$ 1.999,00</td>
 </tr>
 <tr>
 <td><b>Monitoramento</b></td>
 <td colspan=6>
-Os integrantes que tiverem seus equipamentos de desenvolvimento roubados ou estraviados devem informar a equipe de GPP.
-</td> 
+Os integrantes que tiverem seus equipamentos de desenvolvimento roubados ou estraviados devem informar a equipe de EPS.
+</td>
 </tr>
 <tr>
 <td><b>Resposta</b></td>
 <td colspan=6>
-        Caronas e Reuniões diárias devem ser priorizadas para garantir a segurança dos integrantes. Reuniões noturnas devem ser evitadas.
+Caronas e Reuniões diárias devem ser priorizadas para garantir a segurança dos integrantes.
 </td>
 </tr>
 </table>
