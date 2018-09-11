@@ -414,3 +414,72 @@ Deve-se analisar o interesse dos contribuintes.
 </td>
 </tr>
 </table>
+
+
+## 3. SWOT
+
+Após a reunião da equipe de Gerência junto a equipe de MDS, os seguintes dados foram identificados:
+
+<table>
+<tr>
+<td>
+<center><h3>FORÇAS</h3></center>
+<p>
+Cliente técnico
+<p>
+Equipe de outros produtos contribuindo para o projeto
+<p>
+Integração da equipe de EPS
+<p>
+Integrante com algum conhecimento de design
+<p>
+Equipe de desenvolvimento dedicada e competente
+<p>
+Equipe de desenvolvimento com rápida absorção de conhecimento e esforço
+<p>
+</td>
+<td>
+<center><h3>OPORTUNIDADES</h3></center>
+<p>
+Infraestrutura da UNB disponível para implantar o Software
+<p>
+Extensão do software implementada por alunos e terceiros
+<p>
+Relação de várias disciplinas com o software
+<p>
+O software ser financiado e ter ajuda de terceiros
+<p> 
+</td>
+</tr>
+<tr>
+<td>
+<center><h3>FRAQUEZAS</h3></center>
+<p>
+Integração da equipe de desenvolvimento junto aos outros produtos
+<p>
+Pouca experiência com a tecnologia
+<p>
+Comunicação de toda equipe (interna / externa), tanto de Mds quanto de EPs
+<p>
+Equipe de Gerência sem experiência com gerênciamento
+</td>
+<td>
+<center><h3>AMEAÇAS</h3></center>
+<p>
+Mudança no calendário
+<p>
+Perda de membros na equipe
+<p>
+Mudança do escopo
+<p>
+Atrasos na entrega de atividades
+<p>
+Erro de planejamento da equipe
+<p>
+Produto não atender ao cliente
+<p>
+Perda de equipamentos
+</td>
+</tr>
+</table>
+
