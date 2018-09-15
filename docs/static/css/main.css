@@ -18,18 +18,54 @@ body .container .post-content.well {
 nav.menu .navbar-collapse.collapse {
     width: 100%;
 }
+nav.menu .navbar-collapse.collapse ul.nav {
+    background-color: #005565;
+}
+nav.menu .navbar-collapse.collapse ul.nav li.current-menu-item a {
+    background-color: #0AACCC;
+    background-color: #006c80;
+}
+li.current-menu-item:before {
+    content: "";
+    display: inline-block;
+    height: 55px;
+    width: 7px;
+    position: absolute;
+    left: 9px;
+    vertical-align: middle;
+    background: #FFF;
+    background: #00ACCC;
+}
+nav.menu .navbar-collapse.collapse ul.nav li a:hover {
+    background-color: #006c80;
+}
+nav.menu ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.menu ul li a {
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    color: #fff;
+}
 
 .header-panel.shadow-z-2 {
-    background-color: #009587;
-    padding: 50px 0 15px 0;
+    background-color: #171717;
+    padding: 50px 0 30px 0;
     width: 100%;
 }
 .full{ font-size: 16px; }
-.logo-img {
-    width: 56px;
-    height: 56px;
-    border-radius: 60px;
-    margin: 0 auto;
+img { max-width: 100%; }
+a { color: #008299; }
+a:hover { 
+    color: #FFF;
+    text-decoration: none;
+    background: #0AACCC;
 }
 .logo-turner {
     font-size: 18px;
@@ -51,13 +87,6 @@ nav.menu .navbar-collapse.collapse {
     vertical-align: middle;
     color: #fff;
 }
-p.info {
-    color: #fff;
-}
-p.info a {
-    color: #fff;
-    text-decoration: underline;
-}
 .full ul,.full ol {
     margin-left: 15px;
 }
@@ -75,7 +104,7 @@ p.info a {
     text-align: center;
     line-height: 20px;
     font-size: 20px;
-    color: #009688;
+    color: #005565;
     padding: 5px;
     width: 30px;
     height: 30px;
@@ -83,34 +112,7 @@ p.info a {
 }
 .icon:hover {
     color: rgba(255, 255, 255, 0.63);
-    background: #009688;
-}
-.menu ul li {
-    list-style: none;
-    margin: 5px 0;
-}
-
-.menu ul li a:hover, .menu ul li a:focus, li.current-menu-item > a{
-    background: #007D72;
-}
-li.current-menu-item:before {
-    content: "";
-    display: inline-block;
-    height: 55px;
-    width: 5px;
-    position: absolute;
-    left: 9px;
-    vertical-align: middle;
-    background: #B8CA28;
-}
-.menu ul li a {
-    font-size: 15px;
-    font-weight: normal;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
-    padding: 0 0 0 10px;
-    color: #fff;
+    background: #005565;
 }
 .home-subtitle {
     font-size: 26px;
@@ -119,15 +121,9 @@ li.current-menu-item:before {
     color: #01c87b;
     font-weight: 300;
 }
-h2.blog-title-pro{color: #fff;}
-h2.blog-title-pro:after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 4px;
-    margin-top: 16px;
-    margin-left: 3px;
-    background: rgba(255, 255, 255, 0.72);
+h1.blog-title-pro {
+    margin-left: 30px;
+    font-size: 40px;
 }
 span.tags{ margin: 0 2px;cursor: pointer;display: inline-block;}
 .card .card-image .card-image-headline-custom{
@@ -185,13 +181,21 @@ footer {
     margin-top: 10px;
     margin-bottom: 3em;
     padding-top: 10px;
-    color: #444444;
-    font-size: 11px;
+    font-size: 14px;
     bottom: 0;
     padding-bottom: 10px;
 }
+.pager li a,
+.pager li span {
+    border: none;
+    color: #008299;
+}
+.pager li a:hover {
+    background: rgba(0, 130, 153, 0.3);
+}
 .pager li.active a {
-    background: rgba(89, 148, 129, 0.3);
+    background: #008299;
+    color: #fff;
 }
 /** Search input **/
 .searchcontrol {
@@ -276,11 +280,11 @@ body .container ul.well li.li-panel {
 }
 
 body .container ul.well li.accordion.active a {
-    background-color: #007D72;
+    background-color: #006c80;
 }
 
 body .container ul.well ul.panel li {
-    background-color: #00b3a1;
+    background-color: #008299;
     margin: 0;
 }
 
@@ -294,9 +298,15 @@ body .container ul.well ul.panel li a i {
     width: 40px;
 }
 
-body .container ul.well ul.panel li a:hover {
-    background-color: #00b3a1;
-    color: #007D72;
+body .container nav.menu ul.well ul.panel li a:hover {
+    background-color: #0AACCC;
+}
+
+#metrics .nav-tabs {
+    border-bottom: none;
+}
+#metrics .metrics-menu {
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -307,11 +317,15 @@ body .container ul.well ul.panel li a:hover {
 
 table.frequency td:last-child {
     text-align: center;
-    color: #009688;
+    color: #005565;
 }
 
 table.frequency td:last-child i.fa-times {
     color: #333;
+}
+
+table.frequency td:last-child i.fa-check {
+    color: #00accc;
 }
 
 * {
@@ -342,12 +356,16 @@ div.well.metrics div.tab-pane img {
 }
 
 div.well.metrics ul.nav-tabs>li>a {
-    color: #59b0a7 !important;
+    color: #005565 !important;
     background: #fff;
 }
 
+div.well.metrics ul.nav-tabs>li>a:hover {
+    color: #00ACCC !important;
+}
+
 div.well.metrics ul.nav-tabs>li.active>a {
-    background: #009587 !important;
+    background: #005565 !important;
     color: #fff !important;
 }
 
@@ -363,4 +381,26 @@ div.well.metrics div.card-deck .card {
 
 #metrics .container {
     width: auto;
+}
+
+.btn.btn-sm.btn-default.btn-raised:hover {
+    background: #00accc;
+    color: #fff;
+}
+
+.btn.btn-sm.btn-primary.btn-raised,
+.btn.btn-sm.btn-primary.btn-raised:hover {
+    background: #005565;
+}
+
+body.home div.container.main div.well {
+    box-shadow: 0px 0px;
+}
+
+h2:not(:first-child) {
+    margin-top: 60px;
+}
+
+h3, h4, h5, h6 {
+    margin-top: 40px;
 }

@@ -1,36 +1,28 @@
-
-# Documento de Arquitetura
-
-## Sumário
+---
+layout: post
+title:  "Documento de Arquitetura"
+date:   2018-08-28 13:50:39
+categories: docs
+---
 
 1. [Introdução](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#1---introdu%C3%A7%C3%A3o)       
   1.1 [Finalidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#11-finalidade)            
   1.2 [Escopo](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#12-escopo)   
   1.3 [Definições, Acrônimos e Abreviações](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#13-defini%C3%A7%C3%B5es-acr%C3%B4nimos-e-abrevia%C3%A7%C3%B5es)   
-
 2. [Representação da Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#2-representa%C3%A7%C3%A3o-arquitetural)   
   2.1 [Ruby on Rails 5.2.1](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
   2.2 [React Native](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#22-react-native)    
-
 3. [Metas e Restrições de Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
-
 4. [Visão de Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#4-vis%C3%A3o-de-casos-de-uso)  
   4.1 [Realização de Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#41-realiza%C3%A7%C3%A3o-de-casos-de-uso)   
   4.2 [Descrição dos Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#42-descri%C3%A7%C3%A3o-dos-casos-de-uso)
-
 5. [Visão Lógica](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#5---vis%C3%A3o-l%C3%B3gica)  
     5.1 [Camadas](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#51-Camadas)
-
     5.2 [Diagrama de Classes](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#52-diagrama-de-classes)
-
 6. [Visão de Implementação](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#6--vis%C3%A3o-de-implementa%C3%A7%C3%A3o)  
     6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)  
-
-
 7. [Tamanho e Desempenho](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#7--tamanho-e-desempenho)
-
 8. [Qualidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#8-qualidade)
-
 9. [Referências](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#9--refer%C3%AAncias)
 
 ## 1:   Introdução
@@ -72,15 +64,17 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 ## 4: Visão de Casos de Uso
 
 ### 4.1 Realização de Casos de Uso
+
   | Ator | Descrição |
   | --- | --- |
   | Usuário Comum | Usuário que somente pode utilizar as funcionalidades padrão do aplicativo|
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram](../static/diagram-docs/use-case-diagram.jpg)
+  ![use_case_diagram](/static/img/architeture/use-case-diagram.jpg)
 
 ### 4.2 Descrição dos Casos de Uso
+
   | Caso de Uso | Descrição |
   | --- | --- |
   | UC01: Cadastrar local | Cadastramento de um local pelo usuário |
@@ -99,7 +93,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
   A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
-  ![pack-diagram](../static/diagram-docs/pack-diagram.png)
+  ![pack-diagram](/static/img/architeture/pack-diagram.png)
 
 ### 5.1 Camadas
 
@@ -111,7 +105,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram](../static/diagram-docs/class-diagram.jpg)
+![class-diagram](/static/img/architeture/class-diagram.jpg)
 
 ## 6:  Visão de Implementação
 
