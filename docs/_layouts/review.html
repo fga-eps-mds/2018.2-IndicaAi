@@ -9,6 +9,7 @@ layout: default
     <li><a data-toggle="tab" href="#papers">Papéis</a></li>
     <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
     <li><a data-toggle="tab" href="#retrospective">Sprint Retrospective</a></li>
+    {% if page.pairing %}<li><a data-toggle="tab" href="#pairing">Pareamentos</a></li>{% endif %}
     {% if page.feedback %}<li><a data-toggle="tab" href="#feedback">Feedback</a></li>{% endif %}
     <li><a data-toggle="tab" href="#metrics">Métricas</a></li>
   </ul>
@@ -108,6 +109,8 @@ layout: default
               <th rowspan='{{i.headerSpan}}' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
             {% elsif i.header and i.header == "Dividas" %}
               <th rowspan='{{i.headerSpan}}' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
+            {% elsif i.header and i.header == "Adicionadas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>A<br>D<br>I<br>C<br>I<br>O<br>N<br>A<br>D<br>A<br>S</th>
             {% endif %}
             <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/{{i.number}}">#{{i.number}}</a></td>
             <td>{{i.description}}</td>
@@ -150,6 +153,13 @@ layout: default
               </ul>
             {% endif %}
       </div>
+
+      {% if page.pairing %}
+        <div id="pairing" class="tab-pane fade">
+          <h2>Pareamentos</h2>
+          <img src='{{site.baseurl}}/static/img/pareamentos/sprint_{{page.sprint}}.png' title='Pareamentos - Sprint {{page.sprint}}' alt='Pareamentos - Sprint {{page.sprint}}'>
+        </div>
+      {% endif %}
 
       {% if page.feedback %}
         <div id="feedback" class="tab-pane fade">
@@ -218,16 +228,16 @@ layout: default
                   </div>
                 {% endif %}
 
-                {% if page.pairings %}
-                  <div id="pairings" class="tab-pane fade">
+                {% if page.numberPairing %}
+                  <div id="numberPairing" class="tab-pane fade">
                     <h2>Número de Pareamentos</h2>
-                    <img src='{{site.baseurl}}/static/img/pareamentos/sprint_{{page.sprint}}.png' title='Número de Pareamentos - Sprint {{page.sprint}}' alt='Número de Pareamentos - Sprint {{page.sprint}}'>
+                    <img src='{{site.baseurl}}/static/img/numero_de_pareamentos/sprint_{{page.sprint}}.png' title='Número de Pareamentos - Sprint {{page.sprint}}' alt='Número de Pareamentos - Sprint {{page.sprint}}'>
                     <ul>
-                    {% for i in page.pairings %}
+                    {% for i in page.numberPairing %}
                         <li>{{i.review}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/pairings'>aqui</a>.</p>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/numberPairing'>aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -235,8 +245,11 @@ layout: default
                   <div id="coverage" class="tab-pane fade">
                     <h2>Cobertura de Testes</h2>
                     <img src='{{site.baseurl}}/static/img/coverage/sprint_{{page.sprint}}.png' title='Cobertura de Testes - Sprint {{page.sprint}}' alt='Cobertura de Testes - Sprint {{page.sprint}}'>
+                    {% if page.coverage.url %}
+                      <p>Veja o relatório completo sobre a cobertura de testes do final desta <i>sprint</i> <a href='{{page.coverage.url}}' target='blank'>aqui</a>.</p>
+                    {% endif %}
                     <ul>
-                    {% for i in page.coverage %}
+                    {% for i in page.coverage.review %}
                         <li>{{i.review}}</li>
                     {% endfor %}
                     </ul>
@@ -283,6 +296,19 @@ layout: default
                   </div>
                 {% endif %}
 
+                {% if page.maintainability %}
+                  <div id="maintainability" class="tab-pane fade">
+                    <h2>Manutenibilidade</h2>
+                    <img src='{{site.baseurl}}/static/img/maintainability/sprint_{{page.sprint}}.png' title='Manutenibilidade - Sprint {{page.sprint}}' alt='Manutenibilidade - Sprint {{page.sprint}}'>
+                    <ul>
+                    {% for i in page.maintainability %}
+                        <li>{{i.review}}</li>
+                    {% endfor %}
+                    </ul>
+                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/maintainability'>aqui</a>.</p>
+                  </div>
+                {% endif %}
+
                 {% if page.satisfaction %}
                   <div id="satisfaction" class="tab-pane fade">
                     <h2>Satisfação do Usuário</h2>
@@ -315,10 +341,11 @@ layout: default
                 {% if page.velocity %}<li><a data-toggle="tab" href="#velocity">Velocity</a></li>{% endif %}
                 {% if page.commits %}<li><a data-toggle="tab" href="#commits">Commits</a></li>{% endif %}
                 {% if page.knowledge %}<li><a data-toggle="tab" href="#knowledge">Conhecimento</a></li>{% endif %}
-                {% if page.pairings %}<li><a data-toggle="tab" href="#pairings">Pareamentos</a></li>{% endif %}
+                {% if page.numberPairing %}<li><a data-toggle="tab" href="#numberPairing">Número de Pareamentos</a></li>{% endif %}
                 {% if page.coverage %}<li><a data-toggle="tab" href="#coverage">Cobertura de Testes</a></li>{% endif %}
                 {% if page.complexity %}<li><a data-toggle="tab" href="#complexity">Complexidade Ciclomática</a></li>{% endif %}
                 {% if page.duplication %}<li><a data-toggle="tab" href="#duplication">Duplicação de Código</a></li>{% endif %}
+                {% if page.maintainability %}<li><a data-toggle="tab" href="#maintainability">Manutenibilidade</a></li>{% endif %}
                 {% if page.styleSheet %}<li><a data-toggle="tab" href="#styleSheet">Folha de Estilo</a></li>{% endif %}
                 {% if page.satisfaction %}<li><a data-toggle="tab" href="#satisfaction">Satisfação do Usuário</a></li>{% endif %}
                 {% if page.clicks %}<li><a data-toggle="tab" href="#clicks">Número de Cliques</a></li>{% endif %}
