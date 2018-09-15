@@ -9,7 +9,8 @@ layout: default
     <li><a data-toggle="tab" href="#papers">Papéis</a></li>
     <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
     {% if page.knowledge %}<li><a data-toggle="tab" href="#knowledge">Conhecimento</a></li>{% endif %}
-    {% if page.changes %}<li><a data-toggle="tab" href="#changes">Mudanças</a></li>{% endif %}
+    {% if page.pairing %}<li><a data-toggle="tab" href="#pairing">Pareamentos</a></li>{% endif %}
+    {% if page.overview %}<li><a data-toggle="tab" href="#overview">Overview</a></li>{% endif %}
   </ul>
 
   <div class="tab-content">
@@ -84,11 +85,11 @@ layout: default
         </table>
       </div>
 
-      {% if page.changes %}
-        <div id="changes" class="tab-pane fade">
-          <h2>Mudanças na <i>Sprint</i></h2>
+      {% if page.overview %}
+        <div id="overview" class="tab-pane fade">
+          <h2><i>Overview</i> da <i>Sprint</i></h2>
           <ul>
-            {% for i in page.changes %}
+            {% for i in page.overview %}
               <li>{{i}}</li>
             {% endfor %}
           </ul>
@@ -100,6 +101,13 @@ layout: default
           <h2>Quadro de Conhecimentos - Início da <i>Sprint</i></h2>
           <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.previousSprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.previousSprint}}' alt='Quadro de Conhecimentos - Sprint {{page.previousSprint}}'>
           <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
+        </div>
+      {% endif %}
+
+      {% if page.pairing %}
+        <div id="pairing" class="tab-pane fade">
+          <h2>Pareamentos</h2>
+          <img src='{{site.baseurl}}/static/img/pareamentos/sprint_{{page.sprint}}.png' title='Pareamentos - Sprint {{page.sprint}}' alt='Pareamentos - Sprint {{page.sprint}}'>
         </div>
       {% endif %}
   </div>
@@ -153,5 +161,4 @@ layout: default
         })();
     /* ]]> */
     </script>
-</div>
 </div>

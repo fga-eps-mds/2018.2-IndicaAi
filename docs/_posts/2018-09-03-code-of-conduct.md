@@ -1,15 +1,10 @@
 ---
 layout: post
-title:  "Code of Conduct"
+title:  "Código de Conduta"
 date:   2018-09-03 17:11:39
 categories: docs
 ---
-
-<!-- CODIGO-CONDUTA -->
-
-## Código de Conduta do aplicativo IndicaAi
-
-### Nosso Compromisso
+## Nosso Compromisso
 Nosso compromisso é garantir a qualidade do produto, o respeito mútuo de forma a proporcionar 
 tanto no âmbito de desenvolvimento quanto no âmbito de software disponível ao público, a garantia
 de deixar todos de forma integrada ao uso do aplicativo de forma segura e respeitosa. Além disso,

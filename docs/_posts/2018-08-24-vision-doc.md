@@ -244,24 +244,24 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 
  aplicativo ordena todos os passeios encontrados de acordo com a proximidade do usuário, indo do mais próximo para o mais distante. Também é possível aplicar filtros para datas de eventos que ainda vão ocorrer ou categoria dos eventos ( Balada, dança, barato... ).
 
-![Catraca_livre](https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/DocVis_images/8cgrxx4mrv4nji662b7c2dn5f.jpg)
+![Catraca livre](/static/img/vision_document/catraca_livre.jpg)
 
 #### 3.6.2  What3Words(W3W)
 Serviço de localização, já com o suporte para o idioma português, que utiliza somente 3 palavras para encontrar qualquer endereço do mundo.Basta que o usuário resuma sua busca em no mínimo 3 palavras que o programa dará uma possível localização do lugar. Além da ferramenta de busca, o app também possui a opção de traçar uma rota até o ponto encontrado na busca.
 
-![W3W](https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/DocVis_images/size_960_16_9_20151020-25144-zw89r7.jpg)
+![W3W](/static/img/vision_document/what3_words.jpg)
 
 #### 3.6.3 Kekanto
 
 O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugual, por exemplo.
 
-![Kekanto](https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/DocVis_images/kekanto.jpeg)
+![Kekanto](/static/img/vision_document/kekanto.jpeg)
 
 #### 3.6.4 Yelp
 
 Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuario informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
 
-![Yelp](https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/DocVis_images/ZRKtVyQ.jpg)
+![Yelp](/static/img/vision_document/yelp.jpg)
 
 ## 4. Visão Geral do Produto
 

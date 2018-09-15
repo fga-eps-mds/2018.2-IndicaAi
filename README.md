@@ -1,11 +1,11 @@
+![Indica Ai](docs/assets/logo.png)
+
 ![Ruby Version - 2.5.1](https://img.shields.io/badge/ruby-v2.5.1-blue.svg)
 ![Rails Version - 5.1.6](https://img.shields.io/badge/rails-v5.1.6-blue.svg)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](https://travis-ci.org/fga-eps-mds/2018.2-IndicaAi.svg?branch=devel)](https://travis-ci.org/fga-eps-mds/2018.2-IndicaAi)
 [![Coverage Status](https://coveralls.io/repos/github/fga-eps-mds/2018.2-IndicaAi/badge.svg?branch=devel)](https://coveralls.io/github/fga-eps-mds/2018.2-IndicaAi?branch=devel)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2a2e16ded87b761154aa/maintainability)](https://codeclimate.com/github/fga-eps-mds/2018.2-IndicaAi/maintainability)
-
-# IndicaAi
 
 O IndicaAi é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter acesso por meio do FGA App. A API é desenvolvida na Universidade de Brasília, por alunos do curso de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e Engenharia de Produto de Software.
 

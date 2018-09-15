@@ -244,37 +244,15 @@ improvements: [
 
 
 burndown: [
-    {
-        review: "A sprint 2 começou com 14 pontos de dívida advindos da sprint 1, dos quais 9 foram entregues logo no início da sprint 2, evidenciando a primeira entrega bem no começo da sprint."
-    },
-    {
-        review: "Durante a sprint foram feitas integras contínuas, contudo o grupo não conseguiu finalizar as entregas. Esse fator deve-se ao fato dos membros de EPS pegarem muitos pontos e estarem sendo sobrecarregados, infelizmente, essa sobrecarga é necessária afim de que possa-se preparar o ambiente do projeto para a equipe de desenvolvimento conseguir trabalhar."
-    }
+        "A sprint 2 começou com 14 pontos de dívida advindos da sprint 1, dos quais 9 foram entregues logo no início da sprint 2, evidenciando a primeira entrega bem no começo da sprint.",
+        "Durante a sprint foram feitas integras contínuas, contudo o grupo não conseguiu finalizar as entregas. Esse fator deve-se ao fato dos membros de EPS pegarem muitos pontos e estarem sendo sobrecarregados, infelizmente, essa sobrecarga é necessária afim de que possa-se preparar o ambiente do projeto para a equipe de desenvolvimento conseguir trabalhar."
 ]
 
 velocity: [
-    {
-        review: "Nessa sprint o velocity da equipe subiu para 30.5 pontos. Boa parte desse aumento se deve ao trabalho de EPS, pois MDS continua com atividades mais voltadas a aprendizado."
-    }
+        "Nessa sprint o velocity da equipe subiu para 30.5 pontos. Boa parte desse aumento se deve ao trabalho de EPS, pois MDS continua com atividades mais voltadas a aprendizado."
 ]
 
 commits: []
 
 knowledge: []
 ---
-<!-- pairings: [] -->
-<!--  -->
-<!-- coverage: [] -->
-<!--  -->
-<!-- complexity: [] -->
-<!--  -->
-<!-- duplication: [] -->
-<!--  -->
-<!-- style: [] -->
-<!--  -->
-<!-- satisfaction: [] -->
-<!--  -->
-<!-- clicks: [] -->
-<!--  -->
-<!-- feedback: "Oi" -->
-<!--  -->

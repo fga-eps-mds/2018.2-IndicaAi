@@ -93,12 +93,17 @@
         },
         {
           "text": "Documento de Arquitetura",
-          "urls": "#",
+          "urls": "/docs/2018/08/28/architecture-doc.html",
           "icon": "fa-angle-right"
         },
         {
           "text": "Plano de Qualidade",
           "urls": "/docs/2018/08/28/plano-de-qualidade.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Identidade Visual",
+          "urls": "/docs/2018/09/15/identidade-visual.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -122,6 +127,11 @@
           "text": "Sprint 02",
           "url": "/sprint-planning/2018/09/05/planning-sprint-2.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 03",
+          "url": "/sprint-planning/2018/09/09/planning-sprint-3.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -138,6 +148,11 @@
         {
           "text": "Sprint 02",
           "url": "/sprint-review/2018/09/03/review-sprint-2.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 03",
+          "url": "/sprint-review/2018/09/03/review-sprint-3.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -170,6 +185,36 @@
         {
           "text": "Gráfico de Conhecimento",
           "url": "/conhecimento",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Número de Pareamentos",
+          "url": "/numberPairing",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Cobertura de Testes",
+          "url": "/coverage",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Complexidade Ciclomática",
+          "url": "/complexity",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Duplicação de Código",
+          "url": "/duplication",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Manutenibilidade",
+          "url": "/maintainability",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Folha de Estilo",
+          "url": "/styleSheet",
           "icon": "fa-angle-right"
         }
     ]
