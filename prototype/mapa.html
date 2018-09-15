@@ -8,12 +8,12 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>DASHGUM - FREE Bootstrap Admin Template</title>
+    <title>Indica Ai</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    
+
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
     <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
@@ -24,8 +24,8 @@
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
     <script src="assets/js/chart-master/Chart.js"></script>
-    
-    
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,12 +41,14 @@
       TOP BAR CONTENT & NOTIFICATIONS
       ***************************************************** -->
       <!--header start-->
-      <header class="header black-bg">
+      <header style="position: fixed" class="header black-bg ">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Descarte Aqui</b></a>
+            <div class="logo">
+              <a  href="index.html"><img src="assets/img/indicaAi-Logo.png"></a>
+            </div>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -101,7 +103,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li> 
+                            <li>
                                 <a href="index.html#">
                                     <div class="task-info">
                                         <div class="desc">Payments Sent</div>
@@ -190,7 +192,7 @@
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li onclick="top.ajaxRequest(top.fmain.UniURLFrame1, 'Sair', [])"><a class="logout" href="#">Sair</a></li>
+                    <li onclick="top.ajaxRequest(top.fmain.UniURLFrame1, 'Sair', [])"><a class="logout" href="#">Logout</a></li>
             	</ul>
             </div>
         </header>
@@ -205,53 +207,47 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
 
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/logonova.png" class="img-circle" width="150"></a></p>
-              	  <h5 class="centered" id="usuarioT">Usuário</h5>
-                  
+              	  <p class="centered"><a href="profile.html"><img src="assets/img/friends/fr-05.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">Marcel Newman</h5>
 
-                  <li class="mt" onclick="top.ajaxRequest(top.fmainm.UnimURLPrincipal, 'Dashboard', [])">
-                      <a class="active" href="#">
-                          <i class="fa fa-desktop"></i>
-                          <span>Dashboard</span>
+                  <li class="mt">
+                      <a href="cadastro.html">
+                          <i class="fa fa-plus"></i>
+                          <span>Cadastrar locais</span>
                       </a>
                   </li>
 
-                  <li onclick="top.ajaxRequest(top.fmainm.UnimURLPrincipal, 'Clientes', [])" class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-users"></i>
-                          <span>Locais de Descarte</span>
-                      </a>
-                  </li>
-
-                  
-                <!--  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Cadastros</span>
-                      </a>
-                      <ul class="sub">
-                          <li onclick="top.ajaxRequest(top.fmainm.UnimURLPrincipal, 'formcadastroclientes', [])"><a  href="#">Clientes</a></li>
-                          <li><a  href="form_component.html">Categorias de Impostos</a></li>
-                          <li data-toggle="modal" href="#myModalUsuario" onclick="top.ajaxRequest(top.fmain.UniURLFrame1, 'formcadastrousuario', [])"><a  href="#">Produtos ou Serviços</a></li>
-                          <li onclick="top.ajaxRequest(top.fmainm.UnimURLPrincipal, 'formcadastrotransportadora', [])"><a  href="#">Transportadoras</a></li>
-                          <li><a  href="#">Naturezas das Operações</a></li>
-                      </ul>
-                  </li> -->
                   <li class="sub-menu">
                       <a href="javascript:;" >
-                          <i class="fa fa-gears"></i>
-                          <span>Configurações</span>
+                        <i class="fa fa-search"></i>
+                        <span>Buscar locais</span>
                       </a>
                       <ul class="sub">
-                        <li><a  href="#">Primeiros Passos</a></li>
-                        <li data-toggle="modal" href="#myModalSenha"><a>Alterar Senha</a></li>
+                          <li><a  href="general.html">Buscar locais próximos</a></li>
+                          <li><a  href="buttons.html">Buscar por categoria</a></li>
+                          <li><a  href="panels.html">Buscar por distância</a></li>
                       </ul>
                   </li>
-              
+
+                  <li class="sub-menu">
+                      <a href="" >
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                          <span>Avaliar locais</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                        <a href="" >
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span>Meus favoritos</span>
+                        </a>
+                    </li>
+
               </ul>
               <!-- sidebar menu end-->
           </div>
       </aside>
+      <!--sidebar end-->
       		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModalSenha" class="modal fade">
 		              <div class="modal-dialog">
@@ -272,7 +268,7 @@
 		                          <p>Confirme sua Nova Senha</p>
 		                          <input id="senhaNova2" style="width:50%;" maxlength="18" name="cnpj2" onKeyPress="" onchange="" onfocusout="" type="password" class="form-control" placeholder="" autofocus>
 		                      </div>
-                          
+
 		                      <div class="modal-footer">
 		                          <button data-dismiss="modal" class="btn btn-default" type="button">Sair</button>
 		                          <button onclick="AlterarSenha()" class="btn btn-theme" type="button">Alterar Senha</button>
@@ -281,7 +277,7 @@
 		                  </div>
 		              </div>
 		          </div>
-		          <!-- modal -->  
+		          <!-- modal -->
       <!--sidebar end-->
 
       <!-- ****************************************************
@@ -289,7 +285,7 @@
       ***************************************************** -->
       <!--main content start-->
       <section id="main-content">
-        
+
           <section class="wrapper">
 <head>
 
@@ -316,30 +312,27 @@
         });
       }
     </script>
+
+    <div style="padding-bottom: 60px"></div>
+
       <script type="text/javascript"
          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9WYVio--JddgNX3TTF6flEhubkpjJYc&callback=initMap">
     </script>
 
   </body>
 
-
-
-
-
 		</section><! --/wrapper -->
-      
+
 
       <!--main content end-->
       <!--footer start-->
-   <!--   <footer class="site-footer">
+      <footer class="site-footer navbar-fixed-bottom">
           <div class="text-center">
-              2014 - Alvarez.is
-              <a href="index.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
+            <img style="height: 50px" src="https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/img/Screenshot_20180910-205855_1_1_1.jpg">
           </div>
-      </footer>  -->
+      </footer>
       <!--footer end-->
+
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
@@ -417,10 +410,10 @@
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
     </script>
-    
+
     <script>
     function AlterarSenha(){
-    
+
             var novasenha = new Object();
 
 
@@ -442,13 +435,13 @@
         novasenha.senhaAtual = document.getElementById("senhaAtual").value;
         novasenha.senhaNova = document.getElementById("senhaNova").value;
         novasenha.senhaNova2 = document.getElementById("senhaNova2").value;
-      
-        
-        
+
+
+
         var obj = JSON.parse(JSON.stringify(novasenha));
-        
+
         top.ajaxRequest(top.fmainm.UnimURLPrincipal, 'AlterarSenha', obj);
-      }  
+      }
     }
     </script>
 
