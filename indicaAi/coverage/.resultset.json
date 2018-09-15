@@ -279,7 +279,6 @@
         null
       ],
       "/indicaAi/spec/factories/local.rb": [
-        null,
         1,
         1,
         21,
@@ -364,7 +363,6 @@
         1,
         null,
         1,
-        null,
         null
       ],
       "/indicaAi/app/controllers/user_identifiers_controller.rb": [
@@ -470,6 +468,6 @@
         null
       ]
     },
-    "timestamp": 1537022286
+    "timestamp": 1537023221
   }
 }
