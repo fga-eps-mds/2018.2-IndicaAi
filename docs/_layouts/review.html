@@ -8,10 +8,10 @@ layout: default
     <li class='active in'><a data-toggle="tab" class='active in' href="#info">Sprint {{page.sprint}}</a></li>
     <li><a data-toggle="tab" href="#papers">Papéis</a></li>
     <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
-    <li><a data-toggle="tab" href="#retrospective">Sprint Retrospective</a></li>
     {% if page.pairing %}<li><a data-toggle="tab" href="#pairing">Pareamentos</a></li>{% endif %}
-    {% if page.feedback %}<li><a data-toggle="tab" href="#feedback">Feedback</a></li>{% endif %}
+    <li><a data-toggle="tab" href="#retrospective">Sprint Retrospective</a></li>
     <li><a data-toggle="tab" href="#metrics">Métricas</a></li>
+    {% if page.feedback %}<li><a data-toggle="tab" href="#feedback">Feedback</a></li>{% endif %}
   </ul>
 
   <div class="tab-content">
@@ -164,7 +164,11 @@ layout: default
       {% if page.feedback %}
         <div id="feedback" class="tab-pane fade">
           <h2>Feedback</h2>
-          {{page.feedback}}
+          <ul>
+          {% for i in page.feedback %}
+              <li>{{i}}</li>
+          {% endfor %}
+          </ul>
         </div>
       {% endif %}
 
@@ -179,10 +183,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/burndown/sprint_{{page.sprint}}.png' title='Burndown - Sprint {{page.sprint}}' alt='Burndown - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.burndown %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/burndown'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/burndown'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -192,10 +196,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/velocity/sprint_{{page.sprint}}.png' title='Velocity - Sprint {{page.sprint}}' alt='Velocity - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.velocity %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/velocity'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/velocity'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -205,10 +209,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/commits/sprint_{{page.sprint}}.png' title='Commits por Dia - Sprint {{page.sprint}}' alt='Commits por Dia - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.commits %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/commits'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/commits'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -216,13 +220,13 @@ layout: default
                   <div id="knowledge" class="tab-pane fade">
                     <h2>Quadro de Conhecimentos</h2>
                     <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.sprint}}_melhorias.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/knowledge'>Acompanhe mais dessa métrcia aqui</a>.</p>
                     <h2>Gráfico de Conhecimentos</h2>
                     <img src='{{site.baseurl}}/static/img/grafico_de_conhecimentos/sprint_{{page.sprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.sprint}}' alt='Quadro de Conhecimentos - Sprint {{page.sprint}}'>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/conhecimento'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/conhecimento'>Acompanhe mais dessa métrcia aqui</a>.</p>
                     <ul>
                     {% for i in page.knowledge %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
                   </div>
@@ -234,10 +238,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/numero_de_pareamentos/sprint_{{page.sprint}}.png' title='Número de Pareamentos - Sprint {{page.sprint}}' alt='Número de Pareamentos - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.numberPairing %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/numberPairing'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/numberPairing'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -250,10 +254,10 @@ layout: default
                     {% endif %}
                     <ul>
                     {% for i in page.coverage.review %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/coverage'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/coverage'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -263,10 +267,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/complexity/sprint_{{page.sprint}}.png' title='Complexidade Ciclomática - Sprint {{page.sprint}}' alt='Complexidade Ciclomática - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.complexity %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/complexity'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/complexity'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -276,10 +280,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/duplication/sprint_{{page.sprint}}.png' title='Duplicação de Código - Sprint {{page.sprint}}' alt='Duplicação de Código - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.duplication %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/duplication'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/duplication'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -289,10 +293,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/styleSheet/sprint_{{page.sprint}}.png' title='Folha de Estilo - Sprint {{page.sprint}}' alt='Folha de Estilo - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.styleSheet %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/styleSheet'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/styleSheet'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -302,10 +306,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/maintainability/sprint_{{page.sprint}}.png' title='Manutenibilidade - Sprint {{page.sprint}}' alt='Manutenibilidade - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.maintainability %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/maintainability'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/maintainability'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -314,10 +318,10 @@ layout: default
                     <h2>Satisfação do Usuário</h2>
                     <ul>
                     {% for i in page.satisfaction %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/satisfaction'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/satisfaction'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
@@ -327,10 +331,10 @@ layout: default
                     <img src='{{site.baseurl}}/static/img/clicks/sprint_{{page.sprint}}.png' title='Número de Cliques - Sprint {{page.sprint}}' alt='Número de Cliques - Sprint {{page.sprint}}'>
                     <ul>
                     {% for i in page.clicks %}
-                        <li>{{i.review}}</li>
+                        <li>{{i}}</li>
                     {% endfor %}
                     </ul>
-                    <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/clicks'>aqui</a>.</p>
+                    <p><a href='{{site.baseurl}}/clicks'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
               </div>
