@@ -93,17 +93,17 @@
         },
         {
           "text": "Documento de Arquitetura",
-          "urls": "/docs/2018/08/28/architecture-doc.html",
+          "url": "/docs/2018/08/28/architecture-doc.html",
           "icon": "fa-angle-right"
         },
         {
           "text": "Plano de Qualidade",
-          "urls": "/docs/2018/08/28/plano-de-qualidade.html",
+          "url": "/docs/2018/08/28/plano-de-qualidade.html",
           "icon": "fa-angle-right"
         },
         {
           "text": "Identidade Visual",
-          "urls": "/docs/2018/09/15/identidade-visual.html",
+          "url": "/docs/2018/09/15/identidade-visual.html",
           "icon": "fa-angle-right"
         }
     ]
