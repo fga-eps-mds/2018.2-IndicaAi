@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180913193142) do
+ActiveRecord::Schema.define(version: 20180915182842) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "favorite_locals", force: :cascade do |t|
+    t.string "label"
+    t.text "body"
+    t.bigint "local_id"
+    t.bigint "user_identifier_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["local_id"], name: "index_favorite_locals_on_local_id"
+    t.index ["user_identifier_id"], name: "index_favorite_locals_on_user_identifier_id"
+  end
 
   create_table "locals", force: :cascade do |t|
     t.string "name"
