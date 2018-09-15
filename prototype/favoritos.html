@@ -87,7 +87,7 @@
                   </li>
 
                   <li class="sub-menu">
-                        <a href="favoritos.html" >
+                        <a href="favoritos.html">
                             <i class="fa fa-star-o" aria-hidden="true"></i>
                             <span>Meus favoritos</span>
                         </a>
@@ -103,55 +103,48 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-
-
-
     <section id="main-content">
         <section class="wrapper">
-          <div style="margin-top: -85px"></div>
-          <form class="form-login" action="mapa.html">
-            <h2 class="form-login-heading">Cadastro</h2>
-            <div class="login-wrap">
-              <label for="nomeLocal" class="form-label">Nome:</label>
-              <input type="text" class="form-control" placeholder="" id="nomeLocal" autofocus>
-              <br>
-              <label for="descricaoLocal" class="form-label">Descrição:</label>
-              <textarea type="text" class="form-control" placeholder="" id="descricaoLocal"></textarea>
-              <hr>
-              <div class="login-social-link centered">
-                <p>Definir Localização</p>
-                <button class="btn btn-theme" type="submit">Localização atual</button>
-                <button class="btn btn-theme" type="submit">Buscar no mapa</button>
-              </div>
-            </div>
-            <!-- Modal -->
-            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  </div>
-              </div>
-            </div>
-            <!-- modal -->
-          </form>
+            <div id="map" style="width:400px;">
         </section><!--/wrapper -->
-    </section><!-- /MAIN CONTENT -->
+    </section>
 
+      <!-- /MAIN CONTENT -->
 
+      <div style="margin-top: -105px"></div>
 
+      <div  class = "container">
+        <section id="main-content">
+          <form class="form-login" action="mapa.html">
+            <h2 class="form-login-heading">Meus favoritos</h2>
+            <div class="login-wrap">
+              <a class="list-group-item" href="local.html"><span class="glyphicon glyphicon-star"></span> <b>Universidade de Brasília - Faculdade do Gama [FGA]</b><br><small>(Quadra 90 LT.99 Setor Industria - Fim do mundo)</small></a>
+              <br>
+              <a class="list-group-item" href="#"><span class="glyphicon glyphicon-star"></span> <b>Casa do João</b><br><small>(Quadra 30 LT.45 Setor Oeste - Gama)</small></a>
+              <br>
+              <a class="list-group-item" href="#"><span class="glyphicon glyphicon-star"></span> <b>Bar do Buchada</b><br><small>(Quadra 30 LT.45 Setor Oeste - Gama)</small></a>
+              <br>
+              <a class="list-group-item" href="#"><span class="glyphicon glyphicon-star"></span> <b>BRT</b><br><small>(Quadra 30 LT.45 Setor Oeste - Gama)</small></a>
+              <br>
+              <a class="list-group-item" href="#"><span class="glyphicon glyphicon-star"></span> <b>Darcy Ribeiro</b><br><small>(Quadra 30 LT.45 Setor Oeste - Gama)</small></a>
+              <br>
+              <a class="list-group-item" href="#"><span class="glyphicon glyphicon-star"></span> <b>FGA</b><br><small>(Quadra 90 LT.99 Setor Industria - Fim do mundo)</small></a>
+            </div>
+          </form>
+        </section>
+      </div>
       <!--main content end-->
 
+      <div style="padding-bottom: 85px"></div>
+
+      <!--footer start-->
+      <footer class="site-footer navbar-fixed-bottom">
+          <div class="text-center">
+            <img style="height: 50px" src="https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/img/Screenshot_20180910-205855_1_1_1.jpg">
+          </div>
+      </footer>
+      <!--footer end-->
   </section>
-
-  <div style="padding-bottom: 70px"></div>
-
-  <!--footer start-->
-  <footer class="site-footer navbar-fixed-bottom">
-      <div class="text-center">
-        <img style="height: 50px" src="https://raw.githubusercontent.com/fga-eps-mds/2018.2-IndicaAi/DocVisao/docs/static/img/Screenshot_20180910-205855_1_1_1.jpg">
-      </div>
-  </footer>
-  <!--footer end-->
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -159,7 +152,7 @@
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
@@ -173,6 +166,14 @@
 
   <script>
       //custom select box
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
         $(function(){
             $('select.styled').customSelect();
         });
