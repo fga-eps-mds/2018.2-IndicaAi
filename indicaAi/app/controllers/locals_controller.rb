@@ -11,4 +11,10 @@ class LocalsController < ApplicationController
     locals = Local.find_by_name(params[:name])
     json_response(locals)
   end
+
+  def show_rating
+    rating = Local.find_local_ratings(params[:id_local])
+    json_response(rating)
+  end
+
 end
