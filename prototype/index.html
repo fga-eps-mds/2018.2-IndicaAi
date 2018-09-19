@@ -102,8 +102,7 @@
       <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
-            <div id="map" style="width:400px;height:400px">
-        </section><!--/wrapper -->
+            <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=37.062500&long=-95.677000&zoom=4&width=675&height=400&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script><br /><a href="http://www.webestools.com/google-maps-code-generator-insert-map-on-website-javascript-free-google-map-script.html">Google Maps code Generator</a>
     </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
@@ -122,7 +121,6 @@
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
@@ -135,15 +133,6 @@
     <!--script for this page-->
     
   <script>
-      //custom select box
-        function myMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(51.5, -0.12),
-                zoom: 10,
-                mapTypeId: google.maps.MapTypeId.HYBRID
-            }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
         $(function(){
             $('select.styled').customSelect();
         });
