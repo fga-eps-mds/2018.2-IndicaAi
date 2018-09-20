@@ -5,7 +5,7 @@ class LocalsController < ApplicationController
     locals = Local.all
     result = []
     locals.each do |local|
-    result << locals.as_json(methods: [:local_ratings])
+    result << local.as_json(methods: [:local_ratings])
     end
     json_response(result)
   end
