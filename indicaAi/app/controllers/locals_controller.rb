@@ -5,7 +5,7 @@ class LocalsController < ApplicationController
     locals = Local.all
     result = []
     locals.each do |local|
-    result << locals.as_json(methods: [:local_ratings])
+    result << local.as_json(methods: [:local_ratings])
     end
     json_response(result)
   end
@@ -18,10 +18,10 @@ class LocalsController < ApplicationController
     json_response(result)
   end
 
+  # GET /local/:id/rating
   def show_rating
     rating = Local.find_local_ratings(params[:id_local])
     locals = Local.find(params[:id_local])
-    json_response(locals: locals,rating: rating,)
+    json_response(locals: locals, rating: rating)
   end
-
 end
