@@ -1,0 +1,54 @@
+[
+   {
+     "number": "1",
+     "name": "Insatisfação do cliente"
+   },
+   {
+     "number": "2",
+     "name": "Não entregar o produto no prazo"
+   },
+   {
+     "number": "3",
+     "name": "Trancamento/Desistência da matéria"
+   },
+   {
+     "number": "4",
+     "name": "Indefinição do escopo"
+   },
+   {
+     "number": "5",
+     "name": "Falta de comprometimento"
+   },
+   {
+     "number": "6",
+     "name": "Dificuldade de EPS em dar suporte para MDS"
+   },
+   {
+     "number": "7",
+     "name": "Dificuldade com a arquitetura"
+   },
+   {
+     "number": "8",
+     "name": "Falha de equipamentos"
+   },
+   {
+     "number": "9",
+     "name": "Adaptação da equipe com a tecnologia"
+   },
+   {
+     "number": "10",
+     "name": "Integração com outros grupos do App"
+   },
+   {
+     "number": "11",
+     "name": "Dificuldades na interação do time"
+   },
+   {
+     "number": "12",
+     "name": "Dificuldade em realizar testes"
+   },
+   {
+     "number": "13",
+     "name": "Dificuldade de integração com o Google API"
+   }
+]

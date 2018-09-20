@@ -109,6 +109,11 @@
     ]
   },
   {
+    "text": "Riscos do Projeto",
+    "url": "/risks",
+    "icon": "fa-bomb"
+  },
+  {
     "text": "Sprint Planning",
     "url": "#",
     "icon": "fa-paper-plane",
