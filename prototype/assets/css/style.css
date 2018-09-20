@@ -43,6 +43,14 @@ a, a:hover, a:focus {
 }
 
 /* Bootstrap Modifications */
+.logo img{
+  position: fixed;
+  top: 11px;
+  right: 130px;
+  max-height: 35px;
+  max-width: 150px;
+}
+
 .modal-header {
 	background: #68dff0;
 }
@@ -67,7 +75,7 @@ a, a:hover, a:focus {
 	background-color: #ffffff;
 	outline: none !important;
 	text-decoration: none;
-}	
+}
 
 
 
@@ -220,11 +228,22 @@ ul.top-menu > li > .logout {
 	-webkit-border-radius: 4px;
 	border: 1px solid #64c3c2 !important;
 	padding: 5px 15px;
-	margin-right: 15px;
+	margin-right: 0px;
 	background: #005565;
 	margin-top: 15px;
 }
 
+ul.top-menu > li > .logout:hover {
+	color: #f2f2f2;
+	font-size: 12px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #64c3c2 !important;
+	padding: 5px 15px;
+	margin-right: 0px;
+	background: #000;
+	margin-top: 15px;
+}
 
 /*sidebar navigation*/
 
@@ -285,6 +304,7 @@ ul.sidebar-menu , ul.sidebar-menu li ul.sub{
 
 ul.sidebar-menu {
     margin-top: 75px;
+    margin-bottom:85px;
 }
 
 #sidebar > ul > li > ul.sub {
@@ -881,7 +901,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .border-head h3 {
     margin-top: 20px;
     margin-bottom: 20px;
-	margin-left: 15px;	
+	margin-left: 15px;
     padding-bottom: 5px;
     font-weight: normal;
     font-size: 18px;
@@ -991,7 +1011,7 @@ PANELS CONFIGURATIONS
 
 .pn:hover {
 	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
-	
+
 }
 
 /*Grey Panel*/
@@ -1047,7 +1067,7 @@ PANELS CONFIGURATIONS
 	color: white;
 }
 .darkblue-panel footer h5 {
-	margin-left:10px; 
+	margin-left:10px;
 	margin-right: 10px;
 	font-weight: 700;
 }
@@ -1108,7 +1128,7 @@ PANELS CONFIGURATIONS
 .card {
   background: white;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   height: 250px;
 }
 .stock .stock-chart {
@@ -1116,11 +1136,11 @@ PANELS CONFIGURATIONS
 }
 .stock .stock-chart #chart {
     height: 10.7em;
-    background: url(http://i.imgbox.com/abmuNQx2) center bottom no-repeat; 
-}    
+    background: url(http://i.imgbox.com/abmuNQx2) center bottom no-repeat;
+}
 .stock .current-price {
   background: #1d2122;
-  padding: 10px; 
+  padding: 10px;
 }
 .stock .current-price .info abbr {
     display: block;
@@ -1130,14 +1150,14 @@ PANELS CONFIGURATIONS
     margin-top: 0.18em;
 }
 .stock .current-price .changes {
-    text-align: right; 
+    text-align: right;
 }
 .stock .changes .up {
 	color: #4fd98b
 }
 .stock .current-price .changes .value {
       font-size: 1.8em;
-      font-weight: 700; 
+      font-weight: 700;
 }
 .stock .summary {
     color: #2f2f2f;
@@ -1689,7 +1709,7 @@ PANELS CONFIGURATIONS
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
-  
+
 }
 
 .project:hover .photo-wrapper {
@@ -1994,6 +2014,10 @@ label {
 	border-radius: 5px;
 }
 
+.btn-indiaAi {
+    color: #fff;
+    background-color: #0aaccc;
+}
 
 .btn-facebook {
   color: #fff;
@@ -2240,4 +2264,54 @@ label {
     min-height: 900px;
 }
 
+.rating {
+    float:left;
+}
 
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+follow these rules. Every browser that supports :checked also supports :not(), so
+it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    /* padding:0 .1em; */
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:300%;
+    /* line-height:1.2; */
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: dodgerblue;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: dodgerblue;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: dodgerblue;
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
