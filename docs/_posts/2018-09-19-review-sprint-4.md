@@ -142,36 +142,32 @@ presence : [
 ]
 
 positives: [
-    "Grupo alinhado",
-    "Treinamento de React foi bom",
-    "Pareamento rendeu"
+    "Mudou a cor do nosso módulo de aplicativo e a equipe ficou mais satisfeita",
+    "Toda a equipe começou a mecher com o código",
+    "Treinamento de teste foi top"
 ]
 
 negatives: [
-    "Feriadão atrapalhou",
-    "Caiu muito a pontuação entregue",
-    "Faltou comunicação",
-    "Faltou proatividade"
+   "Indecisão do cliente",
+   "Muita prova de outras matérias durante a sprint",
+   "Testes foram difíceis: Ninguém terminou as issues",
+   "Issue do protótipo estava muito grande"
 ]
 
 improvements: [
-    "Mais comunicação",
-    "Mais proatividade",
-    "Mais transparência",
-    "Mais compremetimento",
-    "Comentários nas Issues",
-    "Definir melhor os pontos com os outros grupos do App"
+    "Estudar mais testes",
+    "Separar os dias da Sprint Review e da Sprint Planning"
 ]
 
 
 burndown: [
-    "Os membros de EPS foram muito sobrecarregados nas <i>sprints</i> passadas e, devido a essa <i>sprint</i> parecer um pouco mais tranquila do que as outras houve uma descpreocupação que refletiu negativamente. <b>As <i>issues</i> foram deixadas para serem entregues ao final da <i>sprint</i>, o que acabou não dando tempo</b> e refletindo em quase metade dos pontos do Burndown não entregues.",
-    "A issue planejada de configurar o ambiente de desenvolvimento do frontend ficou como débito devido a <b>alguns pontos ainda não estarem acordados com os outros grupos do App</b>.",
-    "A issue referente a prototipação representa uma boa parcela do backlog, e a mesma esta apresentando-se uma <b>issue grande, somado a dificuldade técnica da equipe</b> resultou na não entrega da issue."
+    "Esta sprint trouxe de débito da sprint passada a issue de confeção do protótipo. <b>No planning desta sprint não foi identificado que essa issue deveria ser quebrada</b>, e o resultado foi que essa issue atrapalhou o burndown novamente. Por ser uma issue grande - de 8 pontos - mais uma vez ela não foi entregue.",
+    "Dos outros 6 pontos que ficaram de débito nessa sprint, ambos são referente a implementação de user stories. E a falta de entrega desses pontos refere-se a <b>dificuldade da equipe em fazer os testes</b>. Assim, as funcionalidades foram implementadas, mas os pull requests não foram aprovados pela falta de testes.",
+    "A entrega contínua apresentada no burndown refere-se a atividades de gerência e documentação do projeto."
 ]
 
 velocity: [
-    "Até a <i>sprint</i> 2, a grande maioria dos pontos entregues foram referente as atividades de EPS. Na <i>sprint</i> 3, teve um grande diferencial de que uma parte considerável dos pontos eram de responsabilidade do time de desenvolvimento. Portanto, optou-se por uma <i>sprint</i> de 44 pontos, sabendo-se que o <i>velocity</i> era de 30 pontos contando que teríamos mais trabalho mas este estaria melhor distribuído entre a equipe. Mediante as falhas das entregas - já mencionadas na análise do Burndown desta sprint - notou-se que essa foi uma <b>má decisão, de forma que a capacidade de produção da equipe foi superestimada</b>."
+    "Nessa sprint, EPS conseguiu sanar todos os pontos que estavam de dívida da sprint anterior. Contudo, como já explicado na análide no Burndown, O time de desenvolvimento teve dificuldade para entregas as histórias testadas e o protótipo finalizado. O que implicou diretamente na queda do velocity."
 ]
 
 commits: [
@@ -180,22 +176,19 @@ commits: [
 ]
 
 knowledge: [
-    "As melhoras em HTML e CSS eram esperadas pois os membros <b>começaram a desenvolver o prótipo</b> utilizando destas ferramentas.",
-    "Melhoras em relação ao React atribuem-se ao <b>treinamento de React</b> executado durante essa sprint",
-    "A grande melhora da equipe em relação ao Ruby on Rails deve-se ao esforço individual de cada um em <b>pesquisar e estudar</b> mais dessa ferramenta. Os membros João e Heron estavam em atividades relacionadas ao framework, mas os demais fizeram seus estudos a parte.",
-    "A melhora quanto ao docker era esperada, pois a equipe de desenvolvimento está começando a pegar <b>atividades das quais eles necessitem usar o docker</b>."
+    "<b>Porque o Lucas diminuiu no scrum?</b>",
+    "A equipe melhorou principalmente em testes devido ao <b>treinamento</b> aplicado nesta sprint, contudo, o conhecimento em testes ainda se mostrou um obstáculo para a equipe."
 ]
 
 pairing: []
 numberPairing: [
-    "Esta foi a primeira <i>sprint</i> que aplicamos o pareamento.",
-    "O pareamento foi aplicado somente para o time de desenvolvimento"
+    "Nesta sprint o pareamento, os membros de EPS não conseguiram parear como havia sido planejado devido a falta de organização da dupla e dificuldade para encontrar horários compatíveis."
 ]
 
 coverage: {
     "url": "https://coveralls.io/builds/19062053",
     "review": [
-        "Nesta <i>sprint</i> a equipe começou a desenvolver a API, mas o <b>treinamento sobre testes ainda não havia sido realizado</b>. Portanto, não foi exigido dos desenvolvedores que o código tivesse testes para aceitar o <i>pull request</i>. Dessa forma, a cobertura acabou ficando abaixo dos 90% determinados e foi <b>aberta uma história técnica</b> para que o código fosse testado assim que a equipe recebesse o conhecimento para tal."
+        "A cobertura subiu nessa sprint, pois o treinamento de testes usou o próprio código que havia sido elaborado pelo time de desenvolvimento na Sprint 3 para busca de locais como exemplo. Assim, ao final do treinamento, o código testado foi submetido para a <code>devel</code> com o objetivo de ser usado como exemplo para os testes futuros."
     ]
 }
 
@@ -204,14 +197,17 @@ complexity: []
 duplication: []
 
 styleSheet: [
-    "O CodeClimate acusou 23 issues referente a folha de estilo no final da sprint, mas todas essas issues são provenientes do <b>código auto gerado do Rails</b> quando se cria um novo app. Algumas dessas falhas foram corrigidas durante a sprint, e as que ficaram serão corrigidas aos poucos no dercorrer do projeto."
+    "As issues da sprint passada, apresentadas no CodeClimate, referente a aplicação da folha de estilo nos arquivos auto-gerados pelo Rails, ainda não foram solucionadas nessa sprint."
 ]
 
 maintainability: []
 
 feedback: [
-    "Nesta <i>sprint</i> houve <b>falha de ateção da equipe e do Scrum Master</b>. Mesmo realizando os stand-ups, ocorreu da <code class='highlighter-rouge'>US - Buscar local por nome</code> ser desenvolvida enquanto o Diagrama de Classe era reformulado e nós não nos atentamos a esse detalhe, de forma que a <i>user story</i> foi desenvolvida em cima do diagrama antigo.",
-    "As user stories foram criadas como issues na sprint passada, e pontuadas como se o desenvolvimento da issue envolve-se o backend e o frontend. Nessa sprint, notou-se que isso é um problema, pois teoricamente, a issue <code class='highlighter-rouge'>US - Buscar locais</code>, que foi implementada nessa sprint somente na parte da API, não poderia ser dada como entregue por não possuir o frontend. Visto essa situação, sentiu-se a necessidade de mudar a metodologia, e partir de então, todas as <b>user stories devem ser criadas como épicos</b>, de forma que nós possamos quebrar em várias atividade, sendo elas, no mínimo, desenvolvimento frontend e backend. Cabe ao Scrum Master reorganizar as user stories já registradas no repositório para essa nova abordagem."
+    "Nessa sprint foi identificado que houve <b>falha no planejamento</b>. Até então nossos rituais - sprint review, sprint retrospective e sprint planning - aconteciam um em sequência do outro toda terça-feira. Isso acarretou que o <b>planning era elaborado sem o Scrum Master ter analisado com calma as métricas e os resultados do final da sprint</b>. Dessa forma, a issues de <code>Confeccionar Protótipo</code>, que deveria ter sido quebrada em issues menores depois de ter ficado como débito da sprint 3, passou para a sprint 4 ainda como uma única história. O que implicou novamente em uma <b>issue grande que não foi entregue dentro do tempo</b> da sprint apesar da equipe ter avançado bastante no seu desenvolvimento. O problema só foi identificado quando o Scrum Master estava transpondo os dados da sprint para a documentação do projeto. Mediante essa situação, a equipe optou por <b>dividir os rituais em dois dias</b>. Na terça-feira será o fechamento da sprint realizando os rituais de review e retrospective, e na Quarta-feira será realizado o planning, com o Scrum Master já tendo avaliado todos os fatores referentes ao fechamento da sprint passada.",
+    "Também foi notável nessa sprint a <b>dificuldade da equipe com a elaboração de testes</b>, portanto deve-se na próxima sprint promover treinamento, pareamentos com EPS ou dojos que visem sanar o quanto antes esse obstáculo.",
+    "Outro problema identificado pelo Scrum Master refere-se aos stand-ups. Até então os stand-ups estavam sendo realizados de terça a sexta-feira, que são os dias que a equipe tem maior disponibilidade presencial. Contudo, <b>durante o final de semana e a segunda-feira - que é o período que a equipe mais produz - não há a realização de stand-ups</b>, e o time de desenvolvimento somente mandava as dúvidas pelo Telegram caso precisassem. Isso acarretou que a <b>dificuldade com testes que a equipe estava somente foi identificada no último dia da sprint</b>, que era quando ocorria stand-up de novo. Dessa forma não foi mais possível corrigir o problema antes que a sprint acabasse.",
+    "Além da questão do stand-up não estar sendo realizado todos os dias, ainda há a ocorrência de <b>ausência de membros</b> durante o stand-up. O que implica no desalinhamento da equipe sobre as atividades em andamento.",
+    "O time de desenvolvimento tem relatado que <b>os pareamentos tem sido bastante produtivos</b>."
 ]
 
 ---

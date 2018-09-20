@@ -138,4 +138,3 @@ overview: [
 ]
 
 ---
-<!-- "Stand-ups nos dias que não nos vemos" -->
