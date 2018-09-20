@@ -1,54 +1,67 @@
 [
    {
      "number": "1",
-     "name": "Insatisfação do cliente"
+     "name": "Insatisfação do cliente",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=981018701&amp;format=image'></iframe>"
    },
    {
      "number": "2",
-     "name": "Não entregar o produto no prazo"
+     "name": "Não entregar o produto no prazo",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=123995752&amp;format=image'></iframe>"
    },
    {
      "number": "3",
-     "name": "Trancamento/Desistência da matéria"
+     "name": "Trancamento/Desistência da matéria",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1079194323&amp;format=image'></iframe>"
    },
    {
      "number": "4",
-     "name": "Indefinição do escopo"
+     "name": "Indefinição do escopo",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1171340134&amp;format=image'></iframe>"
    },
    {
      "number": "5",
-     "name": "Falta de comprometimento"
+     "name": "Falta de comprometimento",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1528114522&amp;format=image'></iframe>"
    },
    {
      "number": "6",
-     "name": "Dificuldade de EPS em dar suporte para MDS"
+     "name": "Dificuldade de EPS em dar suporte para MDS",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=197421684&amp;format=image'></iframe>"
    },
    {
      "number": "7",
-     "name": "Dificuldade com a arquitetura"
+     "name": "Dificuldade com a arquitetura",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1898757833&amp;format=image'></iframe>"
    },
    {
      "number": "8",
-     "name": "Falha de equipamentos"
+     "name": "Falha de equipamentos",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1070683187&amp;format=image'></iframe>"
    },
    {
      "number": "9",
-     "name": "Adaptação da equipe com a tecnologia"
+     "name": "Adaptação da equipe com a tecnologia",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=2038800012&amp;format=image'></iframe>"
    },
    {
      "number": "10",
-     "name": "Integração com outros grupos do App"
+     "name": "Integração com outros grupos do App",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1610957726&amp;format=image'></iframe>"
    },
    {
      "number": "11",
-     "name": "Dificuldades na interação do time"
+     "name": "Dificuldades na interação do time",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1639742517&amp;format=image'></iframe>"
    },
    {
      "number": "12",
-     "name": "Dificuldade em realizar testes"
+     "name": "Dificuldade em realizar testes",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=1220157300&amp;format=image'></iframe>"
    },
    {
      "number": "13",
-     "name": "Dificuldade de integração com o Google API"
+     "name": "Dificuldade de integração com o Google API",
+     "frame": "<iframe width='600' height='371' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=404194557&amp;format=image'></iframe>"
    }
 ]

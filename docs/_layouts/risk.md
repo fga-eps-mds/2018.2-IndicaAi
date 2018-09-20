@@ -5,18 +5,13 @@ layout: default
 <div class='well risks'>
 
       <div class='risk-geral'>
-        <img src='{{site.baseurl}}/static/img/risks/geral.png' title='Burndown de Riscos' alt='Burndown de Riscos'>
+        <iframe width="700" height="432" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTcx230AZReDT1IcXe3w6Miv8CE_FpNS_fa_Cu5bG-DuLJJ0JH1zq5jA4pRr-JpYCFgNfRvn-zhD1Wy/pubchart?oid=240551075&amp;format=image"></iframe>
       </div>
 
   <hr>
 
-  <div class="card-deck">
     {% for i in site.data.risks %}
-      <div class="card bg-primary">
-        <div class="card-body text-center">
-            <img src='{{site.baseurl}}/static/img/risks/risco_{{i.number}}.png' title='Burndown de Risco- {{i.name}}' alt='Burndown de Risco- {{i.name}}'>
-          </div>
-        </div>
+        {{ i.frame }}
+        <hr>
     {% endfor %}
-  </div>
 </div>
