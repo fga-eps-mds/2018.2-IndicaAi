@@ -10,5 +10,4 @@ class Local < ApplicationRecord
   def self.find_local_ratings(params)
     Local.find(params).local_ratings
   end
-
 end

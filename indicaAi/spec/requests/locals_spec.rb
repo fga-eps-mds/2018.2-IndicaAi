@@ -18,4 +18,13 @@ RSpec.describe 'Local API', type: :request do
       expect(response).to have_http_status(200)
     end
   end
+
+  describe 'GET /locals/name/:name' do
+    # make HTTP get request before each example
+    before { get '/locals/name/:name' }
+
+    it 'return local by name' do
+      expect(json).not_to_be_empty
+    end
+  end
 end

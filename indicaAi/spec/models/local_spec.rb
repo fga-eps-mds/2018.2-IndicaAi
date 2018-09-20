@@ -17,6 +17,4 @@ RSpec.describe Local, type: :model do
     local.save
     expect(Local.find_local_ratings(params)) == true
   end
-
 end
-
