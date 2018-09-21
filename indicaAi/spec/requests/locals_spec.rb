@@ -10,6 +10,7 @@ RSpec.describe 'Local API', type: :request do
     before { get '/locals/' }
 
     it 'returns locals' do
+      
       expect(json).not_to be_empty
       expect(json.size).to eq(10)
     end
@@ -24,7 +25,7 @@ RSpec.describe 'Local API', type: :request do
     before { get '/locals/name/:name' }
 
     it 'return local by name' do
-      expect(json).not_to_be_empty
+      expect(json).not_to be_empty
     end
   end
 end
