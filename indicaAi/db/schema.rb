@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20180915182842) do
   end
 
   create_table "user_identifiers", force: :cascade do |t|
-    t.integer "userId"
+    t.integer "identifier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

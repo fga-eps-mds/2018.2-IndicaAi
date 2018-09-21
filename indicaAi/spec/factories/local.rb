@@ -1,4 +1,3 @@
-
 FactoryBot.define do
   factory :local do
     name { Faker::Lorem.word }
