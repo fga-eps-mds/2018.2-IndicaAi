@@ -94,10 +94,20 @@ a, a:hover, a:focus {
 }
 
 .foto-local img{
-  width: 300px;
-  height: 140px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-top: 115px;
+  width: 100%;
+  height: 160px;
+
+}
+.fga-img img{
+  width: 100%;
+}
+
+
+.caixa{
+  width:100%;
+  height: 300px;
+  background-color: #fff;
 }
 
 .modal-header {
