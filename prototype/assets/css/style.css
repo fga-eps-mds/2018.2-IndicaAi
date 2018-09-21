@@ -12,8 +12,8 @@ Premium: http://www.gridgum.com
 /* BASIC THEME CONFIGURATION */
 body {
     color: #005565;
-	background: #f2f2f2;
-    font-family: 'Ruda', sans-serif;
+	  background: #f2f2f2;
+    font-family: 'Maven Pro';
     padding: 0px !important;
     margin: 0px !important;
     font-size:13px;
@@ -43,12 +43,61 @@ a, a:hover, a:focus {
 }
 
 /* Bootstrap Modifications */
-.logo img{
-  position: fixed;
-  top: 11px;
-  right: 130px;
-  max-height: 35px;
-  max-width: 150px;
+.top-bars{
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.topbox{
+  height: 32px;
+  background-color: #0AACCC;
+  text-align:center;
+  color: #fff;
+  font-size: 14;
+  padding-top: 7px;
+}
+
+.apps-bar img{
+    width: 100%;
+    height: 40px;
+}
+
+.list-group-item{
+  margin-top: -8px;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #585858;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+    font-size: 11.4px;
+    color: #fff;
+}
+
+.tab button:hover {
+    background-color: #0AACCC; /*#A4A4A4;*/
+}
+
+.foto-local img{
+  width: 300px;
+  height: 140px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .modal-header {
@@ -440,7 +489,7 @@ ul.sidebar-menu li a.active i {
 
 .wrapper {
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -1960,9 +2009,6 @@ label {
 	text-transform: uppercase;
 	font-weight: 300;
 }
-.login-wrap {
-	padding: 20px;
-}
 .login-wrap .registration {
 	text-align: center;
 }
@@ -2235,12 +2281,6 @@ label {
 }
 
 /*footer*/
-.site-footer {
-    background: #000000;
-    color: #fff;
-    padding: 10px 0;
-}
-
 
 .go-top {
     margin-right: 1%;
@@ -2264,7 +2304,7 @@ label {
     float:left;
 }
 
-/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
 follow these rules. Every browser that supports :checked also supports :not(), so
 it doesn’t make the test unnecessarily selective */
 .rating:not(:checked) > input {

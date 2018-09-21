@@ -12,67 +12,33 @@
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-    
-    <script src="assets/js/chart-master/Chart.js"></script> 
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro"/>
+
+    <script src="assets/js/chart-master/Chart.js"></script>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
   </head>
 
   <body>
 
   <section id="container" >
-      
-      <header class="header black-bg">
-            <div class="sidebar-toggle-box">
-                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-            </div>
-            
-            <div class="top-menu">
-            	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
-            	</ul>
-            </div>
-        </header>
-      
-        <aside>
-                <div id="sidebar"  class="nav-collapse ">
-                    
-                    <ul class="sidebar-menu" id="nav-accordion">
-                  
-                      <p class="centered"><a href="profile.html"><img src="assets/img/friends/fr-05.jpg" class="img-circle" width="60"></a></p>
-                      <h5 class="centered">Linus Torvalds</h5>
-                      
-                      <li class="sub-menu">
-                          <a href="cadastro.html">
-                              <i class="fa fa-plus"></i>
-                              <span>Cadastrar locais</span>
-                          </a>
-                      </li>
-      
-                      <li class="sub-menu">
-                          <a href="index.html">
-                              <i class="fa fa-search"></i> 
-                              <span>Buscar locais</span>
-                          </a>
-                      </li>
-      
-                      <li class="sub-menu">
-                          <a href="favoritos.html" >
-                              <i class="fa fa-star-o" aria-hidden="true"></i>
-                              <span>Locais favoritos</span>
-                          </a>
-                      </li>
-                    </ul>
-                </div>
-            </aside>
-      
+
+    <nav class="navbar-fixed-top">
+      <div class="topbox">Cadastrar</div>
+      <div class="apps-bar">
+          <img src="assets/img/app.jpg">
+      </div>
+      <div style="margin-top: -1px"></div>
+      <div class="tab">
+        <a href="index.html"><button>Buscar local</button></a>
+        <a href="cadastro.html"><button>Cadastrar</button></a>
+        <a href="favoritos.html"><button>Locais favoritos</button></a>
+      </div>
+    </nav>
+
+    <div style="margin-top: 65px"></div>
+
     <section id="main-content">
         <section class="wrapper">
             <section style="margin-top: 15px" class="text-left">
@@ -86,10 +52,6 @@
                         <input type="text" name="dicaLocal" id="dicaLocal" class="form-control" placeholder="Dicas sobre o local..." aria-describedby="helpId">
                     </div>
                     <div class="form-group">
-                        <label for="" >Qualquer coisa:</label>
-                        <input type="text" name="nomeLocal" id="nomeLocal" class="form-control" placeholder="Nome do local..." aria-describedby="helpId">
-                    </div>
-                    <div class="form-group">
                         <label for="fotosLocal">Fotos</label>
                         <input type="file" class="form-control-file" id="fotosLocal">
                     </div>
@@ -98,36 +60,13 @@
                         <textarea type="text" name="descricaoLocal" id="descricaoLocal" class="form-control" placeholder="Descrição do local..." aria-describedby="helpId"></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-indiaAi">Cadastrar</button>
+                      <button type="submit" class="btn btn-indiaAi">Cadastrar</button>
+                      <a href="mapa.html"><button class="btn btn-indiaAi">Buscar no mapa</button></a>
                     </div>
                 </form>
             </section>
         </section>
-
-        <footer class="site-footer navbar-fixed-bottom">
-            <div class="text-center">
-                <a href="index.html">
-                    <img style="height: 50px" src="assets/img/icons8-visita-96.png">
-                </a>
-            </div>
-        </footer>
-        
     </section>
-
-    
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-    <script src="assets/js/common-scripts.js"></script>
-  
-    <script>
-            $(function(){
-                $('select.styled').customSelect();
-            });
-    </script>
 
   </body>
 </html>
