@@ -21,7 +21,7 @@ class LocalsController < ApplicationController
   # GET /local/:id/rating
   def show_rating
     rating = Local.find_local_ratings(params[:id_local])
-    locals = Local.find(params[:id_local])
-    json_response(locals: locals, rating: rating)
+    local = Local.find(params[:id_local])
+    json_response(locals: local, rating: rating)
   end
 end
