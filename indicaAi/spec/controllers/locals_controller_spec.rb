@@ -14,7 +14,10 @@ RSpec.describe LocalsController, type: :controller do
 
   describe 'GET #search_locals' do
     context 'Return a local by its name as a param' do
-      it { should route(:get, '/locals/name/P').to(action: :search_locals, name: 'P') }
+        local = Local.new
+        local.name = "Xoxo"
+        local.save
+      it { should route(:get, '/locals/name/x').to(action: :search_locals, name: 'x') }
       end
   end
   describe 'GET #show_rating' do
