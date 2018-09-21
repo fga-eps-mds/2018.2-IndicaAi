@@ -22,6 +22,9 @@ RSpec.describe LocalsController, type: :controller do
   end
   describe 'GET #show_rating' do
       context 'Return a rating by its id as a param ' do
+          local1 = Local.new
+          local1.name = 'FGA'
+          local1.save
           it { should route(:get, '/locals/1/ratings').to(action: :show_rating, id_local: 1) }
       end
   end
