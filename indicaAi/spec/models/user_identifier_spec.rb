@@ -28,10 +28,8 @@ RSpec.describe UserIdentifier, type: :model do
       number = Faker::Number.between(1, 9999)
       user = UserIdentifier.new(identifier: number)
       user.save
-      p user
       user_2 = UserIdentifier.new(identifier: number)
       user_2.save
-      p user_2
       expect(user_2.valid?).to be_falsey
     end
   end
