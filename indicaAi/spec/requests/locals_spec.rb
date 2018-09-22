@@ -3,7 +3,8 @@ require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
   let!(:locals) { create_list(:local, 10) }
-  let(:local_id) { locals.first.id }
+  let!(:local_id) { locals.first.id }
+  let!(:favorite_locals) { create_list(:favorite_local, 10, local: locals.first)}
 
   describe 'GET /locals' do
     # make HTTP get request before each example
@@ -18,4 +19,25 @@ RSpec.describe 'Local API', type: :request do
       expect(response).to have_http_status(200)
     end
   end
+
+  describe 'GET /local/favorites/:local_id' do
+    before{
+      get "/local/favorites/#{local_id}"
+    }
+    it 'return favorites by local in json' do
+      expect(json).not_to be_empty
+      # json = list_favorites
+      json.each do |item|
+        # p item
+        # tests of local id
+        expect(item["local_id"]).to eq(local_id)
+      end
+    end
+
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
+    end
+    
+  end
+
 end

@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
   let!(:user_identifiers) { create_list(:user_identifier, 10) }
-  let(:user_identifier_id) { user_identifiers.first.id }
+  let!(:user_identifier_id) { user_identifiers.first.id }
   let!(:favorite_locals) { create_list(:favorite_local, 10, user_identifier: user_identifiers.first)}
 
   # Test list all users
@@ -43,11 +43,16 @@ RSpec.describe 'Local API', type: :request do
     }
     it 'return favorites by user in json' do
       expect(json).not_to be_empty
+      # json = list_favorites
       json.each do |item|
         # p item
         # tests of user id
         expect(item["user_identifier_id"]).to eq(user_identifier_id)
       end
+    end
+
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
     end
     
   end
