@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
-  let!(:locals) { create_list(:local, 10) }
+  let!(:local) { create_list(:local, 10) }
   let(:local_id) { locals.first.id }
 
   describe 'GET /locals' do
