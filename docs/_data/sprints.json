@@ -4,6 +4,15 @@
    },
    {
      "number": "2",
+   },
+   {
+     "number": "3",
+     "coverage": true,
+     "complexity": true,
+     "numberPairing": true,
+     "duplication": true,
+     "maintainability": true,
+     "styleSheet": true,
      "class": "active in"
    }
 ]

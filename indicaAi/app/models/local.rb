@@ -4,7 +4,7 @@ class Local < ApplicationRecord
   validates :name, presence: true, length: { minimum: 2 }
   validates :RatingRate, presence: true
   def self.find_by_name(params)
-    Local.where('upper(name) = ?', params.upcase)
+    Local.where('upper(name) like ?', "%#{params.upcase}%")
   end
 
   def self.find_favorites(params)

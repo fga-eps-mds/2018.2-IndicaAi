@@ -238,24 +238,14 @@ improvements: [
 
 
 burndown: [
-    {
-        review: "Esta foi a primeira sprint do grupo e teve um processo conturbado, dividido entre conhecer a equipe, organizar o projeto e realizar os treinamentos necessários para a equipe de desenvolvimento poder começar a trabalhar;"
-    },
-    {
-        review: "O membro Renato Valério - da disciplina de EPS - entrou no meio da sprint, levando um tempo para se ambientar no processo da disciplina e da equipe, o que dificultou um pouco o andamento das atividades;"
-    },
-    {
-        review: "A equipe de desenvolvedores ficou sobrecarregada com os treinamentos que ocorreram durante a sprint e acabaram iniciando tardiamente a construção dos Documentos de Visão e de Arquitetura que estavam previstos pra sprint."
-    },
-    {
-        review: "Em algumas issues relacionadas a documentação do projeto houve dificuldade de entendimento sobre o objetivo/confecção do documento e dificuldade de comunicação com a orientadora do projeto para esclarecê-las, o que acabou atrasando a entrega das mesmas."
-    }
+        "Esta foi a primeira sprint do grupo e teve um processo conturbado, dividido entre conhecer a equipe, organizar o projeto e realizar os treinamentos necessários para a equipe de desenvolvimento poder começar a trabalhar;",
+        "O membro Renato Valério - da disciplina de EPS - entrou no meio da sprint, levando um tempo para se ambientar no processo da disciplina e da equipe, o que dificultou um pouco o andamento das atividades;",
+        "A equipe de desenvolvedores ficou sobrecarregada com os treinamentos que ocorreram durante a sprint e acabaram iniciando tardiamente a construção dos Documentos de Visão e de Arquitetura que estavam previstos pra sprint.",
+        "Em algumas issues relacionadas a documentação do projeto houve dificuldade de entendimento sobre o objetivo/confecção do documento e dificuldade de comunicação com a orientadora do projeto para esclarecê-las, o que acabou atrasando a entrega das mesmas."
 ]
 
 velocity: [
-    {
-        review: "Nessa sprint o velocity da equipe foi de 23 pontos, sendo que o valor planejado para a entrega era de 37."
-    }
+        "Nessa sprint o velocity da equipe foi de 23 pontos, sendo que o valor planejado para a entrega era de 37."
 ]
 
 commits: []
