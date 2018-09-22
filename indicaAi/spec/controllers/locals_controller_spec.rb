@@ -1,22 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe LocalsController, type: :controller do
-  let!(:local) { create(:local) }
-
   it { should route(:get, '/locals').to(action: :index) }
-  let(:action) { LocalsController.new }
-
-  it 'Test index - Should return all locals as JSON' do
+  it 'should return a JSON object' do
     get :index, format: :JSON
     expect(response).to be_success
   end
 
-  describe 'GET #search_locals' do
-    context 'Return a local by its name as a param' do
-      local = Local.new
-      local.name = 'Xoxo'
-      local.save
-      it { should route(:get, '/locals/name/x').to(action: :search_locals, name: 'x') }
+  context 'GET #search_locals' do
+    let!(:local) { create(:local, name: 'Xoxo') }
+    it 'should route locals/name/x to the corresponding action' do
+      should route(:get, '/locals/name/x').to(action: :search_locals, name: 'x')
     end
   end
 end
