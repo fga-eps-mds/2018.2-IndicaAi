@@ -13,7 +13,7 @@ class LocalsController < ApplicationController
   end
 
   def list_favorites
-    @locals = Local.find_favorites(params[:local_id])
-    json_response(@locals)
+    @favorites = Local.find_favorites(params[:local_id])
+    json_response(@favorites)
   end
 end
