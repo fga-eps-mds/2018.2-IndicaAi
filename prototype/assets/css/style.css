@@ -10,14 +10,6 @@ Premium: http://www.gridgum.com
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
 /* BASIC THEME CONFIGURATION */
-.tab {
-    display: inline-block;
-    display: -moz-inline-box;
-    *display: inline; /* For IE7 */
-    zoom: 1; /* Trigger hasLayout */
-    width: 100%;
-    text-align: center;
-}
 body {
     color: #005565;
 	  background: #f2f2f2;
@@ -132,6 +124,31 @@ a, a:hover, a:focus {
   margin-top: -65px;
   width: 40px;
   height: 60px;
+}
+
+.botaoSearch{
+  margin-left: 230px;
+  margin-top: -36px;
+}
+
+#divBusca{
+  background-color:#FFF;
+  border:solid 1px black;
+  border-radius:15px;
+  width:300px;
+  height: 35px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:10px;
+  padding-right:10px;
+  font-family: 'Maven Pro';
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
 }
 
 .modal-header {
