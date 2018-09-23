@@ -4,7 +4,7 @@ RSpec.describe LocalRating, type: :model do
   it { should validate_numericality_of(:value).is_greater_than_or_equal_to(0) }
   context 'ratings validation tests' do
     it 'should return a integer value' do
-      note = build(:local_rating)
+      note = create(:local_rating)
       assert note.value.class == Integer
     end
 
