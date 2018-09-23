@@ -71,14 +71,16 @@ a, a:hover, a:focus {
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
     background-color: #585858;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
+    display: inline-block;
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
