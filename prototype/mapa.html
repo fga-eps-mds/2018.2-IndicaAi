@@ -26,13 +26,13 @@
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
+    <style>
+       #map {
+        height: 330px;
+        width: 100%;
+       }
+    </style>
 
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -40,96 +40,46 @@
   <section id="container" >
 
     <nav class="navbar-fixed-top">
-      <div class="topbox">Buscar local</div>
+      <div class="topbox">Mapa</div>
       <div class="apps-bar">
           <img src="assets/img/app.jpg">
-      </div>
-      <div style="margin-top: -1px"></div>
-      <div class="tab">
-        <a href="index.html"><button>Buscar local</button></a>
-        <a href="cadastro.html"><button>Cadastrar</button></a>
-        <a href="favoritos.html"><button>Locais favoritos</button></a>
-      </div>
-    </nav>
+        </div>
+        <div style="margin-top: -1px"></div>
+        <div class="tab">
+          <a href="welcome.html"><button>Início</button></a>
+          <a href="index.html"><button>Buscar local</button></a>
+          <a href="cadastro.html"><button>Cadastrar</button></a>
+          <a href="favoritos.html"><button>Locais favoritos</button></a>
+          <a href="contato.html"><button>Contato</button></a>
+        </div>
+      </nav>
 
     <div style="margin-top: 80px"></div>
 
-
-
-      		          <!-- Modal -->
-		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModalSenha" class="modal fade">
-		              <div class="modal-dialog">
-		                  <div class="modal-content">
-		                      <div class="modal-header">
-		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		                          <h4 class="modal-title">Alterar Senha ?</h4>
-		                      </div>
-                            <div class="modal-body">
-		                          <p>Digite sua Senha</p>
-		                          <input id="senhaAtual" style="width:50%;" maxlength="18" name="cnpj2" onKeyPress="" onchange="" onfocusout="" type="password" class="form-control" placeholder="" autofocus>
-		                      </div>
-		                      <div class="modal-body">
-		                          <p>Digite sua Nova Senha</p>
-		                          <input id="senhaNova" style="width:50%;" maxlength="18" name="cnpj2" onKeyPress="" onchange="" onfocusout="" type="password" class="form-control" placeholder="" autofocus>
-		                      </div>
-                            <div class="modal-body">
-		                          <p>Confirme sua Nova Senha</p>
-		                          <input id="senhaNova2" style="width:50%;" maxlength="18" name="cnpj2" onKeyPress="" onchange="" onfocusout="" type="password" class="form-control" placeholder="" autofocus>
-		                      </div>
-
-		                      <div class="modal-footer">
-		                          <button data-dismiss="modal" class="btn btn-default" type="button">Sair</button>
-		                          <button onclick="AlterarSenha()" class="btn btn-theme" type="button">Alterar Senha</button>
-
-                          </div>
-		                  </div>
-		              </div>
-		          </div>
-		          <!-- modal -->
-      <!--sidebar end-->
-
-      <!-- ****************************************************
-      MAIN CONTENT
-      ***************************************************** -->
-      <!--main content start-->
       <section id="main-content">
-
-          <section class="wrapper">
-<head>
-
-    <style>
-       #map {
-        height: 330px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 20,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-
-    <div style="padding-bottom: 10px"></div>
-
-      <script type="text/javascript"
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9WYVio--JddgNX3TTF6flEhubkpjJYc&callback=initMap">
-    </script>
+        <section class="wrapper">
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {lat: -25.363, lng: 131.044};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 20,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <div style="padding-bottom: 10px"></div>
+          <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9WYVio--JddgNX3TTF6flEhubkpjJYc&callback=initMap">
+          </script>
+  		</section>
+    </section>
 
   </body>
-
-		</section>
-  </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>

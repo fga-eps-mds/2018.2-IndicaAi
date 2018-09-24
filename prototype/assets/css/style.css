@@ -192,6 +192,34 @@ a, a:hover, a:focus {
   width:260px;
 }
 
+.inicio {
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+  padding-top: 155px;
+}
+
+.inicio img{
+  margin-left: 12px;
+  height: 90px;
+  width: 300px;
+}
+
+.texto{
+  padding-top: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.list-locals{
+  height: 80px;
+  width: 100%;
+  border: 1px solid gray;
+  color:black;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
 .modal-header {
 	background: #68dff0;
 }
