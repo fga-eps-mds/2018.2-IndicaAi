@@ -16,7 +16,7 @@ categories: docs
 
   <tr><td rowspan="2">Cadastro</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/129">US03</a></td><td>Cadastrar local via IndicaAi</td><td> Could have </td><td>13</td></tr>
 
-  <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/159">US09</a></td><td>Cadastrar local via Google API</td><td> -</td><td>-</td></tr>
+  <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/159">US09</a></td><td>Cadastrar local via Google API</td><td> Would have</td><td>-</td></tr>
 
   <tr><td>Rota</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/126">US04</a></td><td>Gerar rota para o local</td><td> Should have</td><td>13</td></tr>
 
@@ -26,5 +26,5 @@ categories: docs
 
   <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/109">US07</a></td><td>Visualizar favoritos</td><td> Would have</td><td>8</td></tr>
 
-<tr><td>Publicidade</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/136">US08</a></td><td>Cadastrar Publicidade</td><td>-</td><td>8</td></tr>  
+<tr><td>Publicidade</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/136">US08</a></td><td>Cadastrar Publicidade</td><td>Must have</td><td>8</td></tr>  
 </table>
