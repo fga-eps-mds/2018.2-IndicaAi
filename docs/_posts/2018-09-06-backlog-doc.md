@@ -10,7 +10,7 @@ categories: docs
 <table>
   <tr><th>Épico</th><th>Feature</th><th>US</th><th>Backlog</th><th>Prioridade</th><th>Pontuação</th></tr>
 
-  <tr><td rowspan="9">Local</td><td>Busca</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/106">US01</a></td><td>Buscar local</td><td>Must have</td><td>13</td></tr>
+  <tr><td rowspan="10">Local</td><td>Busca</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/106">US01</a></td><td>Buscar local</td><td>Must have</td><td>13</td></tr>
 
   <tr><td>Avaliação</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/131">US02</a></td><td>Avaliar local</td><td> Should have</td><td>6</td></tr>
 
@@ -26,5 +26,7 @@ categories: docs
 
   <tr><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/109">US07</a></td><td>Visualizar favoritos</td><td> Would have</td><td>8</td></tr>
 
-<tr><td>Publicidade</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/136">US08</a></td><td>Cadastrar Publicidade</td><td>Must have</td><td>8</td></tr>  
+<tr><td>Publicidade</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/136">US08</a></td><td>Cadastrar publicidade</td><td>Must have</td><td>8</td></tr>
+
+<tr><td>Login</td><td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/160">US10</a></td><td>Verificar login com a API</td><td>Would have</td><td>-</td></tr>
 </table>
