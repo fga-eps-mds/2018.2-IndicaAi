@@ -93,15 +93,25 @@
         },
         {
           "text": "Documento de Arquitetura",
-          "urls": "#",
+          "url": "/docs/2018/08/28/architecture-doc.html",
           "icon": "fa-angle-right"
         },
         {
           "text": "Plano de Qualidade",
-          "urls": "/docs/2018/08/28/plano-de-qualidade.html",
+          "url": "/docs/2018/08/28/plano-de-qualidade.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Identidade Visual",
+          "url": "/docs/2018/09/15/identidade-visual.html",
           "icon": "fa-angle-right"
         }
     ]
+  },
+  {
+    "text": "Riscos do Projeto",
+    "url": "/risks",
+    "icon": "fa-bomb"
   },
   {
     "text": "Sprint Planning",
@@ -109,13 +119,23 @@
     "icon": "fa-paper-plane",
     "urls": [
         {
+          "text": "Backlog",
+          "url": "/docs/2018/09/06/backlog-doc.html",
+          "icon": "fa-angle-right"
+        },
+        {
           "text": "Sprint 01",
           "url": "/sprint-planning/2018/08/27/planning-sprint-1.html",
           "icon": "fa-angle-right"
         },
         {
           "text": "Sprint 02",
-          "url": "/sprint-planning/2018/08/27/planning-sprint-2.html",
+          "url": "/sprint-planning/2018/09/05/planning-sprint-2.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 03",
+          "url": "/sprint-planning/2018/09/09/planning-sprint-3.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -132,7 +152,74 @@
         },
         {
           "text": "Sprint 02",
-          "url": "/sprint-result/2018/08/27/results-sprint-2.html",
+          "url": "/sprint-review/2018/09/03/review-sprint-2.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 03",
+          "url": "/sprint-review/2018/09/03/review-sprint-3.html",
+          "icon": "fa-angle-right"
+        }
+    ]
+  },
+  {
+    "text": "Métricas",
+    "url": "#",
+    "icon": "fa-chart-line",
+    "urls": [
+        {
+          "text": "Burndown",
+          "url": "/burndown",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Velocity",
+          "url": "/velocity",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Commits por Dia",
+          "url": "/commits",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Quadro de Conhecimento",
+          "url": "/knowledge",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Gráfico de Conhecimento",
+          "url": "/conhecimento",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Número de Pareamentos",
+          "url": "/numberPairing",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Cobertura de Testes",
+          "url": "/coverage",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Complexidade Ciclomática",
+          "url": "/complexity",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Duplicação de Código",
+          "url": "/duplication",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Manutenibilidade",
+          "url": "/maintainability",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Folha de Estilo",
+          "url": "/styleSheet",
           "icon": "fa-angle-right"
         }
     ]

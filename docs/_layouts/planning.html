@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<div class="post-content well metrics">
+
+  <ul class="nav nav-tabs">
+    <li class='active in'><a data-toggle="tab" class='active in' href="#info">Sprint {{page.sprint}}</a></li>
+    <li><a data-toggle="tab" href="#papers">Papéis</a></li>
+    <li><a data-toggle="tab" href="#backlog">Sprint Backlog</a></li>
+    {% if page.knowledge %}<li><a data-toggle="tab" href="#knowledge">Conhecimento</a></li>{% endif %}
+    {% if page.pairing %}<li><a data-toggle="tab" href="#pairing">Pareamentos</a></li>{% endif %}
+    {% if page.overview %}<li><a data-toggle="tab" href="#overview">Overview</a></li>{% endif %}
+  </ul>
+
+  <div class="tab-content">
+      <div id="info" class="tab-pane fade active in">
+        <h2>Informações Básicas da Sprint</h2>
+        <table>
+          <tr><th><i>Sprint</i></th><td>{{page.sprint}}</td></tr>
+          <tr><th>Início</th><td>{{page.startDate}}</td></tr>
+          <tr><th>Término</th><td>{{page.endDate}}</td></tr>
+          <tr><th>Duração</th><td>{{page.duration}} dias</td></tr>
+          <tr> <th>Pontos Planejados</th> <td>{{page.plannedPoints}}</td> </tr>
+          <tr> <th>Pontos de dívida passada</th> <td>{{page.debtPoints}}</td> </tr>
+          <tr><th>Pontuação Total</th><td>{{page.totalPoints}}</td></tr>
+        </table>
+        <hr>
+
+        <h3>Presença na <i>Sprint Planning</i></h3>
+        <table class='frequency'>
+        <tr><th>Membro</th><th>Presença</th></tr>
+        {% for i in page.presence %}
+          {% if i.presence == true %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-check"></i></td></tr>
+          {% else %}
+            <tr><td>{{i.name}}</td><td><i class="fa fa-times"></i></td></tr>
+          {% endif %}
+        {% endfor %}
+        </table>
+
+      </div>
+
+      <div id="papers" class="tab-pane fade">
+        <h2>Papéis</h2>
+        <table>
+          <tr> <th>Papel</th> <th>Responsável</th> </tr>
+          <tr> <td><i>Scrum Master</i></td> <td>{{page.scrumMaster}}</td> </tr>
+          <tr> <td><i>Product Owner</i></td> <td>{{page.productOwner}}</td> </tr>
+          <tr> <td>Arquiteto</td> <td>{{page.architect}}</td> </tr>
+          <tr> <td>DevOps</td> <td>{{page.devops}}</td> </tr> 
+          <tr>
+          <td>Time de Desenvolvimento</td>
+          <td>
+          {% for i in page.developmentTeam %}
+              {{i}}<br>
+          {% endfor %}
+          </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="backlog" class="tab-pane fade">
+        <h2>Sprint Backlog</h2>
+        <table>
+        <tr><th></th><th>Issue</th><th>Descrição</th><th>Pontos</th><th>Responsáveis</th></tr>
+        <tr>
+        {% for i in page.issues %}
+          <tr>
+            {% if i.header and i.header == "Planejadas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>P<br>L<br>A<br>N<br>E<br>J<br>A<br>D<br>A<br>S</th>
+            {% elsif i.header and i.header == "Dividas" %}
+              <th rowspan='{{i.headerSpan}}' style='text-align:center'>D<br>Í<br>V<br>I<br>D<br>A<br>S</th>
+            {% endif %}
+            <td><a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/{{i.number}}">#{{i.number}}</a></td>
+            <td>{{i.description}}</td>
+            <td>{{i.points}}</td>
+            <td>
+                {% for p in i.responsible %}
+                    {{p}}<br>
+                {% endfor %}
+             </td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+
+      {% if page.overview %}
+        <div id="overview" class="tab-pane fade">
+          <h2><i>Overview</i> da <i>Sprint</i></h2>
+          <ul>
+            {% for i in page.overview %}
+              <li>{{i}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if page.knowledge %}
+        <div id="knowledge" class="tab-pane fade">
+          <h2>Quadro de Conhecimentos - Início da <i>Sprint</i></h2>
+          <img src='{{site.baseurl}}/static/img/quadros_de_conhecimento/sprint_{{page.previousSprint}}.png' title='Quadro de Conhecimentos - Sprint {{page.previousSprint}}' alt='Quadro de Conhecimentos - Sprint {{page.previousSprint}}'>
+          <p>Acompanhe mais dessa métrcia <a href='{{site.baseurl}}/knowledge'>aqui</a>.</p>
+        </div>
+      {% endif %}
+
+      {% if page.pairing %}
+        <div id="pairing" class="tab-pane fade">
+          <h2>Pareamentos</h2>
+          <img src='{{site.baseurl}}/static/img/pareamentos/sprint_{{page.sprint}}.png' title='Pareamentos - Sprint {{page.sprint}}' alt='Pareamentos - Sprint {{page.sprint}}'>
+        </div>
+      {% endif %}
+  </div>
+</div>
+
+<article class="content">
+    <div class="post">{{ content }}</div>
+</article>
+
+
+<hr>
+{% assign hasSimilar = '' %}
+{% for post in site.posts  %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.categories %}
+        {% for thisTag in page.categories %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <div class="panel-body">
+                <h4>Sprint Planning</h4>
+                <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </ul>
+    </div>
+{% endif %}
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "{{ site.disqus_shortname }}";
+        var disqus_identifier = "{{ site.url }}_{{ page.title }}";
+        var disqus_title = "{{ page.title }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
