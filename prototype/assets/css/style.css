@@ -154,6 +154,7 @@ a, a:hover, a:focus {
   margin-top: 5px;
   height: 15px;
   weight: 20px;
+  padding-left: 0.5px;
   border: 1px solid #0AACCC;
   border-radius: 6px;
   color: #0AACCC;
