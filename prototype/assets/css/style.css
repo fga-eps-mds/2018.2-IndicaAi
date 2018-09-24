@@ -131,7 +131,47 @@ a, a:hover, a:focus {
   margin-top: -36px;
 }
 
+.divulgacao{
+  height: 110px;
+  width: 100%;
+  background-color: #FFF;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 12px;
+  padding-left: 15px;
+  text-align: left;
+  color: black;
+}
+
+.divulgacao .title{
+  height: 80px;
+  width: 190px;
+  font-size: 13px;
+}
+
+.anuncio{
+  margin-right: 140px;
+  margin-top: 5px;
+  height: 15px;
+  weight: 20px;
+  border: 1px solid #0AACCC;
+  border-radius: 6px;
+  color: #0AACCC;
+  font-size: 10.5px;
+
+}
+
+.divulgacao .foto img{
+  margin-top: -77px;
+  margin-left: 190px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid gray;
+  border-radius: 35px;
+}
+
 #divBusca{
+  margin-left: -5px;
   background-color:#FFF;
   border:solid 1px black;
   border-radius:15px;
