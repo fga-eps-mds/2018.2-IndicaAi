@@ -16,7 +16,7 @@ categories: docs
 -----
 ## 1. Introdução
 
-Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA, campus da Universidade de Brasília - UnB. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
+Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem o conhecimento dos usuarios sobre os lugares próximos em relação ao contexto aplicado. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
 
 ### 1.1 Finalidade
 
@@ -52,27 +52,28 @@ Elaborado de acordo com a metodologia RUP, o *Rational Unified Process*, este do
 ## 2. Posicionamento
 
 ### 2.1 Oportunidade de Negócios
-A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasília e recebe alunos de vários lugares do Brasil. A faculdade ainda está em desenvolvimento, portanto faltam serviços e estruturas básicas necessárias às atividades acadêmicas, fazendo com que alunos, professores e servidores precisem sair do campus. Muitos se perdem ao procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento de locais e experiências em relação aos bens e serviços oferecidos, próximos ao campus, com o objetivo de facilitar as buscas e melhorar a vida acadêmica.
+
+Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próximos ou serviços que existem nas proximidades. Com a falta de conhecimento, torna-se exaustivo procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento e avaliação de locais e serviços oferecidos próximos com o objetivo de facilitar as buscas e melhorar a vida do usuário.
 
 ### 2.2 Descrição do Problema
 
 <table>
-  <tr><th> O problema         </th><td> A falta de informação do que existe nas proximidades da faculdade. </td></tr>
-  <tr><th> Afeta                 </th><td> A comunidade acadêmia em geral.</td></tr>
+  <tr><th> O problema         </th><td> A falta de informação sobre a existência de locais nas proximidades relacionadas ao contexto. </td></tr>
+  <tr><th> Afeta                 </th><td> A comunidade envovida naquele grupo.</td></tr>
   <tr><th> cujo impacto é        </th><td> Eventuais má experiências com serviços disponíveis ou desorientação em realação a localização.</td></tr>
-  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade da faculdade o qual pessoas da comunidade pudessem compartilhar locais, experiencias e que indicasse de forma precisa a localização de estabelicimentos. </td></tr>
+  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade em que o cliente esta, podendo compartilhar locais, avaliações e que indicasse a localização de estabelicimentos. </td></tr>
 </table>
 
 
 ### 2.3 Sentença de Posição do Produto
 
 <table>
-  <tr><th>Para</th><td>Membros da comunidade acadêmica da Faculdade do Gama - FGA</td></tr>
-  <tr><th>Que</th><td>Necessitam se deslocar do campus em busca de bens e serviços </td></tr>
+  <tr><th>Para</th><td>Grupo de pessoas com um mesmo contexto</td></tr>
+  <tr><th>Que</th><td>Necessitam obter informações sobre locais e serviços </td></tr>
   <tr><th>O</th><td>Indica Ai</td></tr>
-  <tr><th>Que</th><td>Compartilha locais e experiências </td></tr>
+  <tr><th>Que</th><td>Compartilha locais e avaliações </td></tr>
   <tr><th>Diferente do</th><td>Dos aplicativos Catraca livre, Yelp, Kekanto e What3Words(W3W)</td></tr>
-  <tr><th>Nosso produto</th><td>Indica locais de acordo com a experiências de outros integrantes da comunidade acadêmica da FGA</td></tr>
+  <tr><th>Nosso produto</th><td>Indica locais próximos, relacionados a realidade que o cliente está inserido</td></tr>
 
 </table>
 
@@ -174,7 +175,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
   <tr>
     <td><b>Representantes</b></td>
     <td>Iasmin Santos Mendes
-	  <br>Renato Valério Gomes</br>
+	  <br>Renato Valério Gomes
     </td>
   </tr>
   <tr>
@@ -253,13 +254,13 @@ Serviço de localização, já com o suporte para o idioma português, que utili
 
 #### 3.6.3 Kekanto
 
-O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugual, por exemplo.
+O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugal, por exemplo.
 
 ![Kekanto](/static/img/vision_document/kekanto.jpeg)
 
 #### 3.6.4 Yelp
 
-Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuario informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
+Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuário informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
 
 ![Yelp](/static/img/vision_document/yelp.jpg)
 
@@ -267,13 +268,13 @@ Yelp é um app que pesquisa locais próximos do usuário, utilizando a localiza�
 
 ### 4.1 Perspectiva do Produto
 
-O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais já cadastrados, relatar experiência e achar sua localização por mapa.
+O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as avaliações para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, descrever o mesmo, avaliar locais já cadastrados e gerar uma rota até a localização.
 
 ### 4.2 Resumo dos Recursos
 
 | Código |Recurso | Benefício|
 |:------:|--------|----------|
-| R01 | Indicar locais próximos a FGA.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo a FGA. |
+| R01 | Indicar locais relacionados ao contexto.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo ao contexto do mesmo. |
 | R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
 
 ## 5. Requisitos Funcionais
@@ -288,20 +289,14 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e requisitar a API autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RF2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
-| RF3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
-| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
-| RF5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Administrador seja tomada ). | Intermediária |
-| RF6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
-| RF7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
-| RF8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
-| RF9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
+| RF1 | Autenticar Usuário | O Sistema deve autenticar o usuário pela API externa. | Alta |
+| RF2 | Cadastrar Locais | O Sistema deve permitir ao usuário o ato de cadastro de lugares de seu interesse por meio de um check-in no local. | Alta |
+| RF3 | Busca de Locais | O Sistema deve permitir a busca e visualização de locais solicitados através de uma busca por parte do usuário, assim como filtros de buscas para melhor atender suas expectativas. | Alta |
+| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de notas previamente estabelecidas. | Intermediária |
+| RF5 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Intermediária |
+| RF6 | Favoritar Lugares | O Sistema deve provê ao usuário uma ferramenta para criar favoritos de lugares de seu interesse, assim como a listagem dos mesmos | Baixa |
 
 ## 6. Restrições
-
-
-* Somente os Admnistradores do Sistema poderam realizar a remoção de uma conta de usuário comum.
 
 * O sistema só funcionará mediante uma conexão de rede pelo menos satisfatória e será mantido em um servidor Rails.
 
@@ -332,7 +327,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 * Quando inseridos dados pessoais do usuário, o sistema deve mantê-los protegidos de quaisquer influências externas, por meio de acesso a uma API externa para autenticação do usuário
 
 
-* O sistema deve aprensentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
+* O sistema deve apresentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
 
 ### 7.5 Requisito de Arquitetura
 
