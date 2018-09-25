@@ -57,7 +57,7 @@ A Faculdade do Gama - FGA é um dos campus mais novos da Universidade de Brasíl
 ### 2.2 Descrição do Problema
 
 <table>
-  <tr><th> O problema         </th><td> A falta de informação do que existe nas proximidades da faculdade. </td></tr>
+  <tr><th> O problema         </th><td> A falta de informação sobre a existência de locais próximos à da faculdade. </td></tr>
   <tr><th> Afeta                 </th><td> A comunidade acadêmia em geral.</td></tr>
   <tr><th> cujo impacto é        </th><td> Eventuais má experiências com serviços disponíveis ou desorientação em realação a localização.</td></tr>
   <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade da faculdade o qual pessoas da comunidade pudessem compartilhar locais, experiencias e que indicasse de forma precisa a localização de estabelicimentos. </td></tr>
@@ -267,7 +267,7 @@ Yelp é um app que pesquisa locais próximos do usuário, utilizando a localiza�
 
 ### 4.1 Perspectiva do Produto
 
-O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, e descrever o mesmo, alem de poder avaliar locais já cadastrados, relatar experiência e achar sua localização por mapa.
+O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as experiências para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, descrever o mesmo, avaliar locais já cadastrados e gerar uma rota até a localização.
 
 ### 4.2 Resumo dos Recursos
 
