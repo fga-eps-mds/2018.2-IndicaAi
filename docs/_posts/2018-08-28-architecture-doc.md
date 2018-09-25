@@ -20,7 +20,8 @@ categories: docs
     5.1 [Camadas](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#51-Camadas)
     5.2 [Diagrama de Classes](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#52-diagrama-de-classes)
 6. [Visão de Implementação](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#6--vis%C3%A3o-de-implementa%C3%A7%C3%A3o)  
-    6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)  
+    6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)
+    6.2 [Diagrama de Relações]()
 7. [Tamanho e Desempenho](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#7--tamanho-e-desempenho)
 8. [Qualidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#8-qualidade)
 9. [Referências](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#9--refer%C3%AAncias)
@@ -51,6 +52,8 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
   O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
+  ![react](https://drive.google.com/file/d/1XumTy5uTyioHxKt8qj0pSjogOPDD4RAI/view?usp=sharing)
+
 ## 3: Requisitos e Restrições Arquiteturais
 
    * A aplicação deve ser contruída sobre a arquitetura de microserviços, na qual o frontend será desenvolvido em React Native.
@@ -71,7 +74,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram](/static/img/architeture/use-case-diagram.jpg)
+  ![use_case_diagram](https://drive.google.com/file/d/1DrFX_w3_AqVRY981Z4Xvgj8-NxGjSewn/view?usp=sharing)
 
 ### 4.2 Descrição dos Casos de Uso
 
@@ -105,7 +108,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram](/static/img/architeture/class-diagram.jpg)
+![class-diagram](https://drive.google.com/file/d/18EB3g58DmVLlckJRUVhVoxEo768h8C2q/view?usp=sharing)
 
 ## 6:  Visão de Implementação
 
@@ -121,9 +124,13 @@ A arquitetura utilizada na aplicação é de microserviços que será feita atra
 
   * React Native - Assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
 
+### 6.2 Diagrama de Relações
+
+![relational-diagram](https://drive.google.com/file/d/1E1PSmEy-MMkO075dEdB-QZkVdO8hqu5Y/view?usp=sharing)
+
 ## 7.  Tamanho e Desempenho
 
-Como o sistema é um aplicativo para sistemas mobile em que os principais obejtivos são o cadastro e compartilhamento de locais próximos a universidade tem portanto como usuário principal o corpo acadêmico da FGA. É esperado que o software seja utilizado por toda a comunidade academica por apresentar vantagens a todos que fazem parte da mesma, com isso é previsto um número próximo a 2300 usuários, o que implica que caso seja utilizado um serviço de Cloud Server, plataformas mais simples como Heroku poderam ser usadas durante o tempo de adesão do aplicativo, porem quando em pleno funcionamento uma plataforma mais robusta como AWS (Amazon Web Services) será mais adequada afim de atender melhor o número de acessos simultâneos.
+Como o sistema é um aplicativo para sistemas mobile em que os principais objetivos são o cadastro e compartilhamento de locais próximos a universidade tem portanto como usuário principal o corpo acadêmico da FGA. É esperado que o software seja utilizado por toda a comunidade academica por apresentar vantagens a todos que fazem parte da mesma, com isso é previsto um número próximo a 2300 usuários, o que implica que caso seja utilizado um serviço de Cloud Server, plataformas mais simples como Heroku poderam ser usadas durante o tempo de adesão do aplicativo, porem quando em pleno funcionamento uma plataforma mais robusta como AWS (Amazon Web Services) será mais adequada afim de atender melhor o número de acessos simultâneos.
 
 A arquitetura foi escolhida de forma que o aplicativo tenha um aparato de armazenamento, busca, navegação, e visualização de locais suficientemente eficientes para que atenda de forma satisfatória até dispositivos celulares com hardwares menos poderosos. Vale destacar também que a velocidade de conexão do usuário com a internet e a disponibilidade do servidor possuem grande impacto sobre a experiencia com o aplicativo.
 
