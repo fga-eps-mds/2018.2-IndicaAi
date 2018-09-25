@@ -35,17 +35,6 @@ RSpec.describe UserIdentifier, type: :model do
   let!(:user) { create(:user_identifier) }
   let!(:user2) { create(:user_identifier) }
   let!(:favorites) { create_list(:favorite_local, 10, user_identifier: user) }
-  context 'Find user by id' do
-    it 'should return user related with id' do
-      result = UserIdentifier.find_by_user_id(user.id)
-      expect(result).to eql(user)
-    end
-
-    it 'should not return user related with id' do
-      result = UserIdentifier.find_by_user_id(user2.id)
-      expect(result).not_to eql(user)
-    end
-  end
 
   context 'Return favorites by users' do
     it 'should return favorite locals related with user' do
