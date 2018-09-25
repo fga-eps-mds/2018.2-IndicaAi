@@ -35,3 +35,7 @@ Se for necessário acessar o terminal do _container_ que roda a aplicação, o s
 Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/devel/CONTRIBUTING.md) e não esqueça de ler o nosso [Código de Conduta](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/devel/CODE_OF_CONDUCT.md) para saber como é a nossa política de relacionamento.
 
 Se precisar pode entrar em contato com a equipe por meio das issues ou pelo e-mail [indicaai.api@gmail.com](mailto:indicaai.api@gmail.com).
+
+## Protótipo
+
+Acompanhe o desenvolvimento do nosso [Protótipo do Projeto](https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait).
