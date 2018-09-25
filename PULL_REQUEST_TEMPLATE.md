@@ -1,6 +1,6 @@
 Fixes #
 
-## Proposed Changes
+## Alterções realizadas
 
   -
   -
