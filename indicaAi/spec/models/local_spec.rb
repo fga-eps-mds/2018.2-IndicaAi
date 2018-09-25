@@ -16,17 +16,4 @@ RSpec.describe Local, type: :model do
       expect(local.valid?).to be_falsey
     end
   end
-
-  context 'Return favorites by locals' do
-    it 'should return favorite locals related with local' do
-      result = Local.find_favorites(local.id)
-      assert result == favorite_locals
-    end
-
-    it 'should not return favorite locals related with local' do
-      local2 = create(:local)
-      result2 = Local.find_favorites(local2.id)
-      assert result2 != favorite_locals
-    end
-  end
 end

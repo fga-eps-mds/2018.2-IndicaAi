@@ -19,18 +19,4 @@ RSpec.describe 'Local API', type: :request do
       expect(response).to have_http_status(200)
     end
   end
-
-  describe 'GET /local/favorites/:local_id' do
-    before { get "/local/favorites/#{local_id}" }
-    it 'return favorites by local in json' do
-      expect(json).not_to be_empty
-      json.each do |item|
-        expect(item['local_id']).to eq(local_id)
-      end
-    end
-
-    it 'returns status code 200' do
-      expect(response).to have_http_status(200)
-    end
-  end
 end
