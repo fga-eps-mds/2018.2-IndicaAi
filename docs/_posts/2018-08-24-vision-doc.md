@@ -253,13 +253,13 @@ Serviço de localização, já com o suporte para o idioma português, que utili
 
 #### 3.6.3 Kekanto
 
-O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugual, por exemplo.
+O Kekanto indica bares, restaurantes, baladas e diversos estabelecimentos de acordo com o local do usuário. O app mostra as avaliações dos estabelecimentos,realizadas pela comunidade que utiliza o serviço. Além do mais, Cada usuário pode publicar sua resenha e enviar fotos de estabelecimentos de todas as cidades do Brasil e mais 14 países, entre Argentina, Chile, Estados Unidos e Portugal, por exemplo.
 
 ![Kekanto](/static/img/vision_document/kekanto.jpeg)
 
 #### 3.6.4 Yelp
 
-Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuario informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
+Yelp é um app que pesquisa locais próximos do usuário, utilizando a localização por GPS. Primeiro o usuário informa o tipo de local (bares, restaurantes, shoppings...) e então possível filtrar os resultados obtidos por varias características: valor, mais avalidados, aceita cartões, bom para crianças, entre outros. A distância máxima dos locais também pode ser definida. Para uma escolha melhor do local, o usuário pode ver avaliações escritas por outros usuários.
 
 ![Yelp](/static/img/vision_document/yelp.jpg)
 
@@ -288,20 +288,14 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF1 | Autenticar Usuário | O Sistema deve solicitar o usuário e requisitar a API autenticar a sessão do mesmo, após a aprovação. | Alta |
-| RF2 | Controlar Contas de Usuários  | O Sistema deve autorizar aos Administradores do Sistema o poder de controle sobre contas de usuários comuns quando necessárias medidas cabíveis. | Alta |
-| RF3 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de realizar postagem de lugares de seu interesse por meio de imagens, localização e descrição do local. | Alta |
-| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de comentários ou notas previamente estabelecidas. | Intermediária |
-| RF5 | Denunciar Usuários | O Sistema deve permitir aos usuários comuns a possibilidade de denunciar outros usuários (as denuncias serão analisadas antes que qualquer ação por parte de um Administrador seja tomada ). | Intermediária |
-| RF6 | Buscar Locais | O Sistema deve possuir uma ferramenta de busca de locais, juntamente com filtros de tipo de locais. | Intermediária |
-| RF7 |  Remover Comentários | O Sistema deve permitir que os Administradores do Sistema possam excluir comentários inapropiados de usuários comuns, assim como o usuário comum possa remover seus própios comentários.| Baixa |
-| RF8 | Avaliar Comentários | O Sistema deve permitir que os usuários possam realizar avaliações de comentários de outros usuários. | Baixa |
-| RF9 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Baixa |
+| RF1 | Autenticar Usuário | O Sistema deve possuir uma requisição de senha e login para permitir usuário possa exercer as funções de um usuário registrado. | Alta |
+| RF2 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de cadastro de lugares de seu interesse por meio de um check-in no local. | Alta |
+| RF3 | Busca de Locais | O Sistema deve permitir a busca e visualização de locais solicitados através de uma busca por parte do usuário, assim como filtros de buscas para melhor atender suas expectativas. | Alta |
+| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de notas previamente estabelecidas. | Intermediária |
+| RF5 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Intermediária |
+| RF6 | Favoritar Lugares | O Sistema deve provê ao usuário uma ferramenta para criar favoritos de lugares de seu interesse, assim como a listagem dos mesmos | Baixa |
 
 ## 6. Restrições
-
-
-* Somente os Admnistradores do Sistema poderam realizar a remoção de uma conta de usuário comum.
 
 * O sistema só funcionará mediante uma conexão de rede pelo menos satisfatória e será mantido em um servidor Rails.
 
@@ -332,7 +326,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 * Quando inseridos dados pessoais do usuário, o sistema deve mantê-los protegidos de quaisquer influências externas, por meio de acesso a uma API externa para autenticação do usuário
 
 
-* O sistema deve aprensentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
+* O sistema deve apresentar a menor quantidade possível de falhas, mas não garante que a plataforma seja livre de imprecisões, falhas, erros ou interrupções.
 
 ### 7.5 Requisito de Arquitetura
 
