@@ -16,7 +16,7 @@ categories: docs
 -----
 ## 1. Introdução
 
-Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem o conhecimento dos usuarios sobre os lugares próximos em relação ao contexto aplicado <!--vida acadêmica próximo a Faculdade do Gama - FGA, campus da Universidade de Brasília - UnB-->. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
+Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem o conhecimento dos usuarios sobre os lugares próximos em relação ao contexto aplicado. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
 
 ### 1.1 Finalidade
 
