@@ -37,3 +37,7 @@ Quer contribuir com o nosso projejto? Veja o nosso [Guia de Contribuição](http
 ## Conduta de Código
 
 Acesse o nosso [Código de Conduta](https://github.com/fga-eps-mds/2018.2-IndicaAi/blob/devel/CODE_OF_CONDUCT.md) e saiba como é a nossa política de relacionamento.
+
+## Protótipo
+
+Acompanhe o desenvolvimento do nosso [Protótipo do Projeto](https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait).

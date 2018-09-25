@@ -114,6 +114,12 @@
     "icon": "fa-bomb"
   },
   {
+    "text": "Protótipo",
+    "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
+    "target": "_blank",
+    "icon": "fa-object-group"
+  },
+  {
     "text": "Sprint Planning",
     "url": "#",
     "icon": "fa-paper-plane",
