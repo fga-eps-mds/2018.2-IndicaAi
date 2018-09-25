@@ -1,45 +1,46 @@
-## Código de Conduta do aplicativo IndicaAi
+# Contributor Covenant Code of Conduct
 
-### Nosso Compromisso
-Nosso compromisso é garantir a qualidade do produto, o respeito mútuo de forma a proporcionar 
-tanto no âmbito de desenvolvimento quanto no âmbito de software disponível ao público, a garantia
-de deixar todos de forma integrada ao uso do aplicativo de forma segura e respeitosa. Além disso,
-ressaltando o respeito da equipe tanto como desenvolvedor, como usuário.
+## Our Pledge
 
-## Nossos Padrões
-Visando a necessidade de um ambiente seguro e confiável, nossos padrões incluem:
-* Segurança e confidencialidade 
-* Ajuda mútua dos integrantes em si
-* Compromisso
-* Comunicação simples e funcional
-* Caráter voltado a informação rápida e simples
-* Respeito
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-Padrões inaceitáveis:
-* Falar ou insinuar algo de forma ofensiva 
-* Comentários impróprios
-* Conduta não profissional
-* Ataques pessoais ou públicos
-* Trabalho feito de forma irregular
+## Our Standards
 
+Examples of behavior that contributes to creating a positive environment include:
 
-## Nossa Responsabilidade
-Tendo em vista diversos inconveniente que podem acontecer, temos como responsabilidade cuidar, monitorar e gerenciar 
-o desenvolvimento do projeto de forma justa e colaborativa. Além disso, os mantedores do projeto tem o direito de tomar ações preventivas 
-em qualquer caso de inconvenientes que venham prejudicar o desenvolvimento em si, ou integrantes do próprio grupo.
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
 
-## Escopo
-Este código de conduta se torna necessário tanto no ambiente do projeto, como no ambiente público já inserido. Sendo assim 
-o ambiente da aplicação terá contato direto com o público de uma forma simples e funcional, visando 
-o estabelecimento das condutas realizadas durante o projeto, como uma forma de organização 
-interna da equipe.
+Examples of unacceptable behavior by participants include:
 
-## Execução
-Comentários e informações prestadas de forma a ofender os usuários serão tomadas providências, tendo em vista que o projeto
-vem a beneficiar os usuários de forma fácil e simples. Sendo assim, todas queixas serão analisadas de forma justa e terão 
-providências permanentes ou temporárias se necessário, tendo em vista sempre a confidencialidade.
+* The use of sexualized language or imagery and unwelcome sexual attention or advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a professional setting
 
-## Atribuição
+## Our Responsibilities
 
-* [Código de Ética e de Prática Profissional da Engenharia de Software](https://www.computer.org/cms/Computer.org/professional-education/pdf/doc.pdf)
-* [Convenção do Contribuinte](http://contributor-covenant.org/version/1/4)
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+
+## Scope
+
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at indicaai.api@gmail.com. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
