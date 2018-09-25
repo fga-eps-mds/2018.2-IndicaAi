@@ -5,7 +5,9 @@ plugins:
     enabled: true
     Rails: true
   flog:
-      enabled: true
+    enabled: true
+    exclude_patterns:
+     -  indicaAi/spec/
   duplication:
     enabled: true
     exclude_paths:
