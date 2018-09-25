@@ -9,9 +9,10 @@ categories: docs
   1.1 [Finalidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#11-finalidade)            
   1.2 [Escopo](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#12-escopo)   
   1.3 [Definições, Acrônimos e Abreviações](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#13-defini%C3%A7%C3%B5es-acr%C3%B4nimos-e-abrevia%C3%A7%C3%B5es)   
-2. [Representação da Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#2-representa%C3%A7%C3%A3o-arquitetural)   
-  2.1 [Ruby on Rails 5.2.1](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
-  2.2 [React Native](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#22-react-native)    
+2. [Representação da Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#2-representa%C3%A7%C3%A3o-arquitetural)
+  2.1 [Diagrama de Relações]()
+  2.2 [Ruby on Rails 5.2.1](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
+  2.3 [React Native](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#22-react-native)    
 3. [Metas e Restrições de Arquitetura](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#21-ruby-on-rails-520)  
 4. [Visão de Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#4-vis%C3%A3o-de-casos-de-uso)  
   4.1 [Realização de Casos de Uso](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#41-realiza%C3%A7%C3%A3o-de-casos-de-uso)   
@@ -21,7 +22,6 @@ categories: docs
     5.2 [Diagrama de Classes](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#52-diagrama-de-classes)
 6. [Visão de Implementação](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#6--vis%C3%A3o-de-implementa%C3%A7%C3%A3o)  
     6.1 [Visão Geral](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#61-vis%C3%A3o-geral)
-    6.2 [Diagrama de Relações]()
 7. [Tamanho e Desempenho](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#7--tamanho-e-desempenho)
 8. [Qualidade](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#8-qualidade)
 9. [Referências](https://github.com/fga-eps-mds/RecomendaFGA/blob/documento_arquiterura/docs/_posts/2018-08-28-architecture-doc.md#9--refer%C3%AAncias)
@@ -45,14 +45,19 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 ## 2: Representação Arquitetural
   O padrão de arquitetura será o MVC que separa a interação entre software e usuário. Existira uma integração entre duas tecnologias, Ruby on Rails 5.2.1 e React Native 2.0.1, consistindo em um modelo cliente-servidor, no qual há uma API criada em Ruby on Rails, responsável por fornecer dados ao frontend criado com React Native. A interface do usuário (frontend), será compartilhada com várias API's funcionando sobre o modelo arquitetural de microserviços.
 
-### 2.1 Ruby on Rails 5.2.1
+
+### 2.1 Diagrama de Relações
+
+  ![relational-diagram](/static/img/architeture/relational-diagram.jpg)
+
+### 2.2 Ruby on Rails 5.2.1
   Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
 
-### 2.2 React Native
+### 2.3 React Native
 
   O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
-  ![react](https://drive.google.com/file/d/1XumTy5uTyioHxKt8qj0pSjogOPDD4RAI/view?usp=sharing)
+  ![react](/static/img/architeture/React.png)
 
 ## 3: Requisitos e Restrições Arquiteturais
 
@@ -74,7 +79,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram](https://drive.google.com/file/d/1DrFX_w3_AqVRY981Z4Xvgj8-NxGjSewn/view?usp=sharing)
+  ![use_case_diagram](/static/img/architeture/use-case-diagram.png)
 
 ### 4.2 Descrição dos Casos de Uso
 
@@ -108,7 +113,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram](https://drive.google.com/file/d/18EB3g58DmVLlckJRUVhVoxEo768h8C2q/view?usp=sharing)
+![class-diagram](/static/img/architeture/class-diagram.png)
 
 ## 6:  Visão de Implementação
 
@@ -124,9 +129,6 @@ A arquitetura utilizada na aplicação é de microserviços que será feita atra
 
   * React Native - Assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compativeis.
 
-### 6.2 Diagrama de Relações
-
-![relational-diagram](https://drive.google.com/file/d/1E1PSmEy-MMkO075dEdB-QZkVdO8hqu5Y/view?usp=sharing)
 
 ## 7.  Tamanho e Desempenho
 
