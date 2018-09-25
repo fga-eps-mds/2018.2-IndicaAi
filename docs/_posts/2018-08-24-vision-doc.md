@@ -52,7 +52,7 @@ Elaborado de acordo com a metodologia RUP, o *Rational Unified Process*, este do
 ## 2. Posicionamento
 
 ### 2.1 Oportunidade de Negócios
-<!-- -->
+
 Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próximos ou serviços que existem nas proximidades. Com a falta de conhecimento, torna-se exaustivo procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento e avaliação de locais e serviços oferecidos próximos com o objetivo de facilitar as buscas e melhorar a vida do usuário.
 
 ### 2.2 Descrição do Problema
@@ -61,7 +61,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   <tr><th> O problema         </th><td> A falta de informação sobre a existência de locais nas proximidades relacionadas ao contexto. </td></tr>
   <tr><th> Afeta                 </th><td> A comunidade envovida naquele grupo.</td></tr>
   <tr><th> cujo impacto é        </th><td> Eventuais má experiências com serviços disponíveis ou desorientação em realação a localização.</td></tr>
-  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade em que o cliente esta, podendo compartilhar locais, avaliações e que indicasse de forma precisa a localização de estabelicimentos. </td></tr>
+  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade em que o cliente esta, podendo compartilhar locais, avaliações e que indicasse a localização de estabelicimentos. </td></tr>
 </table>
 
 
@@ -73,7 +73,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   <tr><th>O</th><td>Indica Ai</td></tr>
   <tr><th>Que</th><td>Compartilha locais e avaliações </td></tr>
   <tr><th>Diferente do</th><td>Dos aplicativos Catraca livre, Yelp, Kekanto e What3Words(W3W)</td></tr>
-  <tr><th>Nosso produto</th><td>Indica locais próximos, relacionados a realidade que está inserido</td></tr>
+  <tr><th>Nosso produto</th><td>Indica locais próximos, relacionados a realidade que o cliente está inserido</td></tr>
 
 </table>
 
@@ -175,7 +175,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   <tr>
     <td><b>Representantes</b></td>
     <td>Iasmin Santos Mendes
-	  <br>Renato Valério Gomes</b>
+	  <br>Renato Valério Gomes
     </td>
   </tr>
   <tr>
@@ -274,7 +274,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 
 | Código |Recurso | Benefício|
 |:------:|--------|----------|
-| R01 | Indicar locais relacionados ao contexto.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo ao contexto. |
+| R01 | Indicar locais relacionados ao contexto.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo ao contexto do mesmo. |
 | R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
 
 ## 5. Requisitos Funcionais
@@ -290,7 +290,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 | Identificador | Nome | Descrição | Prioridade |
 |---|---|---|---|
 | RF1 | Autenticar Usuário | O Sistema deve autenticar o usuário pela API externa. | Alta |
-| RF2 | Compartilhar Locais | O Sistema deve permitir ao usuário o ato de cadastro de lugares de seu interesse por meio de um check-in no local. | Alta |
+| RF2 | Cadastrar Locais | O Sistema deve permitir ao usuário o ato de cadastro de lugares de seu interesse por meio de um check-in no local. | Alta |
 | RF3 | Busca de Locais | O Sistema deve permitir a busca e visualização de locais solicitados através de uma busca por parte do usuário, assim como filtros de buscas para melhor atender suas expectativas. | Alta |
 | RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de notas previamente estabelecidas. | Intermediária |
 | RF5 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Intermediária |
