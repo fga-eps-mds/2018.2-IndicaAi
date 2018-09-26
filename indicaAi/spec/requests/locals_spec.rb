@@ -3,7 +3,8 @@ require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
   let!(:locals) { create_list(:local, 10) }
-  let(:local_id) { locals.first.id }
+  let!(:local_id) { locals.first.id }
+  let!(:favorites) { create_list(:favorite_local, 10, local: locals.first) }
 
   describe 'GET /locals' do
     # make HTTP get request before each example
