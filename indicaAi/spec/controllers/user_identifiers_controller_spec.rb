@@ -3,9 +3,6 @@ require 'rails_helper'
 RSpec.describe UserIdentifiersController, type: :controller do
   let!(:users_test) { create_list(:user_identifier, 10) }
   let!(:user) { users_test.first }
-  # let!(:favorites_test) do
-  #   create_list(:favorite_local, 10, user_identifier: user)
-  # end
   describe 'GET index' do
     before { get :index }
     it { should route(:get, '/users').to(action: :index) }
