@@ -7,8 +7,6 @@ RSpec.describe LocalRating, type: :model do
     context 'ratings validation tests' do
       let!(:note) { create(:local_rating) }
       it 'should return a integer value' do
-        note.save
-        # note = create(:local_rating)
         assert note.value.class == Integer
       end
     end
@@ -17,6 +15,7 @@ RSpec.describe LocalRating, type: :model do
       note2.value = 3.4
       assert note2.value == 3
     end
+
     it { should belong_to(:local) }
 
     it { should validate_presence_of(:value) }

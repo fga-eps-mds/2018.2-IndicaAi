@@ -7,8 +7,6 @@ RSpec.describe Local, type: :model do
     local = create(:local)
     name = local.name
     result = Local.find_by_name(name)
-    p result.first
-    p result
     assert result.first, local
   end
 

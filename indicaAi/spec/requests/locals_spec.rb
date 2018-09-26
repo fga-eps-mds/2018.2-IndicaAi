@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
-  let!(:local) { create_list(:local, 10) }
+  let!(:locals) { create_list(:local, 10) }
   let(:local_id) { locals.first.id }
 
   describe 'GET /locals' do
@@ -21,10 +21,11 @@ RSpec.describe 'Local API', type: :request do
 
   describe 'GET /locals/name/:name' do
     # make HTTP get request before each example
-    before { get '/locals/name/:name' }
-
+    let!(:local) { create(:local, name: 'plaza') }
+    before { get '/locals/name/plaza' }
     it 'return local by name' do
       expect(json).not_to be_empty
+      expect(json[0][0]['name']).to eq('plaza')
     end
   end
 end
