@@ -15,6 +15,17 @@ ActiveRecord::Schema.define(version: 20180917225656) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "favorite_locals", force: :cascade do |t|
+    t.string "label"
+    t.text "body"
+    t.bigint "local_id"
+    t.bigint "user_identifier_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["local_id"], name: "index_favorite_locals_on_local_id"
+    t.index ["user_identifier_id"], name: "index_favorite_locals_on_user_identifier_id"
+  end
+
   create_table "local_ratings", force: :cascade do |t|
     t.integer "value"
     t.bigint "local_id"
@@ -31,10 +42,12 @@ ActiveRecord::Schema.define(version: 20180917225656) do
   end
 
   create_table "user_identifiers", force: :cascade do |t|
-    t.integer "userId"
+    t.integer "identifier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favorite_locals", "locals"
+  add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "local_ratings", "locals"
 end
