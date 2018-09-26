@@ -1,19 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe Local, type: :model do
-  let!(:local) { create(:local) }
-  let!(:favorite_locals) { create_list(:favorite_local, 10, local: local) }
-  it { should have_many(:favorite_locals).dependent(:destroy) }
-  context 'Validate of UserIdentifier' do
-    it { should validate_presence_of(:name) }
-    it 'local valid' do
-      local = create(:local)
-      expect(local.valid?).to be_truthy
-    end
+  it { should validate_presence_of(:name) }
 
-    it 'local invalid' do
-      local.name = ''
-      expect(local.valid?).to be_falsey
-    end
+  it 'Testing Search By Name - Should return similar names to params' do
+    local = create(:local)
+    name = local.name
+    result = Local.find_by_name(name)
+    assert result.first, local
+  end
+
+  it 'Testing Find Local Ratings - Should return rating associated to parms' do
+    local = create(:local)
+    nota = create(:local_rating, local: local)
+
+    id = local.id
+    result = Local.find_local_ratings(id)
+    assert result.first, nota
   end
 end
