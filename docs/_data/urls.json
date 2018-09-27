@@ -143,6 +143,11 @@
           "text": "Sprint 03",
           "url": "/sprint-planning/2018/09/09/planning-sprint-3.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 04",
+          "url": "/sprint-planning/2018/09/19/planning-sprint-4.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -164,6 +169,11 @@
         {
           "text": "Sprint 03",
           "url": "/sprint-review/2018/09/03/review-sprint-3.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 04",
+          "url": "/sprint-review/2018/09/19/review-sprint-4.html",
           "icon": "fa-angle-right"
         }
     ]
