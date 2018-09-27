@@ -171,8 +171,8 @@ velocity: [
 ]
 
 commits: [
-    "Nesta <i>sprint</i> a equipe claramente deixou as entregas para o final, resultando em vários pontos de débitos para a próxima <i>sprint</i>.",
-    "Como relatado na <i>Sprint Retrospective</i>, <b>faltou proatividade</b> da equipe."
+    "Como percebe-se no gráfico, essa sprint houve uma <b>queda na produtividade</b> da equipe. Atribuisse isso ao fato da equipe como um todo estar sobrecarregada com <b>provas de outras disciplinas</b>.",
+    "Outro motivo que também atrapalhou a produtividade da equipe foi a <b>dificuldade na realização dos testes</b>. O time de desenvolvimento conseguiu implementar com certa facilidade as funcionalidades, contudo, ficou travado para confeccionar os testes depois."
 ]
 
 knowledge: [
