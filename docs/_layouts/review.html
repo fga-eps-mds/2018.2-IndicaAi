@@ -72,7 +72,14 @@ layout: default
           {% if i.presence == true %}
             <tr><td>{{i.name}}</td><td><i class="fa fa-check"></i></td></tr>
           {% else %}
-            <tr><td>{{i.name}}</td><td><i class="fa fa-times"></i></td></tr>
+            <tr>
+              <td>{{i.name}}</td>
+              <td><i class="fa fa-times"></i><br>
+                {% if i.justified == true %}
+                  Justificado
+                {% endif %}
+              </td>
+            </tr>
           {% endif %}
         {% endfor %}
         </table>

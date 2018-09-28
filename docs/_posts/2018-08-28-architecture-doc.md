@@ -71,7 +71,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram](/static/img/architeture/use-case-diagram.jpg)
+  ![use_case_diagram]({{site.baseurl}}/static/img/architeture/use-case-diagram.jpg)
 
 ### 4.2 Descrição dos Casos de Uso
 
@@ -93,7 +93,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
   A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
-  ![pack-diagram](/static/img/architeture/pack-diagram.png)
+  ![pack-diagram]({{site.baseurl}}/static/img/architeture/pack-diagram.png)
 
 ### 5.1 Camadas
 
@@ -105,7 +105,7 @@ O IndicaAi será um módulo do aplicativo FGA app, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram](/static/img/architeture/class-diagram.jpg)
+![class-diagram]({{site.baseurl}}/static/img/architeture/class-diagram.jpg)
 
 ## 6:  Visão de Implementação
 

@@ -364,11 +364,16 @@ div.well.metrics ul.nav-tabs>li>a:hover {
     color: #00ACCC !important;
 }
 
+div.well.risks div.risk-geral img {
+    margin: auto;
+}
+
 div.well.metrics ul.nav-tabs>li.active>a {
     background: #005565 !important;
     color: #fff !important;
 }
 
+div.well.risk div.card-deck,
 div.well.metrics div.card-deck {
     margin-top: 50px;
 }

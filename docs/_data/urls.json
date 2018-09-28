@@ -109,6 +109,17 @@
     ]
   },
   {
+    "text": "Riscos do Projeto",
+    "url": "/risks",
+    "icon": "fa-bomb"
+  },
+  {
+    "text": "Protótipo",
+    "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
+    "target": "_blank",
+    "icon": "fa-object-group"
+  },
+  {
     "text": "Sprint Planning",
     "url": "#",
     "icon": "fa-paper-plane",
@@ -132,6 +143,11 @@
           "text": "Sprint 03",
           "url": "/sprint-planning/2018/09/09/planning-sprint-3.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 04",
+          "url": "/sprint-planning/2018/09/19/planning-sprint-4.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -153,6 +169,11 @@
         {
           "text": "Sprint 03",
           "url": "/sprint-review/2018/09/03/review-sprint-3.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 04",
+          "url": "/sprint-review/2018/09/19/review-sprint-4.html",
           "icon": "fa-angle-right"
         }
     ]
