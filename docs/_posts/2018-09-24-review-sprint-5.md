@@ -105,7 +105,7 @@ issues: [
         responsible: ['Matheus Gomes', 'Heron Souza'],
         points: 8,
         header: Dividas,
-        headerSpan: 5,
+        headerSpan: 3,
         status: Concluído
     },
     {
@@ -121,7 +121,30 @@ issues: [
         responsible: ['Lucas Maciel', 'Weiller Fernandes'],
         points: 3,
         status: Concluído
-    }
+    },
+    {
+        number: 105,
+        description: TS -  Testar a busca de locais por nome,
+        responsible: ['Lucas Maciel', 'Gabriel Davi'],
+        points: 3,
+        header: Adicionadas,
+        headerSpan: 3,
+        status: Concluído
+    },
+    {
+        number: 162,
+        description: Adicionar link de fácil acesso ao protótipo,
+        responsible: ['Iasmin Mendes'],
+        points: 0,
+        status: Concluído
+    },
+    {
+        number: 164,
+        description: Adicionar canal de comunicação no README,
+        responsible: ['Iasmin Mendes'],
+        points: 0,
+        status: Concluído
+    },
 ]
 
 presence : [
@@ -178,36 +201,38 @@ improvements: [
 
 
 burndown: [
-    "Esta sprint trouxe de débito da sprint passada a issue de confeção do protótipo. <b>No planning desta sprint não foi identificado que essa issue deveria ser quebrada</b>, e o resultado foi que essa issue atrapalhou o burndown novamente. Por ser uma issue grande - de 8 pontos - mais uma vez ela não foi entregue.",
-    "Dos outros 6 pontos que ficaram de débito nessa sprint, ambos são referente a implementação de user stories. E a falta de entrega desses pontos refere-se a <b>dificuldade da equipe em fazer os testes</b>. Assim, as funcionalidades foram implementadas, mas os pull requests não foram aprovados pela falta de testes.",
-    "A entrega contínua apresentada no burndown refere-se a atividades de gerência e documentação do projeto."
+    "Nessa sprint a <b>issue referente ao protótipo</b>, que vinha de débito de duas sprints passadas,  <b>foi quebrada em várias outras issues</b>. Essa foi uma <b>boa decisão</b> tomada pelo grupo, pois finalmente a equipe conseguiu registrar a entrega de tarefas referentes ao protótipo ao invés de ficar com uma issue enorme de débito ao final de cada sprint como vinha acontecendo.",
+    "<b>A entrega contínua foi bem baixa</b> nessa sprint, mas por uma questão da <b>equipe estar se habituando a utilizar a comunicação pelos Pull Requests</b>. No caso, a equipe foi orientada a abrir o Pull Request assim que começasse a desenvolver e colocasse o WIP - Work in Progress - no nome do PR, assim o Scrum Master poderia acompanhar mais fácil o que estava sendo desenvolvido durante a sprint. Ao terminar o desenvolvimento a equipe deveria retirar o WIP para identificar que o PR estaria pronto para ser aprovado, contudo o time de desenvolvimento não lembrou de fazer isso e os Pull Requests foram ficando para o final da sprint.",
+    "A issue de elaborar o frontend da busca de locais ficou como débito devido a equipe estar com <b>dificuldade de utilizar o React integrado com o Redux</b>. Assim a equipe passou mais tempo estudando como utilizar o Redux do que implementando a issue, o que implicou no seu débito ao final da sprint.",
+    "A issue de documento de arquitetura ficou como débito por uma questão de <b>falha de organização da equipe</b> que acabou deixando a issue para o final da sprint e acabou percebendo ao final que alguns pontos ainda deviam ser alinhados com os outros grupos relacionados ao Integra App.",
+    "A issue de Configurar Ambiente de homologação não foi entregue devido a <b>dificuldade da equipe em configurar a aplicação no Heroku</b>",
+    "A issue de Testar Locais por nome não foi planejada para a sptint, mas ela acabou sendo implementada pela equipe de desenvolvimento enquanto eles estudavam e implementavam os testes relacionados a outras histórias. Somente foi identificado que essa issue havia sido executado durante a revisão dos Pull Requests, então consideramos ela como adicionadas e a fechamos.",
+    "As issues de adicionar link para o protótipo e adicionar canal de comunicação no Readme foram adicionadas a essa sprint  por serem tarefas simples de serem executadas e feitas em paralelo enquanto o Scrum Master elaborava a documentação da sprint."
 ]
 
 velocity: [
-    "Nessa sprint, EPS conseguiu sanar todos os pontos que estavam de dívida da sprint anterior. Contudo, como já explicado na análide no Burndown, O time de desenvolvimento teve dificuldade para entregas as histórias testadas e o protótipo finalizado. O que implicou diretamente na queda do velocity."
+    "Para essa sprint foi planejada uma uma <b>pontuação bem acima do velocity</b> da equipe por <b>boa parte das histórias - 6 pontos - serem de débito da sprint passada e estarem quase fechadas</b>, faltando somente testar. A equipe se planejou para reunir logo no início da sprint para realizar esses testes e entregar esses pontos. Contudo, a confecção de testes levou muito mais tempo do que havia sido previsto, atrapalhando o que havia sido planejado e se demonstrando uma <b>má decisão</b>.",
+    "Além dos pontos referentes aos testes havia <b>8 pontos relacionados ao protótipo</b> que faltava somente realizar algumas correções na revisão do Pull Request para ser aceito, que foi deixado para o final da sprint.",
+    "Somado esses pontos de débito que se supôs que a equipe terminaria rápido com as <b>dificuldades das issues planejadas para essa sprint</b>, novamente a equipe acabou entregando menos do que o planejado. Assim o <b>Scrum Master começa a ter consiência de que o velocity da equipe é realmente de 23 pontos e deve-se planejar a sprint em cima dessa pontuação independente de qualquer fator externo que possa influenciar.</b>"
 ]
 
 commits: [
-    "Nesta <i>sprint</i> a equipe claramente deixou as entregas para o final, resultando em vários pontos de débitos para a próxima <i>sprint</i>.",
-    "Como relatado na <i>Sprint Retrospective</i>, <b>faltou proatividade</b> da equipe."
+    "O gráfico de Commits por Dia, evidencia claramente que nessa sprint as <b>entregas foram deixadas em sua maioria para o final da sprint</b>, como relatado na análise do Burndown dessa sprint. Durante o 2º ao 4º dia de sprint a equipe focou na realização dos testes que estavam de débito da sprint passada, focando somente depois nas issues realmente planejadas para a sprint.",
 ]
 
-sprintsCommits: []
-
-knowledge: [
-    "<b>Porque o Lucas diminuiu no scrum?</b>",
-    "A equipe melhorou principalmente em testes devido ao <b>treinamento</b> aplicado nesta sprint, contudo, o conhecimento em testes ainda se mostrou um obstáculo para a equipe."
+sprintsCommits: [
+    "Mesmo com esses poréns, <b>a equipe aumentou sua produtividade nessa sprint</b>, como é possível ver no gráfico de Commits por sprint, no qual a média de commits por dia da equipe aumentou."
 ]
+
+knowledge: []
 
 pairing: []
-numberPairing: [
-    "Nesta sprint o pareamento, os membros de EPS não conseguiram parear como havia sido planejado devido a falta de organização da dupla e dificuldade para encontrar horários compatíveis."
-]
+numberPairing: []
 
 coverage: {
-    "url": "https://coveralls.io/builds/19062053",
+    "url": "https://coveralls.io/builds/19192644",
     "review": [
-        "A cobertura subiu nessa sprint, pois o treinamento de testes usou o próprio código que havia sido elaborado pelo time de desenvolvimento na Sprint 3 para busca de locais como exemplo. Assim, ao final do treinamento, o código testado foi submetido para a <code>devel</code> com o objetivo de ser usado como exemplo para os testes futuros."
+        "Nessa sprint a equipe conseguiu desenvolver os testes que ficaram pendentes na sprint passada, subindo a cobertura do código em 3%."
     ]
 }
 
@@ -215,18 +240,14 @@ complexity: []
 
 duplication: []
 
-styleSheet: [
-    "As issues da sprint passada, apresentadas no CodeClimate, referente a aplicação da folha de estilo nos arquivos auto-gerados pelo Rails, ainda não foram solucionadas nessa sprint."
-]
+styleSheet: []
 
 maintainability: []
 
 feedback: [
-    "Nessa sprint foi identificado que houve <b>falha no planejamento</b>. Até então nossos rituais - sprint review, sprint retrospective e sprint planning - aconteciam um em sequência do outro toda terça-feira. Isso acarretou que o <b>planning era elaborado sem o Scrum Master ter analisado com calma as métricas e os resultados do final da sprint</b>. Dessa forma, a issues de <code>Confeccionar Protótipo</code>, que deveria ter sido quebrada em issues menores depois de ter ficado como débito da sprint 3, passou para a sprint 4 ainda como uma única história. O que implicou novamente em uma <b>issue grande que não foi entregue dentro do tempo</b> da sprint apesar da equipe ter avançado bastante no seu desenvolvimento. O problema só foi identificado quando o Scrum Master estava transpondo os dados da sprint para a documentação do projeto. Mediante essa situação, a equipe optou por <b>dividir os rituais em dois dias</b>. Na terça-feira será o fechamento da sprint realizando os rituais de review e retrospective, e na Quarta-feira será realizado o planning, com o Scrum Master já tendo avaliado todos os fatores referentes ao fechamento da sprint passada.",
-    "Também foi notável nessa sprint a <b>dificuldade da equipe com a elaboração de testes</b>, portanto deve-se na próxima sprint promover treinamento, pareamentos com EPS ou dojos que visem sanar o quanto antes esse obstáculo.",
-    "Outro problema identificado pelo Scrum Master refere-se aos stand-ups. Até então os stand-ups estavam sendo realizados de terça a sexta-feira, que são os dias que a equipe tem maior disponibilidade presencial. Contudo, <b>durante o final de semana e a segunda-feira - que é o período que a equipe mais produz - não há a realização de stand-ups</b>, e o time de desenvolvimento somente mandava as dúvidas pelo Telegram caso precisassem. Isso acarretou que a <b>dificuldade com testes que a equipe estava somente foi identificada no último dia da sprint</b>, que era quando ocorria stand-up de novo. Dessa forma não foi mais possível corrigir o problema antes que a sprint acabasse.",
-    "Além da questão do stand-up não estar sendo realizado todos os dias, ainda há a ocorrência de <b>ausência de membros</b> durante o stand-up. O que implica no desalinhamento da equipe sobre as atividades em andamento.",
-    "O time de desenvolvimento tem relatado que <b>os pareamentos tem sido bastante produtivos</b>."
+    "Nessa sprint a equipe conseguiu <b>evoluir em relação aos testes do backend</b>. Ainda existem dificuldades com a ferramente - RSpec - mas, em geral, a equipe já está um pouco mais familizarizada com o que são testes e a diferença entre testes unitários, de integração, e funcionais.",
+    "A equipe começou a usar a <b>comunicação nos Pull Requestes</b>, resolvendo os comentários colocados no review.",
+    "O <b>ambiente de homologação não foi entregue</b> nessa sprint, e esta issue passa a ser uma <b>prioridade na próxima sprint</b> de forma que seja possível disponibilizá-lo para teste a tempo da primeira release do produto."
 ]
 
 ---

@@ -214,16 +214,22 @@ layout: default
                   <div id="commits" class="tab-pane fade">
                     <h2><i>Commits</i> por Dia</h2>
                     <img src='{{site.baseurl}}/static/img/commits/sprint_{{page.sprint}}.png' title='Commits por Dia - Sprint {{page.sprint}}' alt='Commits por Dia - Sprint {{page.sprint}}'>
-                    {% if page.sprintsCommits%}
-                        <h2><i>Commits</i> por Sprint</h2>
-                        <img src='{{site.baseurl}}/static/img/commits_por_sprint/sprint_{{page.sprint}}.png' title='Commits por Sprint - Sprint {{page.sprint}}' alt='Commits por Dia - Sprint {{page.sprint}}'>
-                    {% endif %}
                     <ul>
                     {% for i in page.commits %}
                         <li>{{i}}</li>
                     {% endfor %}
                     </ul>
                     <p><a href='{{site.baseurl}}/commits'>Acompanhe mais dessa métrcia aqui</a>.</p>
+                    {% if page.sprintsCommits%}
+                        <h2><i>Commits</i> por Sprint</h2>
+                        <img src='{{site.baseurl}}/static/img/commits_por_sprint/sprint_{{page.sprint}}.png' title='Commits por Sprint - Sprint {{page.sprint}}' alt='Commits por Dia - Sprint {{page.sprint}}'>
+                        <ul>
+                        {% for i in page.sprintsCommits %}
+                            <li>{{i}}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <p><a href='{{site.baseurl}}/sprint_commits'>Acompanhe mais dessa métrcia aqui</a>.</p>
                   </div>
                 {% endif %}
 
