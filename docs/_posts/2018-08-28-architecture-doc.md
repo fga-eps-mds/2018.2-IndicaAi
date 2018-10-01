@@ -34,7 +34,7 @@ Este documento tem como objetivo fornecer uma visão geral da arquitetura que se
 
 ### 1.2 Escopo
 
-O IndicaAi será um módulo do aplicativo Integra, este módulo será responsável pelo compartilhamento e avaliação de locais e serviços oferecidos próximos com o objetivo de facilitar as buscas e melhorar a vida do usuário. O documento apresentará toda a parte arquitetural para a confecção do IndicaAi, a fim de tornar claras as características arquiteturais do projeto.
+O IndicaAi será um módulo do aplicativo Integra, este módulo será responsável pelo compartilhamento e avaliação de locais e serviços oferecidos próximos em relação ao contexto aplicado com o objetivo de facilitar as buscas e melhorar a vida do usuário. O documento apresentará toda a parte arquitetural para a confecção do IndicaAi, a fim de tornar claras as características arquiteturais do projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 * MVC ( Model View Controller) : Arquitetura de software utilizada em sistemas que desejam separar a modelagem de dados, interface e processamento de requisições em camadas independentes.
@@ -48,7 +48,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
 ### 2.1 Diagrama de Relações
 
-  ![relational-diagram](/static/img/architeture/relational-diagram.jpg)
+  ![relational-diagram]({{site.baseurl}}/static/img/architeture/relational-diagram.jpg)
 
 ### 2.2 Ruby on Rails 5.2.1
   Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
@@ -57,7 +57,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
   O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
-  ![react](/static/img/architeture/React.png)
+  ![react]({{site.baseurl}}/static/img/architeture/React.png)
 
 ## 3: Requisitos e Restrições Arquiteturais
 
@@ -80,29 +80,29 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram](/static/img/architeture/use-case-diagram.png)
+  ![use_case_diagram]({{site.baseurl}}/static/img/architeture/use-case-diagram.png)
 
 ### 4.2 Descrição dos Casos de Uso
 
   | Caso de Uso | Descrição |
   | --- | --- |
   | UC01: Cadastrar novo local | Cadastramento de um local pelo usuário utilizando a tela de cadastro do IndicaAi |
-  | UC02: Cadastrar local do Google API | Cadastramento de local existente no Google utilizando sistema de "check-in" |
-  | UC03: Cadastrar publicidade | Cadastramento de uma publicidade pelo usuário Administrador |
+  | UC02: Cadastrar local do Google API | Cadastramento de local existente no Google utilizando sistema de "check-in", por meio da API do próprio Google|
+  | UC03: Cadastrar publicidade | Cadastramento de uma publicidade pelo usuário Administrador|
   | UC04: Gerar rota | Cria uma rota baseada na posição de partida do usuário e a posição de destino do local |
   | UC05: Buscar local | Fazer busca dos locais já cadastrados no sistema |
   | UC06: Visualizar local | Visualizar local e todas as informações referentes a ele |
   | UC07: Favoritar local | Salvar local em uma lista de favoritos |
   | UC08: Visualizar locais favoritos | Visualizar toda a lista de locais favoritos |
   | UC09: Avaliar local | Fazer avaliação do local através de um sistema de notas |
-  | UC10: Verificar login | Verificar se o usuário fez o login no aplicativo |
+  | UC10: Verificar login | Verificar, por meio de uma API externa, se o usuário fez o login no aplicativo |
 
 
 ## 5: Visão Lógica
 
   A visão lógica da aplicação é composta por dois pacotes principais: API e Frontend.
 
-  ![pack-diagram](/static/img/architeture/pack-diagram.png)
+  ![pack-diagram]({{site.baseurl}}/static/img/architeture/pack-diagram.png)
 
 ### 5.1 Camadas
 
@@ -114,7 +114,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram](/static/img/architeture/class-diagram.png)
+![class-diagram]({{site.baseurl}}/static/img/architeture/class-diagram.png)
 
 ## 6:  Visão de Implementação
 
@@ -126,7 +126,7 @@ A arquitetura utilizada na aplicação é de microsserviços que será feita atr
 
   * Model - No Rails a model é responsável por implementar as classes que serão responsáveis por definir as informações que estarão presentes na tabela de dado, isso é feito pela herança da classe Active Record a qual faz ORM (Object Relational Mapping), abstraindo assim a necessidade de se conhecer a linguagem SQL pois a Active Record faz todo o trabalho de persistência. O recurso de ORM da *Model* do Rails está em conformidade com o banco de dados PostgreSQL que é objeto relacional.
 
-  * Controller - Responsável pelo fluxo do usuário na aplicação ela controla as requisições feitas pelo Frontend. Controllers sarão responsáveis também pela serialização dos dados, pois a comunicação Frontend/Backend será feita por métodos HTTP (GET, PUT, POST, DELETE entre outros) e JSON (JavaScript Object Notation), o que está em conformidade com o Frontend em React Native que é um framework de JavaScript que interpreta JSON e faz requisições HTTP.  
+  * Controller - Responsável pelo fluxo do usuário na aplicação ela controla as requisições feitas pelo Frontend. Controllers serão responsáveis também pela serialização dos dados, pois a comunicação Frontend/Backend será feita por métodos HTTP (GET, PUT, POST, DELETE entre outros) e JSON (JavaScript Object Notation), o que está em conformidade com o Frontend em React Native que é um framework de JavaScript que interpreta JSON e faz requisições HTTP.  
 
   * React Native - Assim como o React utiliza dados os quais podem ser atualizados sem a necessidade de atualizar a página. No sistema ele é responsável pela interação com o usuário através da criação de interfaces. Essas interfaces são nativas, ou seja com elementos próprios de cada sistema operacional, criando assim ambientes mais compatíveis.
 
