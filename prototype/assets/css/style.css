@@ -2471,3 +2471,11 @@ it doesn’t make the test unnecessarily selective */
     top:2px;
     left:2px;
 }
+
+.icon-favorito {
+    color: #000 !important;
+}
+
+.icon-favorito:hover {
+    color: #0AACCC !important;
+}
