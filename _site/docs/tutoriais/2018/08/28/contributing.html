@@ -1,0 +1,183 @@
+<h2 id="como-contribuir">Como contribuir?</h2>
+
+<p>Se você é um <strong>usuário externo</strong> ao time de desenvolvimento do IndicaAi e quer contribuir com a nossa proposta você deve fazer um <strong>fork</strong> do repositório e seguir os passos a frente. Para quem já faz parte do nosso time de desenvolvimento, basta seguir esses passos:</p>
+
+<ol>
+  <li>Criar sua <a href="#política-de-issues"><em>issue</em></a></li>
+  <li>Criar uma <a href="#política-de-branchs"><em>branch</em></a></li>
+  <li>Fazer seus <a href="#política-de-commits"><em>commits</em></a></li>
+  <li>Abrir um <a href="#política-de-pull-requests"><em>Pull Request</em></a></li>
+</ol>
+
+<hr />
+
+<h2 id="poltica-de-issues">Política de <em>Issues</em></h2>
+
+<ul>
+  <li>As <em>issues</em> devem possuir um nome simples que descreva com poucas palavras o seu propósito;</li>
+  <li>A descrição da <em>issue</em> deve relatar mais a funcionalidade ou <em>bug</em> a ser solucionado. Não é obrigatório inserir uma descrição se o nome da <em>issue</em> já consegue descrever bem o objetivo, mas nós recomendamos colocar sempre :)</li>
+  <li>Lembre-se sempre de identificar a <em>issue</em> com as <em><strong>labels</strong></em> referentes. Isso ajuda o nosso trabalho na hora de mapear quais são as demandas de cada área do projeto.</li>
+</ul>
+
+<h3 id="issues-para-novas-funcionalidades"><em>Issues</em> para novas funcionalidades</h3>
+
+<ul>
+  <li>Novas funcionalidades devem ser descritas como <em>user stories</em>, conforme a <a href="docs/_posts/2018-08-24-metodologia.md">metodologia</a> aplicada no nosso projeto;</li>
+  <li>Essas <em>issues</em> devem ser acompanhadas de uma lista de critérios de aceitação que garantem que o ao implementar o objetivo será atendido, tanto em termos de funcionalidade, usabilidade, design e qualidade de código;</li>
+  <li>No nosso repositório nós já disponibilizamos um <a href="https://github.com/fga-eps-mds/2018.2-IndicaAi/issues/new?template=us-template.md">templete básico</a> para essas <em>issues</em>, com alguns critérios comuns a maioria das funcionalidades.</li>
+  <li>
+    <p>Para melhor identificar essas <em>issues</em> o nome deve seguir o seguinte padrão:</p>
+
+    <blockquote>
+      <p>US - Nome da Issue</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h3 id="issues-para-histrias-tcnicas"><em>Issues</em> para histórias técnicas</h3>
+<ul>
+  <li>Histórias técnicas devem ser descritas conforme o padrão definido na <a href="docs/_posts/2018-08-24-metodologia.md">metodologia</a> desse projeto;</li>
+  <li>
+    <p>Para melhor identificar essas <em>issues</em> o nome deve seguir o seguinte padrão:</p>
+
+    <blockquote>
+      <p>TS - Nome da Issue</p>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="poltica-de-branchs">Política de <em>Branchs</em></h2>
+
+<h4 id="branch-master">Branch <em>master</em></h4>
+
+<p>A <em>branch master</em> é a <em>branch</em> estável do projeto, onde estará o código de produção. <em>Commits</em> e <em>pushes</em> para essa <em>branch</em> estarão bloqueados. Somente serão aceitos <em>pull requests</em> para essa <em>branch</em> oriundos da <em>branch devel</em>.</p>
+
+<h4 id="branch-devel">Branch <em>devel</em></h4>
+
+<p>A <em>branch devel</em> será a <em>branch</em> de desenvolvimento, na qual será unificado novas funcionalidades e correções no código visando gerar uma nova versão estável.</p>
+
+<h3 id="nomenclatura-das-branchs">Nomenclatura das <em>branchs</em></h3>
+
+<p>Os nomes das <em>branchs</em> devem estar em <strong>inglês</strong> e serem objetivos e claros, especificando em poucas palavras a intenção da <em>branch</em>. Além do mais, devem referenciar a <em>issue</em> relacionada no início do nome, conforme o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">x-branch-name</code></p>
+</blockquote>
+
+<p>Onde x refere-se ao número da <em>issue</em>.</p>
+
+<h4 id="branchs-de-documentao"><em>Branchs</em> de Documentação</h4>
+
+<p><em>Branchs</em> cujo foco seja unicamente atualizar a documentação do repositório devem seguir o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">documentation/x-branch-name</code></p>
+</blockquote>
+
+<h3 id="branchs-de-novas-funcionalidades"><em>Branchs</em> de novas funcionalidades</h3>
+
+<p><em>Branchs</em> cujo foco seja inserir uma nova funcionalidade no sistema, em geral relacionadas as <em>user stories</em> devem seguir o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">feature/x-branch-name</code></p>
+</blockquote>
+
+<h3 id="branchs-para-correo-de-bugs"><em>Branchs</em> para correção de <em>bugs</em></h3>
+
+<p><em>Branchs</em> cujo foco seja corrigir funcionalidade no sistema, em geral relacionadas as <em>user stories</em> devem seguir o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">bugfix/x-branch-name</code></p>
+</blockquote>
+
+<h3 id="branchs-para-refatorao-de-cdigo"><em>Branchs</em> para refatoração de código</h3>
+
+<p><em>Branchs</em> cujo foco seja refatorar uma funcionalidade no sistema, em geral relacionadas as <em>techical stories</em> devem seguir o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">refactor/x-branch-name</code></p>
+</blockquote>
+
+<h3 id="branchs-para-problemas-crticos-em-produo"><em>Branchs</em> para problemas críticos em produção</h3>
+
+<p><em>Branchs</em> cujo foco seja corrigir algum problema crítico em produção, o qual não possa esperar até a próxima <em>release</em> devem seguir o seguinte padrão:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">hotfix/x-branch-name</code></p>
+</blockquote>
+
+<h3 id="branchs-para-lanamento-de-verso"><em>Branchs</em> para lançamento de versão</h3>
+
+<blockquote>
+  <p><code class="highlighter-rouge">release/stable-x.x.x</code></p>
+</blockquote>
+
+<p>Onde x.x.x refere-se ao número da versão que será lançada.</p>
+
+<hr />
+
+<h2 id="poltica-de-commits">Política de <em>Commits</em></h2>
+
+<h3 id="mensagem-do-commit">Mensagem do <em>Commit</em></h3>
+<p>A descrição dos <em>commits</em> deve estar em <strong>inglês</strong> e ser sucinta e objetiva, representando claramente o que está sendo alterado naquele <em>commit</em>. A mensagem deve estar acompanhada do número da <em>issue</em> relacionada, como no exemplo abaixo:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">git commit -m'#X my message'</code></p>
+</blockquote>
+
+<p>Onde X representa o número da <em>issue</em> relacionada.</p>
+
+<h3 id="commits-com-pareamento"><em>Commits</em> com pareamento</h3>
+
+<p>Quando houver pareamento o <em>commit</em> deve vir acompanhado da mensagem: <code class="highlighter-rouge">Co-authored-by: CoAuthorName &lt;coauthoremail@mail.com&gt;</code>. Para tal deve-se seguir os seguintes passos:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">git commit -s</code></li>
+  <li>Inserir a descrição do <em>commit</em> na primeira linha</li>
+  <li>Na linha seguinte inserir a mensagem <code class="highlighter-rouge">Co-authored-by: CoAuthorName &lt;coauthoremail@mail.com&gt;</code>, com os respectivos dados do co-autor.</li>
+</ol>
+
+<h2 id="poltica-de-pull-requests">Política de <em>Pull Requests</em></h2>
+
+<p>Os <em>Pull Requests</em> devem possuir a descrição em <strong>inglês</strong> e seguir as seguintes recomendações:</p>
+
+<ul>
+  <li>
+    <p><em>Pull Requests</em> originados de <em>branchs</em> classificadas como <em>feature</em>, <em>documentation</em> e <em>bugfix</em> devem ser abertos para a <em>branch</em> <em>devel</em>.</p>
+  </li>
+  <li>
+    <p><em>Pull Requests</em> originados de <em>branchs</em> <em>hotfix</em> devem ser abertos direto para <em>branch master</em>.</p>
+  </li>
+</ul>
+
+<h3 id="pull-requests-em-progresso"><em>Pull Requests</em> em progresso</h3>
+
+<p><em>Pull Requests</em> que ainda não estão prontos para serem aceitos devem conter a sinalização <em>WIP - Work in Progress</em> logo no início do nome. Exemplo:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">WIP: my pull request</code></p>
+</blockquote>
+
+<h3 id="condies-para-aprovao-do-pull-request">Condições para aprovação do <em>Pull Request</em></h3>
+
+<p>Para que o <em>pull request</em> seja aceito nas <em>branchs</em> oficiais ele deve atender os seguintes pontos:</p>
+
+<ul>
+  <li>Funcionalidade, correção ou refatoração completa;</li>
+  <li><em>Build</em> de integração contínua passando;</li>
+  <li>Manter a cobertura do código acima de 90%;</li>
+  <li>Estar de acordo com as métricas de qualidade de código descritas no plano de qualidade.</li>
+</ul>
+
+<h3 id="pull-requests-de-lanamento-de-verso"><em>Pull Requests</em> de Lançamento de Versão</h3>
+
+<p>Lançamentos de novas versões a partir <em>devel</em> deve ser realizado seguindo os seguintes passos:</p>
+
+<ol>
+  <li>Criar uma <em>branch</em> <em>release</em> a partir da <em>devel</em> com o número da nova versão</li>
+  <li>Lançar a <em>tag</em> do nova <em>release</em></li>
+  <li>Atualizar a <em>master</em> com a nova <em>release</em></li>
+</ol>
+
