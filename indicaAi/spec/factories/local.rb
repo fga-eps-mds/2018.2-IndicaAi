@@ -1,7 +1,8 @@
-
 FactoryBot.define do
   factory :local do
-    name { Faker::Lorem.word }
-    RatingRate { Faker::Number.decimal(2) }
+    # generates locations from the tv serie 'Friends' :D
+    name { Faker::Friends.location }
+    # generates quotations from 'Friends'
+    description { Faker::Friends.quote }
   end
 end
