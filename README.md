@@ -22,7 +22,7 @@ Nós trabalhamos com _containers_ para construção dos ambientes. Para isso é 
 1. Depois execute o comando abaixo para subir o servidor:
 * `docker-compose up`
 1. Em um terminal separado, execute o comando a seguir para rodar as migrações no banco de dados:
-* `docker exec recomendafga_web_1 rake db:migrate`
+* `docker-compose run web rake db:migrate`
 1. No seu navegador, acesse a url `localhost:3000`, assim a aplicação já deverá estar rodando em seu computador.
 
 Se for necessário acessar o terminal do _container_ que roda a aplicação, o seguinte comando pode ser utilizado:
@@ -39,3 +39,11 @@ Se precisar pode entrar em contato com a equipe por meio das issues ou pelo e-ma
 ## Protótipo
 
 Acompanhe o desenvolvimento do nosso [Protótipo do Projeto](https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait).
+
+## Ambiente de Homologação
+
+Todas as novas funcionalidades da API estão na `devel` e ficam disponíveis no link [http://dev-indicaai.herokuapp.com/](http://dev-indicaai.herokuapp.com/locals) para teste.
+
+## Ambiente de Produção
+
+O ambiente de produção da API está disponível no link [https://indicaai.herokuapp.com/](https://indicaai.herokuapp.com/locals) com a versão mais recente do projeto.
