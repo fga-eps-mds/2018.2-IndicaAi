@@ -1,7 +1,0 @@
-Fixes #
-
-## Alterções realizadas
-
-  -
-  -
-  -
