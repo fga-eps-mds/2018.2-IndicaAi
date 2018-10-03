@@ -148,6 +148,11 @@
           "text": "Sprint 04",
           "url": "/sprint-planning/2018/09/19/planning-sprint-4.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 05",
+          "url": "/sprint-planning/2018/09/19/planning-sprint-5.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -175,6 +180,11 @@
           "text": "Sprint 04",
           "url": "/sprint-review/2018/09/19/review-sprint-4.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 05",
+          "url": "/sprint-review/2018/09/24/review-sprint-5.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -196,6 +206,11 @@
         {
           "text": "Commits por Dia",
           "url": "/commits",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Commits por Sprint",
+          "url": "/sprint_commits",
           "icon": "fa-angle-right"
         },
         {

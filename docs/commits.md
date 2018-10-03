@@ -1,5 +1,5 @@
 ---
 layout: commits
-title: Commits
+title: Commits por Dia
 permalink: /commits/
 ---

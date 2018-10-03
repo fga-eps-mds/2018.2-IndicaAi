@@ -48,7 +48,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
 ### 2.1 Diagrama de Relações
 
-  ![relational-diagram]({{site.baseurl}}/static/img/architeture/relational-diagram.jpg)
+  <iframe frameborder="0" style="width:100%;height:481px;" src="https://www.draw.io/?lightbox=1&highlight=000000&nav=1&title=Diagrama%20de%20Rela%C3%A7%C3%B5es#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1E1PSmEy-MMkO075dEdB-QZkVdO8hqu5Y%26export%3Ddownload"></iframe>
 
 ### 2.2 Ruby on Rails 5.2.1
   Ruby on Rails é um framework de desenvolvimento de aplicações web escrito na linguagem de programação Ruby. Não apenas para desenvolvimento de aplicações web com Rails é possível construir web APIs. O Rails fará o papel de *Model-Controller*, resgatando informações do banco de dados da aplicação. Uma vez que esses dados são resgatados a *Controller* irá retornar os dados ao frontend, atendendo a requisição do usuário.
@@ -57,7 +57,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
   O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
-  ![react]({{site.baseurl}}/static/img/architeture/React.png)
+  <iframe frameborder="0" style="width:100%;height:600px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=React#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1XumTy5uTyioHxKt8qj0pSjogOPDD4RAI%26export%3Ddownload"></iframe>
 
 ## 3: Requisitos e Restrições Arquiteturais
 
@@ -80,7 +80,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
   | API de Usuários | API que irá fazer a validação de login do usuário |
   | API Google Maps | API usada para fornecer a localização global do local cadastrado |  
 
-  ![use_case_diagram]({{site.baseurl}}/static/img/architeture/use-case-diagram.png)
+  <iframe frameborder="0" style="width:100%;height:1078px;" src="https://www.draw.io/?lightbox=1&target=frame&highlight=000000&nav=1&title=Use%20Case%20Diagram#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1DrFX_w3_AqVRY981Z4Xvgj8-NxGjSewn%26export%3Ddownload"></iframe>
 
 ### 4.2 Descrição dos Casos de Uso
 
@@ -114,7 +114,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
 ### 5.2 Diagrama de Classes
 
-![class-diagram]({{site.baseurl}}/static/img/architeture/class-diagram.png)
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://www.draw.io/?lightbox=1&highlight=000000&nav=1&title=Diagrama%20de%20Classe#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D18EB3g58DmVLlckJRUVhVoxEo768h8C2q%26export%3Ddownload"></iframe>
 
 ## 6:  Visão de Implementação
 

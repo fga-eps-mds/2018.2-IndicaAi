@@ -176,7 +176,6 @@ commits: [
 ]
 
 knowledge: [
-    "<b>Porque o Lucas diminuiu no scrum?</b>",
     "A equipe melhorou principalmente em testes devido ao <b>treinamento</b> aplicado nesta sprint, contudo, o conhecimento em testes ainda se mostrou um obstáculo para a equipe."
 ]
 

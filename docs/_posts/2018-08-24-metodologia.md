@@ -56,16 +56,16 @@ São responsabilidades deste papel:
 * A ausência destas reuniões deverá ser previamente comunicada pelo membro da equipe e justificada. Sendo obrigação do mesmo informar o andamento das duas atividades neste dia pelos meios de comunicações definidos pela equipe.
 
 ### Sprint Review
-* Duração Máxima: 1 hora
+* Duração Máxima: 1,5 horas
 * Ocorrerão toda terça-feira, tendo início as 18h
 
 ### Sprint Restropective
-* Duração Máxima: 45 minutos
+* Duração Máxima: 30 minutos
 * Ocorrerão toda terça-feira, tendo início as 19h
 
 ### Sprint Planning
 * Duração Máxima: 2 horas
-* Ocorrerão toda terça-feira, tendo início as 20h
+* Ocorrerão toda quarta-feira, tendo início as 16hh
 
 ---
 
@@ -73,16 +73,58 @@ São responsabilidades deste papel:
 
 ### Issues
 * As _issues_ serão aplicadas para representar os mais diversos tipos de tarefas que o projeto demandar.
-* Devem ser classificadas por meio das **_labels_**. Sendo algumas _labels_ básicas para o projeto:
-  * <span style='background-color:#71bfce;color:#000'>documentation</span>
-  * <span style='background-color:#fcc27b;color:#000'>software architecture</span>
-  * <span style='background-color:#0801ba;color:#fff'>DevOPs</span>
-  * <span style='background-color:#0dc695;color:#000'>scrum master</span>
-  * <span style='background-color:#827dce;color:#fff'>product owner</span>
-  * <span style='background-color:#b71f24;color:#fff'>bug</span>
-  * <span style='background-color:#f26aae;color:#fff'>new fetuare</span>
-  * <span style='background-color:#a7d13c;color:#000'>metrics</span>
-  * <span style='background-color:#006b75;color:#fff'>training</span>
+* Devem ser classificadas por meio das **_labels_**. Seguindo o seguinte padrão:
+
+  * Responsável
+    * Labels identificadas pelo número 0.
+    * Possíveis valores:
+        * Arquiteto
+        * Time de Desenvolvimento
+        * Scrum Master
+        * Product Owner
+        * Devops
+        * Integra App.
+  * Tipo de atividade
+    * Labels identificadas pelo número 1.
+    * Possíveis valores:
+        * API
+        * Frontend
+        * Feedback
+        * Documentação
+        * Infraestrutura
+        * Integração (Integração entre frontend, backend e outros serviços)
+        * Product Backlog
+        * Protótipo
+        * Tarefa
+        * Treinamento
+  * Especificação da atividade
+    * Labels identificadas pelo número 2.
+    * Possíveis valores:
+        * Comunidade de Software
+        * Deploy Contínuo
+        * Integração contínua
+        * Desing
+        * Marketing
+        * Métricas e Indicadores
+        * Funcionalidade
+        * Abertura do Projeto
+        * Especificação do Projeto
+        * História Técnica
+        * Viabilidade técnica
+  * Status da issue na sprint
+    * Labels identificadas pelo número 3.
+    * Possíveis valores:
+        * Adicionada
+        * Planejada
+        * Débito
+  * Análise sobre a issue
+    * Labels identificadas pelo número 4.
+    * Possíveis valores:
+        * Duplicada
+        * Invalida
+        * Removida
+        * Dúvida
+        * Não será resolvida
 
   Outras _labels_ podem ser adicionadas ao projeto conforme a necessidade que for surgindo;
 * Para termos de organização, as _issues_ serão classificadas como planejadas ou adicionadas em cada _sprint_:
@@ -114,21 +156,8 @@ São responsabilidades deste papel:
 ### Planning Poker
 * Deverá ser aplicado para estimar a dificuldade de trabalho do projeto e auxiliar no planejamento das _sprints_, conforme nota-se a capacidade de produção da equipe;
 * Os pontos estimados para uma _issue_ devem estar registrados na mesma por meio do ZenHub;
-* Os valores considerados deverão seguir a tabela abaixo: 0, 1, 2, 3, 5, 8, 13 e 21.
-
-<table>
-<tr><th>Pontuação</th><th>Duração</th><th>Risco</th><th>Máximo</th></tr>
-<tr><td>0</td><td>15 minutos</td><td>15 minutos</td><td>30 minutos</td></tr>
-<tr><td>1</td><td>1 hora</td><td>1 hora</td><td>2 horas</td></tr>
-<tr><td>2</td><td>2 horas</td><td>1 hora</td><td>3 horas</td></tr>
-<tr><td>3</td><td>4 horas</td><td>2 horas</td><td>6 horas</td></tr>
-<tr><td>5</td><td>8 horas</td><td>2 horas</td><td>10 horas</td></tr>
-<tr><td>8</td><td>12 horas</td><td>4 horas</td><td>16 horas</td></tr>
-<tr><td>13</td><td>20 horas</td><td>6 horas</td><td>26 horas</td></tr>
-<tr><td>21</td><td>30 horas</td><td>10 horas</td><td>40 horas</td></tr>
-</table>
-
-_Issues_ com mais de 13 pontos devem ser transformadas em Épicos e quebradas em _issues_ menores, para facilitar o desenvolvimento do projeto.
+* Os valores considerados deverão ser: 0, 1, 2, 3, 5, 8, 13 e 21.  
+* _Issues_ com mais de 13 pontos devem ser transformadas em Épicos e quebradas em _issues_ menores, para facilitar o desenvolvimento do projeto.
 
 ### MosCow
 
