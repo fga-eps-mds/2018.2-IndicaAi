@@ -78,7 +78,7 @@ a, a:hover, a:focus {
     background-color:  #0AACCC;
     overflow: auto;
     white-space: nowrap;
-
+    box-shadow: 0 7px 10px grey;
     display: inline-block;
     display: -moz-inline-box;
     *display: inline; /* For IE7 */
