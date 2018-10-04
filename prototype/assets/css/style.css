@@ -182,12 +182,20 @@ a, a:hover, a:focus {
 }
 
 #divBusca{
-  margin-left: -5px;
+
   background-color:#FFF;
-  border:solid 1px black;
-  border-radius:15px;
-  width:300px;
+  border-radius:5px;
+  width:100%;
   height: 35px;
+  text-align: right;
+}
+
+#buttonSearch{
+  border-radius:5px;
+  width:35;
+  height: 35px;
+  text-align: center;
+  padding: 9px;
 }
 
 #txtBusca{
