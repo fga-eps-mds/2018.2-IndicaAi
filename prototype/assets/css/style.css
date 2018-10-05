@@ -10,9 +10,10 @@ Premium: http://www.gridgum.com
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
 /* BASIC THEME CONFIGURATION */
-img #backIcon{
-  margin: 90000px;
-  text-align: center;
+.backIcon{
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 #btnNav{
@@ -59,12 +60,20 @@ a, a:hover, a:focus {
 }
 
 .topbox{
-  height: 50px;
+  height: 60px;
   background-color: #0AACCC;
   text-align:center;
   color: #fff;
   font-size: 14;
   padding-top: 7px;
+}
+
+.body-search{
+  margin-top: 85px;
+}
+
+.body-local{
+  margin-top: 150px;
 }
 
 #screen-title{
