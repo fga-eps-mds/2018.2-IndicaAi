@@ -12,7 +12,9 @@ Premium: http://www.gridgum.com
 /* BASIC THEME CONFIGURATION */
 
 
-
+#btnNav{
+  border-bottom: 3px solid #0AACCC;
+}
 
 body {
     background-color: #005565;
@@ -223,12 +225,6 @@ a, a:hover, a:focus {
   width: 100%;
   background-color: #FFF;
   padding-top: 155px;
-}
-
-.inicio img{
-  margin-left: 12px;
-  height: 90px;
-  width: 300px;
 }
 
 .texto{
