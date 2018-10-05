@@ -102,5 +102,5 @@ function Avaliar(estrela) {
             }
         break;
     }
-    document.getElementById('rating').innerHTML = avaliacao;
+    // document.getElementById('rating').innerHTML = avaliacao;
 }
