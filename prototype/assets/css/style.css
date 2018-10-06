@@ -99,8 +99,8 @@ a, a:hover, a:focus {
 
 .list-group-item{
   margin-top: -8px;
-  margin-left: -7px;
-  margin-right: -7px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Style the tab */
