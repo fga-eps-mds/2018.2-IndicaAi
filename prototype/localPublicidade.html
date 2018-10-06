@@ -50,7 +50,7 @@
         <div class="panel-body">
           <div class="local-title"><h4>São Paulo Pizzaria e Restaurante</h4></div>
           <div class="heart">
-              <i style="width: 10px" class="far fa-heart icon-favorito"></i style="width: 10px">
+              <i style="width: 10px" id = "icon" class="far fa-heart icon-favorito"></i style="width: 10px">
           </div>
           <div>
             <h5>Avaliação:</h5>
@@ -72,7 +72,7 @@
               <!--p id="rating">0</p-->
           </div>
           <hr>
-          <div class = "fga-img"><img src = "assets/img/map-sp.png"></div>
+          <div class = "fga-img"><img src = "assets/img/sp.png"></div>
           <div class="container text-right" style="margin-top: 10px">
               <a href="rota.html" class="btn btn-primary btn-sm"><i class="fas fa-map-marked-alt"></i> Rota</a>
           </div>
@@ -80,14 +80,20 @@
           <h5>Informações:</h5>
           <div class="glyphicon glyphicon-earphone"> (61) 4002-8922</div>
           <div class = "glyphicon glyphicon-map-marker">
-            Qd 90 LT.99 Setor Industria
+            Qd 87 LT.100 Setor Central
           </div>
-          <div class = "glyphicon glyphicon-time"> 6:00h - 22:00h</div>
+          <div class = "glyphicon glyphicon-time"> 9:00h - 23:00h</div>
           <hr>
           <h5>Avaliação:</h5>
-          <div class="glyphicon glyphicon-star"> 0.1</div>
+          <div class="glyphicon glyphicon-star"> 4.0</div>
         </div>
       </div>
     <div style="margin-bottom: -19px;"></div>
   </body>
+  <script type="text/javascript">
+    document.querySelector("#icon").addEventListener("click", changeIcon);
+    function changeIcon(){
+          document.querySelector(".heart").innerHTML = `<span class="glyphicon">&#xe005;</span>`
+    }
+  </script>
 </html>
