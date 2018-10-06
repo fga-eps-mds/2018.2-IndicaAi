@@ -47,30 +47,27 @@
                 <form class="form-" action="mapa.html">
                     <div class="form-group">
                         <input type="text" name="nomeLocal" id="nomeLocal" class="form-control" placeholder="Nome do local..." aria-describedby="helpId">
-                    </div>
-                    <div class="form-group">
+                    <br>
                         <input type="text" name="dicaLocal" id="dicaLocal" class="form-control" placeholder="Dicas sobre o local..." aria-describedby="helpId">
-                    </div>
 
-                    <div class="form-group">
+                    <br>
+
                       <label class="btn btn-indicaAi" for="my-file-selector">
-                        <input  id="my-file-selector" type="file" style="display:none" 
+                        <input  id="my-file-selector" type="file" style="display:none"
                         onchange="$('#upload-file-info').html(this.files[0].name)">
                         Escolha Imagem
                       </label>
                       <span class='label label-info' id="upload-file-info"></span>
-                    </div>
 
-                    <div class="form-group">
+
+
                         <select class="form-group form-control" id="list-categoria">
                           <option style="max-width:90%;">Categoria...</option>
                           <option style="max-width:90%;">Restaurante</option>
                           <option style="max-width:90%;">Utilidades</option>
                           <option style="max-width:90%;">Papelaria</option>
                         </select>
-                    </div>
-
-                    <div class="form-group">
+                    <br>
                         <textarea type="text" name="descricaoLocal" id="descricaoLocal" class="form-control" placeholder="Descrição do local..." aria-describedby="helpId"></textarea>
                     </div>
                     <div class="text-center">
