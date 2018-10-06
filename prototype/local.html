@@ -50,7 +50,7 @@
         <div class="panel-body">
           <div class="local-title"><h4>Universidade de Brasília - Faculdade do Gama [FGA]</h4></div>
           <div class="heart">
-              <i style="width: 10px" class="far fa-heart icon-favorito"></i style="width: 10px">
+              <i style="width: 10px" id = "icon" class="far fa-heart icon-favorito"></i style="width: 10px">
           </div>
           <div>
             <h5>Avaliação:</h5>
@@ -90,4 +90,10 @@
       </div>
     <div style="margin-bottom: -19px;"></div>
   </body>
+  <script type="text/javascript">
+    document.querySelector("#icon").addEventListener("click", changeIcon);
+    function changeIcon(){
+          document.querySelector(".heart").innerHTML = `<span class="glyphicon">&#xe005;</span>`
+    }
+  </script>
 </html>
