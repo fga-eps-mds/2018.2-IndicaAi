@@ -2513,3 +2513,12 @@ it doesn’t make the test unnecessarily selective */
 .icon-favorito:hover {
     color: #0AACCC !important;
 }
+
+#list-categoria{
+ width:250px;   
+}
+
+
+#list-categoria option{
+  width:250px;   
+}
