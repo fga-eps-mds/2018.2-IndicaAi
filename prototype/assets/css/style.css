@@ -16,8 +16,13 @@ Premium: http://www.gridgum.com
   top: 20px;
 }
 
-#btnNav{
+#btnNav-select{
   border-bottom: 3px solid #0AACCC;
+  width: 33%;
+}
+
+#btnNav{
+  width: 33%;
 }
 
 body {
