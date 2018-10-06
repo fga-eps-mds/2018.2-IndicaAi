@@ -10,6 +10,12 @@ Premium: http://www.gridgum.com
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
 /* BASIC THEME CONFIGURATION */
+
+.form-group{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .backIcon{
   position: absolute;
   left: 20px;
@@ -168,14 +174,16 @@ a, a:hover, a:focus {
 
 .divulgacao{
   height: 300px;
-  width: 100%;
   background-color: #fff;
+  /*width: 100%;*/
   /*border: 1px solid #000;*/
   border-radius: 5px;
   padding: 0px;
   border-radius: 5px;
   text-align: left;
   color: #171717;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .divulgacao .title{
@@ -214,14 +222,16 @@ a, a:hover, a:focus {
 #divBusca{
   /*left: 250px;*/
   background-color:#FFF;
+/*  width: 100%; */
   border-radius:5px;
-  width:100%;
   height: 35px;
   /*text-align: right;*/
   margin-top: 5px;
   margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   /*justify-content: left;*/
-  
+
 }
 
 #buttonSearch{
@@ -2526,10 +2536,12 @@ it doesn’t make the test unnecessarily selective */
 }
 
 #list-categoria{
- width:250px;   
+ width:250px;
+ margin-left: 0px;
 }
 
 
 #list-categoria option{
-  width:250px;   
+  width:250px;
+  margin-left: 0px;
 }
