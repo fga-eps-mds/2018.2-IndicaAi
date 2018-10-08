@@ -30,7 +30,7 @@ matrix:
         - '8'
         branches:
         only:
-        - 192-travis-jest
+        - devel
         cache:
         directories:
         - node_modules
