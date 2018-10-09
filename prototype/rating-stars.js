@@ -1,8 +1,12 @@
 function Avaliar(estrela) {
     var url = window.location;
-    url = url.toString()
+    url = url.toString();
     url = url.split("local.html");
     url = url[0];
+    var url2 = window.location;
+    url2 = url2.toString();
+    url2 = url2.split("localPublicidade.html");
+    url2 = url2[0];
 
     var s1 = document.getElementById("s1").src;
     var s2 = document.getElementById("s2").src;
@@ -13,7 +17,7 @@ function Avaliar(estrela) {
 
     switch (estrela) {
         case 5:
-            if (s5 == url + "assets/img/star0.png") {
+            if (s5 == url + "assets/img/star0.png" || s5 == url2 + "assets/img/star0.png") {
                 document.getElementById("s1").src = "assets/img/star1.png";
                 document.getElementById("s2").src = "assets/img/star1.png";
                 document.getElementById("s3").src = "assets/img/star1.png";
@@ -31,7 +35,7 @@ function Avaliar(estrela) {
         break;
 
         case 4:
-            if (s4 == url + "assets/img/star0.png") {
+            if (s4 == url + "assets/img/star0.png" || s4 == url2 + "assets/img/star0.png") {
                 document.getElementById("s1").src = "assets/img/star1.png";
                 document.getElementById("s2").src = "assets/img/star1.png";
                 document.getElementById("s3").src = "assets/img/star1.png";
@@ -49,7 +53,7 @@ function Avaliar(estrela) {
         break;
 
         case 3:
-            if (s3 == url + "assets/img/star0.png") {
+            if (s3 == url + "assets/img/star0.png" || s3 == url2 + "assets/img/star0.png") {
                 document.getElementById("s1").src = "assets/img/star1.png";
                 document.getElementById("s2").src = "assets/img/star1.png";
                 document.getElementById("s3").src = "assets/img/star1.png";
@@ -67,7 +71,7 @@ function Avaliar(estrela) {
         break;
 
         case 2:
-            if (s2 == url + "assets/img/star0.png") {
+            if (s2 == url + "assets/img/star0.png" || s2 == url2 + "assets/img/star0.png") {
                 document.getElementById("s1").src = "assets/img/star1.png";
                 document.getElementById("s2").src = "assets/img/star1.png";
                 document.getElementById("s3").src = "assets/img/star0.png";
@@ -83,9 +87,9 @@ function Avaliar(estrela) {
                 avaliacao = 1;
             }
         break;
-    
+
         case 1:
-            if (s1 == url + "assets/img/star0.png") {
+            if (s1 == url + "assets/img/star0.png" || s1 == url2 + "assets/img/star0.png") {
                 document.getElementById("s1").src = "assets/img/star1.png";
                 document.getElementById("s2").src = "assets/img/star0.png";
                 document.getElementById("s3").src = "assets/img/star0.png";
@@ -102,5 +106,4 @@ function Avaliar(estrela) {
             }
         break;
     }
-    // document.getElementById('rating').innerHTML = avaliacao;
 }

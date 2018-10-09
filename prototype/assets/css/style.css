@@ -1,11 +1,3 @@
-/*
-Template Name: DASHGUM FREE - Bootstrap 3.2 Admin Theme
-Template Version: 1.0
-Author: Carlos Alvarez
-Website: http://blacktie.co
-Premium: http://www.gridgum.com
-*/
-
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
@@ -116,6 +108,7 @@ a, a:hover, a:focus {
      /* Trigger hasLayout */
     width: 100%;
     text-align: center;
+    /* overflow-x:hidden; */
 }
 
 /* Style the buttons inside the tab */
@@ -138,7 +131,7 @@ a, a:hover, a:focus {
 
 .foto-local img{
   width: 100%;
-  height: 180px;
+  height: 220px;
 
 }
 .fga-img img{
@@ -211,27 +204,18 @@ a, a:hover, a:focus {
 }
 
 .divulgacao .foto img{
-  /*margin-top: -77px;*/
-  /*margin-left: 190px;*/
-  height: 220px;
   width: 100%;
-  /*border: 1px solid gray;
-  border-radius: 35px;*/
+  height: 220px;
 }
 
 #divBusca{
-  /*left: 250px;*/
   background-color:#FFF;
-/*  width: 100%; */
   border-radius:5px;
   height: 35px;
-  /*text-align: right;*/
   margin-top: 5px;
   margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 10px;
-  /*justify-content: left;*/
-
 }
 
 #buttonSearch{
@@ -243,9 +227,7 @@ a, a:hover, a:focus {
 }
 
 #txtBusca{
-  /*float: center;*/
   background-color: #005565;
-  /*padding-left:10px;*/
   padding-right:10px;
   font-family: 'Maven Pro';
   font-size:18px;
