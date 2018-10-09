@@ -108,7 +108,7 @@ a, a:hover, a:focus {
      /* Trigger hasLayout */
     width: 100%;
     text-align: center;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 }
 
 /* Style the buttons inside the tab */
@@ -168,8 +168,6 @@ a, a:hover, a:focus {
 .divulgacao{
   height: 300px;
   background-color: #fff;
-  /*width: 100%;*/
-  /*border: 1px solid #000;*/
   border-radius: 5px;
   padding: 0px;
   border-radius: 5px;
