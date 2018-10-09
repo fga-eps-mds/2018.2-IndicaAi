@@ -108,7 +108,11 @@ a, a:hover, a:focus {
      /* Trigger hasLayout */
     width: 100%;
     text-align: center;
-    overflow-x:hidden;
+    /* overflow: hidden; */
+}
+
+.tab::-webkit-scrollbar{
+  height: 0px;
 }
 
 /* Style the buttons inside the tab */
