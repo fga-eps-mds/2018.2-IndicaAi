@@ -5,7 +5,7 @@ date:   2018-09-24 09:00:39
 categories: sprint-review
 
 sprint: 5
-previousSprint: 2
+previousSprint: 3
 startDate: 19/09/2018
 endDate: 25/09/2018
 duration: 7

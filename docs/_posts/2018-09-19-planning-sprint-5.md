@@ -5,7 +5,7 @@ date:   2018-09-19 10:50:39
 categories: sprint-planning
 
 sprint: 5
-previousSprint: 2
+previousSprint: 4
 startDate: 19/09/2018
 endDate: 25/09/2018
 duration: 7
