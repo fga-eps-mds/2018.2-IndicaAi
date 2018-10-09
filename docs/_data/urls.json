@@ -204,6 +204,11 @@
     "icon": "fa-chart-line",
     "urls": [
         {
+          "text": "EVM",
+          "url": "/docs/2018/10/09/evm.html",
+          "icon": "fa-angle-right"
+        },
+        {
           "text": "Burndown",
           "url": "/burndown",
           "icon": "fa-angle-right"
