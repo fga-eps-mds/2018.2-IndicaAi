@@ -20,10 +20,13 @@
 
   </head>
 
-  <body>
+  <body onload = "myMove()">
+
     <section id="container" >
 
+
     <nav class="navbar-fixed-top">
+      <div id = "animate"></div>
       <div class="topbox"><span id="screen-title" >Cadastrar</span></div>
       <div class="apps-bar">
         <img src="assets/img/navbarIndicaAi.png">
@@ -69,5 +72,36 @@
             </section>
         </section>
     </section>
+    <script>
+  function myMove() {
+    var elem = document.getElementById("animate");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 50) {
+          clearInterval(id);
+           document.getElementById("animate").innerHTML = "<h4>"+ "Cadastrado com sucesso!" + "</h4>";
+
+          setTimeout(reduce, 2000);
+      } else {
+        pos++;
+        elem.style.height = pos + 'px';
+      }
+    }
+    function reduce() {
+      var id2 = setInterval(reduce, 70);
+      if(pos == 0){
+
+        clearInterval(id2);
+      }else{
+
+        pos--;
+          elem.style.height = pos + 'px';
+          document.getElementById("animate").innerHTML = "";
+      }
+    }
+  }
+
+    </script>
   </body>
 </html>
