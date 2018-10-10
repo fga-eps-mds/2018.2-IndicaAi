@@ -33,30 +33,6 @@
  	text-align: center;
 
 }
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    margin-top: 50%;
-    border-radius: 10px;
-}
 
 /* The Close Button */
 .close {
@@ -77,10 +53,10 @@
   </head>
 
   <body>
-    <!-- The Modal -->
+  <!--
     <div id="myModal" class="modal">
 
-      <!-- Modal content -->
+
       <div class="modal-content">
         <span class="close">&times;</span>
         <div align = "center">
@@ -97,7 +73,7 @@
           </tr>
         </table>
       </div>
-
+-->
     </div>
   <section id="container" >
 
@@ -141,7 +117,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9WYVio--JddgNX3TTF6flEhubkpjJYc&callback=initMap">
           </script>
           <div class="text-center">
-            <a ><button id="myBtn" class="btn btn-indicaAi">Confirmar</button></a>
+            <a href = "cadastro2.html"><button id="myBtn" class="btn btn-indicaAi">Confirmar</button></a>
           </div>
   		</section>
     </section>
@@ -150,31 +126,6 @@
 
 	<script type="application/javascript">
 
-        // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
         function myNavFunction(id) {
             $("#date-popover").hide();
