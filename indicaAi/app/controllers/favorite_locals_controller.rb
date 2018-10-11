@@ -19,12 +19,20 @@ class FavoriteLocalsController < ApplicationController
     end
   end
   
+  # Patch /favorites/update/:id
   def update
     @favorite = FavoriteLocal.find(params[:id])
     @favorite.update(favorite_params)
     render json: {status: 'SUCCESS', message:'Updated favorite', data:@favorite},status: :ok
   end
 
+  # Delete /favorites/destroy/:id
+  def destroy
+    @favorite = FavoriteLocal.find(params[:id])
+    @favorite.destroy
+    render json: {status: 'SUCCESS', message:'Deleted favorite', data:@favorite},status: :ok
+  end
+  
   private
 
 		def favorite_params

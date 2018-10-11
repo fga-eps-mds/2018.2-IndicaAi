@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # Patch Requests
   patch '/favorite/update/:id', to: 'favorite_locals#update', :defaults => { :format => 'json' }
+
+  # Deleted Requests
+  delete '/favorite/delete/:id', to: 'favorite_locals#destroy', :defaults => { :format => 'json' }
 end
