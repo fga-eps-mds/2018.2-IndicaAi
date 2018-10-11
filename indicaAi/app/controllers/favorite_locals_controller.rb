@@ -13,12 +13,18 @@ class FavoriteLocalsController < ApplicationController
     @favorite.save
 
     if @favorite.save
-      render json: {status: 'SUCCESS', message:'Saved article', data:@favorite},status: :ok
+      render json: {status: 'SUCCESS', message:'Saved favorite', data:@favorite},status: :ok
     else
-      render json: {status: 'ERROR', message:'Articles not saved', data:@favorite.erros},status: :unprocessable_entity
+      render json: {status: 'ERROR', message:'Favorite not saved', data:@favorite.erros},status: :unprocessable_entity
     end
   end
   
+  def update
+    @favorite = FavoriteLocal.find(params[:id])
+    @favorite.update(favorite_params)
+    render json: {status: 'SUCCESS', message:'Updated favorite', data:@favorite},status: :ok
+  end
+
   private
 
 		def favorite_params
