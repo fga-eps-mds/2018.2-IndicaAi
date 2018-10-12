@@ -50,9 +50,7 @@ RSpec.describe 'Local API', type: :request do
   let!(:valid_params) do
     {
       'local_id' => local_test.id,
-      'user_identifier_id' => user_test.id,
-      'label' => Faker::Lorem.sentence,
-      'body' => Faker::Lorem.paragraph
+      'user_identifier_id' => user_test.id
     }
   end
   describe 'PATCH /favorite/update/:id' do
@@ -60,6 +58,11 @@ RSpec.describe 'Local API', type: :request do
       patch "/favorite/update/#{favorite_test.id}", params: valid_params
       expect(FavoriteLocal.last).to have_attributes valid_params
       expect(response).to have_http_status(200)
+    end
+    it 'should returns error not updated favorite' do
+      valid_params['local_id'] = nil
+      patch "/favorite/update/#{favorite_test.id}", params: valid_params
+      expect(response).to have_http_status(422)
     end
     it 'should returns error not found favorite' do
       # favorite.id invalid
