@@ -8,51 +8,50 @@ class FavoriteLocalsController < ApplicationController
 
   # Post /favorite/create
   def create
-		@favorite = FavoriteLocal.new(favorite_params)
+    @favorite = FavoriteLocal.new(favorite_params)
     if @favorite.valid?
       @favorite.save
-      render json: {
-        status: 'SUCCESS', message:'Saved favorite',
-        data:@favorite
-      },status: :ok
+      render_success('SUCCESS', 'Saved favorite', @favorite)
     else
-      render json: {
-        status: 'ERROR', message:'Favorite not saved'
-        # data:@favorite.erros
-      },status: :unprocessable_entity
+      render_error('ERROR', 'Favorite not saved')
     end
   end
-  
+
   # Patch /favorites/update/:id
   def update
     @favorite = FavoriteLocal.find(params[:id])
     @favorite.update(favorite_params)
 
     if @favorite.save
-      render json: {
-        status: 'SUCCESS', message:'Updated favorite',
-        data:@favorite
-      },status: :ok
+      render_success('SUCCESS', 'Updated favorite', @favorite)
     else
-      render json: {
-        status: 'ERROR', message:'Not updated favorite',
-      },status: :unprocessable_entity
+      render_error('ERROR', 'Not updated favorite')
     end
   end
 
   # Delete /favorites/destroy/:id
   def destroy
     @favorite = FavoriteLocal.find(params[:id])
-    if @favorite.destroy
-      render json: {
-        status: 'SUCCESS', message:'Deleted favorite',
-      },status: :ok
-    end
+    return render_success('SUCCESS', 'Deleted favorite', @favorite) if
+      @favorite.destroy
   end
-  
+
   private
 
-		def favorite_params
-			params.permit(:user_identifier_id, :local_id, :label, :body)
-		end
+  def favorite_params
+    params.permit(:user_identifier_id, :local_id, :label, :body)
+  end
+
+  def render_success(type, message, data)
+    render json: {
+      status: type, message: message,
+      data: data
+    }, status: :ok
+  end
+
+  def render_error(type, message)
+    render json: {
+      status: type, message: message
+    }, status: :unprocessable_entity
+  end
 end
