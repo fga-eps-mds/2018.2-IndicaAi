@@ -32,8 +32,8 @@ RSpec.describe FavoriteLocalsController, type: :controller do
     it 'should returns success saved favorite' do
       expect(response).to be_success
       expect(assigns(:favorite)).to have_attributes (valid_params)
-      assigns(:favorite).should be_persisted
-      assigns(:favorite).should be_a(FavoriteLocal)
+      expect(assigns(:favorite)).to be_persisted
+      expect(assigns(:favorite)).to be_a(FavoriteLocal)
       expect(assigns(:favorite)).not_to eq(nil)
     end
     it 'should not returns success saved favorite' do
