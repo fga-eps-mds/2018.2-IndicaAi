@@ -1,8 +1,8 @@
+# Model of Users Rates 
 class UserRate < ApplicationRecord
     belongs_to :user_identifier
-    validates_associated :user_identifier
-    validates :value, presence: true
-    validates :value, numericality: true
-    validates_numericality_of :value, less_than_or_equal_to: 5
-    validates_numericality_of :value, greater_than_or_equal_to: 0
+    validates :rating, numericality: true
+    validates_numericality_of :rating, less_than_or_equal_to: 5
+    validates_numericality_of :rating, greater_than_or_equal_to: 0
+    validates :user_identifier, presence: true
 end

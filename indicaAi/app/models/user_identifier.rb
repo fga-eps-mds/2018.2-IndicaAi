@@ -1,6 +1,7 @@
 # Description of User Identifier Class
 class UserIdentifier < ApplicationRecord
   has_many :favorite_locals, dependent: :destroy
+  has_many :user_rate, dependent: :destroy
   validates :identifier, presence: true
   validates_numericality_of :identifier
   validates_uniqueness_of :identifier
