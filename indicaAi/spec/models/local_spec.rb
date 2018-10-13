@@ -25,6 +25,6 @@ RSpec.describe Local, type: :model do
     exist = true
 
     result = Local.validate_local_existence(name)
-    assert result, exist 
+    assert result, exist
   end
 end
