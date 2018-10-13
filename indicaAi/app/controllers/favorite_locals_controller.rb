@@ -3,8 +3,7 @@ class FavoriteLocalsController < ApplicationController
   # Post /favorite/create
   def create
     @favorite = FavoriteLocal.new(favorite_params)
-    if @favorite.valid?
-      @favorite.save
+    if @favorite.save
       render_success('SUCCESS', 'Saved favorite', @favorite)
     else
       render_error('ERROR', 'Favorite not saved')
