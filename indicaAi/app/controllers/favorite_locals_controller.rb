@@ -25,8 +25,12 @@ class FavoriteLocalsController < ApplicationController
   # Delete /favorites/destroy/:id
   def destroy
     @favorite = FavoriteLocal.find(params[:id])
-    return render_success('SUCCESS', 'Deleted favorite', @favorite) if
-      @favorite.destroy
+    # render_success('SUCCESS', 'Deleted favorite', @favorite) if
+    if @favorite.destroy
+      render_success('SUCCESS', 'Deleted favorite', @favorite)
+    else
+      render_error('ERROR', 'Not deleted favorite')
+    end
   end
 
   private
