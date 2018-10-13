@@ -10,4 +10,13 @@ class Local < ApplicationRecord
   def self.find_local_ratings(local_id)
     Local.find(local_id).local_ratings
   end
+
+  def self.rate_a_place(local_name, user, rate)
+    existe = 
+
+  end 
+
+  def self.validate_local_existence(local_name)
+    Local.exists?('upper(name) like ?' , "%#{params.upcase}%")  
+  end
 end
