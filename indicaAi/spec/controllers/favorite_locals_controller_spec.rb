@@ -7,9 +7,7 @@ RSpec.describe FavoriteLocalsController, type: :controller do
   let!(:valid_params) do
     {
       'local_id' => local_test.id,
-      'user_identifier_id' => user_test.id,
-      'label' => Faker::Lorem.sentence,
-      'body' => Faker::Lorem.paragraph
+      'user_identifier_id' => user_test.id
     }
   end
   describe 'Post create' do
@@ -36,9 +34,7 @@ RSpec.describe FavoriteLocalsController, type: :controller do
     {
       'id' => favorite_test.id,
       'local_id' => local_test.id,
-      'user_identifier_id' => user_test.id,
-      'label' => Faker::Lorem.sentence,
-      'body' => Faker::Lorem.paragraph
+      'user_identifier_id' => user_test.id
     }
   end
   describe 'Patch update' do

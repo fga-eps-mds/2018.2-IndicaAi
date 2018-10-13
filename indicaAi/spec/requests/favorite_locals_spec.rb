@@ -6,9 +6,7 @@ RSpec.describe 'Local API', type: :request do
   let!(:valid_params) do
     {
       'local_id' => local_test.id,
-      'user_identifier_id' => user_test.id,
-      'label' => Faker::Lorem.sentence,
-      'body' => Faker::Lorem.paragraph
+      'user_identifier_id' => user_test.id
     }
   end
   describe 'POST /favorite/create' do
