@@ -18,4 +18,13 @@ RSpec.describe Local, type: :model do
     result = Local.find_local_ratings(id)
     assert result.first, nota
   end
+
+  it 'Testing Validade Local Existence - Should return true if local exist' do
+    local = create(:local)
+    name = local.name
+    exist = true
+
+    result = Local.validate_local_existence(name)
+    assert result, exist 
+  end
 end
