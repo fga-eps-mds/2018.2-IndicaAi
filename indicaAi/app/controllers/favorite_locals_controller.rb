@@ -4,32 +4,30 @@ class FavoriteLocalsController < ApplicationController
   def create
     @favorite = FavoriteLocal.new(favorite_params)
     if @favorite.save
-      render_success('SUCCESS', 'Saved favorite', @favorite)
+      response_success('SUCCESS', 'Saved favorite', @favorite, 200)
     else
-      render_error('ERROR', 'Favorite not saved')
+      response_error('ERROR', 'Favorite not saved', 422)
     end
   end
 
   # Patch /favorites/update/:id
   def update
     @favorite = FavoriteLocal.find(params[:id])
-    @favorite.update(favorite_params)
 
-    if @favorite.save
-      render_success('SUCCESS', 'Updated favorite', @favorite)
+    if @favorite.update(favorite_params)
+      response_success('SUCCESS', 'Updated favorite', @favorite, 200)
     else
-      render_error('ERROR', 'Not updated favorite')
+      response_error('ERROR', 'Not updated favorite', 422)
     end
   end
 
   # Delete /favorites/destroy/:id
   def destroy
     @favorite = FavoriteLocal.find(params[:id])
-    # render_success('SUCCESS', 'Deleted favorite', @favorite) if
     if @favorite.destroy
-      render_success('SUCCESS', 'Deleted favorite', @favorite)
+      response_success('SUCCESS', 'Deleted favorite', @favorite, 200)
     else
-      render_error('ERROR', 'Not deleted favorite')
+      response_error('ERROR', 'Not deleted favorite', 422)
     end
   end
 
@@ -37,18 +35,5 @@ class FavoriteLocalsController < ApplicationController
 
   def favorite_params
     params.permit(:user_identifier_id, :local_id, :label, :body)
-  end
-
-  def render_success(type, message, data)
-    render json: {
-      status: type, message: message,
-      data: data
-    }, status: :ok
-  end
-
-  def render_error(type, message)
-    render json: {
-      status: type, message: message
-    }, status: :unprocessable_entity
   end
 end
