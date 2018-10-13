@@ -1,20 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Local API', type: :request do
-  let!(:favorites_test) { create_list(:favorite_local, 10) }
-  describe 'GET /favorites' do
-    before { get '/favorites/' }
-    it 'returns favorites' do
-      expect(json).not_to be_empty
-      expect(json.size).to eq(10)
-    end
-    it 'returns status code 200' do
-      expect(response).to have_http_status(200)
-    end
-  end
-end
-
-RSpec.describe 'Local API', type: :request do
   let!(:user_test) { create(:user_identifier) }
   let!(:local_test) { create(:local) }
   let!(:valid_params) do

@@ -1,11 +1,5 @@
 # Favorite Controller
 class FavoriteLocalsController < ApplicationController
-  # GET /favorites
-  def index
-    @favorites = FavoriteLocal.all
-    json_response(@favorites)
-  end
-
   # Post /favorite/create
   def create
     @favorite = FavoriteLocal.new(favorite_params)

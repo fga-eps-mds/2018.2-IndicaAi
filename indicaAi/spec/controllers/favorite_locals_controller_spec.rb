@@ -1,21 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe FavoriteLocalsController, type: :controller do
-  let!(:favorites_test) { create_list(:favorite_local, 10) }
-  describe 'GET index' do
-    before { get :index }
-    it { should route(:get, '/favorites').to(action: :index) }
-    it 'should returns all favorites in assigns @favorites' do
-      expect(response).to be_success
-      # assigns(:favorites) is a variable in favorite_locals_controller
-      assert assigns(:favorites) == favorites_test
-      expect(assigns(:favorites).length).to eq(10)
-      expect(assigns(:favorites)).not_to be_empty
-    end
-  end
-end
-
-RSpec.describe FavoriteLocalsController, type: :controller do
   let!(:user_test) { create(:user_identifier) }
   let!(:local_test) { create(:local) }
   let!(:local_test2) { create(:local) }
