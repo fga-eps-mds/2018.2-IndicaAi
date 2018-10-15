@@ -1,6 +1,8 @@
 # Description of Places Class
 class Local < ApplicationRecord
   has_many :local_ratings
+  has_many :user_identifiers, through: :local_ratings
+
   validates :name, presence: true, length: { minimum: 2 }
 
   def self.find_by_name(params)
