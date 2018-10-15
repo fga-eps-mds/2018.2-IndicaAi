@@ -50,7 +50,7 @@ RSpec.describe 'Local API', type: :request do
     end
     it 'should returns error not found favorite' do
       # favorite.id invalid
-      patch "/favorite/update/#{favorite_test.id + 1}", params: valid_params
+      patch "/favorite/update/#{225544}", params: valid_params
       expect(response).to have_http_status(404)
     end
   end
