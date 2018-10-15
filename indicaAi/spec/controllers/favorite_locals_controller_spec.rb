@@ -58,5 +58,11 @@ RSpec.describe FavoriteLocalsController, type: :controller do
     it 'should returns success deleted favorite' do
       expect(assigns(:favorite)).to eq(nil)
     end
+    it 'should returns error - favorite not deleted' do
+      allow(favorite_test).to receive(:destroy).and_return(
+        response.status = :unprocessable_entity
+      )
+      expect(favorite_test.destroy).to eq(:unprocessable_entity)
+    end
   end
 end
