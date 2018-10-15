@@ -115,9 +115,21 @@
   },
   {
     "text": "Protótipo",
-    "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
-    "target": "_blank",
-    "icon": "fa-object-group"
+    "url": "#",
+    "icon": "fa-object-group",
+    "urls": [
+        {
+          "text": "Protótipo",
+          "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
+          "target": "_blank",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Mapa de Telas",
+          "url": "/docs/2018/10/15/screen-map.html",
+          "icon": "fa-angle-right"
+        }
+    ]
   },
   {
     "text": "Sprint Planning",
