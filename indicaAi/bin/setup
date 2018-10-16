@@ -2,7 +2,6 @@
 require 'pathname'
 require 'fileutils'
 
-
 # path to your application root.
 APP_ROOT = Pathname.new File.expand_path('..', __dir__)
 
