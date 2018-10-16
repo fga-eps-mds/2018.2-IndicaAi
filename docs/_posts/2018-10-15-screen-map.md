@@ -6,4 +6,4 @@ categories: docs
 ---
 
 
-![Screen Map]({{site.baseurl}}/static/img/mapa_de_telas.png)
+![Screen Map]({{site.baseurl}}/static/img/prototipo/mapa_de_telas.png)
