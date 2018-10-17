@@ -10,14 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180917225656) do
+ActiveRecord::Schema.define(version: 20181013160532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "favorite_locals", force: :cascade do |t|
-    t.string "label"
-    t.text "body"
     t.bigint "local_id"
     t.bigint "user_identifier_id"
     t.datetime "created_at", null: false
@@ -47,7 +45,5 @@ ActiveRecord::Schema.define(version: 20180917225656) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "favorite_locals", "locals"
-  add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "local_ratings", "locals"
 end
