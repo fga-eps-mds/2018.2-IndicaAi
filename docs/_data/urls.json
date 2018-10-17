@@ -115,9 +115,21 @@
   },
   {
     "text": "Protótipo",
-    "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
-    "target": "_blank",
-    "icon": "fa-object-group"
+    "url": "#",
+    "icon": "fa-object-group",
+    "urls": [
+        {
+          "text": "Protótipo",
+          "url": "https://www.responsinator.com/?url=https://indica-ai.000webhostapp.com/&device=iphone-x&orientation=portrait",
+          "target": "_blank",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Mapa de Telas",
+          "url": "/docs/2018/10/15/screen-map.html",
+          "icon": "fa-angle-right"
+        }
+    ]
   },
   {
     "text": "Sprint Planning",
@@ -158,6 +170,11 @@
           "text": "Sprint 06",
           "url": "/sprint-planning/2018/10/03/planning-sprint-6.html",
           "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 07",
+          "url": "/sprint-planning/2018/10/04/planning-sprint-7.html",
+          "icon": "fa-angle-right"
         }
     ]
   },
@@ -194,6 +211,11 @@
         {
           "text": "Sprint 06",
           "url": "/sprint-review/2018/09/24/review-sprint-6.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 07",
+          "url": "/sprint-review/2018/10/03/review-sprint-7.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -266,6 +288,11 @@
         {
           "text": "Folha de Estilo",
           "url": "/styleSheet",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "TecProg",
+          "url": "/docs/2018/10/09/tecprog.html",
           "icon": "fa-angle-right"
         }
     ]
