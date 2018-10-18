@@ -4,6 +4,15 @@ class Local < ApplicationRecord
   belongs_to :category
   validates :name, presence: true, length: { minimum: 2 }
   validates :category, presence: true
+  validates :latitude, presence: true, numericality: {
+    greater_than_or_equal: 0, less_than_or_equal: 100
+  }
+  validates :longitude, presence: true, numericality: {
+    greater_than_or_equal: 0, less_than_or_equal: 100
+  }
+  validates :address, allow_nil: true, length: { minimum: 10 }
+  validates :telephone, allow_nil: true, length: { minimum: 8 }
+
 
   def self.find_by_name(params)
     Local.where('upper(name) like ?', "%#{params.upcase}%")

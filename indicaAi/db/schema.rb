@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181018021722) do
+ActiveRecord::Schema.define(version: 20181018030921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,10 @@ ActiveRecord::Schema.define(version: 20181018021722) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "category_id"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
+    t.string "telephone"
     t.index ["category_id"], name: "index_locals_on_category_id"
   end
 
@@ -53,6 +57,8 @@ ActiveRecord::Schema.define(version: 20181018021722) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favorite_locals", "locals"
+  add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "local_ratings", "locals"
   add_foreign_key "locals", "categories"
 end

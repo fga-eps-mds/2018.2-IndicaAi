@@ -5,5 +5,9 @@ FactoryBot.define do
     # generates quotations from 'Friends'
     description { Faker::Friends.quote }
     category { FactoryBot.create :category }
+    latitude { Faker::Number.decimal(10, 8) }
+    longitude { Faker::Number.decimal(10, 8) }
+    address { Faker::Address.street_address }
+    telephone { Faker::PhoneNumber.cell_phone }
   end
 end
