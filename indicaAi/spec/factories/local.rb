@@ -4,5 +4,6 @@ FactoryBot.define do
     name { Faker::Friends.location }
     # generates quotations from 'Friends'
     description { Faker::Friends.quote }
+    category { FactoryBot.create :category }
   end
 end

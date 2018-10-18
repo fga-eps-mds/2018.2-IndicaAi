@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181013160532) do
+ActiveRecord::Schema.define(version: 20181018021722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "favorite_locals", force: :cascade do |t|
     t.bigint "local_id"
@@ -37,6 +43,8 @@ ActiveRecord::Schema.define(version: 20181013160532) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_locals_on_category_id"
   end
 
   create_table "user_identifiers", force: :cascade do |t|
@@ -46,4 +54,5 @@ ActiveRecord::Schema.define(version: 20181013160532) do
   end
 
   add_foreign_key "local_ratings", "locals"
+  add_foreign_key "locals", "categories"
 end

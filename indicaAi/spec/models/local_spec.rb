@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Local, type: :model do
   it { should validate_presence_of(:name) }
+  it { should validate_presence_of(:category) }
 
   it 'Testing Search By Name - Should return similar names to params' do
     local = create(:local)
