@@ -18,10 +18,26 @@ class LocalsController < ApplicationController
     json_response(result)
   end
 
+  # POST /local/create
+  def create
+    @local = Local.new(local_params)
+    if @local.save
+      response_success('SUCCESS', 'Saved Local', @local, 200)
+    else
+      response_error('ERROR', 'Local not saved', 422)
+    end
+  end
+
   # GET /local/:id/rating
   def show_rating
     rating = Local.find_local_ratings(params[:id_local])
     local = Local.find(params[:id_local])
     json_response(locals: local, rating: rating)
+  end
+
+  private
+
+  def local_params
+    params.permit(:name, :category_id, :description, :latitude, :longitude, :address, :telephone)
   end
 end

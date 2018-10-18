@@ -39,6 +39,6 @@ class FavoriteLocalsController < ApplicationController
   private
 
   def favorite_params
-    params.permit(:user_identifier_id, :local_id, :label, :body)
+    params.permit(:user_identifier_id, :local_id)
   end
 end

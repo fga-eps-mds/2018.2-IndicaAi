@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # Post Requests
   post '/favorite/create', to: 'favorite_locals#create', :defaults => { :format => 'json' }
+  post '/local/create', to: 'locals#create', :defaults => { :format => 'json' }
 
   # Patch Requests
   patch '/favorite/update/:id', to: 'favorite_locals#update', :defaults => { :format => 'json' }
