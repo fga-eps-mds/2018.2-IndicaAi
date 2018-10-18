@@ -18,7 +18,7 @@ RSpec.describe Local, type: :model do
   end
 
   describe 'Find Local Ratings' do
-    it 'Testing Find Local Ratings - Should return rating associated to parms' do
+    it 'Find Local Ratings - Should return rating associated to params' do
       local = create(:local)
       nota = create(:local_rating, local: local)
 

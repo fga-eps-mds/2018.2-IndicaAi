@@ -22,7 +22,7 @@ RSpec.describe LocalsController, type: :controller do
       'name' => Faker::Friends.location,
       'category_id' => category_test.id,
       'description' => Faker::Friends.quote,
-      'latitude' => Faker::Number.decimal(2,8).to_f,
+      'latitude' => Faker::Number.decimal(2, 8).to_f,
       'longitude' => Faker::Number.decimal(2, 8).to_f,
       'address' => Faker::Address.street_address,
       'telephone' => Faker::PhoneNumber.cell_phone
@@ -31,12 +31,17 @@ RSpec.describe LocalsController, type: :controller do
   describe 'POST #create' do
     it 'should returns success saved local' do
       post :create, params: valid_params
-      
+
       expect(response).to be_success
       expect(assigns(:local)).to have_attributes(valid_params)
       expect(assigns(:local)).to be_persisted
-      expect(assigns(:local)).to be_a(Local)
-      expect(assigns(:local)).not_to eq(nil)
+    end
+    it 'should not returns success saved local' do
+      # local.id invalid
+      valid_params['category_id'] = nil
+      post :create, params: valid_params
+
+      expect(response).not_to be_success
     end
   end
 end

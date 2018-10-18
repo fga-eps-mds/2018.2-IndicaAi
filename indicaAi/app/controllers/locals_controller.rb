@@ -2,9 +2,9 @@
 class LocalsController < ApplicationController
   # GET /locals
   def index
-    locals = Local.all
+    @locals = Local.all
     result = []
-    locals.each do |local|
+    @locals.each do |local|
       result << local.as_json(methods: [:local_ratings])
     end
     json_response(result)
@@ -12,9 +12,9 @@ class LocalsController < ApplicationController
 
   # GET /locals/name/:name
   def search_locals
-    locals = Local.find_by_name(params[:name])
+    @locals = Local.find_by_name(params[:name])
     result = []
-    result << locals.as_json(methods: [:local_ratings])
+    result << @locals.as_json(methods: [:local_ratings])
     json_response(result)
   end
 
@@ -30,14 +30,22 @@ class LocalsController < ApplicationController
 
   # GET /local/:id/rating
   def show_rating
-    rating = Local.find_local_ratings(params[:id_local])
-    local = Local.find(params[:id_local])
+    @rating = Local.find_local_ratings(params[:id_local])
+    @local = Local.find(params[:id_local])
     json_response(locals: local, rating: rating)
   end
 
   private
 
   def local_params
-    params.permit(:name, :category_id, :description, :latitude, :longitude, :address, :telephone)
+    params.permit(
+      :name,
+      :category_id,
+      :description,
+      :latitude,
+      :longitude,
+      :address,
+      :telephone
+    )
   end
 end
