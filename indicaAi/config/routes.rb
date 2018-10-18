@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/locals/name/:name', to: 'locals#search_locals'
   get '/users', to: 'user_identifiers#index'
   get '/user/favorites/:user_id', to: 'user_identifiers#list_favorites'
+  get '/categories', to: 'categories#index'
+  get '/category/locals/:category_id', to: 'categories#list_locals'
 
   # Post Requests
   post '/favorite/create', to: 'favorite_locals#create', :defaults => { :format => 'json' }
