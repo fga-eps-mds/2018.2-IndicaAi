@@ -22,7 +22,7 @@ RSpec.describe Local, type: :model do
   it 'Testing Show Unique Place - Should return the local associate to id' do
     local = create(:local)
     local.name = 'Name'
-    local.save()
+    local.save
     result = Local.show_unique_place(local.id)
     assert result, local
   end

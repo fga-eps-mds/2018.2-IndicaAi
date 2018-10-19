@@ -26,7 +26,7 @@ class LocalsController < ApplicationController
   end
 
   # GET /local/:id
-  def show_unique_place
+  def show_place
     unique_local = Local.show_unique_place(params[:local_id])
     json_response(unique_local)
   end
