@@ -46,6 +46,16 @@
      "maintainability": true,
      "styleSheet": true,
      "sprintCommits": true,
+   }
+   {
+     "number": "8",
+     "coverage": true,
+     "complexity": true,
+     "numberPairing": true,
+     "duplication": true,
+     "maintainability": true,
+     "styleSheet": true,
+     "sprintCommits": true,
      "class": "active in"
    }
 ]
