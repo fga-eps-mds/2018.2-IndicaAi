@@ -13,6 +13,10 @@ RSpec.describe LocalsController, type: :controller do
       should route(:get, '/locals/name/x').to(action: :search_locals, name: 'x')
     end
   end
-
-  it { should route(:get, '/local/1').to(action: :show_place, local_id: '1') }
+  context 'GET #show_place' do
+    let!(:local) { create(:local, name: 'Some name') }
+    it 'Should route local/1 to the corresponding action' do
+      should route(:get, '/local/1').to(action: :show_place, local_id: '1')
+    end
+  end
 end
