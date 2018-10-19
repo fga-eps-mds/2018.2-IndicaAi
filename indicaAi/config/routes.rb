@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   # Get Requests
   get '/locals', to: 'locals#index'
   get '/locals/name/:name', to: 'locals#search_locals'
-  get '/users', to: 'user_identifiers#index'
+  get 'local/:id', to: 'locals#show_unique_place'
   get '/local/favorites/:local_id', to: 'locals#list_favorites'
+  get '/users', to: 'user_identifiers#index'
   get '/user/favorites/:user_id', to: 'user_identifiers#list_favorites'
 
   # Post Requests
