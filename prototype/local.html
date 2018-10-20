@@ -14,7 +14,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro"/>
     <script src="rating-stars.js"></script>
 
   </head>
@@ -22,19 +21,22 @@
   <body>
 
     <nav class="navbar-fixed-top">
-      <div class="topbox">Buscar local</div>
+      <div class="topbox">
+        <a href="favoritos.html"><img class="backIcon" src="assets/img/backIcon.png"></a>
+        <span id="screen-title">Buscar local</span>
+      </div>
       <div class="apps-bar">
-          <img src="assets/img/app.jpg">
+          <img src="assets/img/navbarIndicaAi.png">
         </div>
         <div style="margin-top: -1px"></div>
         <div class="tab">
-          <a href="index.html"><button>Buscar local</button></a>
-          <a href="cadastro.html"><button>Cadastrar</button></a>
-          <a href="favoritos.html"><button>Locais favoritos</button></a>
+          <a href="index.html"><button id="btnNav" >Buscar local</button></a>
+          <a href="cadastro.html"><button id="btnNav" >Cadastrar</button></a>
+          <a href="favoritos.html"><button id="btnNav-select">Locais favoritos</button></a>
         </div>
       </nav>
 
-    <div style="margin-top: 110px;"></div>
+    <div  class="body-local"></div>
 
     <div class="foto-local">
      <img src="assets/img/fga.jpg">
@@ -47,26 +49,25 @@
         <div class="panel-body">
           <div class="local-title"><h4>Universidade de Brasília - Faculdade do Gama [FGA]</h4></div>
           <div class="heart">
-              <i style="width: 10px" class="far fa-heart icon-favorito"></i style="width: 10px">
+              <i style="width: 10px" id = "icon" class="far fa-heart icon-favorito"></i style="width: 10px">
           </div>
-          <div> 
+          <div>
             <h5>Avaliação:</h5>
             <a href="javascript:void(0)" onclick="Avaliar(1)">
-              <img src="assets/img/star0.png" id="s1" style="width:20px;height:20px;"></a>
-    
-              <a href="javascript:void(0)" onclick="Avaliar(2)">
-              <img src="assets/img/star0.png" id="s2" style="width:20px;height:20px;"></a>
-    
-              <a href="javascript:void(0)" onclick="Avaliar(3)">
-              <img src="assets/img/star0.png" id="s3" style="width:20px;height:20px;"></a>
-    
-              <a href="javascript:void(0)" onclick="Avaliar(4)">
-              <img src="assets/img/star0.png" id="s4" style="width:20px;height:20px;"></a>
-    
-              <a href="javascript:void(0)" onclick="Avaliar(5)">
-              <img src="assets/img/star0.png" id="s5" style="width:20px;height:20px;"></a>
-              
-              <!--p id="rating">0</p-->
+            <img src="assets/img/star0.png" id="s1" style="width:20px;height:20px;"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(2)">
+            <img src="assets/img/star0.png" id="s2" style="width:20px;height:20px;"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(3)">
+            <img src="assets/img/star0.png" id="s3" style="width:20px;height:20px;"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(4)">
+            <img src="assets/img/star0.png" id="s4" style="width:20px;height:20px;"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(5)">
+            <img src="assets/img/star0.png" id="s5" style="width:20px;height:20px;"></a>
+
           </div>
           <hr>
           <div class = "fga-img"><img src = "assets/img/map-fga.png"></div>
@@ -76,8 +77,8 @@
           <hr>
           <h5>Informações:</h5>
           <div class="glyphicon glyphicon-earphone"> (61) 4002-8922</div>
-          <div class = "glyphicon glyphicon-map-marker"> 
-            Qd 90 LT.99 Setor Industria 
+          <div class = "glyphicon glyphicon-map-marker">
+            Qd 90 LT.99 Setor Industria
           </div>
           <div class = "glyphicon glyphicon-time"> 6:00h - 22:00h</div>
           <hr>
@@ -87,4 +88,10 @@
       </div>
     <div style="margin-bottom: -19px;"></div>
   </body>
+  <script type="text/javascript">
+    document.querySelector("#icon").addEventListener("click", changeIcon);
+    function changeIcon(){
+          document.querySelector(".heart").innerHTML = `<span class="glyphicon">&#xe005;</span>`
+    }
+  </script>
 </html>

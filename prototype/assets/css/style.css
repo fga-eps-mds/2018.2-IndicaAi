@@ -1,18 +1,43 @@
-/*
-Template Name: DASHGUM FREE - Bootstrap 3.2 Admin Theme
-Template Version: 1.0
-Author: Carlos Alvarez
-Website: http://blacktie.co
-Premium: http://www.gridgum.com
-*/
-
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
 /* BASIC THEME CONFIGURATION */
+
+
+#animate {
+  top: 150px;
+  text-align: center;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  background-color: rgba(10,23,55,0.5);
+  color: #fff;
+}
+
+
+.form-group{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.backIcon{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#btnNav-select{
+  border-bottom: 3px solid #0AACCC;
+  width: 33%;
+}
+
+#btnNav{
+  width: 33%;
+}
+
 body {
     background-color: #005565;
-	  background: #f2f2f2;
+	  background: #e5e5e5;
     font-family: 'Maven Pro';
     padding: 0px !important;
     margin: 0px !important;
@@ -50,12 +75,25 @@ a, a:hover, a:focus {
 }
 
 .topbox{
-  height: 32px;
+  height: 60px;
   background-color: #0AACCC;
   text-align:center;
   color: #fff;
   font-size: 14;
   padding-top: 7px;
+}
+
+.body-search{
+  margin-top: 85px;
+}
+
+.body-local{
+  margin-top: 150px;
+}
+
+#screen-title{
+  font-size: 20px;
+  color: #fff;
 }
 
 .apps-bar img{
@@ -65,16 +103,28 @@ a, a:hover, a:focus {
 
 .list-group-item{
   margin-top: -8px;
-  margin-left: -7px;
-  margin-right: -7px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Style the tab */
 .tab {
-    background-color: #333;
+    background-color:  #fff;
+
     overflow: auto;
     white-space: nowrap;
-    background-color: #333;
+    box-shadow: 0 2px 6px grey;
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+     /* Trigger hasLayout */
+    width: 100%;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.tab::-webkit-scrollbar{
+  height: 0px;
 }
 
 /* Style the buttons inside the tab */
@@ -88,7 +138,7 @@ a, a:hover, a:focus {
     margin-bottom: 0px;
     transition: 0.3s;
     font-size: 11.4px;
-    color: #fff;
+    color: black;
 }
 
 .tab button:hover {
@@ -97,7 +147,7 @@ a, a:hover, a:focus {
 
 .foto-local img{
   width: 100%;
-  height: 160px;
+  height: 220px;
 
 }
 .fga-img img{
@@ -116,7 +166,7 @@ a, a:hover, a:focus {
 .local-title{
   width: 200px;
   height: 70px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .heart{
@@ -132,64 +182,73 @@ a, a:hover, a:focus {
 }
 
 .divulgacao{
-  height: 110px;
-  width: 100%;
-  background-color: #FFF;
-  border: 1px solid gray;
+  height: 300px;
+  background-color: #fff;
   border-radius: 5px;
-  padding: 12px;
-  padding-left: 15px;
+  padding: 0px;
+  border-radius: 5px;
   text-align: left;
-  color: black;
+  color: #171717;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .divulgacao .title{
-  height: 80px;
-  width: 190px;
-  font-size: 13px;
+  height: 100px;
+  width: 100%;
+  font-size: 20px;
 }
 
 .anuncio{
   margin-right: 140px;
   margin-top: 5px;
+  width: 65px;
   height: 15px;
-  weight: 20px;
+  font-weight: 20px;
   padding-left: 0.5px;
-  border: 1px solid #0AACCC;
+  border: 1px solid #000;
   border-radius: 6px;
-  color: #0AACCC;
+  color: #005565;
   font-size: 10.5px;
 
 }
 
+.avaliacao-anuncio{
+  float: right;
+}
+
 .divulgacao .foto img{
-  margin-top: -77px;
-  margin-left: 190px;
-  height: 70px;
-  width: 70px;
-  border: 1px solid gray;
-  border-radius: 35px;
+  width: 100%;
+  height: 220px;
 }
 
 #divBusca{
-  margin-left: -5px;
   background-color:#FFF;
-  border:solid 1px black;
-  border-radius:15px;
-  width:300px;
+  border-radius:5px;
   height: 35px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#buttonSearch{
+  border-radius:5px;
+  width:35;
+  height: 35px;
+  float: right;
+  padding: 9px;
 }
 
 #txtBusca{
-  float:left;
-  background-color:transparent;
-  padding-left:10px;
+  background-color: #005565;
   padding-right:10px;
   font-family: 'Maven Pro';
   font-size:18px;
   border:none;
   height:32px;
-  width:260px;
+  width:80%;
+  background: linear-gradient(to right, #0AACCC, #0AACCC) 5px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat;
 }
 
 .inicio {
@@ -197,12 +256,6 @@ a, a:hover, a:focus {
   width: 100%;
   background-color: #FFF;
   padding-top: 155px;
-}
-
-.inicio img{
-  margin-left: 12px;
-  height: 90px;
-  width: 300px;
 }
 
 .texto{
@@ -610,11 +663,9 @@ ul.sidebar-menu li a.active i {
 .wrapper {
     display: inline-block;
     margin-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 0px;
+    padding: 0px;
     width: 100%;
+    border-radius: 10px;
 }
 
 a.logo {
@@ -2176,7 +2227,7 @@ label {
 	border-radius: 5px;
 }
 
-.btn-indiaAi {
+.btn-indicaAi {
     color: #fff;
     background-color: #0aaccc;
 }
@@ -2478,4 +2529,15 @@ it doesn’t make the test unnecessarily selective */
 
 .icon-favorito:hover {
     color: #0AACCC !important;
+}
+
+#list-categoria{
+ width:250px;
+ margin-left: 0px;
+}
+
+
+#list-categoria option{
+  width:250px;
+  margin-left: 0px;
 }
