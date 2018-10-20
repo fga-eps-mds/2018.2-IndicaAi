@@ -23,10 +23,26 @@ RSpec.describe 'Local API', type: :request do
   describe 'GET /locals/name/:name' do
     # make HTTP get request before each example
     let!(:local) { create(:local, name: 'plaza') }
-    before { get '/locals/name/plaza' }
+    before { get "/locals/name/#{local.name}" }
     it 'return local by name' do
       expect(json).not_to be_empty
       expect(json[0][0]['name']).to eq('plaza')
+    end
+  end
+
+  describe 'GET /local/:id' do
+    # make HTTP get request before each example
+    let!(:local) { create(:local, name: 'plaza') }
+    before { get "/local/#{local.id}" }
+    it 'Should have status 200' do
+      expect(response).to have_http_status(200)
+    end
+  end
+
+  describe 'GET /local/:id' do
+    before { get '/local/1' }
+    it 'Should have status 404' do
+      expect(response).to have_http_status(404)
     end
   end
 end
