@@ -6,4 +6,8 @@ class Local < ApplicationRecord
   def self.find_by_name(params)
     Local.where('upper(name) like ?', "%#{params.upcase}%")
   end
+
+  def self.find_local_ratings(local_id)
+    Local.find(local_id).local_ratings
+  end  
 end

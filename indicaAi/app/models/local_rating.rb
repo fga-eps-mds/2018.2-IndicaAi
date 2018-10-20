@@ -11,7 +11,7 @@ class LocalRating < ApplicationRecord
     greater_than_or_equal_to: 0
   }
 
-  def self.find_local_rating(params)
+  def self.find_local_rating(_params)
     LocalRating.find(local_id).local_ratings
   end
 end

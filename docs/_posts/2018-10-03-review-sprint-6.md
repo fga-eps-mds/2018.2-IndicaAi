@@ -218,7 +218,7 @@ styleSheet: []
 maintainability: []
 
 feedback: [
-    "Nessa sprint a <b>parte da equipe evouluíu bastante em relação ao React</b>. Nas sprints seguintes o propósito será <b>compartilhar esse conhecimento</b>.",
+    "Nessa sprint a <b>parte da equipe evoluíu bastante em relação ao React</b>. Nas sprints seguintes o propósito será <b>compartilhar esse conhecimento</b>.",
     "Apesar da equipe evoluir em React, o <b>Redux continua sendo um obstáculo</b> para a equipe.",
     "Tendo a apresetação da primeira release no final dessa sprint, o ideal teria sido que ao final dessa sprint o <b>frontend já estivesse integrado com os outros grupos</b> e com os ambientes de homologação e produção funcionando. Contudo, <b>não foi possível realizar essa integração ainda nessa sprint</b> e esta deve ser uma tarefa priorizada para as próximas sprints.",
     "<b>A métrica relacionada a Commits terá que ser substituída ou repensada</b>, devido a dificuldade de coleta no frontend."
