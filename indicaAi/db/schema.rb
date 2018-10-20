@@ -46,7 +46,15 @@ ActiveRecord::Schema.define(version: 20181015191753) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-  
+
+  create_table "user_rates", force: :cascade do |t|
+    t.integer "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "favorite_locals", "locals"
+  add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "local_ratings", "locals"
   add_foreign_key "local_ratings", "user_identifiers"
 end
