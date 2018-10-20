@@ -18,30 +18,33 @@ RSpec.describe LocalRating, type: :model do
       rating.local = local
       assert rating.save == false
     end
-
-    it 'Must exist a local' do
-      user = UserIdentifier.create(identifier: 345)
-      user.save
-      rating = LocalRating.new
-      rating.value = 4
-      rating.user_identifier = user
-      assert rating.save == false
-    end
-
-    it 'Must exist a value' do
-      local = Local.create(name: 'Teste')
-      local.save
-      user = UserIdentifier.create(identifier: 345)
-      user.save
-      rating = LocalRating.new
-      rating.user_identifier = user
-      rating.local = local
-      assert rating.save == false
-    end
-    it { should belong_to(:user_identifier) }
-    it { should belong_to(:local) }
-    it { should validate_presence_of(:value) }
-    it { should validate_numericality_of(:value) }
-    it { should validate_numericality_of(:value).is_less_than_or_equal_to(5) }
   end
+end
+
+RSpec.describe LocalRating, type: :model do
+  it 'Must exist a local' do
+    user = UserIdentifier.create(identifier: 345)
+    user.save
+    rating = LocalRating.new
+    rating.value = 4
+    rating.user_identifier = user
+    assert rating.save == false
+  end
+
+  it 'Must exist a value' do
+    local = Local.create(name: 'Teste')
+    local.save
+    user = UserIdentifier.create(identifier: 345)
+    user.save
+    rating = LocalRating.new
+    rating.user_identifier = user
+    rating.local = local
+    assert rating.save == false
+  end
+
+  it { should belong_to(:user_identifier) }
+  it { should belong_to(:local) }
+  it { should validate_presence_of(:value) }
+  it { should validate_numericality_of(:value) }
+  it { should validate_numericality_of(:value).is_less_than_or_equal_to(5) }
 end
