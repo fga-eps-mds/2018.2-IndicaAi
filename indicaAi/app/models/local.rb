@@ -10,8 +10,4 @@ class Local < ApplicationRecord
   def self.find_local_ratings(local_id)
     Local.find(local_id).local_ratings
   end
-
-  def self.show_unique_place(local_id)
-    Local.find(local_id)
-  end
 end
