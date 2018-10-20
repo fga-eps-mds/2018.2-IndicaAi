@@ -29,7 +29,9 @@ RSpec.describe 'Local API', type: :request do
       expect(json[0][0]['name']).to eq('plaza')
     end
   end
+end
 
+RSpec.describe 'Local API 2', type: :request do
   describe 'GET /local/:id' do
     # make HTTP get request before each example
     let!(:local) { create(:local, name: 'plaza') }
