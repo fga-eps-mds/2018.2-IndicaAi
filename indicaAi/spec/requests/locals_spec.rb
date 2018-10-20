@@ -43,7 +43,7 @@ RSpec.describe 'Local API 2', type: :request do
 
   describe 'GET /local/:id' do
     before { get '/local/1' }
-    it 'Should have status 404' do
+    it 'Should have status 404 when id does not exist' do
       expect(response).to have_http_status(404)
     end
   end
