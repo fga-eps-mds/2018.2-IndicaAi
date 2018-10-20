@@ -24,6 +24,6 @@ RSpec.describe LocalsController, type: :controller do
   it { should route(:get, '/local/1').to(action: :show_place, local_id: '1') }
   it 'Should return status 404' do
     get :show_place, params: { 'local_id' => '45' }
-    expect(response.status).to eq(404)  
+    expect(response.status).to eq(404)
   end
 end
