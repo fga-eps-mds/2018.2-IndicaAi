@@ -18,12 +18,4 @@ RSpec.describe Local, type: :model do
     result = Local.find_local_ratings(id)
     assert result.first, nota
   end
-
-  it 'Testing Show Unique Place - Should return the local associate to id' do
-    local = create(:local)
-    local.name = 'Name'
-    local.save
-    result = Local.show_unique_place(local.id)
-    assert result, local
-  end
 end
