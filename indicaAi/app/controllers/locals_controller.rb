@@ -17,7 +17,7 @@ class LocalsController < ApplicationController
     result << locals.as_json(methods: [:local_ratings])
     json_response(result)
   end
-  
+
   # GET /local/:id
   def show_place
     unique_local = Local.find(params[:local_id])
