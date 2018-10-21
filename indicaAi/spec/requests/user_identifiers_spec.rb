@@ -26,8 +26,8 @@ RSpec.describe 'Local API', type: :request do
   let!(:favorites) do
     create_list(:favorite_local, 10, user_identifier: users.first)
   end
-  describe 'GET /user/favorites/:user_id' do
-    before { get "/user/favorites/#{user_id}" }
+  describe 'GET /users/:id/favorites' do
+    before { get "/users/#{user_id}/favorites" }
     it 'return favorites by user in json' do
       expect(json).not_to be_empty
       json.each do |item|

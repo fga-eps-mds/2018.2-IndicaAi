@@ -8,7 +8,7 @@ class UserIdentifiersController < ApplicationController
 
   # list all favorites of user
   def list_favorites
-    @favorites = UserIdentifier.find_favorites(params[:user_id])
+    @favorites = UserIdentifier.find_favorites(params[:id])
     json_response(@favorites)
   end
 end

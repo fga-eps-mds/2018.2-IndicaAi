@@ -18,7 +18,7 @@ RSpec.describe CategoriesController, type: :controller do
   let!(:locals_test) { create_list(:local, 10, category: category_test) }
   describe 'GET list_locals' do
     it 'should returns list of locals' do
-      get :list_locals, params: { category_id: category_test.id }
+      get :list_locals, params: { id: category_test.id }
 
       expect(response).to be_success
       assert assigns(:locals) == locals_test

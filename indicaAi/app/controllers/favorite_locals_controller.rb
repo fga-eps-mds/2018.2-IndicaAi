@@ -10,7 +10,7 @@ class FavoriteLocalsController < ApplicationController
     end
   end
 
-  # Patch /favorites/update/:id
+  # Put /favorites/update/:id
   def update
     @favorite = FavoriteLocal.find_by_id(params[:id])
 

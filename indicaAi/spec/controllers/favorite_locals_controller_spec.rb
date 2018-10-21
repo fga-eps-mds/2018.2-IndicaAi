@@ -39,8 +39,8 @@ RSpec.describe FavoriteLocalsController, type: :controller do
       'user_identifier_id' => user_test.id
     }
   end
-  describe 'Patch update' do
-    before { patch :update, params: valid_params }
+  describe 'Put update' do
+    before { put :update, params: valid_params }
     it 'should returns success updated favorite_test' do
       expect(response).to be_success
       expect(assigns(:favorite)).to have_attributes valid_params

@@ -18,8 +18,8 @@ end
 RSpec.describe 'Category list_locals', type: :request do
   let!(:category_test) { create(:category) }
   let!(:locals_test) { create_list(:local, 10, category: category_test) }
-  describe 'GET /category/locals/:category_id' do
-    before { get "/category/locals/#{category_test.id}" }
+  describe 'GET /categories/:id/locals' do
+    before { get "/categories/#{category_test.id}/locals" }
     it 'should returns locals of the category' do
       expect(json).not_to be_empty
       expect(json.size).to eq(10)

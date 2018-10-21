@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
 
   # list all locals of category
   def list_locals
-    @locals = Category.find_by_id(params[:category_id]).locals
+    @locals = Category.find_by_id(params[:id]).locals
     json_response(@locals)
   end
 end
