@@ -20,7 +20,6 @@ RSpec.describe 'Category search_categories', type: :request do
   describe 'GET /categories/name/:name' do
     before { get "/categories/name/#{category_test.name}" }
     it 'returns category' do
-      p json
       expect(json[0][0]['name']).to eq(category_test.name)
     end
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181018030921) do
+ActiveRecord::Schema.define(version: 20181022015634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,16 @@ ActiveRecord::Schema.define(version: 20181018030921) do
     t.string "address"
     t.string "telephone"
     t.index ["category_id"], name: "index_locals_on_category_id"
+  end
+
+  create_table "opening_hours", force: :cascade do |t|
+    t.bigint "local_id"
+    t.integer "day"
+    t.time "opens"
+    t.time "closes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["local_id"], name: "index_opening_hours_on_local_id"
   end
 
   create_table "user_identifiers", force: :cascade do |t|

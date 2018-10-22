@@ -1,6 +1,7 @@
 # Description of Places Class
 class Local < ApplicationRecord
   has_many :local_ratings
+  has_many :opening_hours
   belongs_to :category
   validates :name, presence: true, length: { minimum: 2 }
   validates :category, presence: true
