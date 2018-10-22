@@ -15,6 +15,35 @@ RSpec.describe 'Category index', type: :request do
   end
 end
 
+RSpec.describe 'Category search_categories', type: :request do
+  let!(:category_test) { create(:category) }
+  describe 'GET /categories/name/:name' do
+    before { get "/categories/name/#{category_test.name}" }
+    it 'returns category' do
+      p json
+      expect(json[0][0]['name']).to eq(category_test.name)
+    end
+
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
+    end
+  end
+end
+
+RSpec.describe 'Category show_category', type: :request do
+  let!(:category_test) { create(:category) }
+  describe 'GET /categories/:id' do
+    before { get "/categories/#{category_test.id}" }
+    it 'returns category' do
+      expect(json[0]['name']).to eq(category_test.name)
+    end
+
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
+    end
+  end
+end
+
 RSpec.describe 'Category list_locals', type: :request do
   let!(:category_test) { create(:category) }
   let!(:locals_test) { create_list(:local, 10, category: category_test) }

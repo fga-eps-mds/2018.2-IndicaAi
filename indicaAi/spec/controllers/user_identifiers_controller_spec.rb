@@ -15,6 +15,18 @@ RSpec.describe UserIdentifiersController, type: :controller do
     end
   end
 end
+
+RSpec.describe UserIdentifiersController, type: :controller do
+  let!(:user_test) { create(:user_identifier) }
+  describe 'GET show_user' do
+    before { get :show_user, params: {id: user_test.id} }
+    it 'should returns user' do
+      expect(response).to be_success
+      assert assigns(:user) == user_test
+    end
+  end
+end
+
 RSpec.describe UserIdentifiersController, type: :controller do
   let!(:users_test) { create_list(:user_identifier, 10) }
   let!(:user) { users_test.first }

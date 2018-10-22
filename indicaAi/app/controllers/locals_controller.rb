@@ -32,7 +32,7 @@ class LocalsController < ApplicationController
   def show_ratings
     @ratings = Local.find_local_ratings(params[:id_local])
     @local = Local.find(params[:id_local])
-    json_response(locals: local, rating: rating)
+    json_response(local: @local, ratings: @ratings)
   end
 
   private
