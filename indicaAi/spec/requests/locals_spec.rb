@@ -40,11 +40,11 @@ RSpec.describe 'Local API', type: :request do
       'description' => Faker::Friends.quote,
       'latitude' => Faker::Number.decimal(2, 8).to_f,
       'longitude' => Faker::Number.decimal(2, 8).to_f,
-      "opening_hours": [
+      'opening_hours' => [
         {
-          "day": 7,
-          "opens": '15:30',
-          "closes": '16:00'
+          'day' => 7,
+          'opens' => '15:30',
+          'closes' => '16:00'
         }
       ]
     }
