@@ -16,7 +16,7 @@ end
 RSpec.describe CategoriesController, type: :controller do
   let!(:category_test) { create(:category) }
   describe 'GET search categories' do
-    before { get :search_categories, params: {name: category_test.name} }
+    before { get :search_categories, params: { name: category_test.name } }
     it 'should returns categories' do
       expect(response).to be_success
       assert assigns(:categories)[0] == category_test
@@ -24,11 +24,10 @@ RSpec.describe CategoriesController, type: :controller do
   end
 end
 
-
 RSpec.describe CategoriesController, type: :controller do
   let!(:category_test) { create(:category) }
   describe 'GET show_category' do
-    before { get :show_category, params: {id: category_test.id} }
+    before { get :show_category, params: { id: category_test.id } }
     it 'should returns category' do
       expect(response).to be_success
       assert assigns(:category) == category_test
