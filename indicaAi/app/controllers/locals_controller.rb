@@ -24,9 +24,7 @@ class LocalsController < ApplicationController
     if @local.save
       result = []
       # if local is created, then create tables in bd with opening hours
-      Array(params['opening_hours']).each do |item|
-        @opening_hour = OpeningHour.create(opening_hour_params(item))
-      end
+      create_opening_hours
       result << @local.as_json(methods: [:opening_hours])
       response_success('SUCCESS', 'Saved Local', result, 200)
     else
@@ -53,6 +51,12 @@ class LocalsController < ApplicationController
       :address,
       :telephone
     )
+  end
+
+  def create_opening_hours
+    Array(params['opening_hours']).each do |item|
+      @opening_hour = OpeningHour.create(opening_hour_params(item))
+    end
   end
 
   def opening_hour_params(params)

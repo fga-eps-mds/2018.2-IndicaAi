@@ -8,14 +8,13 @@ class OpeningHour < ApplicationRecord
   validate :opens_before_closes
 
   # sample validation for better user feedback
-  validates_uniqueness_of :opens, scope: [:local_id, :day]
-  validates_uniqueness_of :closes, scope: [:local_id, :day]
+  validates_uniqueness_of :opens, scope: %i[local_id day]
+  validates_uniqueness_of :closes, scope: %i[local_id day]
 
   protected
-  
+
   def opens_before_closes
-    if opens && closes && opens >= closes
-      errors.add(:closes, I18n.t('errors.opens_before_closes'))
-    end
+    return unless opens && closes && opens >= closes
+    errors.add(:closes, I18n.t('errors.opens_before_closes'))
   end
 end
