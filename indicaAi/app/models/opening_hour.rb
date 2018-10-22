@@ -1,8 +1,10 @@
+# model of Opening Hours to Locals
 class OpeningHour < ApplicationRecord
   belongs_to :local
 
   validates_presence_of :day, :closes, :opens, :local_id
-  validates_inclusion_of :day, :in => 1..7
+  validates_numericality_of :day, less_than_or_equal_to: 7
+  validates_numericality_of :day, greater_than_or_equal_to: 1
   validate :opens_before_closes
 
   # sample validation for better user feedback
@@ -10,7 +12,10 @@ class OpeningHour < ApplicationRecord
   validates_uniqueness_of :closes, scope: [:local_id, :day]
 
   protected
+  
   def opens_before_closes
-    errors.add(:closes, I18n.t('errors.opens_before_closes')) if opens && closes && opens >= closes
+    if opens && closes && opens >= closes
+      errors.add(:closes, I18n.t('errors.opens_before_closes'))
+    end
   end
 end

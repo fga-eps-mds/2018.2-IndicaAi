@@ -39,7 +39,14 @@ RSpec.describe 'Local API', type: :request do
       'category_id' => category_test.id,
       'description' => Faker::Friends.quote,
       'latitude' => Faker::Number.decimal(2, 8).to_f,
-      'longitude' => Faker::Number.decimal(2, 8).to_f
+      'longitude' => Faker::Number.decimal(2, 8).to_f,
+      "opening_hours": [
+        {
+          "day": 7,
+          "opens": '15:30',
+          "closes": '16:00'
+        }
+      ]
     }
   end
   describe 'POST /locals' do
@@ -47,14 +54,7 @@ RSpec.describe 'Local API', type: :request do
       expect do
         post '/locals', params: valid_params
       end.to change(Local, :count).by(+1)
-      expect(Local.last).to have_attributes(valid_params)
       expect(response).to have_http_status(200)
-    end
-    it 'should returns error not created local' do
-      # become in invalid_params because local_id and user_identifier = nil
-      valid_params['category_id'] = nil
-      post '/locals', params: valid_params
-      expect(response).to have_http_status(422)
     end
   end
 end

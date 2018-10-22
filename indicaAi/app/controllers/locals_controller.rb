@@ -22,7 +22,13 @@ class LocalsController < ApplicationController
   def create
     @local = Local.new(local_params)
     if @local.save
-      response_success('SUCCESS', 'Saved Local', @local, 200)
+      result = []
+      # if local is created, then create tables in bd with opening hours
+      Array(params['opening_hours']).each do |item|
+        @opening_hour = OpeningHour.create(opening_hour_params(item))
+      end
+      result << @local.as_json(methods: [:opening_hours])
+      response_success('SUCCESS', 'Saved Local', result, 200)
     else
       response_error('ERROR', 'Local not saved', 422)
     end
@@ -47,5 +53,14 @@ class LocalsController < ApplicationController
       :address,
       :telephone
     )
+  end
+
+  def opening_hour_params(params)
+    {
+      local_id: @local.id,
+      day: params[:day],
+      opens: params[:opens],
+      closes: params[:closes]
+    }
   end
 end
