@@ -10,4 +10,15 @@ RSpec.describe OpeningHour, type: :model do
     it { should validate_numericality_of(:day).is_greater_than_or_equal_to(1) }
     it { should validate_numericality_of(:day).is_less_than_or_equal_to(7) }
   end
+
+  describe 'testing validations' do
+    let!(:category_test) { create(:category) }
+    let!(:local_test) { create(:local, category_id: category_test.id) }
+    it 'should returns error if opens >= closes' do
+      time = OpeningHour.new(
+        local: local_test, day: 1, opens: '10:00', closes: '09:00'
+      )
+      expect(time.valid?).to be_falsey
+    end
+  end
 end

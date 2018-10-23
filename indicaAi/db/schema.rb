@@ -54,8 +54,8 @@ ActiveRecord::Schema.define(version: 20181022015634) do
   create_table "opening_hours", force: :cascade do |t|
     t.bigint "local_id"
     t.integer "day"
-    t.time "opens"
-    t.time "closes"
+    t.string "opens"
+    t.string "closes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["local_id"], name: "index_opening_hours_on_local_id"
