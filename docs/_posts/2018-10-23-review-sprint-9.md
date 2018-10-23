@@ -1,8 +1,8 @@
 ---
-layout: planning
-title:  "Sprint 09 - Planning"
-date:   2018-10-16 09:50:39
-categories: sprint-planning
+layout: review
+title:  "Sprint 09 - Review"
+date:   2018-10-23 09:50:39
+categories: sprint-review
 
 sprint: 9
 previousSprint: 8
@@ -116,6 +116,35 @@ presence : [
         name: Weiller Fernandes,
         presence: true
     }
+]
+
+positives: [
+    "Script com a descrição para o papel de Scrum Master, TOP!",
+    "Resolvido problemas com implementação do Redux"
+]
+
+negatives: [
+    "Sem entrega contínua",
+    "Não foram realizados pareamentos planejados",
+    "Sprint estranha, feriado mais atrapalhou do que ajudou",
+    "Planning na quarta(1º dia da sprint) atrasa a resolução das issues"
+]
+
+improvements: [
+    "Reunião aos sabados para sanar dificuldades e melhorar o aproveitamento da equipe."
+]
+
+
+burndown: [
+    "Essa sprint <b>não ocorreu entrega contínua</b>.",
+    "A equipe conseguiu <b>entregar a issue de Refatorar Buscar local(Frontend)</b> que ja vinha de débito da sprint 7. Dificuldade com a <b>implementação do Redux no problema de uso da variavel 'locals'</b>, para uma melhor mantenabilidade do código, foi a principal causa para a demora na conclusão da issue.",
+    "Configurar/Integrar testes no frontend foi mais uma issue que estava como débito e <b>também foi entregue</b>. A equipe conseguiu se <b>adaptar às tecnologias</b> para resolver a tarefa.",
+    "A descrição das issues foi iniciada porém foi visto que era necessário <b>quebrar o backlog em issues menores</b>, então não foi possivel concluir a issue.",
+    "O time evoluiu bastante em relação aos testes, porém ainda há algumas dificuldades. <b>A issue Adicionar rota para avaliar local ficou faltando teste de request</b>, ficará como debito para proxíma sprint.",
+]
+
+velocity: [
+    "Nessa sprint a equipe não conseguiu resolver todas as issues planejadas e o velocity caiu para 22,5. A equipe entregou as issues que vinham como débito porém devido aos problemas com pareamento, teste e em quebrar o backlog, duas issue ficarão como débito."
 ]
 
 pairing: []
