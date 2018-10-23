@@ -126,6 +126,7 @@ presence : [
 ]
 
 positives: [
+<<<<<<< HEAD:docs/_posts/2018-10-23-review-sprint-9.md
     "Reunião no sábado foi produtiva"
 ]
 
@@ -138,6 +139,21 @@ negatives: [
 
 improvements: [
     "Tentar fazer pareamento online em casos extremos."
+=======
+    "Script com a descrição para o papel de Scrum Master, TOP!",
+    "Resolvido problemas com implementação do Redux"
+]
+
+negatives: [
+    "Sem entrega contínua",
+    "Não foram realizados pareamentos planejados",
+    "Sprint estranha, feriado mais atrapalhou do que ajudou",
+    "Planning na quarta(1º dia da sprint) atrasa a resolução das issues"
+]
+
+improvements: [
+    "Reunião aos sabados para sanar dificuldades e melhorar o aproveitamento da equipe."
+>>>>>>> 89baf4c53fc87ca1a2ac566e20d6bf5f2e2eb737:docs/_posts/2018-10-23-review-sprint-9.md
 ]
 
 
