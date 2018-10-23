@@ -18,6 +18,7 @@ RSpec.describe OpeningHour, type: :model do
       time = OpeningHour.new(
         local: local_test, day: 1, opens: '10:00', closes: '09:00'
       )
+      time.save
       expect(time.valid?).to be_falsey
     end
   end
