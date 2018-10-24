@@ -4,5 +4,9 @@ FactoryBot.define do
     name { Faker::Friends.location }
     # generates quotations from 'Friends'
     description { Faker::Friends.quote }
+    latitude { Faker::Number.decimal(2, 8) }
+    longitude { Faker::Number.decimal(2, 8) }
+    address { Faker::Address.street_address }
+    telephone { Faker::PhoneNumber.cell_phone }
   end
 end

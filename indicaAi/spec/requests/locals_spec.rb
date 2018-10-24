@@ -31,18 +31,46 @@ RSpec.describe 'Local API', type: :request do
   end
 end
 
+RSpec.describe 'Local API', type: :request do
+  let!(:category_test) { create(:category) }
+  let!(:valid_params) do
+    {
+      'name' => Faker::Friends.location,
+      'description' => Faker::Friends.quote,
+      'latitude' => Faker::Number.decimal(2, 8).to_f,
+      'longitude' => Faker::Number.decimal(2, 8).to_f,
+      'opening_hours' => [
+        {
+          'day' => 7,
+          'opens' => '15:30',
+          'closes' => '16:00'
+        }
+      ],
+      'categories' => [{ 'category_id' => category_test.id }]
+    }
+  end
+  describe 'POST /locals' do
+    it 'should returns success created local' do
+      expect do
+        post '/locals', params: valid_params
+      end.to change(Local, :count).by(+1)
+      expect(response).to have_http_status(200)
+    end
+  end
+end
+
 RSpec.describe 'Local API 2', type: :request do
-  describe 'GET /local/:id' do
+  describe 'GET /locals/:id' do
     # make HTTP get request before each example
     let!(:local) { create(:local, name: 'plaza') }
-    before { get "/local/#{local.id}" }
+    before { get "/locals/#{local.id}" }
     it 'Should have status 200' do
       expect(response).to have_http_status(200)
     end
   end
 
-  describe 'GET /local/:id' do
-    before { get '/local/1' }
+  describe 'GET /locals/:id' do
+    before { get '/locals/1' }
     it 'Should have status 404 when id does not exist' do
       expect(response).to have_http_status(404)
     end

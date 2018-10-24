@@ -15,6 +15,18 @@ RSpec.describe UserIdentifiersController, type: :controller do
     end
   end
 end
+
+RSpec.describe UserIdentifiersController, type: :controller do
+  let!(:user_test) { create(:user_identifier) }
+  describe 'GET show_user' do
+    before { get :show_user, params: { id: user_test.id } }
+    it 'should returns user' do
+      expect(response).to be_success
+      assert assigns(:user) == user_test
+    end
+  end
+end
+
 RSpec.describe UserIdentifiersController, type: :controller do
   let!(:users_test) { create_list(:user_identifier, 10) }
   let!(:user) { users_test.first }
@@ -23,11 +35,11 @@ RSpec.describe UserIdentifiersController, type: :controller do
   end
   describe 'GET list_favorites' do
     it 'should returns list of favorites to assign @favorites ' do
-      get :list_favorites, params: { user_id: user.id }
+      get :list_favorites, params: { id: user.id }
       should route(
-        :get, "/user/favorites/#{user.id}"
+        :get, "/users/#{user.id}/favorites"
       ).to(
-        action: :list_favorites, user_id: user.id
+        action: :list_favorites, id: user.id
       )
       expect(response).to be_success
       assert assigns(:favorites) == favorites_test

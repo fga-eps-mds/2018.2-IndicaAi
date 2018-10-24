@@ -10,7 +10,7 @@ class FavoriteLocalsController < ApplicationController
     end
   end
 
-  # Patch /favorites/update/:id
+  # Put /favorites/update/:id
   def update
     @favorite = FavoriteLocal.find_by_id(params[:id])
 
@@ -39,6 +39,6 @@ class FavoriteLocalsController < ApplicationController
   private
 
   def favorite_params
-    params.permit(:user_identifier_id, :local_id, :label, :body)
+    params.permit(:user_identifier_id, :local_id)
   end
 end
