@@ -12,8 +12,7 @@ RSpec.describe OpeningHour, type: :model do
   end
 
   describe 'testing validations' do
-    let!(:category_test) { create(:category) }
-    let!(:local_test) { create(:local, category_id: category_test.id) }
+    let!(:local_test) { create(:local) }
     it 'should returns error if opens >= closes' do
       time = OpeningHour.new(
         local: local_test, day: 1, opens: '10:00', closes: '09:00'

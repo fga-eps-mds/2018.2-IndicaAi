@@ -48,12 +48,12 @@ RSpec.describe LocalsController, type: :controller do
       post :create, params: valid_params
 
       expect(response).to be_success
-      expect(assigns(:local)).to have_attributes(valid_params)
+      expect(assigns(:local).name).to eq(valid_params['name'])
       expect(assigns(:local)).to be_persisted
     end
     it 'should not returns success saved local' do
       # local.id invalid
-      valid_params['category_id'] = nil
+      valid_params['name'] = nil
       post :create, params: valid_params
 
       expect(response).not_to be_success

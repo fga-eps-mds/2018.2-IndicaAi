@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181023022534) do
+ActiveRecord::Schema.define(version: 20181024041749) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20181023022534) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "category_and_locals", force: :cascade do |t|
+    t.bigint "category_id"
+    t.bigint "local_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_category_and_locals_on_category_id"
+    t.index ["local_id"], name: "index_category_and_locals_on_local_id"
   end
 
   create_table "favorite_locals", force: :cascade do |t|
@@ -41,9 +50,11 @@ ActiveRecord::Schema.define(version: 20181023022534) do
   create_table "local_ratings", force: :cascade do |t|
     t.integer "value"
     t.bigint "local_id"
+    t.bigint "user_identifier_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["local_id"], name: "index_local_ratings_on_local_id"
+    t.index ["user_identifier_id"], name: "index_local_ratings_on_user_identifier_id"
   end
 
   create_table "locals", force: :cascade do |t|
@@ -51,12 +62,10 @@ ActiveRecord::Schema.define(version: 20181023022534) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "category_id"
     t.float "latitude"
     t.float "longitude"
     t.string "address"
     t.string "telephone"
-    t.index ["category_id"], name: "index_locals_on_category_id"
   end
 
   create_table "opening_hours", force: :cascade do |t|
@@ -75,9 +84,11 @@ ActiveRecord::Schema.define(version: 20181023022534) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "category_and_locals", "categories"
+  add_foreign_key "category_and_locals", "locals"
   add_foreign_key "favorite_locals", "locals"
   add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "image_locals", "locals"
   add_foreign_key "local_ratings", "locals"
-  add_foreign_key "locals", "categories"
+  add_foreign_key "local_ratings", "user_identifiers"
 end

@@ -2,9 +2,9 @@
 class Local < ApplicationRecord
   has_many :local_ratings
   has_many :opening_hours
-  belongs_to :category
+  has_many :category_and_locals
+  has_many :categories, through: :category_and_locals
   validates :name, presence: true, length: { minimum: 2 }
-  validates :category, presence: true
   validates :latitude, presence: true, numericality: {
     greater_than_or_equal: 0, less_than_or_equal: 100
   }

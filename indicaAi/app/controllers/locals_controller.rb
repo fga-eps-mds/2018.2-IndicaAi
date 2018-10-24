@@ -23,9 +23,13 @@ class LocalsController < ApplicationController
     @local = Local.new(local_params)
     if @local.save
       result = []
-      # if local is created, then create tables in bd with opening hours
+      # create relationship between category and local
+      if Category.exists?(params[:category_id])
+        create_relationship_category_and_local(params)
+      end
+      # create tables in bd with opening hours
       create_opening_hours
-      result << @local.as_json(methods: [:opening_hours])
+      result << @local.as_json(methods: [:opening_hours, :categories])
       response_success('SUCCESS', 'Saved Local', result, 200)
     else
       response_error('ERROR', 'Local not saved', 422)
@@ -47,10 +51,19 @@ class LocalsController < ApplicationController
 
   private
 
+  def create_relationship_category_and_local(params)
+    @relationship= CategoryAndLocal.create(category_and_local_params(params))
+  end
+
+  def create_opening_hours
+    Array(params['opening_hours']).each do |item|
+      @opening_hour = OpeningHour.create(opening_hour_params(item))
+    end
+  end
+
   def local_params
     params.permit(
       :name,
-      :category_id,
       :description,
       :latitude,
       :longitude,
@@ -59,10 +72,11 @@ class LocalsController < ApplicationController
     )
   end
 
-  def create_opening_hours
-    Array(params['opening_hours']).each do |item|
-      @opening_hour = OpeningHour.create(opening_hour_params(item))
-    end
+  def category_and_local_params(params)
+    {
+      category_id: params[:category_id],
+      local_id: @local.id
+    }
   end
 
   def opening_hour_params(params)

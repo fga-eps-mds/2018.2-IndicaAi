@@ -37,14 +37,18 @@ end
 
 RSpec.describe CategoriesController, type: :controller do
   let!(:category_test) { create(:category) }
-  let!(:locals_test) { create_list(:local, 10, category: category_test) }
+  let!(:local_test) { create(:local) }
+  let!(:category_local) { create(:category_and_local,
+    category: category_test,
+    local: local_test) 
+  }
   describe 'GET list_locals' do
     it 'should returns list of locals' do
       get :list_locals, params: { id: category_test.id }
 
       expect(response).to be_success
-      assert assigns(:locals) == locals_test
-      expect(assigns(:locals).length).to eq(10)
+      assert assigns(:locals).first == local_test
+      expect(assigns(:locals).length).to eq(1)
       expect(assigns(:locals)).not_to be_empty
     end
   end
