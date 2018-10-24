@@ -39,6 +39,12 @@ class LocalsController < ApplicationController
     json_response(local: @local, ratings: @ratings)
   end
 
+  # GET /local/:id
+  def show_place
+    unique_local = Local.find(params[:local_id])
+    json_response(unique_local)
+  end
+
   private
 
   def local_params

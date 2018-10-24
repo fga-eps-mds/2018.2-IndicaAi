@@ -3,7 +3,7 @@ class CreateLocalRatings < ActiveRecord::Migration[5.1]
     create_table :local_ratings do |t|
       t.integer :value
       t.references :local, foreign_key: true
-
+      t.references :user_identifier, foreign_key: true
       t.timestamps
     end
   end

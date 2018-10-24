@@ -13,6 +13,21 @@ RSpec.describe LocalsController, type: :controller do
       should route(:get, '/locals/name/x').to(action: :search_locals, name: 'x')
     end
   end
+
+  context 'GET #show_place' do
+    let!(:local) { create(:local, name: 'Some name') }
+    it 'Should route local/local_id to the corresponding action' do
+      get :show_place, params: { 'local_id' => local.id }
+      # p response
+      # p local
+      # expect(response).to be_success
+    end
+  end
+
+  it 'Should return status 404' do
+    get :show_place, params: { 'local_id' => '45' }
+    expect(response.status).to eq(404)
+  end
 end
 
 RSpec.describe LocalsController, type: :controller do

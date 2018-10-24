@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # Get Requests
   get '/locals', to: 'locals#index'
   get '/locals/name/:name', to: 'locals#search_locals'
+  get 'locals/:local_id', to: 'locals#show_place'
   get '/locals/:id_local/ratings', to: 'locals#show_ratings'
   get '/users', to: 'user_identifiers#index'
   get '/users/:id', to: 'user_identifiers#show_user'
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   # Post Requests
   post '/favorites', to: 'favorite_locals#create', :defaults => { :format => 'json' }
   post '/locals', to: 'locals#create', :defaults => { :format => 'json' }
+  post '/local_ratings', to: 'local_ratings#rating_a_place'
 
   # Patch Requests
   put '/favorites/:id', to: 'favorite_locals#update', :defaults => { :format => 'json' }
