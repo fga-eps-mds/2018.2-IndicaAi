@@ -46,10 +46,9 @@ end
 RSpec.describe 'Category list_locals', type: :request do
   let!(:category_test) { create(:category) }
   let!(:local_test) { create(:local) }
-  let!(:category_local) { create(:category_and_local,
-    category: category_test,
-    local: local_test) 
-  }
+  let!(:category_local) do
+    create(:category_and_local, category: category_test, local: local_test)
+  end
   describe 'GET /categories/:id/locals' do
     before { get "/categories/#{category_test.id}/locals" }
     it 'should returns locals of the category' do

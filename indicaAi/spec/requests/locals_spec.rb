@@ -36,7 +36,6 @@ RSpec.describe 'Local API', type: :request do
   let!(:valid_params) do
     {
       'name' => Faker::Friends.location,
-      'category_id' => category_test.id,
       'description' => Faker::Friends.quote,
       'latitude' => Faker::Number.decimal(2, 8).to_f,
       'longitude' => Faker::Number.decimal(2, 8).to_f,
@@ -46,7 +45,8 @@ RSpec.describe 'Local API', type: :request do
           'opens' => '15:30',
           'closes' => '16:00'
         }
-      ]
+      ],
+      'categories' => [{ 'category_id' => category_test.id }]
     }
   end
   describe 'POST /locals' do

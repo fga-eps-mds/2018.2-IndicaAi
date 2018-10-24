@@ -38,10 +38,9 @@ end
 RSpec.describe CategoriesController, type: :controller do
   let!(:category_test) { create(:category) }
   let!(:local_test) { create(:local) }
-  let!(:category_local) { create(:category_and_local,
-    category: category_test,
-    local: local_test) 
-  }
+  let!(:category_local) do
+    create(:category_and_local, category: category_test, local: local_test)
+  end
   describe 'GET list_locals' do
     it 'should returns list of locals' do
       get :list_locals, params: { id: category_test.id }
