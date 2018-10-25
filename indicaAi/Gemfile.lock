@@ -42,6 +42,10 @@ GEM
     ast (2.4.0)
     builder (3.2.3)
     byebug (10.0.2)
+    carrierwave (1.2.3)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     concurrent-ruby (1.0.5)
     coveralls (0.8.22)
       json (>= 1.8, < 3)
@@ -78,6 +82,9 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -188,6 +195,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  carrierwave (~> 1.2.1)
   coveralls (~> 0.8.22)
   database_cleaner (~> 1.7)
   factory_bot_rails (~> 4.11, >= 4.11.1)
@@ -205,4 +213,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.4
+   1.16.6
