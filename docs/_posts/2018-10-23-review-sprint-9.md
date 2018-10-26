@@ -13,12 +13,12 @@ plannedPoints: 46
 debtPoints: 3
 totalPoints: 49
 
-plannedFinishedPoints: 7
-debtFinishedPoints: 8
+plannedFinishedPoints: 46
+debtFinishedPoints: 3
 addPoints: 0
 addFinishedPoints: 0
 finishedPoints: 16
-nextDebtPoints: 8
+nextDebtPoints: 0
 
 scrumMaster: Matheus Gomes Ferreira
 productOwner: Lucas Maciel
@@ -41,18 +41,21 @@ issues: [
         points: 13,
         header: Planejadas,
         headerSpan: 7,
+        status: Concluído
     },
     {
         number: 57,
         description: Cadastrar Local (Backend),
         responsible: ['Lucas Maciel'],
         points: 8,
+        status: Concluído
     },
     {
         number: 60,
         description: Visualizar local (Backend),
         responsible: ['João Lucas'],
         points: 8,
+        status: Concluído
     },
     {
         number: 234,
@@ -65,18 +68,21 @@ issues: [
         description: Quebrar as issues,
         responsible: ['Ismin Mendes'],
         points: 3,
+        status: Concluído
     },
     {
         number: 236,
         description: Organizar lançamento de versão do APP,
         responsible: ['Weiller Fernandes'],
         points: 3,
+        status: Concluído
     },
     {
         number: 237,
         description: Reavaliar as métricas usadas,
         responsible: ['Matheus Gomes'],
         points: 3,
+        status: Concluído
     },
     {
         number: 198,
@@ -85,6 +91,7 @@ issues: [
         header: Dividas,
         headerSpan: 1,
         points: 3,
+        status: Concluído
     },
 ]
 
@@ -126,7 +133,6 @@ presence : [
 ]
 
 positives: [
-<<<<<<< HEAD:docs/_posts/2018-10-23-review-sprint-9.md
     "Reunião no sábado foi produtiva"
 ]
 
@@ -139,34 +145,16 @@ negatives: [
 
 improvements: [
     "Tentar fazer pareamento online em casos extremos."
-=======
-    "Script com a descrição para o papel de Scrum Master, TOP!",
-    "Resolvido problemas com implementação do Redux"
-]
-
-negatives: [
-    "Sem entrega contínua",
-    "Não foram realizados pareamentos planejados",
-    "Sprint estranha, feriado mais atrapalhou do que ajudou",
-    "Planning na quarta(1º dia da sprint) atrasa a resolução das issues"
-]
-
-improvements: [
-    "Reunião aos sabados para sanar dificuldades e melhorar o aproveitamento da equipe."
->>>>>>> 89baf4c53fc87ca1a2ac566e20d6bf5f2e2eb737:docs/_posts/2018-10-23-review-sprint-9.md
 ]
 
 
 burndown: [
     "Essa sprint <b>não ocorreu entrega contínua</b>.",
-    "A equipe conseguiu <b>entregar a issue de Refatorar Buscar local(Frontend)</b> que ja vinha de débito da sprint 7. Dificuldade com a <b>implementação do Redux no problema de uso da variavel 'locals'</b>, para uma melhor mantenabilidade do código, foi a principal causa para a demora na conclusão da issue.",
-    "Configurar/Integrar testes no frontend foi mais uma issue que estava como débito e <b>também foi entregue</b>. A equipe conseguiu se <b>adaptar às tecnologias</b> para resolver a tarefa.",
-    "A descrição das issues foi iniciada porém foi visto que era necessário <b>quebrar o backlog em issues menores</b>, então não foi possivel concluir a issue.",
-    "O time evoluiu bastante em relação aos testes, porém ainda há algumas dificuldades. <b>A issue Adicionar rota para avaliar local ficou faltando teste de request</b>, ficará como debito para proxíma sprint.",
+    "A equipe para tentar entregar melhor, fez reunião no sábado, foram fechadas algumas issues, e deu uma grande ajuda para as outras",
 ]
 
 velocity: [
-    "Nessa sprint a equipe não conseguiu resolver todas as issues planejadas e o velocity caiu para 22,5. A equipe entregou as issues que vinham como débito porém devido aos problemas com pareamento, teste e em quebrar o backlog, duas issue ficarão como débito."
+    "O velocity da equipe teve um almento significativo, mas foi devido a necessidade de se terminar issue importantes e necessárias para o andamento do produto, e para a equipe consegui entregar o produto em sua maioria na data da realease 2"
 ]
 
 pairing: []
