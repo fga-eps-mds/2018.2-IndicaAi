@@ -14,6 +14,8 @@ class Local < ApplicationRecord
   validates :address, allow_nil: true, length: { minimum: 10 }
   validates :telephone, allow_nil: true, length: { minimum: 8 }
 
+  mount__base64_uploader :images, ImageUploader
+
   def self.find_by_name(params)
     Local.where('upper(name) like ?', "%#{params.upcase}%")
   end
