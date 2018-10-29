@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181027135859) do
+ActiveRecord::Schema.define(version: 20181027162156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,12 @@ ActiveRecord::Schema.define(version: 20181027135859) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["local_id"], name: "index_image_locals_on_local_id"
+  end
+
+  create_table "local_images", force: :cascade do |t|
+    t.text "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "local_ratings", force: :cascade do |t|
