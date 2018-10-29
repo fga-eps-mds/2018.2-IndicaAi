@@ -1,11 +1,13 @@
 [
    {
      "number": "1",
-     "sprintCommits": true,
+     "commits": true,
+     "sprintCommits": true
    },
    {
      "number": "2",
-     "sprintCommits": true,
+     "commits": true,
+     "sprintCommits": true
    },
    {
      "number": "3",
@@ -14,6 +16,7 @@
      "numberPairing": true,
      "duplication": true,
      "maintainability": true,
+     "commits": true,
      "sprintCommits": true,
      "styleSheet": true
    },
@@ -24,6 +27,7 @@
      "numberPairing": true,
      "duplication": true,
      "maintainability": true,
+     "commits": true,
      "sprintCommits": true,
      "styleSheet": true
    },
@@ -35,7 +39,8 @@
      "duplication": true,
      "maintainability": true,
      "styleSheet": true,
-     "sprintCommits": true,
+     "commits": true,
+     "sprintCommits": true
    },
    {
      "number": "6",
@@ -45,8 +50,18 @@
      "duplication": true,
      "maintainability": true,
      "styleSheet": true,
-     "sprintCommits": true,
-   }
+     "commits": true,
+     "sprintCommits": true
+   },
+   {
+     "number": "7",
+     "coverage": true,
+     "complexity": true,
+     "numberPairing": true,
+     "duplication": true,
+     "maintainability": true,
+     "styleSheet": true
+   },
    {
      "number": "8",
      "coverage": true,
@@ -55,7 +70,6 @@
      "duplication": true,
      "maintainability": true,
      "styleSheet": true,
-     "sprintCommits": true,
      "class": "active in"
    }
 ]
