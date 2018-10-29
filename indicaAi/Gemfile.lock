@@ -46,6 +46,9 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    carrierwave-base64 (2.7.0)
+      carrierwave (>= 0.8.0)
+      mime-types (~> 3.0)
     concurrent-ruby (1.0.5)
     coveralls (0.8.22)
       json (>= 1.8, < 3)
@@ -197,6 +200,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   carrierwave
+  carrierwave-base64 (~> 2.7)
   coveralls (~> 0.8.22)
   database_cleaner (~> 1.7)
   factory_bot_rails (~> 4.11, >= 4.11.1)
