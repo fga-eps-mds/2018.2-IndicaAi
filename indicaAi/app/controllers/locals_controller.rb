@@ -47,11 +47,6 @@ class LocalsController < ApplicationController
     json_response(unique_local)
   end
 
-  def receive_image
-    @image = Local.update(params[:id], :image => params[:image] )
-    response_success('SUCCESS', 'Image Saved', 200)
-  end
-
   private
 
   def create_relationship_category_and_local(params)
@@ -93,9 +88,5 @@ class LocalsController < ApplicationController
       opens: params[:opens],
       closes: params[:closes]
     }
-  end
-
-  def local_params
-    params.require(:local).permit(:name, { images:[] } )
   end
 end
