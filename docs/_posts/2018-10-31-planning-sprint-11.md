@@ -9,16 +9,17 @@ previousSprint: 10
 startDate: 31/10/2018
 endDate: 06/11/2018
 duration: 7
-plannedPoints: 0
-debtPoints: 0
-totalPoints: 0
+plannedPoints: 22
+debtPoints: 13
+totalPoints: 35
 
-scrumMaster: Iasmin Mendes
-productOwner: Renato Valério
+scrumMaster: Gabriel Davi Silva Pereira
+productOwner: Weiller Fernandes
 architect: Iasmin Mendes
-devops: Gabriel Valério
+devops: João Lucas Fragoso Zarbiélli
 developmentTeam: [
   Gabriel Davi Silva Pereira,
+  Renato Valério,
   Heron Rodrigues Sousa,
   João Lucas Fragoso Zarbiélli,
   Lucas Maciel Aguiar,
@@ -28,42 +29,62 @@ developmentTeam: [
 
 issues: [
     {
-        number: 123,
-        description: US5 - Visualizar local,
-        responsible: ['Heron Rodrigues', 'Weiller Fernandes'],
-        points: 8,
+        number: 264,
+        description: US3 M5 - Adicionar imagens para o local na API IndicaAi,
+        responsible: ['Heron Rodrigues', 'João Lucas Fragoso Zarbiélli'],
+        points: 5,
+        header: Dividas,
+        headerSpan: 3,
+    },
+    {
+        number: 195,
+        description: Configurar/Integrar ambiente de homologação do front,
+        responsible: ['Iasmin Mendes', 'João Lucas Fragoso Zarbiélli'],
+        points: 5,
+    },
+    {
+        number: 217,
+        description: US5 M2 - Criar método para buscar as informações do local na IndicaAi API,
+        responsible: ['Renato Valério', 'Lucas Maciel'],
+        points: 3,
+    },
+    {
+        number: 63,
+        description: US6 M1 - Criar container de favoritar local,
+        responsible: ['Renato Valério', 'Lucas Maciel'],
+        points: 3,
         header: Planejadas,
         headerSpan: 6,
     },
     {
-        number: 183,
-        description: Estudar a possibilidade de usar a DigitalOcean no lugar do Heroku,
-        responsible: ['Iasmin Mendes'],
+        number: 157,
+        description: US9 M3 - Criar método no frontend para cadastrar local na IndicaAi API,
+        responsible: ['Weiller Fernandes', 'Heron Rodrigues'],
+        points: 8,
+    },
+    {
+        number: 262,
+        description: US3 M3 - Criar método para salvar os dados na API IndicaAi,
+        responsible: ['Gabriel Davi', 'Weiller Fernandes'],
+        points: 3,
+    },
+    {
+        number: 266,
+        description: US10 M3 - Criar método para verificar se o usuário já foi cadastrado no sistema,
+        responsible: ['Matheus Gomes Ferreira', 'Heron Rodrigues'],
+        points: 3,
+    },
+    {
+        number: 267,
+        description: US10 M4 - Verificar token de autenticação nos métodos que já foram implementados,
+        responsible: ['Matheus Gomes Ferreira'],
+        points: 3,
+    },
+    {
+        number: 246,
+        description: App - Versão 0.3,
+        responsible: ['João Lucas Fragoso Zarbiélli'],
         points: 2,
-    },
-    {
-        number: 187,
-        description: Revisar o Protótipo,
-        responsible: ['Gabriel Davi', 'Lucas Maciel'],
-        points: 5,
-    },
-    {
-        number: 197,
-        description: Configurar/Integrar testes no frontend,
-        responsible: ['Renato Valério'],
-        points: 5,
-    },
-    {
-        number: 204,
-        description: TS - Refatorar Buscar Local,
-        responsible: ['João Lucas Zarbiélli', 'Matheus Gomes'],
-        points: 3,
-    },
-    {
-        number: 208,
-        description: EVM,
-        responsible: Iasmin Mendes,
-        points: 3,
     },
 ]
 
@@ -76,7 +97,7 @@ presence : [
     },
     {
         name: Renato Valério,
-        presence: false
+        presence: true
     },
     {
         name: Gabriel Davi,
@@ -88,7 +109,9 @@ presence : [
     },
     {
         name: João Lucas Zarbiélli,
-        presence: true
+        presence: false,
+        justified: true
+
     },
     {
         name: Lucas Maciel,
@@ -107,9 +130,8 @@ presence : [
 pairing: []
 
 overview: [
-    "Essa é a primeira sprint planejada em que o <b>velocity foi rigorasamente seguido</b> como parâmetro no planejamento. As tarefas estão bem divididas, não há ninguém sobrecarregado, portanto espera-se que seja uma sprint tranquila e que as issues sejam todas entregues. A issue mais crítica do backlog dessa sprint é #123 - Visualizar local que envolve do grupo integrar com os serviços do Google para exibição do mapa.",
-    "Dado que essa é a primeira sprint pós-release, a equipe alocou uma atividade para revisão do protótipo, uma vez que esse foi um dos pontos mais criticados durante a release.",
-    "Para outros pontos relatados durante a release foram criadas issues com o objetivo de resolvermos durante o andamento do projeto."
+    "Para essa sprint foram <b>planejados 22 pontos,</b> o que se encaixa dentro do <b>velocity atual de 22,5 pontos,</b> acreditamos que os 13 pontos de débito deixados pela sprint passada não vão trazer problemas, pois eles podem ser fechados com facilidade, com isso, acreditamos que seja possível <b>entregar os 35 pontos ao final da sprint.</b>",
+    "A maioria dos membros da equipe acabou ficando com <b>duas issues,</b> como as issues foram quebradas em issues menores, vemos que isso não vai ser um impecilho, já que estaríamos apenas mantendo a carga de trabalho aplicada antes."
 ]
 
 ---
