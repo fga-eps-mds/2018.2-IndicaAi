@@ -19,7 +19,7 @@ RSpec.describe FavoriteLocalsController, type: :controller do
       expect(assigns(:favorite)).to be_a(FavoriteLocal)
       expect(assigns(:favorite)).not_to eq(nil)
     end
-    it 'should returns not success saved favorite' do
+    it 'should not returns success saved favorite' do
       # local.id invalid
       valid_params['local_id'] = nil
       post :create, params: valid_params
@@ -39,8 +39,8 @@ RSpec.describe FavoriteLocalsController, type: :controller do
       'user_identifier_id' => user_test.id
     }
   end
-  describe 'Patch update' do
-    before { patch :update, params: valid_params }
+  describe 'Put update' do
+    before { put :update, params: valid_params }
     it 'should returns success updated favorite_test' do
       expect(response).to be_success
       expect(assigns(:favorite)).to have_attributes valid_params
