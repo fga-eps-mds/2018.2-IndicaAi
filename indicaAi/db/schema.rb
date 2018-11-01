@@ -49,8 +49,10 @@ ActiveRecord::Schema.define(version: 20181027162156) do
 
   create_table "local_images", force: :cascade do |t|
     t.text "image"
+    t.bigint "local_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["local_id"], name: "index_local_images_on_local_id"
   end
 
   create_table "local_ratings", force: :cascade do |t|
@@ -72,7 +74,6 @@ ActiveRecord::Schema.define(version: 20181027162156) do
     t.float "longitude"
     t.string "address"
     t.string "telephone"
-    t.string "image"
   end
 
   create_table "opening_hours", force: :cascade do |t|
@@ -96,6 +97,7 @@ ActiveRecord::Schema.define(version: 20181027162156) do
   add_foreign_key "favorite_locals", "locals"
   add_foreign_key "favorite_locals", "user_identifiers"
   add_foreign_key "image_locals", "locals"
+  add_foreign_key "local_images", "locals"
   add_foreign_key "local_ratings", "locals"
   add_foreign_key "local_ratings", "user_identifiers"
 end

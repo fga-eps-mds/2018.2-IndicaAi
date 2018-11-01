@@ -2,10 +2,11 @@
 class LocalImagesController < ApplicationController
   def receive_image
     local = Local.find(params[:id])
+    print params[:id]
     if local.present?
-        images = params[:images]
+        images = params[:image]
         images.each do |image|
-            LocalImage.create(image: image, local: local)
+            LocalImage.create(image: image, local_id: params[:id])
         end
         response_success('SUCCESS', 'Images saved', 200)
     else
