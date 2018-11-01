@@ -2,7 +2,6 @@
 class LocalImagesController < ApplicationController
   def receive_image
     local = Local.find(params[:id])
-    print params[:id]
     if local.present?
         images = params[:image]
         images.each do |image|
