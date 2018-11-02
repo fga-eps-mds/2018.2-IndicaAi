@@ -177,7 +177,7 @@ pairing: []
 numberPairing: []
 
 coverage: {
-    "url": https://coveralls.io/builds/19580260",
+    "url": "https://coveralls.io/builds/19580260",
     "review": []
 }
 

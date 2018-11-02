@@ -46,7 +46,7 @@
      "maintainability": true,
      "styleSheet": true,
      "sprintCommits": true,
-   }
+   },
    {
      "number": "8",
      "coverage": true,

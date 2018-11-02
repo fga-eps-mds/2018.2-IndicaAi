@@ -137,9 +137,9 @@ positives: [
 ]
 
 negatives: [
-    "Issues ainda não descritas".,
-    "Falta de compatibilidade de horário".,
-    "João sem celular".,
+    "Issues ainda não descritas",
+    "Falta de compatibilidade de horário",
+    "João sem celular",
     "Entrega contínua, continua sendo um problema.",
 ]
 
