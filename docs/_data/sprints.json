@@ -1,10 +1,12 @@
 [
    {
      "number": "1",
+     "commits": true,
      "sprintCommits": true,
    },
    {
      "number": "2",
+     "commits": true,
      "sprintCommits": true,
    },
    {
@@ -14,6 +16,7 @@
      "numberPairing": true,
      "duplication": true,
      "maintainability": true,
+     "commits": true,
      "sprintCommits": true,
      "styleSheet": true
    },
@@ -24,6 +27,7 @@
      "numberPairing": true,
      "duplication": true,
      "maintainability": true,
+     "commits": true,
      "sprintCommits": true,
      "styleSheet": true
    },
@@ -35,10 +39,22 @@
      "duplication": true,
      "maintainability": true,
      "styleSheet": true,
+     "commits": true,
      "sprintCommits": true,
    },
    {
      "number": "6",
+     "coverage": true,
+     "complexity": true,
+     "numberPairing": true,
+     "duplication": true,
+     "maintainability": true,
+     "styleSheet": true,
+     "commits": true,
+     "sprintCommits": true,
+   },
+   {
+     "number": "7",
      "coverage": true,
      "complexity": true,
      "numberPairing": true,
