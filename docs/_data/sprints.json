@@ -62,7 +62,6 @@
      "maintainability": true,
      "styleSheet": true,
      "sprintCommits": true,
-<<<<<<< HEAD
    },
    {
      "number": "8",
@@ -73,8 +72,10 @@
      "maintainability": true,
      "styleSheet": true,
      "sprintCommits": true,
-=======
->>>>>>> origin/revert-240-documentation/sprint-8
+   },
+   {
+     "number": "9",
+     "coverage": true,
      "class": "active in"
    }
 ]

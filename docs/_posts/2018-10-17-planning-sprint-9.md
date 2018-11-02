@@ -1,7 +1,7 @@
 ---
 layout: planning
 title:  "Sprint 09 - Planning"
-date:   2018-10-16 09:50:39
+date:   2018-10-17 09:50:39
 categories: sprint-planning
 
 sprint: 9
