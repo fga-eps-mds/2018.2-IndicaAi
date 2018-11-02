@@ -10,4 +10,14 @@ class UserIdentifier < ApplicationRecord
   def self.find_favorites(params)
     UserIdentifier.find(params).favorite_locals
   end
+
+  def self.get_by_token(token)
+    user = UserIdentifier.find_by(identifier:token)
+    unless user.nil?
+      user
+    else
+      UserIdentifier.create(identifier:token)
+    end
+  end
+
 end
