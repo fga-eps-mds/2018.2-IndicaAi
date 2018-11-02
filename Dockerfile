@@ -8,4 +8,5 @@ WORKDIR /indicaAi
 COPY ./indicaAi /indicaAi
 
 RUN bundle install
+RUN rake db:migrate
 
