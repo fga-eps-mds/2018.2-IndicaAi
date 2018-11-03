@@ -12,10 +12,4 @@ class LocalImagesController < ApplicationController
       response_error('ERROR', 'Place not found', 422)
     end
   end
-
-  private
-
-  def local_images_params
-    params.require(:local_id).permit(images: [])
-  end
 end
