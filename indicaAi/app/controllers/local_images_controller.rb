@@ -8,8 +8,6 @@ class LocalImagesController < ApplicationController
         LocalImage.create(image: image, local_id: params[:id])
       end
       response_success('SUCCESS', 'Images saved', 200)
-    else
-      response_error('ERROR', 'Place not found', 422)
     end
   end
 end
