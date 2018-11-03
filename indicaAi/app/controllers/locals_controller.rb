@@ -27,7 +27,6 @@ class LocalsController < ApplicationController
       create_relationship_category_and_local(params)
       # create tables in bd with opening hours
       create_opening_hours
-      create_images @local, params[:images]
       result << @local.as_json(methods: %i[opening_hours categories local_images])
       response_success('SUCCESS', 'Saved Local', result, 200)
     else
@@ -61,14 +60,6 @@ class LocalsController < ApplicationController
   def create_opening_hours
     Array(params['opening_hours']).each do |item|
       @opening_hour = OpeningHour.create(opening_hour_params(item))
-    end
-  end
-
-  def create_images local, images
-    if local.present?
-        images.each do |image|
-            LocalImage.create(image: image, local: local)
-        end
     end
   end
 
