@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :user_identifier do
-    identifier { Faker::StarWars.quote }
+    identifier { Faker::Lorem.word }
   end
 end

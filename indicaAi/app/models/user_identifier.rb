@@ -11,13 +11,12 @@ class UserIdentifier < ApplicationRecord
   end
 
   def self.get_by_token(token)
-    #TODO validade token with api
-    user = UserIdentifier.find_by(identifier:token)
-    unless user.nil?
-      user
+    # TODO: Validade token with api
+    user = UserIdentifier.find_by(identifier: token)
+    if user.nil?
+      UserIdentifier.create(identifier: token)
     else
-      UserIdentifier.create(identifier:token)
+      user
     end
   end
-
 end
