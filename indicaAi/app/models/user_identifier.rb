@@ -4,7 +4,6 @@ class UserIdentifier < ApplicationRecord
   has_many :local_ratings
 
   validates :identifier, presence: true
-  validates_numericality_of :identifier
   validates_uniqueness_of :identifier
 
   def self.find_favorites(params)
@@ -12,6 +11,7 @@ class UserIdentifier < ApplicationRecord
   end
 
   def self.get_by_token(token)
+    #TODO validade token with api
     user = UserIdentifier.find_by(identifier:token)
     unless user.nil?
       user
