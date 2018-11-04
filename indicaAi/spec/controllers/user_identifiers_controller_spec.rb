@@ -37,9 +37,9 @@ RSpec.describe UserIdentifiersController, type: :controller do
     it 'should returns list of favorites to assign @favorites ' do
       get :list_favorites, params: { id: user.id }
       should route(
-        :get, "/users/#{user.id}/favorites"
+        :get, "/users/#{user.identifier}/favorites"
       ).to(
-        action: :list_favorites, id: user.id
+        action: :list_favorites, identifier: user.identifier
       )
       expect(response).to be_success
       assert assigns(:favorites) == favorites_test
