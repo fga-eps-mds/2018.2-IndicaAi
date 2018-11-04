@@ -5,7 +5,7 @@ class LocalsController < ApplicationController
     @locals = Local.all
     result = []
     @locals.each do |local|
-      result << local.as_json(methods: [:local_ratings])
+      result << response_format(local)
     end
     json_response(result)
   end
@@ -14,7 +14,7 @@ class LocalsController < ApplicationController
   def search_locals
     @locals = Local.find_by_name(params[:name])
     result = []
-    result << @locals.as_json(methods: [:local_ratings])
+    result << response_format(@locals)
     json_response(result)
   end
 
@@ -43,11 +43,23 @@ class LocalsController < ApplicationController
 
   # GET /local/:id
   def show_place
-    unique_local = Local.find(params[:local_id])
-    json_response(unique_local)
+    @local = Local.find(params[:local_id])
+    result = []
+    result << response_format(@local)
+    json_response(result)
   end
 
   private
+
+  def response_format(local)
+    local.as_json(
+      include: {
+        opening_hours: { only: %i[day opens closes] },
+        categories: { only: %i[id name] },
+        local_ratings: { only: %i[id value] }
+      }
+    )
+  end
 
   def create_relationship_category_and_local(params)
     Array(params['categories']).each do |item|
