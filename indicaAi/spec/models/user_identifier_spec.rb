@@ -18,7 +18,11 @@ RSpec.describe UserIdentifier, type: :model do
       user2.save
       expect(user2.valid?).to be_falsey
     end
+  end
+end
 
+RSpec.describe UserIdentifier, type: :model do
+  context 'Get UserIdentifier by token' do
     let!(:user) { create(:user_identifier) }
 
     it 'should return user' do
