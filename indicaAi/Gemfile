@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'i18n', '~> 1.1', '>= 1.1.1'
+# Upload files encoded as base64 strings directly to carrierwave
+gem 'carrierwave'
+gem 'carrierwave-base64', '~> 2.7'
+# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record

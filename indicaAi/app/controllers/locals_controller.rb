@@ -21,17 +21,15 @@ class LocalsController < ApplicationController
   # POST /local/create
   def create
     @local = Local.new(local_params)
-    if @local.save
-      result = []
-      # create relationship between category and local
-      create_relationship_category_and_local(params)
-      # create tables in bd with opening hours
-      create_opening_hours
-      result << @local.as_json(methods: %i[opening_hours categories])
-      response_success('SUCCESS', 'Saved Local', result, 200)
-    else
-      response_error('ERROR', 'Local not saved', 422)
-    end
+    return response_error('ERROR', 'Local not saved', 422) unless @local.save
+    result = []
+    # create relationship between category and local
+    create_relationship_category_and_local(params)
+    # create tables in bd with opening hours
+    create_opening_hours
+    result <<
+      @local.as_json(methods: %i[opening_hours categories local_images])
+    response_success('SUCCESS', 'Saved Local', result, 200)
   end
 
   # GET /local/:id/rating
