@@ -1,5 +1,5 @@
 # Local Images Controller
-class LocalImagesController < ApplicationControllerexit
+class LocalImagesController < ApplicationController
   def receive_image
     local = Local.find(params[:id])
     return response_success('ERROR', 404) unless local.present?
