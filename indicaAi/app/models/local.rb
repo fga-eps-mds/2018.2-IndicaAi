@@ -6,6 +6,7 @@ class Local < ApplicationRecord
   has_many :categories, through: :category_and_locals
   has_many :local_images
   validates :name, presence: true, length: { minimum: 2 }
+  validates :publicity, inclusion: {in: ['true', 'false']}
   validates :latitude, presence: true, numericality: {
     greater_than_or_equal: 0, less_than_or_equal: 100
   }
