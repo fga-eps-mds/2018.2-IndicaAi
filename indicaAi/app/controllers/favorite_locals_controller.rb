@@ -4,13 +4,12 @@ class FavoriteLocalsController < ApplicationController
   def create
     if (user = UserIdentifier.find_by(identifier: params[:user_identifier]))
       @favorite = FavoriteLocal.new(favorite_create_params(params, user))
+      result = { favorite: @favorite, user: user }
       if @favorite.save
-        response_success('SUCCESS', 'Favorite saved', [@favorite, user], 200)
-      else
-        response_error('ERROR', 'Favorite not saved', 422)
+        response_success('SUCCESS', 'Favorite saved', result, 200)
+      else response_error('ERROR', 'Favorite not saved', 422)
       end
-    else
-      response_error('ERROR', 'User not found', 422)
+    else response_error('ERROR', 'User not found', 422)
     end
   end
 
