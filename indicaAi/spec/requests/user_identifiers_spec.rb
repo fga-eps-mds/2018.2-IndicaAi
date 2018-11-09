@@ -37,7 +37,7 @@ RSpec.describe 'User Controller', type: :request do
     create_list(:favorite_local, 10, user_identifier: user_test)
   end
   describe 'GET /users/:id/favorites' do
-    before { get "/users/#{user_test.id}/favorites" }
+    before { get "/users/#{user_test.identifier}/favorites" }
     it 'return favorites by user in json' do
       expect(json).not_to be_empty
       expect(json['favorites'][0]['user_identifier_id']).to eq(user_test.id)
