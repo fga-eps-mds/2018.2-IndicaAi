@@ -2,11 +2,15 @@
 class FavoriteLocalsController < ApplicationController
   # Post /favorite/create
   def create
-    @favorite = FavoriteLocal.new(favorite_params)
-    if @favorite.save
-      response_success('SUCCESS', 'Saved favorite', @favorite, 200)
+    if (user = UserIdentifier.find_by(identifier: params[:user_identifier]))
+      @favorite = FavoriteLocal.new(favorite_create_params(params, user))
+      if @favorite.save
+        response_success('SUCCESS', 'Favorite saved', [@favorite, user], 200)
+      else
+        response_error('ERROR', 'Favorite not saved', 422)
+      end
     else
-      response_error('ERROR', 'Favorite not saved', 422)
+      response_error('ERROR', 'User not found', 422)
     end
   end
 
@@ -16,7 +20,7 @@ class FavoriteLocalsController < ApplicationController
 
     if @favorite.nil?
       response_error('ERROR', 'Favorite not found', 404)
-    elsif @favorite.update(favorite_params)
+    elsif @favorite.update(favorite_update_params)
       response_success('SUCCESS', 'Updated favorite', @favorite, 200)
     else
       response_error('ERROR', 'Favorite not updated', 422)
@@ -38,7 +42,14 @@ class FavoriteLocalsController < ApplicationController
 
   private
 
-  def favorite_params
+  def favorite_create_params(params, user)
+    {
+      user_identifier_id: user.id,
+      local_id: params[:local_id]
+    }
+  end
+
+  def favorite_update_params
     params.permit(:user_identifier_id, :local_id)
   end
 end
