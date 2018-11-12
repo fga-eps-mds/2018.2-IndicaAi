@@ -34,8 +34,6 @@ class FavoriteLocalsController < ApplicationController
       response_error('ERROR', 'Favorite not found', 404)
     elsif @favorite.destroy
       response_success('SUCCESS', 'Deleted favorite', @favorite, 200)
-    else
-      response_error('ERROR', 'Favorite not deleted', 422)
     end
   end
 
