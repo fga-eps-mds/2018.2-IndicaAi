@@ -29,5 +29,12 @@ module IndicaAi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.before_configuration do
+      file = File.join(Rails.root, 'config', 'local_variables.yml')
+      YAML.load(File.open(file)).each do |key, value|
+              ENV[key.to_s] = value
+      end if File.exists?(file)
+    end
   end
 end
