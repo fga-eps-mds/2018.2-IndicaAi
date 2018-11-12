@@ -24,6 +24,11 @@ RSpec.describe FavoriteLocalsController, type: :controller do
       post :create, params: valid_params
       expect(response).not_to be_success
     end
+    it 'should return error user not found' do
+      valid_params['user_identifier'] = nil
+      post :create, params: valid_params
+      expect(response).to have_http_status(422)
+    end
   end
 end
 
