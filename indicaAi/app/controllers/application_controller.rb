@@ -11,12 +11,10 @@ class ApplicationController < ActionController::API
     authenticate = authenticate_params
     if authenticate[:token].nil?
       response_error('ERROR', 'Empty Token', :bad_request)
-    else
-      response = post_request("#{ENV['LOGIN_API']}/api/token-verify/",
-                              token: authenticate[:token])
-      unless JSON.parse(response.body)['token'].present?
-        response_error('ERROR', 'Authentication Failed', :forbidden)
-      end
+    elsif verify_token authenticate[:token]
+      @current_user = UserIdentifier.get_by_identifier(
+        authenticate[:user_identifier]
+      )
     end
   end
 
@@ -34,10 +32,20 @@ class ApplicationController < ActionController::API
     response_error('ERROR', exception, :internal_server_error)
   end
 
+  def verify_token(token)
+    response = post_request("#{ENV['LOGIN_API']}/api/token-verify/",
+                            token: token)
+    response_error('ERROR', 'Authentication Failed', :forbidden) unless
+      JSON.parse(response.body)['token'].present?
+  end
+
   private
 
   def authenticate_params
-    { token: authorization_token }
+    {
+      token: authorization_token,
+      user_identifier: params[:user_identifier]
+    }
   end
 
   def authorization_token
