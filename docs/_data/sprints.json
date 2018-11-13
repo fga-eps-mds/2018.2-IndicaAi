@@ -65,12 +65,9 @@
    },
    {
      "number": "10",
-     "coverage": true,
      "complexity": true,
      "numberPairing": true,
      "duplication": true,
-     "maintainability": true,
-     "styleSheet": true,
      "sprintCommits": true,
      "class": "active in"
    }
