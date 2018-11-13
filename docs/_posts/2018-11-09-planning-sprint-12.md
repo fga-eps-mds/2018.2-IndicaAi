@@ -1,6 +1,6 @@
 ---
 layout: planning
-title:  "Sprint 012 - Planning"
+title:  "Sprint 12 - Planning"
 date:   2018-11-08 00:16:39
 categories: sprint-planning
 
@@ -32,6 +32,8 @@ issues: [
         description: Implementar método que retorna os locais favoritos na API,
         responsible: ['Matheus', 'Weiller Fernandes'],
         points: 3,
+        header: Planejadas,
+        headerSpan: 15
     },
     {
         number: 134,
@@ -48,7 +50,7 @@ issues: [
     {
         number: 261,
         description: Carregar as categorias que o usuário pode selecionar no cadastro,
-        responsible: ['Weiller' e 'matheus'],
+        responsible: ['Weiller', 'matheus'],
         points: 3,
     },
     {
@@ -113,7 +115,7 @@ issues: [
     },
     {
         number: 247,
-        description: Lançar versão do app 0.4
+        description: Lançar versão do app 0.4,
         responsible: ['lucas', 'joao'],
         points: 2,
     }

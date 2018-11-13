@@ -39,7 +39,9 @@ issues: [
       description: US6 M1 - Criar container de favoritar local,
       responsible: ['Renato' , 'Lucas'],
       points: 3,
-      status: 'Concluído'
+      status: 'Concluído',
+      header: Planejadas,
+      headerSpan: 5
     },
     {
         number: 157,
@@ -74,15 +76,8 @@ issues: [
         description: US3 M5 - Adicionar imagens para o local na API IndicaAi,
         responsible: ['João Zarbiélli'],
         points: 5,
-        header: Debito,
-        status: 'Concluído'
-    },
-    {
-        number: 195,
-        description: Configurar/Integrar ambiente de homologação do front,
-        responsible: ['João Zarbiélli',  'Iasmin Mendes'],
-        points: 2,
-        header: Debito,
+        header: Dividas,
+        headerSpan: 3,
         status: 'Concluído'
     },
     {
@@ -90,7 +85,13 @@ issues: [
         description: US5 M2 - Criar método para buscar as informações do local na IndicaAi API,
         responsible: ['Renato', 'Lucas'],
         points: 3,
-        header: Debito,
+        status: 'Concluído'
+    },
+    {
+        number: 195,
+        description: Configurar/Integrar ambiente de homologação do front,
+        responsible: ['João Zarbiélli',  'Iasmin Mendes'],
+        points: 2,
         status: 'Concluído'
     },
 
@@ -164,20 +165,6 @@ velocity: [
 knowledge: []
 
 pairing: []
-numberPairing: []
-
-coverage: {
-    "url": "https://coveralls.io/builds/19455961",
-    "review": []
-}
-
-complexity: []
-
-duplication: []
-
-styleSheet: []
-
-maintainability: []
 
 feedback: [
     "O maior problema dessa sprint foi a <b>falta da descrição nas issues</b>. Foi relatado pela dupla responsável pela issue de Visualizar Local que eles tiveram dificuldade de entender no começo o que realmente era para eles fazerem na issue. Eles conseguiram sanar essa dúvida durante os primeiros stand-ups da sprint e assim conseguiram entregar a tarefa. Contudo, a issue de refatorar a busca de locais teve o problema de ser deixada para ser implementada no final da sprint devido os membros estarem envolvidos em provas de outras disciplinas, e somado a falta de uma especificação sobre o que era pra ser feita na issue, a dupla acabou entregando algo que era fora do esperado e não resolvia o problema real. Assim, <b>objetiva-se uma revisão o mais rápido possível da descrição das issues</b>, para evitar retrabalhos como o que teremos que fazer na próxima sprint.",
