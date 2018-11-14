@@ -174,8 +174,5 @@ knowledge: []
 pairing: []
 
 feedback: [
-    "O maior problema dessa sprint foi a <b>falta da descrição nas issues</b>. Foi relatado pela dupla responsável pela issue de Visualizar Local que eles tiveram dificuldade de entender no começo o que realmente era para eles fazerem na issue. Eles conseguiram sanar essa dúvida durante os primeiros stand-ups da sprint e assim conseguiram entregar a tarefa. Contudo, a issue de refatorar a busca de locais teve o problema de ser deixada para ser implementada no final da sprint devido os membros estarem envolvidos em provas de outras disciplinas, e somado a falta de uma especificação sobre o que era pra ser feita na issue, a dupla acabou entregando algo que era fora do esperado e não resolvia o problema real. Assim, <b>objetiva-se uma revisão o mais rápido possível da descrição das issues</b>, para evitar retrabalhos como o que teremos que fazer na próxima sprint.",
-    "Quando esta sprint foi planejada, esperava-se um ritmo saudável de produção e que a equipe seria capaz de entregar todos os pontos. <b>Nós tivemos um ritmo saudável de produção, mas devido a falhas de comunicação não conseguimos entregar o proposto</b>."
+   "No geral,<b> foi uma ótima sprint</b>. Todas as issues propostas foram realizadas. O grupo se ajudou bastante mesmo em issues fora do pareamnento por conta desse suporte todas as issue foram fechadas."
 ]
-
----
