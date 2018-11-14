@@ -69,7 +69,10 @@
      "numberPairing": true,
      "duplication": true,
      "maintainability": true,
-     "styleSheet": true,
+     "styleSheet": true
+   },
+   {
+     "number": "9",
      "class": "active in"
    }
 ]
