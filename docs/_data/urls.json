@@ -188,7 +188,7 @@
         },
         {
           "text": "Sprint 10",
-          "url": "/sprint-planning/2018/10/1/planning-sprint-9.html",
+          "url": "/sprint-planning/2018/10/24/planning-sprint-10.html",
           "icon": "fa-angle-right"
         }
     ]
@@ -241,6 +241,11 @@
         {
           "text": "Sprint 09",
           "url": "/sprint-review/2018/10/23/review-sprint-9.html",
+          "icon": "fa-angle-right"
+        },
+        {
+          "text": "Sprint 10",
+          "url": "/sprint-review/2018/10/31/review-sprint-10.html",
           "icon": "fa-angle-right"
         }
     ]

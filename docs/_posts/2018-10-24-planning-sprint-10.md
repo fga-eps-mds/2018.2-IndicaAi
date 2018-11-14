@@ -61,26 +61,6 @@ issues: [
         responsible: ['Iasmin Mendes'],
         points: 5,
     },
-    {
-        number: 127,
-        description: US3 M1 - Criar container para cadastrar local,
-        responsible: ['Heron Rodrigues'],
-        points: 5,
-        header: Adicionadas,
-        headerSpan: 3,
-    },
-    {
-        number: 217,
-        description: US5 M2 - Criar método para buscar as informações do local na IndicaAi API,
-        responsible: ['Renato Valério', 'Lucas Maciel'],
-        points: 3,
-    },
-    {
-        number: 245,
-        description: App - Versão 0.2,
-        responsible: ['Iasmin Mendes'],
-        points: 2,
-    },
 ]
 
 knowledge: true

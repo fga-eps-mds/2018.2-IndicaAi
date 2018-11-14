@@ -165,7 +165,6 @@ velocity: [
 knowledge: []
 
 pairing: []
-numberPairing: []
 
 feedback: [
     "Um ponto positivo dessa sprint foi que houve uma <b>melhora na entrega contínua</b> e consequentemente no <b>gráfico de burndow,</b> com issues sendo entregues na metade da sprint e novas já sendo puxadas, contudo ainda houveram falhas e o número de <b>pontos de débito acabou ficando muito elevado</b>, para contornar isso, a próxima sprint já se inicia com todas as duplas tendo duas issues atribuídas, com isso esperamos que haja melhor planejamento na execução de cada tarefa."
