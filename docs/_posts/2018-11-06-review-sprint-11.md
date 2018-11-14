@@ -41,7 +41,7 @@ issues: [
       points: 3,
       status: 'Concluído',
       header: Planejadas,
-      headerSpan: 5
+      headerSpan: 6
     },
     {
         number: 157,
@@ -63,6 +63,13 @@ issues: [
         responsible: ['Matheus' ,'Heron'],
         points: 3,
         status: 'Concluído'
+    },
+    {
+        number: 267,
+        description: Verificar token de autenticação nos métodos que já foram implementados,
+        responsible: ['Matheus'],
+        points: 3,
+        status: 'Removido'
     },
     {
         number: 280,
