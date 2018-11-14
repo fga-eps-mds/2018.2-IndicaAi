@@ -72,7 +72,14 @@
      "styleSheet": true
    },
    {
-     "number": "9",
+     "number": "9"
+   },
+   {
+     "number": "10",
+     "complexity": true,
+     "numberPairing": true,
+     "duplication": true,
+     "sprintCommits": true,
      "class": "active in"
    }
 ]
