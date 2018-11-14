@@ -9,5 +9,9 @@ build:
     web: Dockerfile
   config:
     RAILS_ENV: production
+release:
+  command:
+    - rake db:migrate
+  image: web
 run:
   web: puma
