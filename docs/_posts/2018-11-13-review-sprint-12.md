@@ -41,28 +41,28 @@ issues: [
         description: Implementar método que retorna os locais favoritos na API,
         responsible: ['Matheus', 'Weiller Fernandes'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 134,
         description: Cadastrar publicidade,
         responsible: ['Heron Rodrigues', 'Renato Valério'],
         points: 5,
-        status:
+        status: Concluído
     },
     {
         number: 135,
         description: Destacar publicidade,
         responsible: ['Heron Rodrigues', 'Renato Valério'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 261,
         description: Carregar as categorias que o usuário pode selecionar no cadastro,
         responsible: ['Weiller' e 'matheus'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 285,
@@ -76,21 +76,21 @@ issues: [
         description:  US4 - Gerar rota para o local,
         responsible: ['Gabriel Davi', 'Iasmin Mendes'],
         points: 13,
-        status:
+        status: Concluído
     },
     {
         number: 265,
         description:  Adicionar componentes de upload de imagem no cadastro,
         responsible: ['Lucas Maciel', 'João Lucas'],
         points: 5,
-        status:
+        status: Concluído
     },
     {
         number: 202,
         description:  Submeter as imagens pelo formulário de cadastro,
         responsible: ['Lucas Maciel', 'João Lucas'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 167,
@@ -118,14 +118,14 @@ issues: [
         description: Teste de Usabilidade - Cadastrar Local via Google API,
         responsible: ['Lucas Maciel', 'João Lucas'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 206,
         description: Teste de usuabilidade - Buscar local,
         responsible: ['Lucas Maciel', 'João Lucas'],
         points: 3,
-        status:
+        status: Concluído
     },
     {
         number: 188,
@@ -150,7 +150,7 @@ presence : [
     },
     {
         name: Renato Valério,
-        presence: true,
+        presence: false,
 
     },
     {
@@ -181,15 +181,24 @@ presence : [
 ]
 
 positives: [
-    "Pontos Positivos."
+    "Entrega considerável de pontos",
+    "Equipe de Desenvolvedores está com mais facilidade de uso da tecnologia utilizada",
+    "Colaboração entre os membros da equipe",
 ]
 
 negatives: [
-    "Pontos Negativos."
+    "Ausência de alguns membros da equipe em durante os encontros e/ou pelo Telegram",
+    "Integração falha com outros grupos do Integra App",
+    "Essa Sprint não teve Stand Ups presenciais",
+    "Não foram entregues os pontos de todas as issues planejadas",
+    "Entrega contínua",
+    "Prazo curto para entrega de todas as issues"
 ]
 
 improvements: [
-    "Descrever melhor as issues."
+    "Tentar melhorar a comunicação com outros grupos do Integra App",
+    "Melhorar a participação em pareamentos presenciais",
+    "Entrega Contínua"
 ]
 
 burndown: [
