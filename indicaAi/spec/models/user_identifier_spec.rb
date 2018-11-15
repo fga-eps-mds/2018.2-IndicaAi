@@ -4,20 +4,10 @@ RSpec.describe UserIdentifier, type: :model do
   context 'Validate of UserIdentifier' do
     it { should validate_presence_of(:identifier) }
     it { should have_many(:favorite_locals).dependent(:destroy) }
-    it { should validate_numericality_of(:identifier) }
     it { should validate_uniqueness_of(:identifier) }
     it 'user valid ' do
       user = create(:user_identifier)
       expect(user.valid?).to be_truthy
-    end
-
-    it 'user invalid - without identifier or is not number' do
-      # identifier empty
-      user = UserIdentifier.new
-      user.save
-      expect(user.valid?).to be_falsey
-      user.identifier = Faker::Lorem.word
-      expect(user.valid?).to be_falsey
     end
 
     it 'user invalid - is not unique' do
@@ -27,6 +17,24 @@ RSpec.describe UserIdentifier, type: :model do
       user2 = UserIdentifier.new(identifier: number)
       user2.save
       expect(user2.valid?).to be_falsey
+    end
+  end
+end
+
+RSpec.describe UserIdentifier, type: :model do
+  context 'Get UserIdentifier by token' do
+    let!(:user) { create(:user_identifier) }
+
+    it 'should return user' do
+      token = user.identifier
+      result = UserIdentifier.get_by_token(token)
+      assert result, user
+    end
+    it 'should return new user' do
+      count = UserIdentifier.count
+      token = 'dsfoanoi1ni3no2n3fo23n'
+      UserIdentifier.get_by_token(token)
+      assert count, (count + 1)
     end
   end
 end
