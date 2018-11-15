@@ -80,7 +80,8 @@ class LocalsController < ApplicationController
       :latitude,
       :longitude,
       :address,
-      :telephone
+      :telephone,
+      :publicity
     )
   end
 

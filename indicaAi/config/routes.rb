@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/locals/:id_local/ratings', to: 'locals#show_ratings'
   get '/users', to: 'user_identifiers#index'
   get '/users/:id', to: 'user_identifiers#show_user'
-  get '/users/:id/favorites/', to: 'user_identifiers#list_favorites'
+  get '/users/:user_identifier/favorites/', to: 'user_identifiers#list_favorites'
   get '/categories', to: 'categories#index'
   get '/categories/:id', to: 'categories#show_category'
   get '/categories/:id/locals', to: 'categories#list_locals'
