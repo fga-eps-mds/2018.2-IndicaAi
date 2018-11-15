@@ -1,7 +1,7 @@
 ---
 layout: review
 title:  "Sprint 12 - Review"
-date:   2018-11-13 00:00:00
+date:   2018-11-13 00:00:01
 categories: sprint-review
 
 sprint: 12
@@ -32,7 +32,7 @@ developmentTeam: [
   João Lucas Fragoso Zarbiélli,
   Lucas Maciel Aguiar,
   Matheus Gomes Ferreira,
-  Weiller Fernandes Pereira,
+  Weiller Fernandes Pereira
 ]
 
 issues: [
@@ -41,6 +41,8 @@ issues: [
         description: Implementar método que retorna os locais favoritos na API,
         responsible: ['Matheus', 'Weiller Fernandes'],
         points: 3,
+        header: Planejadas,
+        headerSpan: 14,
         status: Concluído
     },
     {
@@ -60,7 +62,7 @@ issues: [
     {
         number: 261,
         description: Carregar as categorias que o usuário pode selecionar no cadastro,
-        responsible: ['Weiller' e 'matheus'],
+        responsible: ['Weiller', 'matheus'],
         points: 3,
         status: Concluído
     },
@@ -107,13 +109,6 @@ issues: [
         status: Não Concluído
     },
     {
-        number: 274,
-        description: Fixing Heroku migrate,
-        responsible: ['Gabriel Davi', 'Iasmin Mendes'],
-        points: 2,
-        status: Concluído
-    },
-    {
         number: 212,
         description: Teste de Usabilidade - Cadastrar Local via Google API,
         responsible: ['Lucas Maciel', 'João Lucas'],
@@ -136,11 +131,20 @@ issues: [
     },
     {
         number: 247,
-        description: Lançar versão do app 0.4
+        description: Lançar versão do app 0.4,
         responsible: ['Mathues', 'Heron Rodrigues'],
         points: 2,
         status: Concluído
-    }
+    },
+    {
+        number: 274,
+        description: Fixing Heroku migrate,
+        responsible: ['Gabriel Davi', 'Iasmin Mendes'],
+        points: 2,
+        header: Dividas,
+        headerSpan: 1,
+        status: Concluído
+    },
 ]
 
 presence : [
@@ -150,7 +154,7 @@ presence : [
     },
     {
         name: Renato Valério,
-        presence: false,
+        presence: false
 
     },
     {
@@ -183,7 +187,7 @@ presence : [
 positives: [
     "Entrega considerável de pontos",
     "Equipe de Desenvolvedores está com mais facilidade de uso da tecnologia utilizada",
-    "Colaboração entre os membros da equipe",
+    "Colaboração entre os membros da equipe"
 ]
 
 negatives: [
