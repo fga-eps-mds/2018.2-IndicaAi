@@ -80,6 +80,10 @@
      "numberPairing": true,
      "duplication": true,
      "sprintCommits": true,
+   },
+   {
+     "number": "11",
      "class": "active in"
    }
+
 ]
