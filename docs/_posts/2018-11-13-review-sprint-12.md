@@ -9,16 +9,16 @@ previousSprint: 11
 startDate: 07/11/2018
 endDate: 13/11/2018
 duration: 7
-plannedPoints: 61
-debtPoints: 0
+plannedPoints: 59
+debtPoints: 2
 totalPoints: 61
 
-plannedFinishedPoints: 00
-debtFinishedPoints: 0
+plannedFinishedPoints: 48
+debtFinishedPoints: 2
 addPoints: 0
 addFinishedPoints: 0
-finishedPoints: 00
-nextDebtPoints: 00
+finishedPoints: 50
+nextDebtPoints: 11
 
 scrumMaster: Lucas Maciel
 productOwner: João Lucas Fragoso Zarbiélli
@@ -69,7 +69,7 @@ issues: [
         description: Fix the display problem in the map,
         responsible: ['Gabriel Davi', 'Iasmin Mendes'],
         points: 3,
-        status:
+        status: Não Concluído
     },
     {
         number: 125,
@@ -97,21 +97,21 @@ issues: [
         description: Criar método de verificação do token na IndicaAi API,
         responsible: ['Gabriel Davi', 'Iasmin Mendes'],
         points: 5,
-        status:
+        status: Não Concluído
     },
     {
         number: 267,
         description: Verificar token de autenticação nos métodos que já foram implementados,
         responsible: ['Gabriel Davi', 'Iasmin Mendes'],
         points: 3,
-        status:
+        status: Não Concluído
     },
     {
         number: 274,
         description: Fixing Heroku migrate,
         responsible: ['Gabriel Davi', 'Iasmin Mendes'],
-        points: 3,
-        status:
+        points: 2,
+        status: Concluído
     },
     {
         number: 212,
@@ -132,14 +132,14 @@ issues: [
         description: Integrar nosso app com a branch devel do front,
         responsible: ['Matheus', 'Heron Rodrigues'],
         points: 5,
-        status:
+        status: Concluído
     },
     {
         number: 247,
         description: Lançar versão do app 0.4
         responsible: ['Mathues', 'Heron Rodrigues'],
         points: 2,
-        status:
+        status: Concluído
     }
 ]
 
@@ -215,8 +215,10 @@ pairing: []
 numberPairing: []
 
 coverage: {
-    "url": "https://coveralls.io/builds/19455961",
-    "review": []
+    "url": "https://coveralls.io/builds/20112562",
+    "review": [
+        "Na Sprint em questão como a maior parte das issues estava voltada para o Front End, não ouve mudanças significativas na cobertura de código relevante"
+    ]
 }
 
 complexity: []
