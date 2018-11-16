@@ -101,8 +101,4 @@ class LocalsController < ApplicationController
       closes: params[:closes]
     }
   end
-
-  def return_image(params)
-    @image = LocalImages.find(params[:id])
-  end
 end
