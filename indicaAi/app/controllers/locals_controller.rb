@@ -55,7 +55,7 @@ class LocalsController < ApplicationController
         opening_hours: { only: %i[day opens closes] },
         categories: { only: %i[id name] },
         local_ratings: { only: %i[id value] },
-        local_images: { only: %s[image] }
+        local_images: { only: %s(image) }
       }
     )
   end
