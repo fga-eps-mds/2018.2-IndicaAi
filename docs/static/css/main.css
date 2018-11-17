@@ -409,3 +409,18 @@ h2:not(:first-child) {
 h3, h4, h5, h6 {
     margin-top: 40px;
 }
+
+/* Novos estilos para github pages */
+
+.mb-30 {
+    margin-bottom: 30px
+}
+
+.font-titulos {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.texto-home{
+    padding-top: 1px; 
+    font-family: 'Open Sans', sans-serif;
+}
