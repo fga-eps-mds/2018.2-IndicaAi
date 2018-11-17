@@ -11,6 +11,11 @@
     "icon": "fa-users"
   },
   {
+    "text": "Histórico",
+    "url": "/historys/",
+    "icon": "fa-users"
+  },
+  {
     "text": "Abertura do Projeto",
     "url": "#",
     "icon": "fa-clipboard",
