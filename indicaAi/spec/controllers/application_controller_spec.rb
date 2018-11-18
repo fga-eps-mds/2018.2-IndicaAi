@@ -61,6 +61,18 @@ RSpec.describe ApplicationController, type: :controller do
       expect(result['message']).to eq('Empty Token')
     end
 
+    it 'should return error if user identifier is invalid' do
+      headers = { :Authorization => 'Token test_token' }
+      request.headers.merge! headers
+
+      post :action_test
+
+      assert_response :bad_request
+      result = JSON.parse(response.body)
+      expect(result['status']).to eq('ERROR')
+      expect(result['message']).to eq('Invalid user identifier')
+    end
+
     it 'should verify token with Login API' do
       headers = { :Authorization => 'Token test_token' }
       request.headers.merge! headers

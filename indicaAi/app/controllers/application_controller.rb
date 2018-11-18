@@ -9,11 +9,13 @@ class ApplicationController < ActionController::API
 
   def authenticate_request!
     authenticate = authenticate_params
-
-    response_error('ERROR', 'Empty Token', :bad_request) if
-      authenticate[:token].nil?
-
-    verify_token authenticate[:token]
+    if authenticate[:token].nil?
+      response_error('ERROR', 'Empty Token', :bad_request)
+    elsif authenticate[:user_identifier].nil?
+      response_error('ERROR', 'Invalid user identifier', :bad_request)
+    else
+      verify_token authenticate[:token]
+    end
   end
 
   def post_request(url, body = {},
