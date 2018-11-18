@@ -4,7 +4,7 @@ module Response
     render json: object, status: status
   end
 
-  def response_success(type, message, data, status = :ok)
+  def response_success(type, message, data=nil, status = :ok)
     render json: {
       status: type, message: message,
       data: data

@@ -9,13 +9,11 @@ class ApplicationController < ActionController::API
 
   def authenticate_request!
     authenticate = authenticate_params
-    if authenticate[:token].nil?
-      response_error('ERROR', 'Empty Token', :bad_request)
-    elsif verify_token authenticate[:token]
-      @current_user = UserIdentifier.get_by_identifier(
-        authenticate[:user_identifier]
-      )
-    end
+
+    response_error('ERROR', 'Empty Token', :bad_request) if
+      authenticate[:token].nil?
+
+    verify_token authenticate[:token]
   end
 
   def post_request(url, body = {},
@@ -52,5 +50,9 @@ class ApplicationController < ActionController::API
     @authorization_token ||= if request.headers['Authorization'].present?
                                request.headers['Authorization'].split(' ').last
                              end
+  end
+
+  def current_user
+    UserIdentifier.get_by_identifier(authenticate_params[:user_identifier])
   end
 end
