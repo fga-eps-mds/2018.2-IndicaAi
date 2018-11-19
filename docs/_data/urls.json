@@ -11,11 +11,6 @@
     "icon": "fa-users"
   },
   {
-    "text": "Histórico",
-    "url": "/historys/",
-    "icon": "fa-history"
-  },
-  {
     "text": "Abertura do Projeto",
     "url": "#",
     "icon": "fa-clipboard",
