@@ -206,17 +206,19 @@ improvements: [
 ]
 
 burndown: [
-    "Breve explicação da queima de pontos"
+    "Na sprint em questão a conclusão das tarefas occorreu de maneira quase linear e constante, porém o resultado não foi refletido rapidamente em Deploys no repositório do backend ,pelo menos.",
+    "Como o projeto está chegando ao final a maioria das issues estavam voltadas para o frontend do aplicativo, e as poucas issues do backend eram voltadas para alguma correção de código requisitada pelo frontend do aplicativo, por isso algumas issues foram realizadas em conjunto o front e o back end, gerando um atraso no término da mesma, como na issue de destacar locais como anúncio, que precisava de uma pequena refatoração no backend.",
+    "Nas issues de Enviar Imagem do front para o backend e Gerar Rotas Para os Locais a conclusão das tarefas ocorreram surpreendentemente sem grandes problemas, dada a complexidade esperada, isso se deve ao amadurecimento da equipe com as ferramentas utilizadas",
+    " As issues relacionadas a revisão dos códigos para verificação do token de usuário no backend não foram concluídas devido a coplexidade e a dependência dos codigos que foram modificados, assim necessitando também uma revisão dos testes. Já a issue de integração com os outros grupos do aplicativo IntegraApp parece meio incerta, porém a conclusão mínima da issue voltada para esse problema foi completada"
 ]
 
 velocity: [
-    "Breve explicação do velocity(pontos possiveis da equipe)"
+    "O velocity da equipe subiu um pouco em relação a sprint passada para 26,5 devido ao grande número de pontos que pegamos nessa sprint, mais precisamente 61 pontos. Isso ocorreu devido a chegada da data final de entrega do projeto do aplicativo e disponibilidade adicional de alguns integrantes do grupo."
 ]
 
 knowledge: []
 
 pairing: []
-numberPairing: []
 
 coverage: {
     "url": "https://coveralls.io/builds/20112562",
@@ -234,7 +236,8 @@ styleSheet: []
 maintainability: []
 
 feedback: [
-    ""
+    "Essa foi uma issue incomun em que pegamos a maior quantidade de pontos do projeto até o momento, 61 pontos. Nem todos os pontos foram concluídos devido a problemas isolados, mas isso não vejo como um ponto negativo, pois conseguimos realizar a maioria das tarefas atribuidas a equipe de desenvolvedores, e também houve um aumento significativo de ajuda mútua dentro da equipe.",
+    "Para a próxima sprint vamos manter o foco para conseguirmos ser mais eficientes e continuar mantendo também uma comunicação com os integrantes do Integra App para tentar previnir imprevistos para a 2 Release na matéria, esse é o ponto mais crítico no momento."
 ]
 
 ---
