@@ -1,68 +1,90 @@
 [
-   {
-     "number": "1",
-     "commits": true,
-     "sprintCommits": true
-   },
-   {
-     "number": "2",
-     "commits": true,
-     "sprintCommits": true
-   },
-   {
-     "number": "3",
-     "coverage": true,
-     "complexity": true,
-     "numberPairing": true,
-     "duplication": true,
-     "maintainability": true,
-     "commits": true,
-     "sprintCommits": true,
-     "styleSheet": true
-   },
-   {
-     "number": "4",
-     "coverage": true,
-     "complexity": true,
-     "numberPairing": true,
-     "duplication": true,
-     "maintainability": true,
-     "commits": true,
-     "sprintCommits": true,
-     "styleSheet": true
-   },
-   {
-     "number": "5",
-     "coverage": true,
-     "complexity": true,
-     "numberPairing": true,
-     "duplication": true,
-     "maintainability": true,
+  {
+    "number": "1",
+    "commits": true,
+    "sprintCommits": true
+  },
+  {
+    "number": "2",
+    "commits": true,
+    "sprintCommits": true
+  },
+  {
+    "number": "3",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
+    "commits": true,
+    "sprintCommits": true,
+    "styleSheet": true
+  },
+  {
+    "number": "4",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
+    "commits": true,
+    "sprintCommits": true,
+    "styleSheet": true
+  },
+  {
+    "number": "5",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
+    "styleSheet": true,
+    "commits": true,
+    "sprintCommits": true
+  },
+  {
+    "number": "6",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
+    "styleSheet": true,
+    "commits": true,
+    "sprintCommits": true
+  },
+  {
+    "number": "7",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
      "styleSheet": true,
-     "commits": true,
-     "sprintCommits": true
-   },
-   {
-     "number": "6",
-     "coverage": true,
-     "complexity": true,
-     "numberPairing": true,
-     "duplication": true,
-     "maintainability": true,
-     "styleSheet": true,
-     "commits": true,
-     "sprintCommits": true
-   },
-   {
-     "number": "7",
-     "coverage": true,
-     "complexity": true,
-     "numberPairing": true,
-     "duplication": true,
-     "maintainability": true,
-     "styleSheet": true,
-     "sprintCommits": true
-   },
+    "sprintCommits": true
+  },
+  {
+    "number": "8",
+    "coverage": true,
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "maintainability": true,
+    "styleSheet": true
+  },
+  {
+    "number": "9"
+  },
+  {
+    "number": "10",
+    "complexity": true,
+    "numberPairing": true,
+    "duplication": true,
+    "sprintCommits": true
+  },
+  {
+    "number": "11"
+  },
    {
     "number": "12",
     "coverage": true,

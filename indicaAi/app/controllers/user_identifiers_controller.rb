@@ -15,8 +15,12 @@ class UserIdentifiersController < ApplicationController
 
   # list all favorites of user
   def list_favorites
-    @favorites = UserIdentifier.find_favorites(params[:id])
-    @user = UserIdentifier.find_by_id(params[:id])
-    json_response(user: @user, favorites: @favorites)
+    if (user = UserIdentifier.find_by(identifier: params[:user_identifier]))
+      @favorites = UserIdentifier.find_favorites(user.id)
+      @user = UserIdentifier.find_by_id(user.id)
+      json_response(user: @user, favorites: @favorites)
+    else
+      response_error('ERROR', 'User not found', 422)
+    end
   end
 end

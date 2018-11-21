@@ -7,17 +7,19 @@ categories: sprint-planning
 sprint: 13
 previousSprint: 12
 startDate: 14/11/2018
-endDate: 20/11/2018
-duration: 7
-plannedPoints: 00
-debtPoints: 0
-totalPoints: 00
+endDate: 26/11/2018
+duration: 13
+plannedPoints: 45
+debtPoints: 11
+totalPoints: 54
 
-scrumMaster: Iasmin Mendes
-productOwner: Renato Valério
+scrumMaster: João Lucas Fragoso Zarbiélli
+productOwner: Matheus Gomes Ferreira
 architect: Iasmin Mendes
-devops: Gabriel Valério
+devops: Gabriel Davi Silva Pereira
 developmentTeam: [
+  Iasmin Mendes,
+  Renato Valério,
   Gabriel Davi Silva Pereira,
   Heron Rodrigues Sousa,
   João Lucas Fragoso Zarbiélli,

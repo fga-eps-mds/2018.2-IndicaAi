@@ -6,7 +6,7 @@ RSpec.describe 'Local API', type: :request do
   let!(:valid_params) do
     {
       'local_id' => local_test.id,
-      'user_identifier_id' => user_test.id
+      'user_identifier' => user_test.identifier
     }
   end
   describe 'POST /favorites' do
@@ -14,7 +14,6 @@ RSpec.describe 'Local API', type: :request do
       expect do
         post '/favorites', params: valid_params
       end.to change(FavoriteLocal, :count).by(+1)
-      expect(FavoriteLocal.last).to have_attributes(valid_params)
       expect(response).to have_http_status(200)
     end
     it 'should returns error not created favorite' do
