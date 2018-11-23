@@ -16,11 +16,11 @@ categories: docs
 -----
 ## 1. Introdução
 
-Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do Aplicativo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem o conhecimento dos usuarios sobre os lugares próximos em relação ao contexto aplicado. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
+Este documento visa o entendimento geral do projeto ao definir as necessidades para o desenvolvimento do módulo Indica Ai, o qual refere-se a um sistema para indicação de locais que facilitem o conhecimento dos usuarios sobre os lugares próximos em relação ao contexto aplicado, inserido no aplicativo Intregra App. As informações contidas neste documento são apresentadas com alto nível de abstração, de forma que o entendimento sobre o sistema seja claro para todos os envolvidos na produção. Além dos atributos necessários para a compreensão do software, também será descrito o sistema de forma contextual, destacando o seu posicionamento frente ao problema, os envolvidos e seu determinado escopo. Para tal, segue-se uma organização em tópicos informativos relacionados às necessidade do projeto.
 
 ### 1.1 Finalidade
 
-O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do aplicativo Indica Ai ao expor as ideias necessárias para seu desenvolvimento.
+O presente documento tem como finalidade manter uma visão comum para os envolvidos no projeto do módulo Indica Ai ao expor as ideias necessárias para seu desenvolvimento.
 
 ### 1.2 Escopo
 
@@ -53,7 +53,7 @@ Elaborado de acordo com a metodologia RUP, o *Rational Unified Process*, este do
 
 ### 2.1 Oportunidade de Negócios
 
-Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próximos ou serviços que existem nas proximidades. Com a falta de conhecimento, torna-se exaustivo procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento e avaliação de locais e serviços oferecidos próximos com o objetivo de facilitar as buscas e melhorar a vida do usuário.
+Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próximos ou serviços que existem nas proximidades. Com a falta de conhecimento, torna-se exaustivo procurar lugares próximos seja para lanchar ou comprar algum material de trabalho. Sendo assim, o Indica Ai visa o compartilhamento de locais e serviços oferecidos próximos com o objetivo de facilitar as buscas e melhorar a vida do usuário.
 
 ### 2.2 Descrição do Problema
 
@@ -61,7 +61,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   <tr><th> O problema         </th><td> A falta de informação sobre a existência de locais nas proximidades relacionadas ao contexto. </td></tr>
   <tr><th> Afeta                 </th><td> A comunidade envovida naquele grupo.</td></tr>
   <tr><th> cujo impacto é        </th><td> Eventuais má experiências com serviços disponíveis ou desorientação em realação a localização.</td></tr>
-  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade em que o cliente esta, podendo compartilhar locais, avaliações e que indicasse a localização de estabelicimentos. </td></tr>
+  <tr><th>Uma boa solução seria </th><td> Um aplicativo voltado a realidade em que o cliente está, podendo compartilhar locais, e que indicasse a localização de estabelicimentos alem de traçar uma rota entre o local em que o usuário se encontra até o estabelecimento. </td></tr>
 </table>
 
 
@@ -71,7 +71,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   <tr><th>Para</th><td>Grupo de pessoas com um mesmo contexto</td></tr>
   <tr><th>Que</th><td>Necessitam obter informações sobre locais e serviços </td></tr>
   <tr><th>O</th><td>Indica Ai</td></tr>
-  <tr><th>Que</th><td>Compartilha locais e avaliações </td></tr>
+  <tr><th>Que</th><td>Compartilha locais </td></tr>
   <tr><th>Diferente do</th><td>Dos aplicativos Catraca livre, Yelp, Kekanto e What3Words(W3W)</td></tr>
   <tr><th>Nosso produto</th><td>Indica locais próximos, relacionados a realidade que o cliente está inserido</td></tr>
 
@@ -83,7 +83,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
 
 | Nome                           | Descrição                                                                 | Responsabilidades                                                                |
 |--------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Clientes               | Prof. Carla Silva Rocha Aguiar, doutora docente na Universidade de Brasília | Acompanhar o andamento do projeto e disponibilizar informações sobre o mesmo.    |
+| Clientes               | - | - |
 | Coaches                        | -                | - |
 | Equipe de  Desenvolvimento     | Equipe de alunos da UnB  de Métodos de  Desenvolvimento  de Software.    | Planejar, desenvolver e  implementar o sistema.                                     |
 | Equipe de Gestores  de Projeto | Equipe de alunos da UnB  de Disciplina de Engenharia de Produto de Software. | Planejar, desenvolver e gerenciar o projeto.                 |
@@ -98,40 +98,8 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
 
 ### 3.3 Perfis dos Envolvidos
 
-##### 3.3.1 Clientes
-<table>
-  <tr>
-    <td><b>Representantes</b></td>
-    <td>Carla Silva Rocha Aguiar</td>
-  </tr>
-  <tr>
-    <td><b>Descrição</b></td>
-    <td>Atua na graduação em disciplinas orientadas desenvolvimento de  software livre (MDS/EPS) e coordena o Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS).</td>
-  </tr>
-  <tr>
-    <td><b>Tipo</b></td>
-    <td>Cliente que requisitou o projeto.</td>
-  </tr>
-  <tr>
-    <td><b>Responsabilidades</b></td>
-    <td>Observar e validar o andamento do software.</td>
-  </tr>
-  <tr>
-    <td><b>Critérios de Sucesso</b></td>
-    <td>Receber um software que realize de forma sucinta a indicação de locais que facilitem a vida acadêmica próximo a Faculdade do Gama - FGA</td>
-  </tr>
-  <tr>
-    <td><b>Envolvimento</b></td>
-    <td>Alto.</td>
-  </tr>
-  <tr>
-    <td><b>Comentários</b></td>
-    <td></td>
-  </tr>
-</table>
 
-
-#### 3.3.2 Equipe de Desenvolvedores
+#### 3.3.1 Equipe de Desenvolvedores
 <table>
   <tr>
     <td><b>Representantes</b></td>
@@ -170,7 +138,7 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
   </tr>
 </table>
 
-#### 3.3.3 Equipe de Gestores
+#### 3.3.2 Equipe de Gestores
 <table>
   <tr>
     <td><b>Representantes</b></td>
@@ -222,9 +190,9 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
 
 | **Representante** | Corpo acadêmico da universidade |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Descrição** | Navegará dentro do aplicativo sendo capaz de buscar locais desejados e também indicar lugares que considerar útil à comunidade. Também poderá descrever assim como avaliar locais indicados pelo aplicativo |
+| **Descrição** | Navegará dentro do aplicativo sendo capaz de buscar locais desejados e também indicar lugares que considerar útil à comunidade. |
 | **Tipo** | Mestres e Doutores que lecionam na universidade, alunos e servidores da universidade. |
-| **Responsabilidades** | Indicar lugares que irão compor a base de dados do aplicativo e julgar lugares já indicados a fim de avaliar sua experiência no local para outros usuários.|
+| **Responsabilidades** | Indicar lugares que irão compor a base de dados do aplicativo.|
 | **Critérios de Sucesso**  | Obter um software resultante capaz de indicar locais próximos a FGA de acordo com a necessidade do usuário |
 | **Envolvimento** | Usuário final do sistema. |
 | **Produtos Liberados** | <br>Relação de disponibilidade de locais;</br> Informações sobre o local desejado;<br> Indicação de rota para o local desejado.</br> |
@@ -234,9 +202,8 @@ Ambientes novos ou em desenvolvimento, tem pouca informação dos lugares próxi
 
 | Necessidade | Prioridade | Preocupação | Solução Atual | Solução Proposta |
 | ----------- | ---------- | ----------- | ------------- | ---------------- |
-| Buscar locais na proximidade da faculdade | Alta |  Falta de informação para localizar o local; tempo gasto para procurar locais satisfatórios; Dificuldade de acesso ao local devido carência de instruções; Local com falta de estrutura para atender o usuário. |Busca na internet por locais; indicação de pessoas. | - Mostrar em um design simples e sofisticado locais que sirvam de utilidade para o usuário; <br> - Mecanismo de busca para especificar a procura do usuário; <br> - Mostrar ao usuário avaliações da comunidade assim como comentários sobre locais solicitados.|
-|Conhecimento do percurso a um local desejado | Alta | Capacidade de acessar localidades da forma mais simples possível. | Orientações dadas por pessoas conhecidas; uso de aplicativos externos. | Informar  ao usuário o melhor percurso para o local solicitado partindo da FGA.  |
-|  Informações sobre um dado local.| Média | Saber de antemão a qualidade de um local recomendado | Buscar informações de pessoas conhecidas que já estiveram no local | O sistema deverá fornecer avaliações de diversos usuários  que estiveram presentes no local; fornecimento comentários e informações como presença de estacionamento, banheiro e etc. |
+| Buscar locais na proximidade da faculdade | Alta |  Falta de informação para localizar o local; tempo gasto para procurar locais satisfatórios; Dificuldade de acesso ao local devido carência de instruções; Local com falta de estrutura para atender o usuário. |Busca na internet por locais; indicação de pessoas. | - Mostrar em um design simples e sofisticado locais que sirvam de utilidade para o usuário; <br> - Mecanismo de busca para especificar a procura do usuário; <br> |
+|Conhecimento do percurso a um local desejado | Alta | Capacidade de acessar localidades da forma mais simples possível. | Orientações dadas por pessoas conhecidas; uso de aplicativos externos. | Informar  ao usuário o melhor percurso para o local solicitado partindo da localização atual do usuário.  |
 
 
 ### 3.6 Alternativas e Concorrência
@@ -268,14 +235,15 @@ Yelp é um app que pesquisa locais próximos do usuário, utilizando a localiza�
 
 ### 4.1 Perspectiva do Produto
 
-O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as avaliações para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do aplicativo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, descrever o mesmo, avaliar locais já cadastrados e gerar uma rota até a localização.
+O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os serviços e as avaliações para facilitar a situações cotidianas comuns à toda comunidade. Desse modo, usando as funcionalidade do módulo, os usuários irão reduzir o tempo gasto pesquisando essas informações na internet, principalmente quando  se tratar de demandas urgentes e/ou importantes. O produto fornecerá ao usuário a possibilidade de cadastrar locais, descrever o mesmo, gerar uma rota até a localização alem de poder enviar fotos do local.
 
 ### 4.2 Resumo dos Recursos
 
 | Código |Recurso | Benefício|
 |:------:|--------|----------|
 | R01 | Indicar locais relacionados ao contexto.| Ajuda os usuários a acharem locais que atendam a suas necessidades e seja próximo ao contexto do mesmo. |
-| R02 | Avaliar locais cadastrados. | Permite que o usuário faça a escolha de onde irá baseada em avaliações de outros usuários. |
+| R02 | Gerar rota até o local | Permite que o usuário faça uma rota até o local proporcionando assim que o mesmo vá ao estabelecimento sem a necessidade de buscar informações em fontes externas. | 
+| R03 | Favoritar locais | Permite o fácil acesso de um local através de uma lista de locais favoritos associada a cada usuário. |
 
 ## 5. Requisitos Funcionais
 
@@ -292,9 +260,8 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 | RF1 | Autenticar Usuário | O Sistema deve autenticar o usuário pela API externa. | Alta |
 | RF2 | Cadastrar Locais | O Sistema deve permitir ao usuário o ato de cadastro de lugares de seu interesse por meio de um check-in no local. | Alta |
 | RF3 | Busca de Locais | O Sistema deve permitir a busca e visualização de locais solicitados através de uma busca por parte do usuário, assim como filtros de buscas para melhor atender suas expectativas. | Alta |
-| RF4 | Avaliar Locais | O Sistema deve permitir que os demais usuários também possam avaliar os locais por meio de notas previamente estabelecidas. | Intermediária |
-| RF5 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Intermediária |
-| RF6 | Favoritar Lugares | O Sistema deve provê ao usuário uma ferramenta para criar favoritos de lugares de seu interesse, assim como a listagem dos mesmos | Baixa |
+| RF4 | Criar Rotas | O Sistema deve ser capaz de criar rotas para a orientação dos usuários de maneira relativa com a posição do mesmo. | Alta |
+| RF5 | Favoritar Lugares | O Sistema deve provê ao usuário uma ferramenta para criar favoritos de lugares de seu interesse, assim como a listagem dos mesmos | Média |
 
 ## 6. Restrições
 
@@ -331,7 +298,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 
 ### 7.5 Requisito de Arquitetura
 
-* O uso da tecnologia React Native.
+* O uso da tecnologia React Native e Redux.
 
 ### 7.6 Requisito de Usabilidade
 
@@ -339,7 +306,7 @@ O Indica Ai irá ajudar todo o corpo acadêmico informando a localização, os s
 
 ### 7.7 Requisito de Suportabilidade
 
-* O sistema deve ser compatível com aparelhos celulares os quais usem como sistema operacional Android e iOS.
+* O sistema deve ser compatível com aparelhos celulares os quais usem o sistema operacional Android.
 
 ### 7.8 Requisito de Segurança
 
