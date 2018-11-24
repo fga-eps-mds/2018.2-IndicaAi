@@ -30,17 +30,15 @@ end
 
 private
 
-  def response_format_favorite(favorite)
-    favorite.as_json(
+def response_format_favorite(favorite)
+  favorite.as_json(
+    include: { local: {
       include: {
-        local: {
-          include: {
-            opening_hours: { only: %i[day opens closes] },
-            categories: { only: %i[id name] },
-            local_ratings: { only: %i[id value] },
-            local_images: { only: %s(image) }
-          }
-        }
+        opening_hours: { only: %i[day opens closes] },
+        categories: { only: %i[id name] },
+        local_ratings: { only: %i[id value] },
+        local_images: { only: %s(image) }
       }
-    )
-  end
+    } }
+  )
+end
