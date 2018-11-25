@@ -5,8 +5,8 @@ logo: /assets/logo.png
 github: https://github.com/fga-eps-mds/2018.2-IndicaAi
 about: 2018 EPS / MDS
 
-baseurl: ""
-#baseurl: "https://fga-eps-mds.github.io/2018.2-IndicaAi/"
+#baseurl: ""
+baseurl: "https://fga-eps-mds.github.io/2018.2-IndicaAi/"
 url: "https://fga-eps-mds.github.io/2018.2-IndicaAi/"
 
 allowsearch: true

@@ -19,7 +19,9 @@ end
 RSpec.describe UserIdentifiersController, type: :controller do
   let!(:user_test) { create(:user_identifier) }
   describe 'GET show_user' do
-    before { get :show_user, params: { id: user_test.id } }
+    before do
+      get :show_user, params: { user_identifier: user_test.identifier }
+    end
     it 'should returns user' do
       expect(response).to be_success
       assert assigns(:user) == user_test

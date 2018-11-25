@@ -2,7 +2,7 @@
 class FavoriteLocalsController < ApplicationController
   # Post /favorite/create
   def create
-    if (user = UserIdentifier.find_by(identifier: params[:user_identifier]))
+    if (user = UserIdentifier.get_by_user(params[:user_identifier]))
       @favorite = FavoriteLocal.new(favorite_create_params(params, user))
       result = { favorite: @favorite, user: user }
       if @favorite.save
