@@ -30,7 +30,7 @@ developmentTeam: [
   João Lucas Fragoso Zarbiélli,
   Lucas Maciel Aguiar,
   Matheus Gomes Ferreira,
-  Weiller Fernandes Pereira
+  Weiller Fernandes Pereira,
 ]
 
 issues: [
@@ -174,6 +174,5 @@ knowledge: []
 pairing: []
 
 feedback: [
-   "No geral,<b> foi uma ótima sprint</b>. Todas as issues propostas foram realizadas. O grupo se ajudou bastante mesmo em issues fora do pareamento por conta desse suporte todas as issue foram fechadas."
+   "No geral,<b> foi uma ótima sprint</b>. Todas as issues propostas foram realizadas. O grupo se ajudou bastante mesmo em issues fora do pareamnento por conta desse suporte todas as issue foram fechadas."
 ]
----

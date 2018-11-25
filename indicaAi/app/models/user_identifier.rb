@@ -10,11 +10,11 @@ class UserIdentifier < ApplicationRecord
     UserIdentifier.find(params).favorite_locals
   end
 
-  def self.get_by_user(id)
+  def self.get_by_token(token)
     # TODO: Validade token with api
-    user = UserIdentifier.find_by(identifier: id)
+    user = UserIdentifier.find_by(identifier: token)
     if user.nil?
-      UserIdentifier.create(identifier: id)
+      UserIdentifier.create(identifier: token)
     else
       user
     end
