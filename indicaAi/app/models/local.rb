@@ -17,11 +17,7 @@ class Local < ApplicationRecord
   validates :telephone, allow_nil: true, length: { minimum: 8 }
 
   def self.find_by_name(params)
-    Local.left_outer_joins(:categories).group('locals.id').where('
-      upper(categories.name) LIKE :search OR
-      upper(locals.name) LIKE :search OR
-      upper(locals.description) LIKE :search OR
-      upper(locals.address) LIKE :search', search: "%#{params.upcase}%")
+    Local.where('upper(name) like ?', "%#{params.upcase}%")
   end
 
   def self.find_local_ratings(local_id)

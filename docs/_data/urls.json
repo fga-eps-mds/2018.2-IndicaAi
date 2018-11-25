@@ -200,11 +200,6 @@
           "text": "Sprint 12",
           "url": "/sprint-planning/2018/11/07/planning-sprint-12.html",
           "icon": "fa-angle-right"
-        },
-	{
-          "text": "Sprint 13",
-          "url": "/sprint-planning/2018/11/13/planning-sprint-13.html",
-          "icon": "fa-angle-right"
         }
     ]
   },
@@ -267,13 +262,7 @@
           "text": "Sprint 11",
           "url": "/sprint-review/2018/11/07/review-sprint-11.html",
           "icon": "fa-angle-right"
-        },
-        {
-          "text": "Sprint 12",
-          "url": "/sprint-review/2018/11/12/review-sprint-12.html",
-          "icon": "fa-angle-right"
         }
-
     ]
   },
   {

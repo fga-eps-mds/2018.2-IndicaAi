@@ -26,14 +26,14 @@ RSpec.describe UserIdentifier, type: :model do
     let!(:user) { create(:user_identifier) }
 
     it 'should return user' do
-      id = user.identifier
-      result = UserIdentifier.get_by_user(id)
+      token = user.identifier
+      result = UserIdentifier.get_by_token(token)
       assert result, user
     end
     it 'should return new user' do
       count = UserIdentifier.count
-      id = 'dsfoanoi1ni3no2n3fo23n'
-      UserIdentifier.get_by_user(id)
+      token = 'dsfoanoi1ni3no2n3fo23n'
+      UserIdentifier.get_by_token(token)
       assert count, (count + 1)
     end
   end

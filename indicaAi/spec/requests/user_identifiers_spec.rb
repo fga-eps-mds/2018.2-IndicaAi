@@ -18,8 +18,8 @@ end
 
 RSpec.describe 'User Controller', type: :request do
   let!(:user_test) { create(:user_identifier) }
-  describe 'GET /users/:user_identifier' do
-    before { get "/users/#{user_test.identifier}" }
+  describe 'GET /users/:id' do
+    before { get "/users/#{user_test.id}" }
     it 'returns user' do
       expect(json[0]['identifier']).to eq(user_test.identifier)
     end
