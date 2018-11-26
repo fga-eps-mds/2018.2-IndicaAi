@@ -55,7 +55,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
 ### 2.3 React Native
 
-  O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript, CSS e HTML5. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
+  O React Native é um framework de JavaScript que fornece suporte ao desenvolvimento de aplicações móveis usando JavaScript. Com React Native é possivel criar aplicativos tanto para Android quanto para iOS de forma nativa, ou seja como se fossem escritos para uma plataforma específica. A camada *View* será representada pelo React Native, portanto será responsável por exibir a interface do usuário e fazer requisições a API feita em Ruby on Rails.
 
   <iframe frameborder="0" style="width:100%;height:600px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=React#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1XumTy5uTyioHxKt8qj0pSjogOPDD4RAI%26export%3Ddownload"></iframe>
 
@@ -63,7 +63,7 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
 
    * A aplicação deve ser construída sobre a arquitetura de microsserviços, na qual o frontend será desenvolvido em React Native.
 
-   * O Aplicativo será funcional em dispositivos celulares Android ou iOS os quais devem ter acesso a internet.
+   * O Aplicativo será funcional em dispositivos celulares Android os quais devem ter acesso a internet.
 
    * O frontend deve ser desenvolvido para consumir diferentes serviços de APIs diferentes, portanto um módulo não pode interferir no outro.
 
@@ -88,14 +88,13 @@ O IndicaAi será um módulo do aplicativo Integra, este módulo será responsáv
   | --- | --- |
   | UC01: Cadastrar novo local | Cadastramento de um local pelo usuário utilizando a tela de cadastro do IndicaAi |
   | UC02: Cadastrar local do Google API | Cadastramento de local existente no Google utilizando sistema de "check-in", por meio da API do próprio Google|
-  | UC03: Cadastrar publicidade | Cadastramento de uma publicidade pelo usuário Administrador|
+  | UC03: Cadastrar publicidade | Cadastramento de uma publicidade pelo mantenedores |
   | UC04: Gerar rota | Cria uma rota baseada na posição de partida do usuário e a posição de destino do local |
   | UC05: Buscar local | Fazer busca dos locais já cadastrados no sistema |
   | UC06: Visualizar local | Visualizar local e todas as informações referentes a ele |
   | UC07: Favoritar local | Salvar local em uma lista de favoritos |
   | UC08: Visualizar locais favoritos | Visualizar toda a lista de locais favoritos |
-  | UC09: Avaliar local | Fazer avaliação do local através de um sistema de notas |
-  | UC10: Verificar login | Verificar, por meio de uma API externa, se o usuário fez o login no aplicativo |
+  | UC09: Verificar login | Verificar, por meio de uma API externa, se o usuário fez o login no aplicativo |
 
 
 ## 5: Visão Lógica
