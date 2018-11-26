@@ -127,7 +127,7 @@ issues: [
         description: US10 M4 - Verificar token de autenticação nos métodos que já foram implementados, 
         responsible: ['Iasmin Mendes'],
         points: 3,
-        header: Débito,
+        header: dividas,
         headerSpan: 3,
         status: Removido
     },
