@@ -274,7 +274,7 @@ negatives: [
 improvements: [
     "Tentar melhorar a comunicação com outros grupos do Integra App",
     "Melhorar a entrega contínua",
-    "Melhorar o plenjamento de issues de acordo com o tempo"
+    "Melhorar o planejamento de issues de acordo com o tempo"
 ]
 
 burndown: [
