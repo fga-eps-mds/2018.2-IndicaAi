@@ -278,8 +278,6 @@
           "url": "/sprint-review/2018/11/13/review-sprint-13.html",
           "icon": "fa-angle-right"
         }
-
-
     ]
   },
   {
@@ -385,6 +383,11 @@
     "text": "Licença",
     "url": "/docs/2018/08/28/license.html",
     "icon": "fa-shield-alt"
+  },
+  {
+    "text": "Postmortem",
+    "url": "/docs/2018/11/26/postmortem.html",
+    "icon": "fas fa-skull"
   },
   {
     "text": "Github",

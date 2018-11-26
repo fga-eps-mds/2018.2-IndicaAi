@@ -187,7 +187,8 @@ presence : [
 positives: [
     "Entrega considerável de pontos",
     "Equipe de Desenvolvedores está com mais facilidade de uso da tecnologia utilizada",
-    "Colaboração entre os membros da equipe"
+    "Colaboração entre os membros da equipe",
+    "Entrega contínua"
 ]
 
 negatives: [
@@ -195,7 +196,6 @@ negatives: [
     "Integração falha com outros grupos do Integra App",
     "Essa Sprint não teve Stand Ups presenciais",
     "Não foram entregues os pontos de todas as issues planejadas",
-    "Entrega contínua",
     "Prazo curto para entrega de todas as issues"
 ]
 
@@ -219,21 +219,6 @@ velocity: [
 knowledge: []
 
 pairing: []
-
-coverage: {
-    "url": "https://coveralls.io/builds/20112562",
-    "review": [
-        "Na Sprint em questão como a maior parte das issues estava voltada para o Front End, não ouve mudanças significativas na cobertura de código relevante"
-    ]
-}
-
-complexity: []
-
-duplication: []
-
-styleSheet: []
-
-maintainability: []
 
 feedback: [
     "Essa foi uma issue incomun em que pegamos a maior quantidade de pontos do projeto até o momento, 61 pontos. Nem todos os pontos foram concluídos devido a problemas isolados, mas isso não vejo como um ponto negativo, pois conseguimos realizar a maioria das tarefas atribuidas a equipe de desenvolvedores, e também houve um aumento significativo de ajuda mútua dentro da equipe.",
