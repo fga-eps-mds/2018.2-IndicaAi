@@ -17,7 +17,8 @@
         <div class="row">
           {% if site.allowsearch == true %}
           <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol pull-right" id="js-search">
-            <a href="/">Home</a>
+            <input class="form-control" type="text" id="js-search__input" placeholder="Buscar">
+            <ul class="search__results" id="js-search__results"></ul>
           </div>
           {% endif %}
         </div>
