@@ -127,7 +127,7 @@ issues: [
         description: US10 M4 - Verificar token de autenticação nos métodos que já foram implementados, 
         responsible: ['Iasmin Mendes'],
         points: 3,
-        header: dividas,
+        header: Dividas,
         headerSpan: 3,
         status: Removido
     },
@@ -278,11 +278,11 @@ improvements: [
 ]
 
 burndown: [
-   "<b>A sprint com a melhoror entrega contínua desde a primeira!</b> Refletindo o amadureciemento da equipe em relação as práticas ageis e o domínio das tecnologias utilizadas duarnte o projeto. Foram planejadas bastantes issues pelo fator dessa sprint ser atípica por ser a única do projeto com mais de 7 dias, possibilitando assim a entrega de todas as issues."
+   "<b>A sprint com a melhoror entrega contínua desde a primeira!</b> Refletindo o amadureciemento da equipe em relação as práticas ágeis e o domínio das tecnologias utilizadas duarnte o projeto. Foram planejadas bastantes issues pelo fator dessa sprint ser atípica por ser a única do projeto com mais de 7 dias, possibilitando assim a entrega de todas as issues."
 ]
 
 velocity: [
-    "O velocity da equipe subiu um pouco em relação a sprint passada para 26,5 devido ao grande número de pontos que pegamos nessa sprint, mais precisamente 61 pontos. Isso ocorreu devido a chegada da data final de entrega do projeto do aplicativo e disponibilidade adicional de alguns integrantes do grupo."
+    "O velocity da equipe subiu em relação a sprint passada para 30 devido ao grande número de pontos que pegamos nessa sprint, mais precisamente 83 pontos. Isso ocorreu devido a chegada da data final de entrega do projeto do aplicativo e da proatividade dos integrantes do grupo."
 ]
 
 knowledge: []
