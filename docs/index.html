@@ -1,83 +1,53 @@
 ---
-layout: default
+layout: home
 ---
-<div class="well-lg">
-
-    <div class="container-fluid mb-30">
-        <div class="row row-picture">
-            <img id="about" class="logo-img" src="{{ site.baseurl }}{{ site.logo }}">
-        </div>
-        <div class="navbar-header pull-right">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-2x fa-bars"></i>
-            </button>
-        </div>
-        <!-- style="border: 2px solid red" -->
-        <div class="row mb-30">
-            <h1 class="text-center font-titulos">Sobre</h1>
-            <p class="text-justify texto-home">
-                O IndicaAi é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele
-                funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter
-                acesso por meio do Integra app. A API é desenvolvida na Universidade de Brasília, por alunos do curso
-                de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e
-                Engenharia de Produto de Software.
-            </p>
-        </div>
-
-        <div class="row vertical-align mb-30">
-            <div class="col-6">
-                <video width="640" height="480" autoplay loop>
-                    <source src="static/img/homePage/buscarLocal.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="col-6 font-titulos">
-                <h1 class="text-center">Busque locais próximos a você</h1>
-                <p class="text-center texto-home">Encontre locais proximos com mais facilidade.</p>
-            </div>
-        </div>
-
-        <div class="row vertical-align mb-30">
-            <div class="col-6 font-titulos">
-                <h1 class="text-center">Cadastre locais usando seu GPS</h1>
-                <p class="text-center texto-home">Cadastre os locais visitados por você, usando os dados que existem na
-                    internet.</p>
-            </div>
-            <div class="col-6">
-                <video width="640" height="480" autoplay loop>
-                    <source src="static/img/homePage/cadastroGPS.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-
-        <div class="row vertical-align mb-30">
-            <div class="col-6">
-                <video width="640" height="480" autoplay loop>
-                    <source src="static/img/homePage/cadastroUsuario.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="col-6 font-titulos">
-                <h1 class="text-center">Cadastre locais usando seus próprios dados</h1>
-                <p class="text-center texto-home">Ou cadastre os locais visitados por você, usando os dados que existem
-                    conhece.</p>
-            </div>
-        </div>
-
-        <div class="row vertical-align mb-30">
-            <div class="col-6 font-titulos">
-                <h1 class="text-center">Veja os locais</h1>
-                <p class="text-center texto-home">Veja, favorite e encotre rotas para os locais que você deseja.</p>
-            </div>
-            <div class="col-6">
-                <video width="640" height="480" autoplay loop>
-                    <source src="static/img/homePage/visualizarLocal.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
+<div class="home-header">
+    <div class='home-header-links'>
+      <a href="https://github.com/fga-eps-mds/2018.2-IndicaAi" target='_blank'>Repositório</a>
+      <a href="{{ site.baseurl }}/documentation">Documentação</a>
     </div>
-</div><!-- end #home -->
+    <img id="about" class="logo-img" src="{{ site.baseurl }}{{ site.logo }}">
+</div>
+
+<div>
+  <div class='card'>
+      <div class='card-body sobre'>
+          <h1>Sobre</h1>
+          <p>
+              O IndicaAi é uma API para recomendação dos mais diversos locais próximos ao Campus Gama da UnB. Ele
+              funciona como um microserviço, pelo qual qualquer um que estude, trabalhe ou visite a FGA possa ter
+              acesso por meio do Integra app. A API é desenvolvida na Universidade de Brasília, por alunos do curso
+              de Engenharia de Software dentro das disciplinas de Métodos de Desenvolvimento de Software e
+              Engenharia de Produto de Software.
+          </p>
+          <div class='card-image'>
+            <img class='app-image' src="{{site.baseurl}}/assets/buscar_local.gif">
+            <div class='card-image-description'>
+                    <p>Busque e conheça locais frequentados pela <span class='destaque'>sua comunidade</span>!</p>
+            </div>
+          </div>
+          <div class='card-image'>
+            <div class='card-image-description'>
+                    <p><span class='destaque'>Indique</span> para outros usuários locais que você gosta de frequentar.</p>
+            </div>
+            <img class='app-image' src="{{site.baseurl}}/assets/cadastro_gps.gif">
+          </div>
+          <div class='card-image'>
+            <img class='app-image' src="{{site.baseurl}}/assets/cadastro_form.gif">
+            <div class='card-image-description'>
+                    <p><span class='destaque'>Descubra e compartilhe</span> novos locais.</p>
+            </div>
+          </div>
+          <div class='card-image'>
+            <div class='card-image-description'>
+              <p>Informe-se, favorite e encotre rotas para os local que você acabou de encontrar!</p>
+            </div>
+            <img class='app-image' src="{{site.baseurl}}/assets/view_local.gif">
+          </div>
+          <div>
+            {% include footer.html %}
+          </div>
+
+      </div>
+    </div>
+</div>
