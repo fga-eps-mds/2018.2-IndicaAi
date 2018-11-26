@@ -76,11 +76,7 @@
     "number": "9"
   },
   {
-    "number": "10",
-    "complexity": true,
-    "numberPairing": true,
-    "duplication": true,
-    "sprintCommits": true
+    "number": "10"
   },
   {
     "number": "11"
