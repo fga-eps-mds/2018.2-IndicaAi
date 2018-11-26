@@ -7,7 +7,7 @@ class UserIdentifiersController < ApplicationController
   end
 
   def show_user
-    @user = UserIdentifier.find_by_id(params[:id])
+    @user = UserIdentifier.find_by(identifier: params[:user_identifier])
     result = []
     result << @user.as_json(methods: [:favorite_locals])
     json_response(result)
@@ -17,10 +17,28 @@ class UserIdentifiersController < ApplicationController
   def list_favorites
     if (user = UserIdentifier.find_by(identifier: params[:user_identifier]))
       @favorites = UserIdentifier.find_favorites(user.id)
-      @user = UserIdentifier.find_by_id(user.id)
-      json_response(user: @user, favorites: @favorites)
+      result = []
+      @favorites.each do |favorite|
+        result << response_format_favorite(favorite)
+      end
+      json_response(favorites: result)
     else
       response_error('ERROR', 'User not found', 422)
     end
   end
+end
+
+private
+
+def response_format_favorite(favorite)
+  favorite.as_json(
+    include: { local: {
+      include: {
+        opening_hours: { only: %i[day opens closes] },
+        categories: { only: %i[id name] },
+        local_ratings: { only: %i[id value] },
+        local_images: { only: %s(image) }
+      }
+    } }
+  )
 end
