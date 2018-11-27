@@ -26,6 +26,7 @@ Dado o encerramento das disciplinas de Métodos de Desenvolvimento de Software e
   - O projeto começou já em um ritmo muito pesado, somado a falta de informação sobre como era a disciplina para a equipe de MDS que se sentiu perdida no início, levando um tempo para se adaptar;
   - O conhecimento não foi tão bem compartilhado, algumas pessoas acabaram se sobressaindo mais no Frontend enquanto outras mais no Backend;
   - Houveram treinamentos no começo que não foram direcionados para as ferramentas que seriam utilizadas, como JQuery;
+  - A comunicação pelas issues não foi tão boa. Em geral, a equipe se comunicou bem durante o projeto pessoalmente ou por telegram para resolver assuntos rápidos, registrando nas issues somente decisões importantes relacionadas.
   - A comunicação entre os vários grupos relacionados ao App foi conturbada;
     - Em geral, para mudar algo no app era necessário que todos os grupos estivessem de acordo e isso tornava o processo mais lento e mais restrito a mudanças;
   - O planejamento do escopo não foi muito bem elaborado, sendo necessário entregar menos funcionalidades do que o proposto no começo.
