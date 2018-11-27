@@ -60,8 +60,7 @@
     "numberPairing": true,
     "duplication": true,
     "maintainability": true,
-     "styleSheet": true,
-    "sprintCommits": true
+     "styleSheet": true
   },
   {
     "number": "8",
